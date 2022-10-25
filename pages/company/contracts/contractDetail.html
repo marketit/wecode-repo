@@ -1067,9 +1067,10 @@ License: For each use you must have a valid license purchased only from above li
                                             <label class="required fs-5 fw-semibold mb-2">보증금</label>
                                             <!--end::Label-->
                                             <div class="form-floating">
-                                                <input type="email" class="form-control" id="floatingInputValue"
-                                                    placeholder="name@example.com" value="test@example.com" />
-                                                <label for="floatingInputValue">Input with value</label>
+                                                <div type="email" class="form-control form-control-solid"
+                                                    id="floatingInputValue" placeholder="name@example.com"
+                                                    value="test@example.com">0 / 100,000</div>
+                                                <label for="floatingInputValue">잔액 / 설정금액</label>
                                             </div>
                                         </div>
                                     </div>
@@ -1264,7 +1265,7 @@ License: For each use you must have a valid license purchased only from above li
                                 <div class="card-header pt-5">
                                     <!--begin:: 타이틀-->
                                     <h3 class="card-title align-items-start flex-column">
-                                        <span class="card-label fw-bold text-dark">연결된 제휴사</span>
+                                        <span class="card-label fw-bold text-dark">연결된 캠페인</span>
                                     </h3>
                                     <div class="d-flex flex-center">
                                         <span class="required">필수 정보</span>
@@ -1277,17 +1278,16 @@ License: For each use you must have a valid license purchased only from above li
                                 <div class="card-body">
                                     <div class="no-account-search-list text-center"><i
                                             class="marketit-icon_search_list"></i>
-                                        <h5 class="mt-4 mb-2" style="font-weight: bold;">연결된 제휴사가 없습니다.</h5>
-                                        <p>
-                                            <span style="color: var(--red-6);">*</span> 계약을 진행할 제휴사를 연결해 주세요.
-                                        </p>
+                                        <h5 class="mt-4 mb-5" style="font-weight: bold;">연결된 캠페인이 없습니다.</h5>
+
                                         <div class="mt-3">
                                             <button type="button" class="btn btn-light-primary" data-bs-toggle="modal"
-                                                data-bs-target="#kt_modal_1">제휴사 연결</button>
+                                                data-bs-target="#kt_modal_1">새 캠페인 추가</button>
 
                                         </div>
                                     </div>
                                 </div>
+                                <!-- begin:: Modal -->
                                 <div class="modal fade" tabindex="-1" id="kt_modal_1">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
@@ -1380,7 +1380,7 @@ License: For each use you must have a valid license purchased only from above li
                                         </div>
                                     </div>
                                 </div>
-                                <!-- end:: 컨텐트 -->
+                                <!-- begin:: Modal -->
                             </div>
                         </div>
                         <!-- end:: 카드 -->
