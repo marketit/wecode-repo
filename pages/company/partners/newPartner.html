@@ -1054,7 +1054,6 @@ License: For each use you must have a valid license purchased only from above li
                                                         <label class="fs-5 fw-semibold mb-2">상품/서비스 제공 방식</label>
                                                         <!--end::Label-->
 
-
                                                         <!--begin::상품 제공 방식-->
                                                         <div class="form-control" style="border: 0;">
                                                             <div style="display: flex;">
@@ -1144,31 +1143,35 @@ License: For each use you must have a valid license purchased only from above li
                                                             <!--end::Label-->
 
                                                             <!--begin::Input-->
-                                                            <input class="form-control form-control-solid"
-                                                                placeholder="주소 입력" name="email">
+                                                            <div class="d-flex">
+                                                                <input class="form-control form-control-solid col"
+                                                                    placeholder="주소 입력" name="email">
+                                                                <button class="m-lg-1 btn btn-outline">주소
+                                                                    검색</button>
+                                                            </div>
                                                             <!--end::Input-->
                                                             <div class="fv-plugins-message-container invalid-feedback">
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-1 fv-row fv-plugins-icon-container">
-                                                            <!--begin::Label-->
+                                                        <!-- <div class="col-md-1 fv-row fv-plugins-icon-container">
+                                                            begin::Label
                                                             <div class="d-flex">
                                                                 <div>
                                                                     <label
                                                                         class=" fs-5 fw-semibold mb-2 me-5">&nbsp</label>
                                                                 </div>
                                                             </div>
-                                                            <!--end::Label-->
+                                                            end::Label
 
-                                                            <!--begin::Input-->
+                                                            begin::Input
                                                             <button class="">주소
                                                                 검색</button>
-                                                            <!--end::Input-->
+                                                            end::Input
                                                             <div class="fv-plugins-message-container invalid-feedback">
                                                             </div>
-                                                        </div>
-                                                        <div class="col-md-5 fv-row fv-plugins-icon-container">
-                                                            <!--begin::Label-->
+                                                        </div> -->
+                                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                            <!-- begin::Label -->
                                                             <div class="d-flex">
                                                                 <div>
                                                                     <label class=" fs-5 fw-semibold mb-2 me-5">상세
@@ -1189,6 +1192,35 @@ License: For each use you must have a valid license purchased only from above li
                                                         </div>
                                                     </div>
                                                     <!-- end::주소 입력 -->
+
+                                                    <!-- begin::대표자 성명 -->
+                                                    <div class="row mb-5">
+                                                        <!--begin::Col-->
+                                                        <div class="col-md-12 fv-row fv-plugins-icon-container">
+                                                            <!--begin::Label-->
+                                                            <div class="d-flex">
+                                                                <div>
+                                                                    <label
+                                                                        class="fs-5 fw-semibold mb-2 me-5">웹사이트</label>
+                                                                </div>
+                                                                <div>
+                                                                    <button class="btn">계정
+                                                                        연결 끊기</button>
+                                                                </div>
+                                                            </div>
+                                                            <!--end::Label-->
+                                                            <!--begin::Input-->
+                                                            <input class="form-control form-control-solid"
+                                                                placeholder="전화번호 입력" name="email">
+                                                            <!--end::Input-->
+                                                            <div class="fv-plugins-message-container invalid-feedback">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="fv-plugins-message-container invalid-feedback">
+                                                        </div>
+                                                    </div>
+                                                    <!-- end::대표자 성명 -->
 
                                                     <!--end::Col-->
                                                 </div>
