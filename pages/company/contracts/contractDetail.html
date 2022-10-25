@@ -883,8 +883,15 @@ License: For each use you must have a valid license purchased only from above li
                                                 <label class="required fs-5 fw-semibold mb-2">영업 담당자</label>
                                                 <!--end::Label-->
                                                 <!--begin::Input-->
-                                                <input type="text" class="form-control form-control-solid"
-                                                    placeholder="이름 입력" name="first_name">
+                                                <select class="form-select form-select" data-control="select2"
+                                                    data-placeholder="이름 입력 또는 선택" data-allow-clear="true">
+                                                    <option></option>
+                                                    <option value="1">jacob</option>
+                                                    <option value="2">jack</option>
+                                                    <option value="3">raymon</option>
+                                                    <option value="4">chaem</option>
+                                                    <option value="5">yona</option>
+                                                </select>
                                                 <!--end::Input-->
                                                 <div class="fv-plugins-message-container invalid-feedback"></div>
                                             </div>
@@ -897,15 +904,22 @@ License: For each use you must have a valid license purchased only from above li
                                                 <!--end::Input-->
                                                 <div class="row">
                                                     <div class="col-md-9 fs-5">
-                                                        <input type="text" class="form-control form-control-solid"
-                                                            placeholder="숫자 입력" name="last_name" />
+                                                        <select class="form-select form-select" data-control="select2"
+                                                            data-placeholder="이름 입력 또는 선택" data-allow-clear="true">
+                                                            <option></option>
+                                                            <option value="1">jacob</option>
+                                                            <option value="2">jack</option>
+                                                            <option value="3">raymon</option>
+                                                            <option value="4">chaem</option>
+                                                            <option value="5">yona</option>
+                                                        </select>
                                                     </div>
                                                     <div class="col-md-3 fs-5">
-                                                        <button class="btn btn-light-primary">업무 요청</button>
+                                                        <button class="btn btn-wite btn-outline fs-7" disabled>업무
+                                                            요청</button>
                                                     </div>
                                                 </div>
                                                 <!--end::Input-->
-                                                <div class="fv-plugins-message-container invalid-feedback"></div>
                                             </div>
                                             <!--end::Col-->
                                             <!-- begin::Col -->
@@ -918,7 +932,7 @@ License: For each use you must have a valid license purchased only from above li
                                                 <!--begin::Label-->
                                                 <label class="required fs-5 fw-semibold mb-2">특이사항</label>
                                                 <!--end::Label-->
-                                                <div class="input-group input-group-solid">
+                                                <div class="input-group input-group">
                                                     <textarea class="form-control"
                                                         placeholder="계약 특이사항, 캠페인 운영에 참고해야 할 사항"
                                                         aria-label="With textarea"
@@ -950,7 +964,7 @@ License: For each use you must have a valid license purchased only from above li
                                         <span class="card-label fw-bold text-dark">연결된 제휴사</span>
                                     </h3>
                                     <div class="d-flex flex-center">
-                                        <button class="btn btn-light-primary">변경</button>
+                                        <button class="btn btn-wite btn-outline fs-7">변경</button>
                                     </div>
                                     <!--end:: 타이틀-->
                                 </div>
@@ -1112,30 +1126,39 @@ License: For each use you must have a valid license purchased only from above li
                                         </div>
                                         <div class="col-md-6 fv-row fv-plugins-icon-container">
                                             <label class="fs-5 fw-semibold mb-2">종료일</label>
-                                            <div class="text-inverse-light bg-light form-control form-control-solid">
-                                                계약 종료 처리된 시각이 자동 입력됩니다.
+                                            <div class="row">
+                                                <div class="col-md-9">
+                                                    <div
+                                                        class="text-inverse-light bg-light form-control form-control-solid">
+                                                        계약 종료 처리된 시각이 자동 입력됩니다.
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <button class="btn btn-wite btn-outline fs-7">게약 종료</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row mb-5">
                                         <div class="col-md-12 fv-row fv-plugins-icon-container">
                                             <label class="fs-5 fw-semibold mb-2">상태</label>
-                                            <div class="text-inverse-light bg-light form-control form-control-solid">
+                                            <div class="text-inverse-light form-control">
                                                 <ul
-                                                    class="breadcrumb breadcrumb-separatorless fw-semibold fs-14 my-0 pt-1">
-                                                    <li class="breadcrumb-item text-muted">
-                                                        <a href="/" class="text-muted text-hover-primary">계약등록</a>
+                                                    class="breadcrumb breadcrumb-separatorless fw-semibold fs-12 my-0 pt-1">
+                                                    <li class="breadcrumb-item">
+                                                        <span class="fw-bolder" style="color: var(--bs-black);">계약
+                                                            등록</span>
                                                     </li>
                                                     <li class="breadcrumb-item">
-                                                        <span class="bullet bg-gray-400 w-5px h-2px"></span>
+                                                        <span>></span>
                                                     </li>
                                                     <li class="breadcrumb-item text-muted">캠페인 진행</li>
                                                     <li class="breadcrumb-item">
-                                                        <span class="bullet bg-gray-400 w-5px h-2px"></span>
+                                                        <span>></span>
                                                     </li>
                                                     <li class="breadcrumb-item text-muted">계약 종료 대기</li>
                                                     <li class="breadcrumb-item">
-                                                        <span class="bullet bg-gray-400 w-5px h-2px"></span>
+                                                        <span>></span>
                                                     </li>
                                                     <li class="breadcrumb-item text-muted">계약 종료</li>
                                                 </ul>
@@ -1145,9 +1168,14 @@ License: For each use you must have a valid license purchased only from above li
                                     <div class="row mb-5">
                                         <div class="col-md-12 fv-row fv-plugins-icon-container">
                                             <label class="fs-5 fw-semibold mb-2">유입 경로</label>
-                                            <div class="text-inverse-light bg-light form-control form-control-solid">
-                                                저장 이후 생성됩니다.
-                                            </div>
+                                            <select class="form-select form-select" data-control="select2"
+                                                data-placeholder="이름 입력 또는 선택" data-allow-clear="true"
+                                                data-hide-search="true">
+                                                <option></option>
+                                                <option value="1" selected>인바운드</option>
+                                                <option value="2">아웃바운드</option>
+                                                <option value="3">계약연장</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="row mb-5">
@@ -1156,7 +1184,7 @@ License: For each use you must have a valid license purchased only from above li
                                             <!--begin::Form-->
                                             <form class="form" action="#" method="post">
                                                 <!--begin::Input group-->
-                                                <div class="form-group row">
+                                                <div class="form-group row d-flex flex-column">
                                                     <!--begin::Col-->
                                                     <div class="col-lg-10">
                                                         <!--begin::Dropzone-->
@@ -1172,6 +1200,7 @@ License: For each use you must have a valid license purchased only from above li
                                                                 <a
                                                                     class="dropzone-remove-all btn btn-sm btn-light-primary">Remove
                                                                     All</a>
+
                                                             </div>
                                                             <!--end::Controls-->
 
@@ -1187,7 +1216,13 @@ License: For each use you must have a valid license purchased only from above li
                                                         <!--end::Dropzone-->
 
                                                         <!--begin::Hint-->
-                                                        <span class="form-text text-muted">개당 10MB 이하,파일 수 제한없음</span>
+                                                        <div class="d-flex flex-column">
+                                                            <span class="form-text text-muted">개당 10MB 이하,파일
+                                                                수제한없음</span>
+                                                            <span class="form-text text-muted">개당 10MB 이하,파일 수
+                                                                제한없음</span>
+                                                        </div>
+
                                                         <!--end::Hint-->
                                                     </div>
                                                     <!--end::Col-->
@@ -1208,11 +1243,9 @@ License: For each use you must have a valid license purchased only from above li
                                     <div class="row mb-5">
                                         <div class="col-md-6 fv-row fv-plugins-icon-container">
                                             <label class="required fs-5 fw-semibold mb-2">희망 혜택 제공일</label>
-                                            <div class="mb-0">
-                                                <input class="form-control form-control-solid"
-                                                    placeholder="Pick date rage" id="kt_daterangepicker_3">
-                                            </div>
+                                            <div class="form-control form-control-solid"> 2023. 10. 24</div>
                                         </div>
+
                                         <div class="col-md-6 fv-row fv-plugins-icon-container">
                                             <label class="required fs-5 fw-semibold mb-2">희망 혜택 제공 종료일</label>
                                             <div class="row">
@@ -1227,28 +1260,35 @@ License: For each use you must have a valid license purchased only from above li
                                                         <option value="2">50일</option>
                                                         <option value="3">180일</option>
                                                         <option value="4">365일</option>
-                                                    </select><span
+                                                    </select>
+                                                    <span
                                                         class="select2 select2-container select2-container--bootstrap5"
                                                         dir="ltr" data-select2-id="select2-data-2-n1a7"
-                                                        style="width: 100%;"><span class="selection"><span
+                                                        style="width: 100%;">
+                                                        <span class="selection">
+                                                            <span
                                                                 class="select2-selection select2-selection--single form-select form-select-solid"
                                                                 role="combobox" aria-haspopup="true"
                                                                 aria-expanded="false" tabindex="0" aria-disabled="false"
                                                                 aria-labelledby="select2-uyfn-container"
-                                                                aria-controls="select2-uyfn-container"><span
-                                                                    class="select2-selection__rendered"
+                                                                aria-controls="select2-uyfn-container">
+                                                                <span class="select2-selection__rendered"
                                                                     id="select2-uyfn-container" role="textbox"
-                                                                    aria-readonly="true" title="365일"><span
-                                                                        class="select2-selection__placeholder">365일</span></span><span
-                                                                    class="select2-selection__arrow"
-                                                                    role="presentation"><b
-                                                                        role="presentation"></b></span></span></span><span
-                                                            class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                                    aria-readonly="true" title="365일">
+                                                                    <span
+                                                                        class="select2-selection__placeholder">365일</span>
+                                                                </span>
+                                                                <span class="select2-selection__arrow"
+                                                                    role="presentation">
+                                                                    <b role="presentation"></b>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                        <span class="dropdown-wrapper" aria-hidden="true"></span></span>
                                                 </div>
-                                                <div class="col-md-8 fv-row fv-plugins-icon-container">
-                                                    <div class="mb-0">
-                                                        <input class="form-control form-control-solid"
-                                                            placeholder="Pick date rage" id="kt_daterangepicker_3">
+                                                <div class="col-md-8">
+                                                    <div class="form-control form-control-solid">
+                                                        2023. 10. 24
                                                     </div>
                                                 </div>
                                             </div>
@@ -1281,123 +1321,95 @@ License: For each use you must have a valid license purchased only from above li
                                         <h5 class="mt-4 mb-5" style="font-weight: bold;">연결된 캠페인이 없습니다.</h5>
 
                                         <div class="mt-3">
-                                            <button type="button" class="btn btn-light-primary" data-bs-toggle="modal"
-                                                data-bs-target="#kt_modal_1">새 캠페인 추가</button>
+                                            <a href="/pages/campaign/campaigns/newCampaign.html">
+                                                <button type="button" class="btn btn-light-primary">새 캠페인 추가</button>
+                                            </a>
 
                                         </div>
                                     </div>
                                 </div>
-                                <!-- begin:: Modal -->
-                                <div class="modal fade" tabindex="-1" id="kt_modal_1">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h3 class="modal-title">제휴사 연결</h3>
-
-                                                <!--begin::Close-->
-                                                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2"
-                                                    data-bs-dismiss="modal" aria-label="Close">
-                                                    <span class="svg-icon svg-icon-1"></span>
-                                                </div>
-                                                <!--end::Close-->
-                                            </div>
-
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h3 class="card-title align-items-start flex-column">
-                                                        <span class="card-label fw-bold text-dark">계약 정보</span>
-                                                    </h3>
-                                                </div>
-
-                                                <div class="card-body">
-                                                    <div class="row mb-5">
-                                                        <div class="col-md-12 fv-row fv-plugins-icon-container">
-                                                            <label class="fs-5 fw-semibold mb-2">영업 담당자</label>
-                                                            <div
-                                                                class="text-inverse-light bg-light form-control form-control-solid">
-                                                                저장 이후 생성됩니다.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mb-5">
-                                                        <div class="col-md-12 fv-row fv-plugins-icon-container">
-                                                            <label class="fs-5 fw-semibold mb-2">사업자명</label>
-                                                            <div
-                                                                class="text-inverse-light bg-light form-control form-control-solid">
-                                                                저장 이후 생성됩니다.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mb-5">
-                                                        <div class="col-md-12 fv-row fv-plugins-icon-container">
-                                                            <label class="fs-5 fw-semibold mb-2">사업자등록번호</label>
-                                                            <div
-                                                                class="text-inverse-light bg-light form-control form-control-solid">
-                                                                저장 이후 생성됩니다.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mb-5">
-                                                        <label class="fs-5 fw-semibold mb-2">제휴사명</label>
-                                                        <div class="col-md-12 fv-row fv-plugins-icon-container">
-                                                            <div
-                                                                class="text-inverse-light bg-light form-control form-control-solid">
-                                                                저장 이후 생성됩니다.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div style="display: flex; justify-content: center;"
-                                                        class="basic-btn">
-                                                        <button type="button"
-                                                            class="btn btn-outline-secondary">초기화</button>
-                                                        <button type="button" class="btn btn-primary">검색</button>
-                                                    </div>
-                                                </div>
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <h3 class="card-title align-items-start flex-column">
-                                                            <span class="card-label fw-bold text-dark">계약 정보</span>
-                                                        </h3>
-                                                    </div>
-                                                    <div class="card-body">
-                                                        <div class="no-account-search-list text-center"><i
-                                                                class="marketit-icon_search_list"></i>
-                                                            <h5 class="mt-4 mb-2" style="font-weight: bold;"> 검색 내역이
-                                                                없습니다.</h5>
-                                                            <p>
-                                                                검색 조건을 새로 입력하세요.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="modal-footer flex-center">
-                                                <button type="button" class="btn btn-light"
-                                                    data-bs-dismiss="modal">닫기</button>
-                                                <button type="button" class="btn btn-primary">연결</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- begin:: Modal -->
                             </div>
+
                         </div>
                         <!-- end:: 카드 -->
+                        <!-- begin:: 카드 -->
+                        <div class="col-xxl-12 mb-5 mb-xl-10">
+                            <div class="card">
+                                <div class="card-header pt-5">
+                                    <!--begin:: 타이틀-->
+                                    <h3 class="card-title align-items-start flex-column">
+                                        <span class="card-label fw-bold text-dark">연결된 캠페인</span>
+                                    </h3>
+                                    <div class="d-flex flex-center">
+                                        <span class="required">필수 정보</span>
+                                    </div>
+                                    <!--end:: 타이틀-->
+                                </div>
+
+                                <!-- ////////////////////////////////////////////////////////////////////////////// -->
+                                <!-- begin:: 컨텐트 -->
+                                <div class="card-body">
+                                    <div class="row mb-5">
+                                        <div class="col-md-12 x fv-plugins-icon-container">
+                                            <!--begin::Label-->
+                                            <label class="required fs-5 fw-semibold mb-2">캠페인명</label>
+                                            <!--end::Label-->
+                                            <div class="text-inverse-light bg-light form-control form-control-solid">
+                                                스파오 공식몰 (4987)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-5">
+                                        <div class="col-md-12 x fv-plugins-icon-container">
+                                            <!--begin::Label-->
+                                            <label class="required fs-5 fw-semibold mb-2">모집일정</label>
+                                            <!--end::Label-->
+                                            <div class="row">
+
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <div type="email" class="form-control form-control-solid"
+                                                            id="floatingInputValue" value="test@example.com">2022-04-15
+                                                            06:00:00</div>
+                                                        <label for="floatingInputValue">인플루언서 모집
+                                                            시작일</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <div class="form-control form-control-solid"
+                                                            id="floatingInputValue">2023-04-15 06:00:00</div>
+                                                        <label for="floatingInputValue">인플루언서 모집
+                                                            종료일</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
-                    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-
-                    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-
+                    <!-- end:: 카드 -->
+                    <div class="col-xxl-12 mb-5 mb-xl-10">
+                        <div class="d-flex flex-center">
+                            <button class="btn btn-primary" style="width: 100px;">저장</button>
+                        </div>
+                    </div>
                 </div>
-                <!-- 바디: 끝 -->
+                <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-                <!--end:::Main-->
+                <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
             </div>
-            <!--end::Wrapper-->
+            <!-- 바디: 끝 -->
+
+            <!--end:::Main-->
         </div>
-        <!--end::Page-->
+        <!--end::Wrapper-->
+    </div>
+    <!--end::Page-->
     </div>
     <!--end::App-->
 
