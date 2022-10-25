@@ -122,7 +122,7 @@ License: For each use you must have a valid license purchased only from above li
                             data-kt-drawer-overlay="true" data-kt-drawer-width="250px" data-kt-drawer-direction="end"
                             data-kt-drawer-toggle="#kt_app_header_menu_toggle" data-kt-swapper="true"
                             data-kt-swapper-mode="{default: 'append', lg: 'prepend'}"
-                            data-kt-swapper-parent="{default: '#kt_app_body', lg: '#kt_app_header_wrapper'}" style="">
+                            data-kt-swapper-parent="{default: '#kt_app_body', lg: '#kt_app_header_wrapper'}">
                         </div>
                         <!--begin::Menu wrapper-->
 
@@ -192,7 +192,7 @@ License: For each use you must have a valid license purchased only from above li
                                 <!--begin::Menu toggle-->
                                 <!--begin::Menu-->
                                 <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-title-gray-700 menu-icon-muted menu-active-bg menu-state-color fw-semibold py-4 fs-base w-175px"
-                                    data-kt-menu="true" data-kt-element="theme-mode-menu" style="">
+                                    data-kt-menu="true" data-kt-element="theme-mode-menu">
                                     <!--begin::Menu item-->
                                     <div class="menu-item px-3 my-0">
                                         <a href="#" class="menu-link px-3 py-2 active" data-kt-element="mode"
@@ -379,7 +379,7 @@ License: For each use you must have a valid license purchased only from above li
                 <div id="kt_app_sidebar" class="app-sidebar flex-column" data-kt-drawer="true"
                     data-kt-drawer-name="app-sidebar" data-kt-drawer-activate="{default: true, lg: false}"
                     data-kt-drawer-overlay="true" data-kt-drawer-width="225px" data-kt-drawer-direction="start"
-                    data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle" style="">
+                    data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle">
                     <!--begin::Logo-->
                     <div class="app-sidebar-logo px-6" id="kt_app_sidebar_logo">
                         <!--begin::Logo image-->
@@ -980,7 +980,7 @@ License: For each use you must have a valid license purchased only from above li
                                 </div>
 
 
-                                <div class="modal fade" tabindex="-1" id="kt_modal_1">
+                                <div class="modal fade" tabindex="-1" id="kt_modal_1" style="--bs-modal-width: 800px;">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
@@ -997,7 +997,7 @@ License: For each use you must have a valid license purchased only from above li
                                             <div class="card">
                                                 <div class="card-header">
                                                     <h3 class="card-title align-items-start flex-column">
-                                                        <span class="card-label fw-bold text-dark">계약 정보</span>
+                                                        <span class="card-label fw-bold text-dark">검색</span>
                                                     </h3>
                                                 </div>
 
@@ -1007,7 +1007,7 @@ License: For each use you must have a valid license purchased only from above li
                                                             <label class="fs-5 fw-semibold mb-2">영업 담당자</label>
                                                             <div
                                                                 class="text-inverse-light bg-light form-control form-control-solid">
-                                                                저장 이후 생성됩니다.
+                                                                이름 입력 또는 선택
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1016,7 +1016,7 @@ License: For each use you must have a valid license purchased only from above li
                                                             <label class="fs-5 fw-semibold mb-2">사업자명</label>
                                                             <div
                                                                 class="text-inverse-light bg-light form-control form-control-solid">
-                                                                저장 이후 생성됩니다.
+                                                                사업자등록증에 표시된 '상호, 법인명, 단체명' 입력
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1025,7 +1025,7 @@ License: For each use you must have a valid license purchased only from above li
                                                             <label class="fs-5 fw-semibold mb-2">사업자등록번호</label>
                                                             <div
                                                                 class="text-inverse-light bg-light form-control form-control-solid">
-                                                                저장 이후 생성됩니다.
+                                                                숫자만 입력
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1040,25 +1040,59 @@ License: For each use you must have a valid license purchased only from above li
                                                     </div>
                                                     <div style="display: flex; justify-content: center;"
                                                         class="basic-btn">
-                                                        <button type="button"
-                                                            class="btn btn-outline-secondary">초기화</button>
+                                                        <button type="button" class="btn btn-light-primary">초기화</button>
                                                         <button type="button" class="btn btn-primary">검색</button>
                                                     </div>
                                                 </div>
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <h3 class="card-title align-items-start flex-column">
-                                                            <span class="card-label fw-bold text-dark">계약 정보</span>
+                                                            <span class="card-label fw-bold text-dark">검색 내역</span>
                                                         </h3>
                                                     </div>
                                                     <div class="card-body">
-                                                        <div class="no-account-search-list text-center"><i
+                                                        <!-- <div class="no-account-search-list text-center"><i
                                                                 class="marketit-icon_search_list"></i>
                                                             <h5 class="mt-4 mb-2" style="font-weight: bold;"> 검색 내역이
                                                                 없습니다.</h5>
                                                             <p>
                                                                 검색 조건을 새로 입력하세요.
                                                             </p>
+                                                        </div> -->
+                                                        <div class="table-responsive">
+                                                            <table
+                                                                class="table table-hover table-rounded table-striped border gy-7 gs-7">
+                                                                <thead>
+                                                                    <tr
+                                                                        class="fw-semibold fs-6 text-gray-800 border-bottom-2 border-gray-200 ">
+                                                                        <th>제휴사명</th>
+                                                                        <th>유형</th>
+                                                                        <th>사업자 정보</th>
+                                                                        <th>영업 담당자</th>
+                                                                        <th>연결</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>챔프프리 성수 (4321)</td>
+                                                                        <td>싱글</td>
+                                                                        <td>(주) 챔프프리 <br /> 123-4567-142</td>
+                                                                        <td>chame</td>
+                                                                        <td>
+                                                                            <div
+                                                                                class="form-check form-switch form-check-custom form-check-solid">
+                                                                                <input class="form-check-input"
+                                                                                    type="checkbox" value=""
+                                                                                    id="flexSwitchDefault" />
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+
+
+
+                                                                </tbody>
+                                                            </table>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1067,7 +1101,8 @@ License: For each use you must have a valid license purchased only from above li
                                             <div class="modal-footer flex-center">
                                                 <button type="button" class="btn btn-light"
                                                     data-bs-dismiss="modal">닫기</button>
-                                                <button type="button" class="btn btn-primary">연결</button>
+                                                <button type="button" id="kt_docs_sweetalert_basic"
+                                                    class="btn btn-primary">연결</button>
                                             </div>
                                         </div>
                                     </div>
@@ -1563,6 +1598,23 @@ License: For each use you must have a valid license purchased only from above li
             alert("You are " + years + " years old!");
         }
         );
+    </script>
+    <script>
+        const button = document.getElementById('kt_docs_sweetalert_basic');
+
+        button.addEventListener('click', e => {
+            e.preventDefault();
+
+            Swal.fire({
+                text: "연결 성공",
+                icon: "success",
+                buttonsStyling: false,
+                confirmButtonText: "확인",
+                customClass: {
+                    confirmButton: "btn btn-primary"
+                }
+            });
+        });
     </script>
 </body>
 <!--end::Body-->
