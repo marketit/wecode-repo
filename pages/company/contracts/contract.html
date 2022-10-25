@@ -17,22 +17,7 @@ License: For each use you must have a valid license purchased only from above li
   <base href="../" />
   <title>Infleca</title>
   <meta charset="utf-8" />
-  <meta name="description"
-    content="The most advanced Bootstrap Admin Theme on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Blazor, Django, Flask & Laravel versions. Grab your copy now and get life-time updates for free." />
-  <meta name="keywords"
-    content="metronic, bootstrap, bootstrap 5, angular, VueJs, React, Asp.Net Core, Blazor, Django, Flask & Laravel starter kits, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title"
-    content="Metronic | Bootstrap HTML, VueJS, React, Angular, Asp.Net Core, Blazor, Django, Flask & Laravel Admin Dashboard Theme" />
-  <meta property="og:url" content="https://keenthemes.com/metronic" />
-  <meta property="og:site_name" content="Keenthemes | Metronic" />
-  <link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
   <link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
-  <!--begin::Fonts-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
-  <!--end::Fonts-->
   <!--begin::Vendor Stylesheets(used by this page)-->
   <link href="/assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
   <link href="/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
@@ -115,7 +100,6 @@ License: For each use you must have a valid license purchased only from above li
               data-kt-swapper-mode="{default: 'append', lg: 'prepend'}"
               data-kt-swapper-parent="{default: '#kt_app_body', lg: '#kt_app_header_wrapper'}"></div>
             <!--begin::Menu wrapper-->
-
             <!--end::Menu wrapper-->
             <!--begin::Navbar-->
             <div class="app-navbar flex-shrink-0">
@@ -957,45 +941,44 @@ License: For each use you must have a valid license purchased only from above li
                   <h3 class="card-title align-items-start flex-column">
                     <span class="card-label fw-bold text-dark">계약 리스트(137)</span>
                   </h3>
-                  <div class="d-flex"><select class="me-2 form-select" style="width: 100px; margin-bottom: 0.75rem;">
+                  <div class="d-flex">
+                    <select class="me-2 form-select" style="width: 100px; margin-bottom: 0.75rem;">
                       <option value="DESC">최신순</option>
                       <option value="ASC">과거순</option>
                     </select><select class="form-select" style="width: 78px; margin-bottom: 0.75rem;">
                       <option value="30">30</option>
                       <option value="50">50</option>
                       <option value="100">100</option>
-                    </select></div>
+                    </select>
+                  </div>
                   <!--end:: 타이틀-->
                 </div>
                 <div class="d-flex justify-content-end" style="padding: 1rem 2.25rem;">
                   <a href="/pages/company/contracts/newContract.html">
-                    <button type="button" class="btn btn-primary">새 계약 추가</button>
+                    <button type="button" class="btn btn-primary">새계약 추가</button>
                   </a>
                 </div>
                 <!-- ////////////////////////////////////////////////////////////////////////////// -->
                 <!-- begin:: 컨텐트 -->
                 <div class="table-responsive">
-                  <table class="table table-hover table-rounded table-striped border gy-7 gs-7">
+                  <table class="table table-hover table-striped border gy-7 gs-7">
                     <thead>
-                      <tr class="fw-semibold fs-4 text-gray-800 border-bottom-2 border-gray-200 ">
-                        <th class="min-w-100px">계약번호</th>
-                        <th class="min-w-100px">제휴사</th>
-                        <th class="min-w-50px">유형</th>
-                        <th class="min-w-150px">사업자 정보</th>
-                        <th class="min-w-100px">운영 담당자</th>
-                        <th class="min-w-100px">영업 담당자</th>
-                        <th class="min-w-100px">상태</th>
-                        <th class="min-w-150px">등록일</th>
-                        <th class="min-w-100px">계약서 파일</th>
-                        <th>계약 상세 정보</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
+                      <tr class="fw-semibold fs-6 text-gray-800 border-bottom-2 border-gray-200"">
+                         <th>Name</th>
+                         <th>Position</th>
+                         <th>Office</th>
+                         <th>Age</th>
+                         <th>Start date</th>
+                         <th>Salary</th>
+                         
+                        </tr>
+                       </thead>
+                       <tbody >
+                        <tr>
                         <td>
                           <a class=" text-link" href="/contract/142/290" target="_blank">142 <i
-                              class="marketit-icon_link_text"></i>
-                          </a>
+                          class="marketit-icon_link_text"></i>
+                        </a>
                         </td>
                         <td>sample-제휴사2 <span style="color: var(--bs-gray-600);">(290)</span></td>
                         <td>
@@ -1045,7 +1028,7 @@ License: For each use you must have a valid license purchased only from above li
 
 
                       </tr>
-                    </tbody>
+                      </tbody>
                   </table>
                   <ul class="pagination mb-5">
                     <li class="page-item previous disabled"><a href="#" class="page-link"><i class="previous"></i></a>
