@@ -851,7 +851,7 @@ License: For each use you must have a valid license purchased only from above li
                         <div class="page-title d-flex flex-column justify-content-center flex-wrap me-3">
                             <h1
                                 class="page-heading d-flex text-dark fw-bold fs-3 flex-column justify-content-center my-0">
-                                제휴사 현황
+                                새 제휴사 추가
                             </h1>
                             <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
                                 <li class="breadcrumb-item text-muted">
@@ -861,6 +861,10 @@ License: For each use you must have a valid license purchased only from above li
                                     <span class="bullet bg-gray-400 w-5px h-2px"></span>
                                 </li>
                                 <li class="breadcrumb-item text-muted">제휴사 현황</li>
+                                <li class="breadcrumb-item">
+                                    <span class="bullet bg-gray-400 w-5px h-2px"></span>
+                                </li>
+                                <li class="breadcrumb-item text-muted">새 제휴사 추가</li>
                             </ul>
                         </div>
                         <!--end::Actions-->
@@ -879,190 +883,366 @@ License: For each use you must have a valid license purchased only from above li
                             <div class="card">
 
                                 <!--begin:: 타이틀-->
-                                <div class="card-header pt-5">
-                                    <h3 class="card-title align-items-start flex-column">
-                                        <span class="card-label fw-bold text-dark">검색</span>
-                                    </h3>
+                                <div class="card-header pt-5" style="border: 0;">
+                                    <ul class="nav nav-tabs nav-line-tabs nav-line-tabs-2x mb-5 fs-6">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-bs-toggle="tab" href="#kt_tab_pane_4">계정 및
+                                                제휴사 정보</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#kt_tab_pane_5">계약 및 캠페인</a>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <!--end:: 타이틀-->
 
                                 <!-- begin:: 컨텐트 -->
-                                <div class="card-body">
-                                    <form action="m-0" class="form mb-15 fv-plugins-bootstrap5 fv-plugins-framework"
-                                        method="post" id="kt_careers_form">
-                                        <!--begin::Input group-->
-                                        <div class="row mb-5">
-                                            <!--begin::Col-->
+                                <div class="tab-content" id="myTabContent">
+
+                                    <!-- begin::First tap -->
+                                    <div class="tab-pane fade show active" id="kt_tab_pane_4" role="tabpanel">
+                                        <div class="card-body">
+                                            <form action="m-0"
+                                                class="form mb-15 fv-plugins-bootstrap5 fv-plugins-framework"
+                                                method="post" id="kt_careers_form">
+                                                <!--begin::Input group-->
+                                                <div class="row mb-5">
+                                                    <!--begin::Col-->
+
+                                                    <div class="col-md-12 fv-row fv-plugins-icon-container">
+                                                        <!--begin::Label-->
+                                                        <label class="required fs-5 fw-semibold mb-2">영업 담당자</label>
+                                                        <!--end::Label-->
+
+                                                        <!--begin::Input-->
+                                                        <input type="text" class="form-control form-control-solid"
+                                                            placeholder="이름 입력" name="first_name">
+                                                        <!--end::Input-->
+
+                                                        <div class="fv-plugins-message-container invalid-feedback">
+                                                        </div>
+                                                    </div>
+                                                    <!--end::Col-->
+                                                </div>
+                                                <!--end::Input group-->
+                                            </form>
                                             <div class="col-md-12 fv-row fv-plugins-icon-container">
-                                                <!--begin::Label-->
-                                                <label class="required fs-5 fw-semibold mb-2">영업 담당자</label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input type="text" class="form-control form-control-solid"
-                                                    placeholder="이름 입력" name="first_name">
-                                                <!--end::Input-->
-                                                <div class="fv-plugins-message-container invalid-feedback"></div>
-                                            </div>
-                                            <!--end::Col-->
-                                        </div>
-                                        <!--end::Input group-->
 
-                                        <!--begin::Input group-->
-                                        <div class="row mb-5">
-                                            <!--begin::Col-->
-                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
-                                                <!--begin::Label-->
-                                                <label class="required fs-5 fw-semibold mb-2">제휴사 상태</label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input class="form-control form-control-solid" placeholder="전체 상태"
-                                                    name="email">
-                                                <!--end::Input-->
-                                                <div class="fv-plugins-message-container invalid-feedback"></div>
-                                            </div>
-                                            <!--end::Col-->
-                                            <!--begin::Col-->
-                                            <div class="col-md-6 fv-row">
-                                                <!--end::Label-->
-                                                <label class="required fs-5 fw-semibold mb-2">사업자명</label>
-                                                <!--end::Label-->
-                                                <!--end::Input-->
-                                                <input type="text" class="form-control form-control-solid"
-                                                    placeholder="사업자명 입력" name="mobileno">
-                                                <!--end::Input-->
-                                            </div>
-                                            <!--end::Col-->
-                                        </div>
-                                        <!--end::Input group-->
+                                                <!-- begin::연결된 계정 -->
+                                                <div
+                                                    style="border-bottom: 1px solid var(--kt-card-border-color); margin: 20px 0;">
+                                                    <!--begin::Label-->
+                                                    <label class="fs-5 fw-semibold mb-2">연결된 계정</label>
+                                                    <!--end::Label-->
+                                                </div>
+                                                <!-- end::연결된 계정 -->
 
-                                        <!--begin::Input group-->
-                                        <div class="row mb-5">
-                                            <!--begin::Col-->
-                                            <div class="col-md-4 fv-row fv-plugins-icon-container">
-                                                <!--begin::Label-->
-                                                <label class="required fs-5 fw-semibold mb-2">제휴사 유형</label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input class="form-control form-control-solid" placeholder="전체 유형"
-                                                    name="email">
-                                                <!--end::Input-->
-                                                <div class="fv-plugins-message-container invalid-feedback"></div>
-                                            </div>
-                                            <!--end::Col-->
-                                            <!--begin::Col-->
-                                            <div class="col-md-4 fv-row fv-plugins-icon-container">
-                                                <!--begin::Label-->
-                                                <label class="required fs-5 fw-semibold mb-2">제휴사명</label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input class="form-control form-control-solid"
-                                                    placeholder="제휴사명 입력 또는 선택" name="email">
-                                                <!--end::Input-->
-                                                <div class="fv-plugins-message-container invalid-feedback"></div>
-                                            </div>
-                                            <!--end::Col-->
-                                            <!--begin::Col-->
-                                            <div class="col-md-4 fv-row">
-                                                <!--end::Label-->
-                                                <label class="fs-5 fw-semibold mb-2">제휴사 번호</label>
-                                                <!--end::Label-->
-                                                <!--end::Input-->
-                                                <input type="text" class="form-control form-control-solid"
-                                                    placeholder="2개 이상 입력 시 ','로 구분" name="mobileno">
-                                                <!--end::Input-->
-                                            </div>
-                                            <!--end::Col-->
-                                        </div>
-                                        <!--end::Input group-->
+                                                <!-- begin::계정 연결 버튼 -->
+                                                <div style="margin: 20px 0;">
+                                                    <button class="btn btn-light btn-active-light-primary me-3">
+                                                        + 계정 연결
+                                                    </button>
+                                                </div>
+                                                <!-- end::계정 연결 버튼 -->
 
-                                        <!-- begin::Reset button -->
-                                        <div class="mb-5 d-flex justify-content-center basic-btn">
-                                            <button class="btn btn-white btn-outline btn-active-light-primary me-3">
-                                                초기화
-                                            </button>
-                                            <button class="btn btn-primary">검색</button>
-                                        </div>
-                                        <!-- end::Reset button -->
+                                                <!-- begin::Id-Password -->
+                                                <div class="row mb-5">
+                                                    <!--begin::Col-->
+                                                    <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                        <!--begin::Label-->
+                                                        <label class=" fs-5 fw-semibold mb-2">Id</label>
+                                                        <!--end::Label-->
+                                                        <!--begin::Input-->
+                                                        <p class="form-control form-control-solid">ID입니다. [마스터 계정]</p>
+                                                        <!--end::Input-->
+                                                        <div class="fv-plugins-message-container invalid-feedback">
+                                                        </div>
+                                                    </div>
+                                                    <!--end::Col-->
+                                                    <!--begin::Col-->
+                                                    <div class="col-md-6 fv-row">
+                                                        <!--end::Label-->
+                                                        <div style="display: flex; justify-content: space-between;">
+                                                            <label class=" fs-5 fw-semibold mb-2">Password</label>
+                                                        </div>
+                                                        <!--end::Label-->
+                                                        <!--end::Input-->
+                                                        <p class="form-control form-control-solid">비밀번호입니다.</p>
+                                                        <!--end::Input-->
+                                                    </div>
+                                                    <!--end::Col-->
+                                                </div>
+                                                <!-- end::Id-Password -->
 
-                                    </form>
+                                                <!-- begin::Id-Password -->
+                                                <div class="row mb-5">
+                                                    <!--begin::Col-->
+                                                    <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                        <!--begin::Label-->
+                                                        <label class=" fs-5 fw-semibold mb-2">Id</label>
+                                                        <!--end::Label-->
+                                                        <!--begin::Input-->
+                                                        <p class="form-control form-control-solid">ID입니다.</p>
+                                                        <!--end::Input-->
+                                                        <div class="fv-plugins-message-container invalid-feedback">
+                                                        </div>
+                                                    </div>
+                                                    <!--end::Col-->
+                                                    <!--begin::Col-->
+                                                    <div class="col-md-6 fv-row">
+                                                        <!--end::Label-->
+                                                        <div style="display: flex; justify-content: space-between;">
+                                                            <div>
+                                                                <label class=" fs-5 fw-semibold mb-2">Password</label>
+                                                            </div>
+                                                            <div>
+                                                                <button
+                                                                    style="background-color: transparent; border: 1px solid red; border-radius: 5px; color: red;">계정
+                                                                    연결 끊기</button>
+                                                            </div>
+                                                        </div>
+                                                        <!--end::Label-->
+                                                        <!--end::Input-->
+                                                        <p class="form-control form-control-solid">비밀번호입니다.</p>
+                                                        <!--end::Input-->
+                                                    </div>
+                                                    <!--end::Col-->
+                                                </div>
+                                                <!-- end::Id-Password -->
+
+                                                <!-- begin::제휴사 정보 title-->
+                                                <div
+                                                    style="border-bottom: 1px solid var(--kt-card-border-color); margin: 20px 0;">
+                                                    <!--begin::Label-->
+                                                    <label class="fs-5 fw-semibold mb-2">제휴사 정보</label>
+                                                    <!--end::Label-->
+                                                </div>
+                                                <!-- end::제휴사 정보 title -->
+
+                                                <!-- begin::제휴사 정보 -->
+                                                <div class="row mb-5">
+                                                    <!--begin::Col-->
+                                                    <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                        <!--begin::Label-->
+                                                        <label class="required fs-5 fw-semibold mb-2">제휴사명</label>
+                                                        <!--end::Label-->
+                                                        <!--begin::Input-->
+                                                        <input class="form-control form-control-solid"
+                                                            placeholder="제휴사명" name="email">
+                                                        <!--end::Input-->
+                                                        <div class="fv-plugins-message-container invalid-feedback">
+                                                        </div>
+                                                    </div>
+                                                    <!--end::Col-->
+                                                    <!--begin::Col-->
+                                                    <div class="col-md-6 fv-row">
+                                                        <!--end::Label-->
+                                                        <label class="fs-5 fw-semibold mb-2">제휴사 번호</label>
+                                                        <!--end::Label-->
+                                                        <!--end::Input-->
+                                                        <p class="form-control form-control-solid"> 1234 </p>
+                                                        <!--end::Input-->
+                                                    </div>
+                                                    <!--end::Col-->
+                                                </div>
+                                                <!-- end::제휴사 정보 -->
+
+                                                <div class="row mb-5">
+                                                    <!--begin::Col-->
+                                                    <div class="col-md-12 fv-row fv-plugins-icon-container mb-5">
+                                                        <!--begin::Label-->
+                                                        <label class="fs-5 fw-semibold mb-2">상품/서비스 제공 방식</label>
+                                                        <!--end::Label-->
+
+                                                        <!--begin::상품 제공 방식-->
+                                                        <div class="form-control" style="border: 0;">
+                                                            <div style="display: flex;">
+                                                                <div class="form-check form-check-custom form-check-solid"
+                                                                    style="margin-right: 20px;">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="1" id="flexCheckDefault" />
+                                                                    <label class="form-check-label"
+                                                                        for="flexCheckDefault">
+                                                                        인플루언서에게 온라인/배송으로 제공
+                                                                    </label>
+                                                                </div>
+
+                                                                <label
+                                                                    class="form-check form-check-custom form-check-solid">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="1" />
+                                                                    <span class="form-check-label">
+                                                                        인플루언서가 직접 방문
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--end::상품 제공 방식-->
+
+                                                    <!-- begin::전화번호 입력 -->
+                                                    <div class="row mb-5">
+                                                        <!--begin::Col-->
+                                                        <div class="col-md-12 fv-row fv-plugins-icon-container">
+                                                            <!--begin::Label-->
+                                                            <div class="d-flex">
+                                                                <div>
+                                                                    <label
+                                                                        class="required fs-5 fw-semibold mb-2 me-5">전화번호</label>
+                                                                </div>
+                                                                <div>
+                                                                    <div
+                                                                        class="form-check form-switch form-check-custom form-check-solid me-10">
+                                                                        <input class="form-check-input h-20px w-35px"
+                                                                            type="checkbox" value=""
+                                                                            id="flexSwitch30x50" />
+                                                                        <label class="form-check-label"
+                                                                            for="flexSwitch30x50">
+                                                                            전화번호 입력
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--end::Label-->
+                                                            <!--begin::Input-->
+                                                            <input class="form-control form-control-solid"
+                                                                placeholder="전화번호 입력" name="email">
+                                                            <!--end::Input-->
+                                                            <div class="fv-plugins-message-container invalid-feedback">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="fv-plugins-message-container invalid-feedback">
+                                                        </div>
+                                                    </div>
+                                                    <!-- end::전화번호 입력 -->
+
+                                                    <!-- begin::주소 입력 -->
+                                                    <div class="row mb-5">
+                                                        <!--begin::Col-->
+                                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                            <!--begin::Label-->
+                                                            <div class="d-flex">
+                                                                <div>
+                                                                    <label
+                                                                        class=" fs-5 fw-semibold mb-2 me-5">주소</label>
+                                                                </div>
+                                                                <div>
+                                                                    <div
+                                                                        class="form-check form-switch form-check-custom form-check-solid me-10">
+                                                                        <input class="form-check-input h-20px w-35px"
+                                                                            type="checkbox" value=""
+                                                                            id="flexSwitch30x50" />
+                                                                        <label class="form-check-label"
+                                                                            for="flexSwitch30x50">
+                                                                            사업장 주소(소재지)와 동일
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--end::Label-->
+
+                                                            <!--begin::Input-->
+                                                            <div class="d-flex">
+                                                                <input class="form-control form-control-solid col"
+                                                                    placeholder="주소 입력" name="email">
+                                                                <button class="m-lg-1 btn btn-outline">주소
+                                                                    검색</button>
+                                                            </div>
+                                                            <!--end::Input-->
+                                                            <div class="fv-plugins-message-container invalid-feedback">
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div class="col-md-1 fv-row fv-plugins-icon-container">
+                                                            begin::Label
+                                                            <div class="d-flex">
+                                                                <div>
+                                                                    <label
+                                                                        class=" fs-5 fw-semibold mb-2 me-5">&nbsp</label>
+                                                                </div>
+                                                            </div>
+                                                            end::Label
+
+                                                            begin::Input
+                                                            <button class="">주소
+                                                                검색</button>
+                                                            end::Input
+                                                            <div class="fv-plugins-message-container invalid-feedback">
+                                                            </div>
+                                                        </div> -->
+                                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                            <!-- begin::Label -->
+                                                            <div class="d-flex">
+                                                                <div>
+                                                                    <label class=" fs-5 fw-semibold mb-2 me-5">상세
+                                                                        주소</label>
+                                                                </div>
+                                                            </div>
+                                                            <!--end::Label-->
+
+                                                            <!--begin::Input-->
+                                                            <input class="form-control form-control-solid"
+                                                                placeholder="주소 입력" name="email">
+                                                            <!--end::Input-->
+                                                            <div class="fv-plugins-message-container invalid-feedback">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="fv-plugins-message-container invalid-feedback">
+                                                        </div>
+                                                    </div>
+                                                    <!-- end::주소 입력 -->
+
+                                                    <!-- begin::대표자 성명 -->
+                                                    <div class="row mb-5">
+                                                        <!--begin::Col-->
+                                                        <div class="col-md-12 fv-row fv-plugins-icon-container">
+                                                            <!--begin::Label-->
+                                                            <div class="d-flex">
+                                                                <div>
+                                                                    <label
+                                                                        class="fs-5 fw-semibold mb-2 me-5">웹사이트</label>
+                                                                </div>
+                                                                <div>
+                                                                    <button class="btn">계정
+                                                                        연결 끊기</button>
+                                                                </div>
+                                                            </div>
+                                                            <!--end::Label-->
+                                                            <!--begin::Input-->
+                                                            <input class="form-control form-control-solid"
+                                                                placeholder="전화번호 입력" name="email">
+                                                            <!--end::Input-->
+                                                            <div class="fv-plugins-message-container invalid-feedback">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="fv-plugins-message-container invalid-feedback">
+                                                        </div>
+                                                    </div>
+                                                    <!-- end::대표자 성명 -->
+
+                                                    <!--end::Col-->
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end::first tap -->
+
+                                    <!-- begin::Second tap -->
+                                    <div class="tab-pane fade" id="kt_tab_pane_5" role="tabpanel">
+                                        계약 및 캠페인
+                                    </div>
+                                    <!-- end::Second tap -->
+
                                 </div>
                                 <!-- end:: 컨텐트 -->
 
                             </div>
                         </div>
                         <!-- end:: 카드 -->
-                        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-                        <!-- begin:: 카드 -->
-                        <div class="col-xxl-12 mb-5 mb-xl-10">
-                            <div class="card">
 
-                                <!--begin:: 타이틀-->
-                                <div class="card-header pt-5">
-                                    <!--begin:: 타이틀-->
-                                    <h3 class="card-title align-items-start flex-column">
-                                        <span class="card-label fw-bold text-dark">제휴사 리스트 (1)</span>
-                                    </h3>
-                                    <div class="d-flex">
-                                        <select class="form-select" style="width: 78px; margin-bottom: 0.75rem;">
-                                            <option value="30">30</option>
-                                            <option value="50" selected>50</option>
-                                            <option value="100">100</option>
-                                        </select>
-                                    </div>
-                                    <!--end:: 타이틀-->
-                                </div>
-                                <div class="d-flex justify-content-end" style="padding: 1rem 2.25rem;">
-                                    <button type="button"
-                                        class="btn btn-white btn-outline btn-active-light-primary me-3"
-                                        style="font-weight:700;">새 그룹 제휴사
-                                        추가</button>
-                                    <button type="button" class="btn btn-primary">새 제휴사 추가</button>
-                                </div>
-                                <!--end:: 타이틀-->
-
-                                <!-- ////////////////////////////////////////////////////////////////////////////// -->
-                                <div class="card-body">
-
-                                    <!-- begin:: 컨텐트 -->
-                                    <div class="table-responsive">
-                                        <table class="table table-hover table-rounded table-striped border gy-7 gs-7">
-                                            <thead>
-                                                <tr class="fw-semibold fs-6 text-gray-800 border-bottom-2 border-gray-200" "="">
-                                                    <th>제휴사명</th>
-                                                    <th>유형</th>
-                                                    <th>제휴사 상태</th>
-                                                    <th>사업자 정보</th>
-                                                    <th>연결된 계정</th>
-                                                    <th>영업 담당자</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr style=" vertical-align: middle;">
-                                                    <td>sample 제휴사</td>
-                                                    <td>싱글</td>
-                                                    <td>
-                                                        등록
-                                                    </td>
-                                                    <td>
-                                                        <p class=" mb-0">(주) 샘플</p>
-                                                        <p class="mb-0">123-45-678</p>
-                                                    </td>
-                                                    <td>sample</td>
-                                                    <td>
-                                                        sancho
-                                                    </td>
-                                                </tr>
-                                                </tbody>
-                                        </table>
-                                    </div>
-                                    <!-- end:: 컨텐트 -->
-
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- end:: 카드 -->
-                        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
                     </div>
                 </div>
