@@ -684,13 +684,19 @@
               <h1 class="page-heading text-dark fw-bold fs-3 flex-column justify-content-center my-0">
                 가입 정보 확인
               </h1>
-              <ol class="breadcrumb breadcrumb-line text-muted fs-6 fw-semibold">
-                <li class="breadcrumb-item pe-3"><a href="#" class="pe-3">제휴사</a></li>
-                <li class="breadcrumb-item pe-3"><a href="/pages/company/accounts/partnersAccounts.html" class="pe-3">계정
-                    및
-                    권한</a></li>
-                <li class="breadcrumb-item pe-3 text-muted">가입 정보 확인</li>
-              </ol>
+              <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
+                <li class="breadcrumb-item text-muted">
+                  <a href="/" class="text-muted text-hover-primary">제휴사</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <span class="bullet bg-gray-400 w-5px h-2px"></span>
+                </li>
+                <li class="breadcrumb-item text-muted">계정 및 권한</li>
+                <li class="breadcrumb-item">
+                  <span class="bullet bg-gray-400 w-5px h-2px"></span>
+                </li>
+                <li class="breadcrumb-item text-muted">가입 정보 확인</li>
+              </ul>
             </div>
             <!--end::Actions-->
           </div>
@@ -1084,6 +1090,9 @@
                           </div>
                         </div>
                       </div>
+
+
+
                       <!--end::Input group 세금계산서-->
                     </div>
                     <!-- end:: 컨텐트 -->
@@ -1167,7 +1176,7 @@
                         </div>
                         <!--end::Col-->
                         <!--begin::Col-->
-                        <div class="col-xl-9">
+                        <div class="col-md-6 fv-plugins-icon-container">
                           <div class="d-flex fw-semibold h-100">
                             <div class="form-check form-check-custom me-9">
                               <input class="form-check-input" type="checkbox" value="">
@@ -1175,7 +1184,7 @@
                             </div>
                             <div class="form-check form-check-custom">
                               <input class="form-check-input" type="checkbox" value="">
-                              <label class="form-check-label ms-3" for="phone">인플루언서에가 직접 방문</label>
+                              <label class="form-check-label ms-3" for="phone">인플루언서가 직접 방문</label>
                             </div>
                           </div>
                         </div>
@@ -1571,6 +1580,23 @@
   <script>
     var input1 = document.querySelector("#kt_tagify_1");
     var input2 = document.querySelector("#kt_tagify_2");
+  </script>
+  <script>
+    $('#kt_docs_repeater_basic').repeater({
+      initEmpty: false,
+
+      defaultValues: {
+        'text-input': 'foo'
+      },
+
+      show: function () {
+        $(this).slideDown();
+      },
+
+      hide: function (deleteElement) {
+        $(this).slideUp(deleteElement);
+      }
+    });
   </script>
 </body>
 <!--end::Body-->
