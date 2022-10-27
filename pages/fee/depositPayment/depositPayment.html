@@ -838,14 +838,14 @@
                                 <div class="card-header">
                                     <!--begin:: 타이틀-->
                                     <h3 class="card-title align-items-start flex-column">
-                                        <span class="card-label fw-bold text-dark">결제 내역 리스트(137)</span>
+                                        <span class="card-label fw-bold text-dark">파트너캐시 충전 리스트(137)</span>
                                     </h3>
                                     <div class="d-flex">
-                                        <select class="me-2 form-select" style="width: 100px; margin: 0.75rem;">
+                                        <select class="me-2 form-select" style="width: 100px; margin: 1rem 0">
                                             <option value="DESC">최신순</option>
                                             <option value="ASC">과거순</option>
                                         </select>
-                                        <select class="form-select" style="width: 78px; margin: 0.75rem;">
+                                        <select class="form-select" style="width: 78px; margin: 1rem 0">
                                             <option value="30">30</option>
                                             <option value="50">50</option>
                                             <option value="100">100</option>
@@ -855,19 +855,265 @@
                                 </div>
                                 <!-- end:: card-header -->
                                 <!-- begin:: card-body -->
-                                <div class="card-body">
-                                    <div id="grid" style="width: 100%;"></div>
-                                    <ul class="pagination">
+                                <div class="d-flex justify-content-between" style="padding: 1rem 2.25rem;">
+                                    <button class="btn btn-light-danger btn-outline">요청 건 삭제</button>
+                                    <div>
+                                        <button type="button" class="btn btn-white-primary btn-outline fs-6"
+                                            data-bs-toggle="modal" data-bs-target="#kt_modal_1">검색 결과 거래명세서
+                                            출력하기</button>
+                                        </button>
+                                        <button class="btn btn-primary fs-6">파트너캐시 충전 요청</button>
+                                    </div>
+                                    <!-- begin:: Modal -->
+                                    <div class="modal modal-xl fade" tabindex="-1" id="kt_modal_1">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h3 class="modal-title">전자거래 명세서</h3>
+
+                                                    <!--begin::Close-->
+                                                    <div class="btn btn-icon btn-sm btn-active-light-primary ms-2"
+                                                        data-bs-dismiss="modal" aria-label="Close">
+                                                        <span class="svg-icon svg-icon-1"></span>
+                                                    </div>
+                                                    <!--end::Close-->
+                                                </div>
+                                                <!-- begin:: Card -->
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h3 class="card-title align-items-start flex-column pb-2"
+                                                            style="border-bottom:1px solid var(--bs-gray)">
+                                                            <span class="card-label fw-bold text-dark">공급받는자</span>
+                                                        </h3>
+                                                        <div class="row mb-5">
+                                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                                <label class="form-label mb-2">상호명</label>
+                                                                <p type="text" class="form-control form-control-solid">
+                                                                    린다1</p>
+                                                            </div>
+                                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                                <label class="form-label mb-2">사업자등록번호</label>
+                                                                <p type="text" class="form-control form-control-solid">
+                                                                    111-11-11113</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-5">
+                                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                                <label class="form-label mb-2">사업장 주소</label>
+                                                                <p type="text" class="form-control form-control-solid">
+                                                                    서울 성동구 왕십리로 16</p>
+                                                            </div>
+                                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                                <label class="form-label mb-2">대표자명</label>
+                                                                <p type="text" class="form-control form-control-solid">
+                                                                    김채린</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h3 class="align-items-start flex-column pb-2"
+                                                            style="border-bottom:1px solid var(--bs-gray)">
+                                                            <span class="card-label fw-bold text-dark">공급자</span>
+                                                        </h3>
+                                                        <div class="row mb-5">
+                                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                                <label class="form-label mb-2">상호명</label>
+                                                                <p type="text" class="form-control form-control-solid">
+                                                                    린다1</p>
+                                                            </div>
+                                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                                <label class="form-label mb-2">사업자등록번호</label>
+                                                                <p type="text" class="form-control form-control-solid">
+                                                                    111-11-11113</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-5">
+                                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                                <label class="form-label mb-2">사업장 주소</label>
+                                                                <p type="text" class="form-control form-control-solid">
+                                                                    서울 성동구 왕십리로 16</p>
+                                                            </div>
+                                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                                <label class="form-label mb-2">대표자명</label>
+                                                                <p type="text" class="form-control form-control-solid">
+                                                                    김채린</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end:: Card -->
+                                                <!-- begin:: Card -->
+                                                <div class="col-xxl-6">
+
+                                                </div>
+                                                <div class="card">
+
+                                                </div>
+                                                <!-- end:: Card -->
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h3 class="card-title align-items-start flex-column pb-2"
+                                                            style="border-bottom:1px solid var(--bs-gray)">
+                                                            <span class="card-label fw-bold text-dark">검색 내역</span>
+                                                        </h3>
+                                                        <div class="table-responsive">
+                                                            <table
+                                                                class="table table-hover table-striped border gy-7 gs-7">
+                                                                <thead>
+                                                                    <tr
+                                                                        class="fw-bold fs-6 text-gray-800 border-bottom-2 border-gray-200 ">
+                                                                        <th class="text-center">거래 일자</th>
+                                                                        <th class="text-center">거래 아이디</th>
+                                                                        <th class="text-center">상세 내용</th>
+                                                                        <th class="text-center">결제 수단</th>
+                                                                        <th class="text-center">금액</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="text-center">
+                                                                            2022-10-21<span
+                                                                                style="margin-left:5px;color:var(--bs-gray-600)">18:50</span>
+                                                                        </td>
+                                                                        <td class="text-center">170
+                                                                        </td>
+                                                                        <td class="text-center">파트너캐시 충전
+                                                                        </td>
+                                                                        <td class="text-center">계좌이체</td>
+                                                                        <td class="text-end">700,000원</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center">
+                                                                            2022-10-21<span
+                                                                                style="margin-left:5px;color:var(--bs-gray-600)">18:50</span>
+                                                                        </td>
+                                                                        <td class="text-center">170
+                                                                        </td>
+                                                                        <td class="text-center">파트너캐시 충전
+                                                                        </td>
+                                                                        <td class="text-center">계좌이체</td>
+                                                                        <td class="text-end">700,000원</td>
+                                                                    </tr>
+                                                                    <tr class="text-end">
+                                                                        <td colspan="5">
+                                                                            금액 합계:
+                                                                            <span
+                                                                                style="color: var(--bs-blue);">1,700,000원</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--begin::Text-->
+                                                <div class="col-md-12 x  fv-plugins-icon-container mb-2">
+                                                    <div class="mb-0 fs-6">
+                                                        <div class="lh-lg mb-1 text-bg-light p-10 ">
+                                                            <ul>
+                                                                <span class="fw-semibold">안내 사항</span>
+                                                                <div class="ps-5">
+                                                                    <li>거래명세서는 법적 효력이 없습니다.</li>
+                                                                    <li>거래명세서는 세무 상 증빙자료로 활용할 수 없습니다.</li>
+                                                                    <li>거래명세서는 소득공제용 영수증 및 세금계산서로 활용할 수 없습니다.</li>
+                                                                </div>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--end::Text-->
+                                                <div class="modal-footer flex-center">
+                                                    <button type="button" class="btn btn-light"
+                                                        data-bs-dismiss="modal">닫기</button>
+                                                    <button type="button" id="kt_docs_sweetalert_basic"
+                                                        class="btn btn-primary">인쇄하기</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end:: Modal -->
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-striped border gy-7 gs-7">
+                                        <thead>
+                                            <tr class="fw-bold fs-6 text-gray-800 border-bottom-2 border-gray-200 ">
+                                                <th class="text-center">선택</th>
+                                                <th class="text-center">거래 아이디</th>
+                                                <th class="text-center">사업자명</th>
+                                                <th class="text-center">영업 담당자</th>
+                                                <th class="text-center">거래 상태</th>
+                                                <th class="text-center">충전액</th>
+                                                <th class="text-center">요청 경로</th>
+                                                <th class="text-center">입금 여부</th>
+                                                <th class="text-center">입금일</th>
+                                                <th class="text-center">충전 승인일</th>
+                                                <th class="text-center">충전 요청일</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-center">
+                                                    <div
+                                                        class="form-check form-check-custom form-check-solid justify-content-center">
+                                                        <input class="form-check-input" type="checkbox" value="1"
+                                                            id="flexCheckDefault" checked />
+                                                    </div>
+                                                </td>
+                                                <td class="text-center align-items-center">20200606</td>
+                                                <td class="text-center">(주)챔스프리 업그레이드</td>
+                                                <td class="text-center">chaem</td>
+                                                <td class="text-center">충전 승인</td>
+                                                <td class="text-end">
+                                                    <div>
+                                                        <span>+50,000 원</span><br>
+                                                        <span>충전 후 잔액 : 250,000원</span>
+                                                    </div>
+                                                </td>
+                                                <td class="text-center">어드민</td>
+                                                <td class="text-center">입금 완료</td>
+                                                <td class="text-end">
+                                                    <span>2022-03-15</span><br>
+                                                    <span>10:10</span>
+                                                </td>
+                                                <td class="text-end">
+                                                    <span>2022-03-15</span><br>
+                                                    <span>10:10</span>
+                                                </td>
+                                                <td class="text-end">
+                                                    <span>2022-03-15</span><br>
+                                                    <span>10:10</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <ul class="pagination mb-5">
                                         <li class="page-item previous disabled"><a href="#" class="page-link"><i
-                                                    class="previous"></i></a></li>
-                                        <li class="page-item "><a href="#" class="page-link">1</a></li>
-                                        <li class="page-item active"><a href="#" class="page-link">2</a></li>
-                                        <li class="page-item "><a href="#" class="page-link">3</a></li>
-                                        <li class="page-item "><a href="#" class="page-link">4</a></li>
-                                        <li class="page-item "><a href="#" class="page-link">5</a></li>
-                                        <li class="page-item "><a href="#" class="page-link">6</a></li>
-                                        <li class="page-item next"><a href="#" class="page-link"><i
-                                                    class="next"></i></a></li>
+                                                    class="previous"></i></a>
+                                        </li>
+                                        <li class="page-item ">
+                                            <a href="#" class="page-link">1</a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a href="#" class="page-link">2</a>
+                                        </li>
+                                        <li class="page-item ">
+                                            <a href="#" class="page-link">3</a>
+                                        </li>
+                                        <li class="page-item ">
+                                            <a href="#" class="page-link">4</a>
+                                        </li>
+                                        <li class="page-item ">
+                                            <a href="#" class="page-link">5</a>
+                                        </li>
+                                        <li class="page-item ">
+                                            <a href="#" class="page-link">6</a>
+                                        </li>
+                                        <li class="page-item next">
+                                            <a href="#" class="page-link">
+                                                <i class="next"></i>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
 
