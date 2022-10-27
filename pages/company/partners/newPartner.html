@@ -1269,37 +1269,39 @@ License: For each use you must have a valid license purchased only from above li
                     <div id="kt_app_content_container" class="app-container flex-column-fluid">
                         <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-                        <!-- begin:: 카드 -->
-                        <div class="col-xxl-12 mb-5 mb-xl-10">
-                            <div class="card">
+                        <!--begin:: 타이틀 이거 탭-->
+                        <div class="card-header pt-5">
+                            <ul class="nav nav-tabs nav-line-tabs nav-line-tabs-2x mb-5 fs-6">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-bs-toggle="tab" href="#kt_tab_pane_4">계정 및
+                                        제휴사 정보</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#kt_tab_pane_5">계약 및 캠페인</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--end:: 타이틀 이거 탭-->
 
-                                <!--begin:: 타이틀-->
-                                <div class="card-header pt-5" style="border: 0;">
-                                    <ul class="nav nav-tabs nav-line-tabs nav-line-tabs-2x mb-5 fs-6">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" data-bs-toggle="tab" href="#kt_tab_pane_4">계정 및
-                                                제휴사 정보</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab" href="#kt_tab_pane_5">계약 및 캠페인</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!--end:: 타이틀-->
 
-                                <!-- begin:: 컨텐트 -->
-                                <div class="tab-content" id="myTabContent">
 
-                                    <!-- begin::First tap -->
-                                    <div class="tab-pane fade show active" id="kt_tab_pane_4" role="tabpanel">
+
+                        <!-- begin::tab -->
+                        <div class="tab-content" id="myTabContent">
+
+                            <!-- begin::first tab -->
+                            <div class="tab-pane fade show active" id="kt_tab_pane_4" role="tabpanel">
+                                <!-- begin::카드 -->
+                                <div class="col-xxl-12 mb-5 mb-xl-10">
+                                    <div class="card">
+                                        <!-- begin:: card-body -->
                                         <div class="card-body">
-                                            <form action="m-0"
-                                                class="form mb-15 fv-plugins-bootstrap5 fv-plugins-framework"
+                                            <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework"
                                                 method="post" id="kt_careers_form">
+
                                                 <!--begin::Input group-->
                                                 <div class="row mb-5">
                                                     <!--begin::Col-->
-
                                                     <div class="col-md-12 fv-row fv-plugins-icon-container">
                                                         <!--begin::Label-->
                                                         <label class="required fs-5 fw-semibold mb-2">영업 담당자</label>
@@ -1309,42 +1311,150 @@ License: For each use you must have a valid license purchased only from above li
                                                         <input type="text" class="form-control" placeholder="이름 입력"
                                                             name="first_name">
                                                         <!--end::Input-->
-
-                                                        <div class="fv-plugins-message-container invalid-feedback">
-                                                        </div>
                                                     </div>
                                                     <!--end::Col-->
                                                 </div>
                                                 <!--end::Input group-->
+
                                             </form>
-                                            <div class="col-md-12 fv-row fv-plugins-icon-container">
+                                        </div>
+                                        <!-- end::card-body-->
+                                    </div>
+                                </div>
+                                <!-- end:: 카드 -->
+                                <!-- begin::카드 -->
+                                <div class="col-xxl-12 mb-5 mb-xl-10">
+                                    <div class="card">
+                                        <!-- begin:: card-body -->
+                                        <div class="card-body">
+                                            <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework"
+                                                method="post" id="kt_careers_form">
+                                                <!--begin::Input group-->
+                                                <div class="row mb-5">
 
-                                                <!-- begin::연결된 계정 -->
-                                                <div
-                                                    style="border-bottom: 1px solid var(--kt-card-border-color); margin: 20px 0;">
+                                                    <div class="col-md-12 fv-row fv-plugins-icon-container">
+                                                        <!-- begin::연결된 계정 -->
+                                                        <div
+                                                            style="border-bottom: 1px solid var(--kt-card-border-color);">
+                                                            <!--begin::Label-->
+                                                            <label class="fs-2 fw-semibold mb-2">연결된 계정</label>
+                                                            <!--end::Label-->
+                                                        </div>
+                                                        <!-- end::연결된 계정 -->
+
+                                                        <!-- begin::계정 연결 버튼 -->
+                                                        <div style="margin: 20px 0;">
+                                                            <button type="button" class="btn btn-light-primary"
+                                                                data-bs-toggle="modal" data-bs-target="#kt_modal_1">계정
+                                                                연결</button>
+                                                        </div>
+                                                        <!-- end::계정 연결 버튼 -->
+
+                                                        <!-- begin::Id-Password -->
+                                                        <div class="row mb-5">
+                                                            <!--begin::Col-->
+                                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                                <!--begin::Label-->
+                                                                <label class=" fs-5 fw-semibold mb-2">Id</label>
+                                                                <!--end::Label-->
+                                                                <!--begin::Input-->
+                                                                <p class="form-control">ID입니다. [마스터 계정]</p>
+                                                                <!--end::Input-->
+                                                                <div
+                                                                    class="fv-plugins-message-container invalid-feedback">
+                                                                </div>
+                                                            </div>
+                                                            <!--end::Col-->
+                                                            <!--begin::Col-->
+                                                            <div class="col-md-6 fv-row">
+                                                                <!--end::Label-->
+                                                                <div
+                                                                    style="display: flex; justify-content: space-between;">
+                                                                    <label
+                                                                        class=" fs-5 fw-semibold mb-2">Password</label>
+                                                                </div>
+                                                                <!--end::Label-->
+                                                                <!--end::Input-->
+                                                                <p class="form-control">비밀번호입니다.</p>
+                                                                <!--end::Input-->
+                                                            </div>
+                                                            <!--end::Col-->
+                                                        </div>
+                                                        <!-- end::Id-Password -->
+
+                                                        <!-- begin::Id-Password -->
+                                                        <div class="row mb-5">
+                                                            <!--begin::Col-->
+                                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                                <!--begin::Label-->
+                                                                <label class=" fs-5 fw-semibold mb-2">Id</label>
+                                                                <!--end::Label-->
+                                                                <!--begin::Input-->
+                                                                <p class="form-control">ID입니다.</p>
+                                                                <!--end::Input-->
+                                                                <div
+                                                                    class="fv-plugins-message-container invalid-feedback">
+                                                                </div>
+                                                            </div>
+                                                            <!--end::Col-->
+                                                            <!--begin::Col-->
+                                                            <div class="col-md-6 fv-row">
+                                                                <!--end::Label-->
+                                                                <div
+                                                                    style="display: flex; justify-content: space-between;">
+                                                                    <div>
+                                                                        <label
+                                                                            class=" fs-5 fw-semibold mb-2">Password</label>
+                                                                    </div>
+                                                                    <div>
+                                                                        <button
+                                                                            style="background-color: transparent; border: 1px solid red; border-radius: 5px; color: red;">계정
+                                                                            연결 끊기</button>
+                                                                    </div>
+                                                                </div>
+                                                                <!--end::Label-->
+                                                                <!--end::Input-->
+                                                                <p class="form-control">비밀번호입니다.</p>
+                                                                <!--end::Input-->
+                                                            </div>
+                                                            <!--end::Col-->
+                                                        </div>
+                                                        <!-- end::Id-Password -->
+                                                    </div>
+
+                                                </div>
+                                                <!--end::Input group-->
+                                            </form>
+                                        </div>
+                                        <!-- end::card-body-->
+                                    </div>
+                                </div>
+                                <!-- end:: 카드 -->
+                                <!-- begin::카드 -->
+                                <div class="col-xxl-12 mb-5 mb-xl-10">
+                                    <div class="card">
+                                        <!-- begin:: card-body -->
+                                        <div class="card-body">
+                                            <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework"
+                                                method="post" id="kt_careers_form">
+
+                                                <!-- begin::제휴사 정보 title-->
+                                                <div style="border-bottom: 1px solid var(--kt-card-border-color);">
                                                     <!--begin::Label-->
-                                                    <label class="fs-5 fw-semibold mb-2">연결된 계정</label>
+                                                    <label class="fs-2 fw-semibold mb-2">제휴사 정보</label>
                                                     <!--end::Label-->
                                                 </div>
-                                                <!-- end::연결된 계정 -->
+                                                <!-- end::제휴사 정보 title -->
 
-                                                <!-- begin::계정 연결 버튼 -->
-                                                <div style="margin: 20px 0;">
-                                                    <button type="button" class="btn btn-light-primary"
-                                                        data-bs-toggle="modal" data-bs-target="#kt_modal_1">계정
-                                                        연결</button>
-                                                </div>
-                                                <!-- end::계정 연결 버튼 -->
-
-                                                <!-- begin::Id-Password -->
-                                                <div class="row mb-5">
+                                                <!-- begin::제휴사 정보 -->
+                                                <div class="row mt-7 mb-5">
                                                     <!--begin::Col-->
                                                     <div class="col-md-6 fv-row fv-plugins-icon-container">
                                                         <!--begin::Label-->
-                                                        <label class=" fs-5 fw-semibold mb-2">Id</label>
+                                                        <label class="required fs-5 fw-semibold mb-2">제휴사명</label>
                                                         <!--end::Label-->
                                                         <!--begin::Input-->
-                                                        <p class="form-control">ID입니다. [마스터 계정]</p>
+                                                        <input class="form-control" placeholder="제휴사명" name="email">
                                                         <!--end::Input-->
                                                         <div class="fv-plugins-message-container invalid-feedback">
                                                         </div>
@@ -1353,123 +1463,51 @@ License: For each use you must have a valid license purchased only from above li
                                                     <!--begin::Col-->
                                                     <div class="col-md-6 fv-row">
                                                         <!--end::Label-->
-                                                        <div style="display: flex; justify-content: space-between;">
-                                                            <label class=" fs-5 fw-semibold mb-2">Password</label>
-                                                        </div>
+                                                        <label class="fs-5 fw-semibold mb-2">제휴사 번호</label>
                                                         <!--end::Label-->
                                                         <!--end::Input-->
-                                                        <p class="form-control">비밀번호입니다.</p>
+                                                        <p class="form-control form-control-solid"> 1234 </p>
                                                         <!--end::Input-->
                                                     </div>
                                                     <!--end::Col-->
                                                 </div>
-                                                <!-- end::Id-Password -->
+                                                <!-- end::제휴사 정보 -->
 
-                                                <!-- begin::Id-Password -->
+                                                <!-- begin::웹사이트 -->
                                                 <div class="row mb-5">
                                                     <!--begin::Col-->
-                                                    <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                    <div class="col-md-12 fv-row fv-plugins-icon-container mb-5">
                                                         <!--begin::Label-->
-                                                        <label class=" fs-5 fw-semibold mb-2">Id</label>
+                                                        <label class="fs-5 fw-semibold mb-2">상품/서비스 제공 방식</label>
                                                         <!--end::Label-->
-                                                        <!--begin::Input-->
-                                                        <p class="form-control">ID입니다.</p>
-                                                        <!--end::Input-->
-                                                        <div class="fv-plugins-message-container invalid-feedback">
-                                                        </div>
-                                                    </div>
-                                                    <!--end::Col-->
-                                                    <!--begin::Col-->
-                                                    <div class="col-md-6 fv-row">
-                                                        <!--end::Label-->
-                                                        <div style="display: flex; justify-content: space-between;">
-                                                            <div>
-                                                                <label class=" fs-5 fw-semibold mb-2">Password</label>
-                                                            </div>
-                                                            <div>
-                                                                <button
-                                                                    style="background-color: transparent; border: 1px solid red; border-radius: 5px; color: red;">계정
-                                                                    연결 끊기</button>
-                                                            </div>
-                                                        </div>
-                                                        <!--end::Label-->
-                                                        <!--end::Input-->
-                                                        <p class="form-control">비밀번호입니다.</p>
-                                                        <!--end::Input-->
-                                                    </div>
-                                                    <!--end::Col-->
-                                                </div>
-                                                <!-- end::Id-Password -->
 
-                                            </div>
-                                            <!-- begin::제휴사 정보 title-->
-                                            <div
-                                                style="border-bottom: 1px solid var(--kt-card-border-color); margin: 20px 0;">
-                                                <!--begin::Label-->
-                                                <label class="fs-5 fw-semibold mb-2">제휴사 정보</label>
-                                                <!--end::Label-->
-                                            </div>
-                                            <!-- end::제휴사 정보 title -->
+                                                        <!--begin::상품 제공 방식-->
+                                                        <div class="form-control" style="border: 0;">
+                                                            <div style="display: flex;">
+                                                                <div class="form-check form-check-custom form-check-solid"
+                                                                    style="margin-right: 20px;">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="1" id="flexCheckDefault" />
+                                                                    <label class="form-check-label"
+                                                                        for="flexCheckDefault">
+                                                                        인플루언서에게 온라인/배송으로 제공
+                                                                    </label>
+                                                                </div>
 
-                                            <!-- begin::제휴사 정보 -->
-                                            <div class="row mb-5">
-                                                <!--begin::Col-->
-                                                <div class="col-md-6 fv-row fv-plugins-icon-container">
-                                                    <!--begin::Label-->
-                                                    <label class="required fs-5 fw-semibold mb-2">제휴사명</label>
-                                                    <!--end::Label-->
-                                                    <!--begin::Input-->
-                                                    <input class="form-control" placeholder="제휴사명" name="email">
-                                                    <!--end::Input-->
-                                                    <div class="fv-plugins-message-container invalid-feedback">
-                                                    </div>
-                                                </div>
-                                                <!--end::Col-->
-                                                <!--begin::Col-->
-                                                <div class="col-md-6 fv-row">
-                                                    <!--end::Label-->
-                                                    <label class="fs-5 fw-semibold mb-2">제휴사 번호</label>
-                                                    <!--end::Label-->
-                                                    <!--end::Input-->
-                                                    <p class="form-control form-control-solid"> 1234 </p>
-                                                    <!--end::Input-->
-                                                </div>
-                                                <!--end::Col-->
-                                            </div>
-                                            <!-- end::제휴사 정보 -->
-
-                                            <!-- begin::웹사이트 -->
-                                            <div class="row mb-5">
-                                                <!--begin::Col-->
-                                                <div class="col-md-12 fv-row fv-plugins-icon-container mb-5">
-                                                    <!--begin::Label-->
-                                                    <label class="fs-5 fw-semibold mb-2">상품/서비스 제공 방식</label>
-                                                    <!--end::Label-->
-
-                                                    <!--begin::상품 제공 방식-->
-                                                    <div class="form-control" style="border: 0;">
-                                                        <div style="display: flex;">
-                                                            <div class="form-check form-check-custom form-check-solid"
-                                                                style="margin-right: 20px;">
-                                                                <input class="form-check-input" type="checkbox"
-                                                                    value="1" id="flexCheckDefault" />
-                                                                <label class="form-check-label" for="flexCheckDefault">
-                                                                    인플루언서에게 온라인/배송으로 제공
+                                                                <label
+                                                                    class="form-check form-check-custom form-check-solid">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="1" />
+                                                                    <span class="form-check-label">
+                                                                        인플루언서가 직접 방문
+                                                                    </span>
                                                                 </label>
                                                             </div>
-
-                                                            <label
-                                                                class="form-check form-check-custom form-check-solid">
-                                                                <input class="form-check-input" type="checkbox"
-                                                                    value="1" />
-                                                                <span class="form-check-label">
-                                                                    인플루언서가 직접 방문
-                                                                </span>
-                                                            </label>
                                                         </div>
                                                     </div>
+                                                    <!--end::상품 제공 방식-->
                                                 </div>
-                                                <!--end::상품 제공 방식-->
+                                                <!-- end::웹사이트 -->
 
                                                 <!-- begin::전화번호 입력 -->
                                                 <div class="row mb-5">
@@ -1512,6 +1550,10 @@ License: For each use you must have a valid license purchased only from above li
                                                         <!--begin::Label-->
                                                         <div class="form-check form-check-custom form-check-solid mb-1"
                                                             style="margin-right: 20px;">
+                                                            <label class="form-check-label me-3 fw-semibold fs-5"
+                                                                for="workplace">
+                                                                주소
+                                                            </label>
                                                             <input class="form-check-input" type="checkbox" value="1"
                                                                 id="workplace">
                                                             <label class="form-check-label" for="workplace">
@@ -1547,7 +1589,8 @@ License: For each use you must have a valid license purchased only from above li
                                                             <div>
                                                                 <button type="button" class="btn btn-light-primary mb-2"
                                                                     data-bs-toggle="modal"
-                                                                    data-bs-target="#kt_modal_1">웹사이트 추가</button>
+                                                                    data-bs-target="#kt_modal_1">웹사이트
+                                                                    추가</button>
                                                             </div>
                                                         </div>
                                                         <!--end::Label-->
@@ -1621,7 +1664,7 @@ License: For each use you must have a valid license purchased only from above li
                                                 <!-- end::웹사이트 추가 -->
 
                                                 <!-- begin::카드 가맹점 정보 -->
-                                                <div class="row mb-5">
+                                                <div class="row">
                                                     <!--begin::Col-->
                                                     <div class="col-md-12 fv-row fv-plugins-icon-container">
                                                         <!--begin::Label-->
@@ -1633,7 +1676,8 @@ License: For each use you must have a valid license purchased only from above li
                                                             <div>
                                                                 <button type="button" class="btn btn-light-primary mb-2"
                                                                     data-bs-toggle="modal"
-                                                                    data-bs-target="#kt_modal_1">가맹점 정보 추가</button>
+                                                                    data-bs-target="#kt_modal_1">가맹점
+                                                                    정보 추가</button>
                                                             </div>
                                                         </div>
                                                         <!--end::Label-->
@@ -1697,47 +1741,83 @@ License: For each use you must have a valid license purchased only from above li
 
                                                                         <!--begin::Text-->
                                                                         <div
-                                                                            class="col-md-12 x fv-plugins-icon-container mb-2">
+                                                                            class="col-md-12 x  fv-plugins-icon-container mb-2">
                                                                             <div class="mb-0 fs-6">
                                                                                 <div
-                                                                                    class="text-muted fw-semibold lh-lg mb-2 text-bg-light p-20">
-                                                                                    <ul>[현대카드 가맹점 정보]
-                                                                                        <li>현대카드 가맹점 페이지 &gt; 가맹점 번호 조회
-                                                                                            버튼을 눌러 조회할 수 있습니다.</li>
-                                                                                        <li>정확한 가맹점 정보를 입력해주셔야 인플루언서의 결제
-                                                                                            정보에 맞는 캠페인 안내가 가능합니다.</li>
-                                                                                        <li>계정 생성 완료 후, ID와 임시 PW를 계정
-                                                                                            사용자에게 전달해 주세요.</li>
+                                                                                    class="lh-lg mb-1 text-bg-light p-10 ">
+                                                                                    <ul>
+                                                                                        <span class="fw-semibold">[현대카드
+                                                                                            가맹점
+                                                                                            정보]</span>
+                                                                                        <div class="ps-5">
+                                                                                            <li><a href="https://www.hyundaicard.com/csa/mb/STOREMAIN.hc"
+                                                                                                    class="text-decoration-underline"
+                                                                                                    target="_blank"
+                                                                                                    rel="noreferrer">현대카드
+                                                                                                    가맹점 페이지 &gt; 가맹점 번호
+                                                                                                    조회</a>
+                                                                                                버튼을 눌러 조회할 수 있습니다.</li>
+                                                                                            <li>정확한 가맹점 정보를 입력해주셔야
+                                                                                                인플루언서의 결제
+                                                                                                정보에 맞는 캠페인 안내가 가능합니다.
+                                                                                            </li>
+                                                                                        </div>
+
                                                                                     </ul>
-                                                                                    <ul>[PG사 여부]
-                                                                                        <li>PG사 예시 : KG이니시스,나이스페이 등</li>
-                                                                                        <li>PG사를 통해 결제된 건은, 인플루언서의 캠페인
-                                                                                            요청이 승인 되어야 App에 캠페인이 생성됩니다.
-                                                                                        </li>
-                                                                                        <li>계정 생성 완료 후, ID와 임시 PW를 계정
-                                                                                            사용자에게 전달해 주세요.</li>
+                                                                                    <ul>
+                                                                                        <span class="fw-semibold">[PG사
+                                                                                            여부]
+                                                                                        </span>
+                                                                                        <div class="ps-5">
+                                                                                            <li>PG사 예시 : KG이니시스,나이스페이 등
+                                                                                            </li>
+                                                                                        </div>
                                                                                     </ul>
-                                                                                    <ul>[결제건-캠페인 매칭 방식]
-                                                                                        <ul>자동 매칭
-                                                                                            <li>제휴사의 단독 가맹점 정보일 경우 선택해
-                                                                                                주세요.</li>
-                                                                                            <li>해당 가맹점 정보의 결제건 확인 시, 인플카
-                                                                                                액티비티가 바로 생성됨니다.</li>
+                                                                                    <ul>
+                                                                                        <span
+                                                                                            class="fw-semibold">[결제건-캠페인
+                                                                                            매칭
+                                                                                            방식]</span>
+                                                                                        <div class="ps-5">
+                                                                                            <li>자동 매칭</li>
+                                                                                            <ul>
+                                                                                                <li>제휴사의 단독 가맹점 정보일 경우
+                                                                                                    선택해
+                                                                                                    주세요.</li>
+                                                                                                <li>해당 가맹점 정보의 결제건 확인 시,
+                                                                                                    인플카
+                                                                                                    액티비티가 바로 생성됨니다.</li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </ul>
+                                                                                    <div class="ps-5">
+                                                                                        <ul>
+                                                                                            <li>수동 매칭</li>
+                                                                                            <ul>
+                                                                                                <li>진행하는 제휴사 외 다른 사업자가
+                                                                                                    해당
+                                                                                                    가맹점 정보를 함께 사용하는 경우
+                                                                                                    선택해
+                                                                                                    주세요. (PG사, 몰에 입점한 매장
+                                                                                                    등이
+                                                                                                    해당됨)</li>
+                                                                                                <li>인플루언서가 결제건에 맞는 캠페인을
+                                                                                                    직접
+                                                                                                    선택해야 합니다.</li>
+                                                                                            </ul>
                                                                                         </ul>
-                                                                                        <ul>수동 매칭
-                                                                                            <li>진행하는 제휴사 외 다른 사업자가 해당
-                                                                                                가맹점 정보를 함께 사용하는 경우 선택해
-                                                                                                주세요. (PG사, 몰에 입점한 매장 등이
-                                                                                                해당됨)</li>
-                                                                                            <li>인플루언서가 결제건에 맞는 캠페인을 직접
-                                                                                                선택해야 합니다.</li>
-                                                                                        </ul>
-                                                                                    </ul>
-                                                                                    <ul>[사업자등록번호]
-                                                                                        <li>영수증이나 카드 전표에 표시되는 사업자등록번호를
-                                                                                            입력해주세요.</li>
-                                                                                        <li>・PG사 가맹점 정보를 등록할 경우 PG사의
-                                                                                            사업자등록번호를 입력해주세요.</li>
+                                                                                    </div>
+                                                                                    <ul>
+                                                                                        <span
+                                                                                            class="fw-semibold">[사업자등록번호]
+                                                                                        </span>
+                                                                                        <div class="ps-5">
+                                                                                            <li>영수증이나 카드 전표에 표시되는
+                                                                                                사업자등록번호를
+                                                                                                입력해주세요.</li>
+                                                                                            <li>・PG사 가맹점 정보를 등록할 경우 PG사의
+                                                                                                사업자등록번호를 입력해주세요.</li>
+                                                                                        </div>
                                                                                     </ul>
                                                                                 </div>
                                                                             </div>
@@ -1750,404 +1830,479 @@ License: For each use you must have a valid license purchased only from above li
                                                         </div>
                                                     </div>
                                                     <!--end::Input-->
-
-                                                </div>
-                                                <!-- end::카드 가맹점 정보 -->
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end::first tap -->
-
-                                <!-- begin::Second tap -->
-                                <div class="tab-pane fade" id="kt_tab_pane_5" role="tabpanel">
-                                    <div class="tab-pane fade show active" id="kt_tab_pane_4" role="tabpanel">
-                                        <div class="card-body">
-                                            <form action="m-0"
-                                                class="form mb-15 fv-plugins-bootstrap5 fv-plugins-framework"
-                                                method="post" id="kt_careers_form">
-                                                <!--begin::Input group-->
-                                                <div class="row mb-5">
-                                                    <!--begin::Col-->
-
-                                                    <div class="col-md-12 fv-row fv-plugins-icon-container">
-                                                        <!--begin::Label-->
-                                                        <label class="required fs-5 fw-semibold mb-2">영업 담당자</label>
-                                                        <!--end::Label-->
-
-                                                        <!--begin::Input-->
-                                                        <input type="text" class="form-control" placeholder="이름 입력"
-                                                            name="first_name">
-                                                        <!--end::Input-->
-
-                                                        <div class="fv-plugins-message-container invalid-feedback">
+                                                    <div class="col-xxl-12 mb-5 mb-xl-10">
+                                                        <div class="d-flex flex-center">
+                                                            <button class="btn btn-primary"
+                                                                style="width: 100px;">저장</button>
                                                         </div>
                                                     </div>
-                                                    <!--end::Col-->
                                                 </div>
-                                                <!--end::Input group-->
+                                                <!-- end::카드 가맹점 정보 -->
+
                                             </form>
-                                            <div class="col-md-12 fv-row fv-plugins-icon-container">
-
-                                                <!-- begin::연결된 계정 -->
-                                                <div
-                                                    style="border-bottom: 1px solid var(--kt-card-border-color); margin: 20px 0;">
-                                                    <!--begin::Label-->
-                                                    <label class="fs-5 fw-semibold mb-2">연결된 계정</label>
-                                                    <!--end::Label-->
-                                                </div>
-                                                <!-- end::연결된 계정 -->
-
-                                                <!-- begin::계정 연결 버튼 -->
-                                                <div style="margin: 20px 0;">
-                                                    <button type="button" class="btn btn-light-primary"
-                                                        data-bs-toggle="modal" data-bs-target="#kt_modal_1">계정
-                                                        연결</button>
-                                                </div>
-                                                <!-- end::계정 연결 버튼 -->
-
-                                                <!-- begin::Id-Password -->
-                                                <div class="row mb-5">
-                                                    <!--begin::Col-->
-                                                    <div class="col-md-6 fv-row fv-plugins-icon-container">
-                                                        <!--begin::Label-->
-                                                        <label class=" fs-5 fw-semibold mb-2">Id</label>
-                                                        <!--end::Label-->
-                                                        <!--begin::Input-->
-                                                        <p class="form-control">ID입니다. [마스터 계정]</p>
-                                                        <!--end::Input-->
-                                                        <div class="fv-plugins-message-container invalid-feedback">
-                                                        </div>
-                                                    </div>
-                                                    <!--end::Col-->
-                                                    <!--begin::Col-->
-                                                    <div class="col-md-6 fv-row">
-                                                        <!--end::Label-->
-                                                        <div style="display: flex; justify-content: space-between;">
-                                                            <label class=" fs-5 fw-semibold mb-2">Password</label>
-                                                        </div>
-                                                        <!--end::Label-->
-                                                        <!--end::Input-->
-                                                        <p class="form-control">비밀번호입니다.</p>
-                                                        <!--end::Input-->
-                                                    </div>
-                                                    <!--end::Col-->
-                                                </div>
-                                                <!-- end::Id-Password -->
-
-                                                <!-- begin::Id-Password -->
-                                                <div class="row mb-5">
-                                                    <!--begin::Col-->
-                                                    <div class="col-md-6 fv-row fv-plugins-icon-container">
-                                                        <!--begin::Label-->
-                                                        <label class=" fs-5 fw-semibold mb-2">Id</label>
-                                                        <!--end::Label-->
-                                                        <!--begin::Input-->
-                                                        <p class="form-control">ID입니다.</p>
-                                                        <!--end::Input-->
-                                                        <div class="fv-plugins-message-container invalid-feedback">
-                                                        </div>
-                                                    </div>
-                                                    <!--end::Col-->
-                                                    <!--begin::Col-->
-                                                    <div class="col-md-6 fv-row">
-                                                        <!--end::Label-->
-                                                        <div style="display: flex; justify-content: space-between;">
-                                                            <div>
-                                                                <label class=" fs-5 fw-semibold mb-2">Password</label>
-                                                            </div>
-                                                            <div>
-                                                                <button
-                                                                    style="background-color: transparent; border: 1px solid red; border-radius: 5px; color: red;">계정
-                                                                    연결 끊기</button>
-                                                            </div>
-                                                        </div>
-                                                        <!--end::Label-->
-                                                        <!--end::Input-->
-                                                        <p class="form-control">비밀번호입니다.</p>
-                                                        <!--end::Input-->
-                                                    </div>
-                                                    <!--end::Col-->
-                                                </div>
-                                                <!-- end::Id-Password -->
-
-                                            </div>
-                                            <!-- begin::제휴사 정보 title-->
-                                            <div
-                                                style="border-bottom: 1px solid var(--kt-card-border-color); margin: 20px 0;">
-                                                <!--begin::Label-->
-                                                <label class="fs-5 fw-semibold mb-2">제휴사 정보</label>
-                                                <!--end::Label-->
-                                            </div>
-                                            <!-- end::제휴사 정보 title -->
-
-                                            <!-- begin::제휴사 정보 -->
-                                            <div class="row mb-5">
-                                                <!--begin::Col-->
-                                                <div class="col-md-6 fv-row fv-plugins-icon-container">
-                                                    <!--begin::Label-->
-                                                    <label class="required fs-5 fw-semibold mb-2">제휴사명</label>
-                                                    <!--end::Label-->
-                                                    <!--begin::Input-->
-                                                    <input class="form-control" placeholder="제휴사명" name="email">
-                                                    <!--end::Input-->
-                                                    <div class="fv-plugins-message-container invalid-feedback">
-                                                    </div>
-                                                </div>
-                                                <!--end::Col-->
-                                                <!--begin::Col-->
-                                                <div class="col-md-6 fv-row">
-                                                    <!--end::Label-->
-                                                    <label class="fs-5 fw-semibold mb-2">제휴사 번호</label>
-                                                    <!--end::Label-->
-                                                    <!--end::Input-->
-                                                    <p class="form-control form-control-solid"> 1234 </p>
-                                                    <!--end::Input-->
-                                                </div>
-                                                <!--end::Col-->
-                                            </div>
-                                            <!-- end::제휴사 정보 -->
-
-                                            <!-- begin::웹사이트 -->
-                                            <div class="row mb-5">
-                                                <!--begin::Col-->
-                                                <div class="col-md-12 fv-row fv-plugins-icon-container mb-5">
-                                                    <!--begin::Label-->
-                                                    <label class="fs-5 fw-semibold mb-2">상품/서비스 제공 방식</label>
-                                                    <!--end::Label-->
-
-                                                    <!--begin::상품 제공 방식-->
-                                                    <div class="form-control" style="border: 0;">
-                                                        <div style="display: flex;">
-                                                            <div class="form-check form-check-custom form-check-solid"
-                                                                style="margin-right: 20px;">
-                                                                <input class="form-check-input" type="checkbox"
-                                                                    value="1" id="flexCheckDefault" />
-                                                                <label class="form-check-label" for="flexCheckDefault">
-                                                                    인플루언서에게 온라인/배송으로 제공
-                                                                </label>
-                                                            </div>
-
-                                                            <label
-                                                                class="form-check form-check-custom form-check-solid">
-                                                                <input class="form-check-input" type="checkbox"
-                                                                    value="1" />
-                                                                <span class="form-check-label">
-                                                                    인플루언서가 직접 방문
-                                                                </span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--end::상품 제공 방식-->
-
-                                                <!-- begin::전화번호 입력 -->
-                                                <div class="row mb-5">
-                                                    <!--begin::Col-->
-                                                    <div class="col-md-12 fv-row fv-plugins-icon-container">
-                                                        <!--begin::Label-->
-                                                        <div class="d-flex">
-                                                            <div>
-                                                                <label
-                                                                    class="required fs-5 fw-semibold mb-2 me-5">전화번호</label>
-                                                            </div>
-                                                            <div>
-                                                                <div
-                                                                    class="form-check form-switch form-check-custom form-check-solid me-10">
-                                                                    <input class="form-check-input h-20px w-35px"
-                                                                        type="checkbox" value="" id="flexSwitch30x50" />
-                                                                    <label class="form-check-label"
-                                                                        for="flexSwitch30x50">
-                                                                        전화번호 입력
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!--end::Label-->
-                                                        <!--begin::Input-->
-                                                        <input class="form-control" placeholder="전화번호 입력" name="email">
-                                                        <!--end::Input-->
-                                                        <div class="fv-plugins-message-container invalid-feedback">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="fv-plugins-message-container invalid-feedback">
-                                                    </div>
-                                                </div>
-                                                <!-- end::전화번호 입력 -->
-
-                                                <!-- begin::주소 입력 -->
-                                                <div class="row mb-5">
-                                                    <div class="col-md-6 fv-plugins-icon-container">
-                                                        <!--begin::Label-->
-                                                        <div class="form-check form-check-custom form-check-solid mb-1"
-                                                            style="margin-right: 20px;">
-                                                            <input class="form-check-input" type="checkbox" value="1"
-                                                                id="workplace">
-                                                            <label class="form-check-label" for="workplace">
-                                                                사업장 주소(소재지)와 동일
-                                                            </label>
-                                                        </div>
-                                                        <div class="d-flex mb-2">
-                                                            <!--end::Label-->
-                                                            <input class=" form-control form-control-solid col me-2"
-                                                                placeholder="주소검색을 해주세요">
-                                                            <button type="submit" class="btn btn-white btn-outline">
-                                                                <!--begin::Indicator label-->
-                                                                <span class="indicator-label">주소검색</span>
-                                                                <!--end::Indicator label-->
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-12 fv-plugins-icon-container">
-                                                        <input class=" form-control col" placeholder="상세주소 입력">
-                                                    </div>
-                                                </div>
-                                                <!-- end::주소 입력 -->
-
-                                                <!-- begin::웹사이트 추가 -->
-                                                <div class="row mb-5">
-                                                    <!--begin::Col-->
-                                                    <div class="col-md-12 fv-row fv-plugins-icon-container">
-                                                        <!--begin::Label-->
-                                                        <div>
-                                                            <div>
-                                                                <label class="fs-5 fw-semibold mb-2 me-5">웹사이트</label>
-                                                            </div>
-                                                            <div>
-                                                                <button type="button" class="btn btn-light-primary mb-2"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#kt_modal_1">웹사이트 추가</button>
-                                                            </div>
-                                                        </div>
-                                                        <!--end::Label-->
-                                                        <!--begin::Input-->
-                                                        <div class="row mb-5">
-                                                            <!--begin::Col-->
-                                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
-
-                                                                <!--begin::Input-->
-
-                                                                <div class="d-flex"
-                                                                    data-select2-id="select2-data-6-2yuh">
-                                                                    <div class="overflow-hidden flex-grow-1"
-                                                                        data-select2-id="select2-data-5-drzp">
-                                                                        <select class="form-select form-select"
-                                                                            data-control="select2" data-placeholder="유형"
-                                                                            data-allow-clear="true"
-                                                                            data-hide-search="true">
-                                                                            <option></option>
-                                                                            <option value="1">공식홈페이지</option>
-                                                                            <option value="2">인스타그램</option>
-                                                                            <option value="3">블로그</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                                                                <!--end::Input-->
-
-
-                                                            </div>
-                                                            <!--end::Col-->
-                                                            <!--begin::Col-->
-                                                            <div class="col-md-6 fv-row">
-
-                                                                <!--end::Input-->
-
-                                                                <input class="form-control " placeholder="URL">
-                                                                </input>
-                                                                <!--end::Input-->
-
-                                                            </div>
-                                                            <!--end::Col-->
-                                                        </div>
-                                                        <!--end::Input-->
-                                                    </div>
-                                                </div>
-                                                <!-- end::웹사이트 추가 -->
-
-                                                <!-- begin::카드 가맹점 정보 -->
-                                                <div class="row mb-5">
-                                                    <!--begin::Col-->
-                                                    <div class="col-md-12 fv-row fv-plugins-icon-container">
-                                                        <!--begin::Label-->
-                                                        <div>
-                                                            <div>
-                                                                <label class="fs-5 fw-semibold mb-2 me-5">현대카드 가맹점
-                                                                    정보</label>
-                                                            </div>
-                                                            <div>
-                                                                <button type="button" class="btn btn-light-primary mb-2"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#kt_modal_1">가맹점 정보 추가</button>
-                                                            </div>
-                                                        </div>
-                                                        <!--end::Label-->
-
-                                                        <!--begin::Input-->
-                                                        <div class="row mb-5">
-                                                            <div class="col-md-12 x fv-plugins-icon-container mb-2">
-                                                                <div class="row">
-                                                                    <div
-                                                                        class="col-md-3 x fv-plugins-icon-container mb-2">
-                                                                        <select class="form-select form-select"
-                                                                            data-control="select2"
-                                                                            data-placeholder="PG사 여부"
-                                                                            data-allow-clear="true"
-                                                                            data-hide-search="true">
-                                                                            <option></option>
-                                                                            <option value="1">해당</option>
-                                                                            <option value="2">해당 없음</option>
-                                                                            <option value="3">알 수 없음</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <div
-                                                                        class="col-md-3 x fv-plugins-icon-container mb-2">
-                                                                        <input type="text" class="form-control"
-                                                                            placeholder="사업자 등록 번호" name="first_name">
-                                                                    </div>
-                                                                    <div
-                                                                        class="col-md-3 x fv-plugins-icon-container mb-2">
-                                                                        <input type="text" class="form-control"
-                                                                            placeholder="가맹점명" name="first_name">
-                                                                    </div>
-                                                                    <div
-                                                                        class="col-md-3 x fv-plugins-icon-container mb-2">
-                                                                        <input type="text" class="form-control"
-                                                                            placeholder="가맹점 번호" name="first_name">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--end::Input-->
-
-                                                </div>
-                                                <!-- end::카드 가맹점 정보 -->
-                                            </div>
-
-
                                         </div>
+                                        <!-- end::card-body-->
                                     </div>
                                 </div>
-                                <!-- end::Second tap -->
+                                <!-- end:: 카드 -->
+                            </div>
+                            <!-- end::first tab -->
+
+
+
+                            <!-- begin::second tab -->
+                            <div class="tab-pane fade" id="kt_tab_pane_5" role="tabpanel">
+
+                                <!-- begin::카드 -->
+                                <div class="col-xxl-12 mb-5 mb-xl-10">
+                                    <div class="card">
+                                        <!-- begin:: card-body -->
+                                        <div>
+                                            <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework"
+                                                method="post" id="kt_careers_form">
+
+
+
+                                                <!--begin:: 타이틀-->
+                                                <div class="card-header pt-5">
+                                                    <!--begin::Label-->
+                                                    <label class="d-flex flex-center fs-2 fw-semibold mb-2">진행 중인 계약 및
+                                                        캠페인</label>
+                                                    <!--end::Label-->
+                                                </div>
+                                                <!--end:: 타이틀-->
+
+                                                <!-- begin:: 컨텐트 -->
+                                                <div class="card-body">
+                                                    <div class="no-account-search-list text-center">
+                                                        <i class="marketit-icon_search_list"></i>
+                                                        <h5 class="mt-4 mb-8 fw-bold">연결된 계약 및 캠페인이
+                                                            없습니다.
+                                                        </h5>
+                                                        <div class="mt-3">
+                                                            <button type="button" class="btn btn-light-primary"
+                                                                data-bs-toggle="modal" data-bs-target="#kt_modal_1">새
+                                                                계약서 추가</button>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- begin:: Modal -->
+                                                <div class="modal fade" tabindex="-1" id="kt_modal_1"
+                                                    style="--bs-modal-width: 800px;">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h3 class="modal-title">제휴사 및 계약 연결</h3>
+
+                                                                <!--begin::Close-->
+                                                                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2"
+                                                                    data-bs-dismiss="modal" aria-label="Close">
+                                                                    <span class="svg-icon svg-icon-1"></span>
+                                                                </div>
+                                                                <!--end::Close-->
+                                                            </div>
+                                                            <!-- begin:: Card -->
+                                                            <div class="card">
+                                                                <div class="card-header">
+                                                                    <h3
+                                                                        class="card-title align-items-start flex-column">
+                                                                        <span
+                                                                            class="card-label fw-bold text-dark">검색</span>
+                                                                    </h3>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="row mb-5">
+                                                                        <div
+                                                                            class="col-md-12 fv-row fv-plugins-icon-container">
+                                                                            <div class="input-group flex-nowrap">
+                                                                                <span class="input-group-text">영업
+                                                                                    담당자</span>
+                                                                                <select
+                                                                                    class="form-select select2-hidden-accessible"
+                                                                                    data-control="select2"
+                                                                                    data-placeholder="이름 입력 또는 선택"
+                                                                                    data-allow-clear="true"
+                                                                                    data-select2-id="select2-data-1-xdji"
+                                                                                    tabindex="-1" aria-hidden="true"
+                                                                                    data-kt-initialized="1">
+                                                                                    <option
+                                                                                        data-select2-id="select2-data-3-lcz4">
+                                                                                    </option>
+                                                                                    <option value="1">jacob
+                                                                                    </option>
+                                                                                    <option value="2">jack
+                                                                                    </option>
+                                                                                    <option value="3">raymon
+                                                                                    </option>
+                                                                                    <option value="4">chaem
+                                                                                    </option>
+                                                                                    <option value="5">yona
+                                                                                    </option>
+                                                                                </select><span
+                                                                                    class="select2 select2-container select2-container--bootstrap5"
+                                                                                    dir="ltr"
+                                                                                    data-select2-id="select2-data-2-no0l"
+                                                                                    style="width: 100%;"><span
+                                                                                        class="selection"><span
+                                                                                            class="select2-selection select2-selection--single form-select"
+                                                                                            role="combobox"
+                                                                                            aria-haspopup="true"
+                                                                                            aria-expanded="false"
+                                                                                            tabindex="0"
+                                                                                            aria-disabled="false"
+                                                                                            aria-labelledby="select2-tjk6-container"
+                                                                                            aria-controls="select2-tjk6-container"><span
+                                                                                                class="select2-selection__rendered"
+                                                                                                id="select2-tjk6-container"
+                                                                                                role="textbox"
+                                                                                                aria-readonly="true"
+                                                                                                title="이름 입력 또는 선택"><span
+                                                                                                    class="select2-selection__placeholder">이름
+                                                                                                    입력 또는
+                                                                                                    선택</span></span><span
+                                                                                                class="select2-selection__arrow"
+                                                                                                role="presentation"><b
+                                                                                                    role="presentation"></b></span></span></span><span
+                                                                                        class="dropdown-wrapper"
+                                                                                        aria-hidden="true"></span></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row mb-5">
+                                                                        <div
+                                                                            class="col-md-12 fv-row fv-plugins-icon-container">
+                                                                            <div class="input-group flex-nowrap">
+                                                                                <span class="input-group-text">운영
+                                                                                    담당자</span>
+                                                                                <select
+                                                                                    class="form-select select2-hidden-accessible"
+                                                                                    data-control="select2"
+                                                                                    data-placeholder="사업자등록증에 표시된 상호 법인명 단체명 입력"
+                                                                                    data-allow-clear="true"
+                                                                                    data-select2-id="select2-data-4-uyol"
+                                                                                    tabindex="-1" aria-hidden="true"
+                                                                                    data-kt-initialized="1">
+                                                                                    <option
+                                                                                        data-select2-id="select2-data-6-fqgo">
+                                                                                    </option>
+                                                                                    <option value="1">jacob
+                                                                                    </option>
+                                                                                    <option value="2">jack
+                                                                                    </option>
+                                                                                    <option value="3">raymon
+                                                                                    </option>
+                                                                                    <option value="4">chaem
+                                                                                    </option>
+                                                                                    <option value="5">yona
+                                                                                    </option>
+                                                                                </select><span
+                                                                                    class="select2 select2-container select2-container--bootstrap5"
+                                                                                    dir="ltr"
+                                                                                    data-select2-id="select2-data-5-aa8y"
+                                                                                    style="width: 100%;"><span
+                                                                                        class="selection"><span
+                                                                                            class="select2-selection select2-selection--single form-select"
+                                                                                            role="combobox"
+                                                                                            aria-haspopup="true"
+                                                                                            aria-expanded="false"
+                                                                                            tabindex="0"
+                                                                                            aria-disabled="false"
+                                                                                            aria-labelledby="select2-sdvn-container"
+                                                                                            aria-controls="select2-sdvn-container"><span
+                                                                                                class="select2-selection__rendered"
+                                                                                                id="select2-sdvn-container"
+                                                                                                role="textbox"
+                                                                                                aria-readonly="true"
+                                                                                                title="사업자등록증에 표시된 상호 법인명 단체명 입력"><span
+                                                                                                    class="select2-selection__placeholder">사업자등록증에
+                                                                                                    표시된 상호 법인명
+                                                                                                    단체명
+                                                                                                    입력</span></span><span
+                                                                                                class="select2-selection__arrow"
+                                                                                                role="presentation"><b
+                                                                                                    role="presentation"></b></span></span></span><span
+                                                                                        class="dropdown-wrapper"
+                                                                                        aria-hidden="true"></span></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!--begin::Input group-->
+                                                                    <div class="row mb-5">
+                                                                        <!--begin::Col-->
+                                                                        <div
+                                                                            class="col-md-4 fv-row fv-plugins-icon-container">
+                                                                            <div class="input-group flex-nowrap">
+                                                                                <span class="input-group-text">유형</span>
+                                                                                <select
+                                                                                    class="form-select rounded-start-0 select2-hidden-accessible"
+                                                                                    data-control="select2"
+                                                                                    data-placeholder="전체"
+                                                                                    data-allow-clear="true"
+                                                                                    data-select2-id="select2-data-7-trx4"
+                                                                                    tabindex="-1" aria-hidden="true"
+                                                                                    data-kt-initialized="1">
+                                                                                    <option
+                                                                                        data-select2-id="select2-data-9-9wj9">
+                                                                                    </option>
+                                                                                    <option value="1">싱글
+                                                                                    </option>
+                                                                                    <option value="2">그룹
+                                                                                    </option>
+                                                                                </select><span
+                                                                                    class="select2 select2-container select2-container--bootstrap5"
+                                                                                    dir="ltr"
+                                                                                    data-select2-id="select2-data-8-fe16"
+                                                                                    style="width: 100%;"><span
+                                                                                        class="selection"><span
+                                                                                            class="select2-selection select2-selection--single form-select rounded-start-0"
+                                                                                            role="combobox"
+                                                                                            aria-haspopup="true"
+                                                                                            aria-expanded="false"
+                                                                                            tabindex="0"
+                                                                                            aria-disabled="false"
+                                                                                            aria-labelledby="select2-blgu-container"
+                                                                                            aria-controls="select2-blgu-container"><span
+                                                                                                class="select2-selection__rendered"
+                                                                                                id="select2-blgu-container"
+                                                                                                role="textbox"
+                                                                                                aria-readonly="true"
+                                                                                                title="전체"><span
+                                                                                                    class="select2-selection__placeholder">전체</span></span><span
+                                                                                                class="select2-selection__arrow"
+                                                                                                role="presentation"><b
+                                                                                                    role="presentation"></b></span></span></span><span
+                                                                                        class="dropdown-wrapper"
+                                                                                        aria-hidden="true"></span></span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--end::Col-->
+                                                                        <div
+                                                                            class="col-md-8 fv-row fv-plugins-icon-container">
+                                                                            <div class="input-group">
+                                                                                <div class="input-group flex-nowrap">
+                                                                                    <span
+                                                                                        class="input-group-text">제휴사명</span>
+                                                                                    <select
+                                                                                        class="form-select rounded-start-0 select2-hidden-accessible"
+                                                                                        data-control="select2"
+                                                                                        data-placeholder="이름 입력 또는 선택"
+                                                                                        data-allow-clear="true"
+                                                                                        data-select2-id="select2-data-10-lbat"
+                                                                                        tabindex="-1" aria-hidden="true"
+                                                                                        data-kt-initialized="1">
+                                                                                        <option
+                                                                                            data-select2-id="select2-data-12-2jl8">
+                                                                                        </option>
+                                                                                        <option value="1">세컨라이프
+                                                                                        </option>
+                                                                                        <option value="2">마켓잇
+                                                                                        </option>
+                                                                                        <option value="3">인플카
+                                                                                        </option>
+                                                                                        <option value="4">삼성
+                                                                                        </option>
+                                                                                        <option value="5">Lg
+                                                                                        </option>
+                                                                                    </select><span
+                                                                                        class="select2 select2-container select2-container--bootstrap5"
+                                                                                        dir="ltr"
+                                                                                        data-select2-id="select2-data-11-k898"
+                                                                                        style="width: 100%;"><span
+                                                                                            class="selection"><span
+                                                                                                class="select2-selection select2-selection--single form-select rounded-start-0"
+                                                                                                role="combobox"
+                                                                                                aria-haspopup="true"
+                                                                                                aria-expanded="false"
+                                                                                                tabindex="0"
+                                                                                                aria-disabled="false"
+                                                                                                aria-labelledby="select2-bl5c-container"
+                                                                                                aria-controls="select2-bl5c-container"><span
+                                                                                                    class="select2-selection__rendered"
+                                                                                                    id="select2-bl5c-container"
+                                                                                                    role="textbox"
+                                                                                                    aria-readonly="true"
+                                                                                                    title="이름 입력 또는 선택"><span
+                                                                                                        class="select2-selection__placeholder">이름
+                                                                                                        입력 또는
+                                                                                                        선택</span></span><span
+                                                                                                    class="select2-selection__arrow"
+                                                                                                    role="presentation"><b
+                                                                                                        role="presentation"></b></span></span></span><span
+                                                                                            class="dropdown-wrapper"
+                                                                                            aria-hidden="true"></span></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--end::Col-->
+                                                                    </div>
+                                                                    <!--end::Input group-->
+                                                                    <div class="row mb-5">
+                                                                        <div
+                                                                            class="col-md-12 fv-row fv-plugins-icon-container">
+                                                                            <div class="input-group">
+                                                                                <span class="input-group-text">계약
+                                                                                    번호</span>
+                                                                                <input type=" text" class="form-control"
+                                                                                    placeholder="숫자만 입력">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row mb-5">
+                                                                        <div
+                                                                            class="col-md-12 d-flex justify-content-center">
+                                                                            <button type="button"
+                                                                                class="btn btn-white btn-outline me-2">초기화</button>
+                                                                            <button type="button"
+                                                                                class="btn btn-primary">검색</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- end:: Card -->
+                                                            <div class="card">
+                                                                <div class="card-header">
+                                                                    <h3
+                                                                        class="card-title align-items-start flex-column">
+                                                                        <span class="card-label fw-bold text-dark">검색
+                                                                            내역</span>
+                                                                    </h3>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <!-- <div class="no-account-search-list text-center"><i
+                                                        class="marketit-icon_search_list"></i>
+                                                    <h5 class="mt-4 mb-2" style="font-weight: bold;"> 검색 내역이
+                                                        없습니다.</h5>
+                                                    <p>
+                                                        검색 조건을 새로 입력하세요.
+                                                    </p>
+                                                </div> -->
+                                                                    <div class="table-responsive">
+                                                                        <table
+                                                                            class="table table-hover table-rounded table-striped border gy-7 gs-7">
+                                                                            <thead>
+                                                                                <tr
+                                                                                    class="fw-semibold fs-6 text-gray-800 border-bottom-2 border-gray-200 ">
+                                                                                    <th>제휴사명</th>
+                                                                                    <th>유형</th>
+                                                                                    <th>계약</th>
+                                                                                    <th>관리</th>
+                                                                                    <th>연결</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>챔프프리 성수 (4321)</td>
+                                                                                    <td>싱글</td>
+                                                                                    <td>계약번호 : 145<br> 등록일 :
+                                                                                        2022-10-24</td>
+                                                                                    <td>영업담당자 : chame<br> 운영담당자
+                                                                                        : </td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="form-check form-switch form-check-custom form-check-solid">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox" value=""
+                                                                                                id="flexSwitchDefault">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    <ul class="pagination">
+                                                                        <li class="page-item previous disabled">
+                                                                            <a href="#" class="page-link"><i
+                                                                                    class="previous"></i></a>
+                                                                        </li>
+                                                                        <li class="page-item "><a href="#"
+                                                                                class="page-link">1</a></li>
+                                                                        <li class="page-item active"><a href="#"
+                                                                                class="page-link">2</a></li>
+                                                                        <li class="page-item "><a href="#"
+                                                                                class="page-link">3</a></li>
+                                                                        <li class="page-item "><a href="#"
+                                                                                class="page-link">4</a></li>
+                                                                        <li class="page-item "><a href="#"
+                                                                                class="page-link">5</a></li>
+                                                                        <li class="page-item "><a href="#"
+                                                                                class="page-link">6</a></li>
+                                                                        <li class="page-item next"><a href="#"
+                                                                                class="page-link"><i
+                                                                                    class="next"></i></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="modal-footer flex-center">
+                                                                <button type="button" class="btn btn-light"
+                                                                    data-bs-dismiss="modal">닫기</button>
+                                                                <button type="button" id="kt_docs_sweetalert_basic"
+                                                                    class="btn btn-primary">연결</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end:: Modal -->
+                                                <!-- end:: 컨텐트 -->
+
+
+
+
+
+                                            </form>
+                                        </div>
+                                        <!-- end::card-body-->
+                                    </div>
+                                </div>
+                                <!-- end:: 카드 -->
 
                             </div>
-                            <!-- end:: 컨텐트 -->
-
+                            <!-- end::second tab -->
                         </div>
+                        <!-- end::tab -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     </div>
-                    <!-- end:: 카드 -->
-
-
                 </div>
+                <!-- end:: 컨텐트 -->
             </div>
-            <!-- 바디: 끝 -->
+            <!-- end:: 카드 -->
 
-            <!--end:::Main-->
+
         </div>
-        <!--end::Wrapper-->
+
+
+    </div>
+    </div>
+    <!-- 바디: 끝 -->
+
+    <!--end:::Main-->
+    </div>
+    <!--end::Wrapper-->
     </div>
     <!--end::Page-->
     </div>
@@ -2175,9 +2330,7 @@ License: For each use you must have a valid license purchased only from above li
 
 
     <!-- begin:: Javascript -->
-    <script>
-        var hostUrl = "assets/";
-    </script>
+
     <!--begin::Global Javascript Bundle(used by all pages)-->
     <script src="/assets/plugins/global/plugins.bundle.js"></script>
     <script src="/assets/js/scripts.bundle.js"></script>
