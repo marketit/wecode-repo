@@ -872,30 +872,25 @@ License: For each use you must have a valid license purchased only from above li
                         <div class="col-xxl-12 mb-5 mb-xl-10">
                             <div class="card">
 
-                                <!--begin:: 타이틀-->
-                                <div class="card-header pt-5">
-                                    <h3 class="card-title align-items-start flex-column">
-                                        <span class="card-label fw-bold text-dark">검색</span>
-                                    </h3>
-                                </div>
-                                <!--end:: 타이틀-->
-
                                 <!-- begin:: 컨텐트 -->
                                 <div class="card-body">
-                                    <form action="m-0" class="form mb-15 fv-plugins-bootstrap5 fv-plugins-framework"
+                                    <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework"
                                         method="post" id="kt_careers_form">
                                         <!--begin::Input group-->
                                         <div class="row mb-5">
                                             <!--begin::Col-->
                                             <div class="col-md-12 fv-row fv-plugins-icon-container">
-                                                <!--begin::Label-->
-                                                <label class="required fs-5 fw-semibold mb-2">영업 담당자</label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input type="text" class="form-control form-control-solid"
-                                                    placeholder="이름 입력" name="first_name">
-                                                <!--end::Input-->
-                                                <div class="fv-plugins-message-container invalid-feedback"></div>
+                                                <label class="form-label">영업담당자</label>
+                                                <select class=" form-select" data-control="select2"
+                                                    data-placeholder="이름 선택" select box : data-allow-clear="true"
+                                                    data-hide-search="true">
+                                                    <option></option>
+                                                    <option value="1">엠마의 1004 사업장</option>
+                                                    <option value="2">sample1</option>
+                                                    <option value="3">sample12</option>
+                                                    <option value="4">sample3</option>
+                                                    <option value="5">sample4</option>
+                                                </select>
                                             </div>
                                             <!--end::Col-->
                                         </div>
@@ -905,24 +900,27 @@ License: For each use you must have a valid license purchased only from above li
                                         <div class="row mb-5">
                                             <!--begin::Col-->
                                             <div class="col-md-6 fv-row fv-plugins-icon-container">
-                                                <!--begin::Label-->
-                                                <label class="required fs-5 fw-semibold mb-2">제휴사 상태</label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input class="form-control form-control-solid" placeholder="전체 상태"
-                                                    name="email">
-                                                <!--end::Input-->
-                                                <div class="fv-plugins-message-container invalid-feedback"></div>
+                                                <label class="form-label">제휴사 상태</label>
+                                                <select class=" form-select" data-control="select2"
+                                                    data-placeholder="전체" select box : data-allow-clear="true"
+                                                    data-hide-search="true">
+                                                    <option></option>
+                                                    <option value="1">등록</option>
+                                                    <option value="2">진행중_정상</option>
+                                                    <option value="3">진행중_관리 필요</option>
+                                                    <option value="4">sample3</option>
+                                                    <option value="5">sample4</option>
+                                                </select>
                                             </div>
                                             <!--end::Col-->
                                             <!--begin::Col-->
                                             <div class="col-md-6 fv-row">
                                                 <!--end::Label-->
-                                                <label class="required fs-5 fw-semibold mb-2">사업자명</label>
+                                                <label class="fs-5 fw-semibold mb-2">사업자명</label>
                                                 <!--end::Label-->
                                                 <!--end::Input-->
-                                                <input type="text" class="form-control form-control-solid"
-                                                    placeholder="사업자명 입력" name="mobileno">
+                                                <input type="text" class="form-control" placeholder="사업자명 입력"
+                                                    name="mobileno">
                                                 <!--end::Input-->
                                             </div>
                                             <!--end::Col-->
@@ -932,40 +930,37 @@ License: For each use you must have a valid license purchased only from above li
                                         <!--begin::Input group-->
                                         <div class="row mb-5">
                                             <!--begin::Col-->
-                                            <div class="col-md-4 fv-row fv-plugins-icon-container">
-                                                <!--begin::Label-->
-                                                <label class="required fs-5 fw-semibold mb-2">제휴사 유형</label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input class="form-control form-control-solid" placeholder="전체 유형"
-                                                    name="email">
-                                                <!--end::Input-->
-                                                <div class="fv-plugins-message-container invalid-feedback"></div>
+                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                <label class="form-label">제휴사유형</label>
+                                                <div class="d-flex">
+                                                    <div class="col-md-4">
+                                                        <select class=" form-select" data-control="select2"
+                                                            data-placeholder="전체유형" select box : data-allow-clear="true"
+                                                            data-hide-search="true">
+                                                            <option></option>
+                                                            <option value="1">그룹</option>
+                                                            <option value="2">싱글</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <select class=" form-select" data-control="select2"
+                                                            data-placeholder="제휴사명 입력 또는 선택" select box :
+                                                            data-allow-clear="true" data-hide-search="false">
+                                                            <option></option>
+                                                            <option value="1">그룹</option>
+                                                            <option value="2">싱글</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <!--end::Col-->
+
                                             <!--begin::Col-->
-                                            <div class="col-md-4 fv-row fv-plugins-icon-container">
-                                                <!--begin::Label-->
-                                                <label class="required fs-5 fw-semibold mb-2">제휴사명</label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input class="form-control form-control-solid"
-                                                    placeholder="제휴사명 입력 또는 선택" name="email">
-                                                <!--end::Input-->
-                                                <div class="fv-plugins-message-container invalid-feedback"></div>
+                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                <label class="form-label">유형</label>
+                                                <input class="form-control" placeholder="2개이상 입력시 ,로 구분" value=""
+                                                    id="kt_tagify_2" />
                                             </div>
-                                            <!--end::Col-->
-                                            <!--begin::Col-->
-                                            <div class="col-md-4 fv-row">
-                                                <!--end::Label-->
-                                                <label class="fs-5 fw-semibold mb-2">제휴사 번호</label>
-                                                <!--end::Label-->
-                                                <!--end::Input-->
-                                                <input type="text" class="form-control form-control-solid"
-                                                    placeholder="2개 이상 입력 시 ','로 구분" name="mobileno">
-                                                <!--end::Input-->
-                                            </div>
-                                            <!--end::Col-->
                                         </div>
                                         <!--end::Input group-->
 
@@ -985,6 +980,8 @@ License: For each use you must have a valid license purchased only from above li
                             </div>
                         </div>
                         <!-- end:: 카드 -->
+
+
                         <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
                         <!-- begin:: 카드 -->
                         <div class="col-xxl-12 mb-5 mb-xl-10">
@@ -1023,7 +1020,8 @@ License: For each use you must have a valid license purchased only from above li
                                     <div class="table-responsive">
                                         <table class="table table-hover table-rounded table-striped border gy-7 gs-7">
                                             <thead>
-                                                <tr class="fw-semibold fs-6 text-gray-800 border-bottom-2 border-gray-200" "="">
+                                                <tr
+                                                    class="fw-semibold fs-6 text-gray-800 border-bottom-2 border-gray-200">
                                                     <th>제휴사명</th>
                                                     <th>유형</th>
                                                     <th>제휴사 상태</th>
@@ -1048,7 +1046,7 @@ License: For each use you must have a valid license purchased only from above li
                                                         sancho
                                                     </td>
                                                 </tr>
-                                                </tbody>
+                                            </tbody>
                                         </table>
                                     </div>
                                     <!-- end:: 컨텐트 -->

@@ -804,6 +804,7 @@
           <!--end::Toolbar container-->
         </div>
         <!-- 헤더:끝 -->
+
         <!-- 바디: 시작 -->
         <div id="kt_app_content" class="app-content flex-column-fluid">
           <div id="kt_app_content_container" class="app-container flex-column-fluid">
@@ -815,69 +816,72 @@
                 <div class="card-body">
                   <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework">
                     <!--begin::Input group-->
-                    <div class="row">
+                    <div class="row mb-5">
                       <!--begin::Col-->
-                      <div class="col-md-4 fv-row fv-plugins-icon-container">
-                        <div class="input-group mb-5">
-                          <span class="input-group-text d-flex justify-content-end" style="width:140px;">이름</span>
-                          <input class="form-control " placeholder="이름입력" />
-                        </div>
+                      <div class="col-md-6 fv-row fv-plugins-icon-container">
+                        <!--begin::Label-->
+                        <label class=" fs-5 fw-semibold mb-2">이름</label>
+                        <!--end::Label-->
+                        <!--begin::Input-->
+                        <input type="text" class="form-control" placeholder="이름 입력" name="first_name">
+                        <!--end::Input-->
+                        <div class="fv-plugins-message-container invalid-feedback"></div>
                       </div>
                       <!--end::Col-->
                       <!--begin::Col-->
-                      <div class="col-md-4 fv-row fv-plugins-icon-container">
-                        <div class="input-group mb-5 flex-nowrap">
-                          <span class="input-group-text d-flex justify-content-end" style="width:140px;">계정 번호</span>
-                          <input class="form-control " placeholder="숫자 입력" />
-                        </div>
+                      <div class="col-md-6 fv-row fv-plugins-icon-container">
+                        <!--end::Label-->
+                        <label class=" fs-5 fw-semibold mb-2">계정 번호</label>
+                        <!--end::Label-->
+                        <!--end::Input-->
+                        <input type="text" class="form-control" placeholder="숫자 입력" name="last_name">
+                        <!--end::Input-->
+                        <div class="fv-plugins-message-container invalid-feedback"></div>
                       </div>
                       <!--end::Col-->
-                      <!--begin::Col-->
-                      <div class="col-md-4 fv-row fv-plugins-icon-container">
-                        <div class="input-group mb-5 flex-nowrap">
-                          <span class="input-group-text d-flex justify-content-end" style="width:140px;">플랫폼ID</span>
-                          <input class="form-control " placeholder="숫자 입력" />
-                        </div>
-                      </div>
-                      <!--end::Col-->
+
                     </div>
                     <!--end::Input group-->
-
                     <!--begin::Input group-->
                     <div class="row">
+                      <!-- begin::Col -->
+                      <div class="col-md-4 fv-row fv-plugins-icon-container">
+                        <!--end::Label-->
+                        <label class=" fs-5 fw-semibold mb-2">플랫폼 ID</label>
+                        <!--end::Label-->
+                        <!--end::Input-->
+                        <input type="text" class="form-control" placeholder="아이디 입력" name="last_name">
+                        <!--end::Input-->
+                        <div class="fv-plugins-message-container invalid-feedback"></div>
+                      </div>
+                      <!-- end::col -->
                       <!--begin::Col-->
-                      <div class="col-md-6 fv-row fv-plugins-icon-container">
-                        <div class="input-group mb-5 flex-nowrap">
-                          <span class="input-group-text d-flex justify-content-end" style="width:140px;">혜택 등급</span>
-                          <select class=" form-select rounded-start-0" data-control="select2"
-                            data-placeholder="혜택 등급 선택" data-hide-search="true">
-                            <option></option>
-                            <option value="1">엠마의 1004 사업장</option>
-                            <option value="2">sample1</option>
-                            <option value="3">sample12</option>
-                            <option value="4">sample3</option>
-                            <option value="5">sample4</option>
-                          </select>
-                        </div>
+                      <div class="col-md-4 fv-row fv-plugins-icon-container">
+                        <label class="form-label">혜택 등급</label>
+                        <select class=" form-select" data-control="select2" data-placeholder="혜택 등급 입력 또는 선택" select box
+                          : data-allow-clear="true" data-hide-search="true">
+                          <option></option>
+                          <option value="1">MEGA</option>
+                          <option value="2">MACRO</option>
+                          <option value="3">MICRO</option>
+                          <option value="4">NANO</option>
+                          <option value="5">CELL</option>
+                          <option value="6">등급없음</option>
+                        </select>
+                      </div>
+                      <!--begin::Col-->
+                      <div class="col-md-4 fv-row fv-plugins-icon-container mb-5">
+                        <label class="form-label">카드 종류</label>
+                        <select class=" form-select" data-control="select2" data-placeholder="카드 종류 선택" select box :
+                          data-allow-clear="true" data-hide-search="true">
+                          <option></option>
+                          <option value="1">신용카드</option>
+                          <option value="2">등록 완료</option>
+                        </select>
                       </div>
                       <!--end::Col-->
-                      <!--begin::Col-->
-                      <div class="col-md-6 fv-row fv-plugins-icon-container">
-                        <div class="input-group mb-5 flex-nowrap">
-                          <span class="input-group-text d-flex justify-content-end" style="width:140px;">카드 종류</span>
-                          <select class=" form-select rounded-start-0" data-control="select2"
-                            data-placeholder="카드 종류 선택" data-hide-search="true">
-                            <option></option>
-                            <option value="1">엠마의 1004 사업장</option>
-                            <option value="2">sample1</option>
-                            <option value="3">sample12</option>
-                            <option value="4">sample3</option>
-                            <option value="5">sample4</option>
-                          </select>
-                        </div>
-                      </div>
-                      <!--end::Col-->
-                      <!--end::Input group-->
+
+
                     </div>
                     <!--end::Input group-->
 
@@ -925,10 +929,7 @@
                     <span class="card-label fw-bold text-dark">검색 내역(19)</span>
                   </h3>
                   <div class="d-flex">
-                    <select class="me-2 form-select" style="width: 100px; margin-bottom: 0.75rem;">
-                      <option value="DESC">최신순</option>
-                      <option value="ASC">과거순</option>
-                    </select><select class="form-select" style="width: 78px; margin-bottom: 0.75rem;">
+                    <select class="form-select" style="width: 78px; margin-bottom: 0.75rem;">
                       <option value="30">30</option>
                       <option value="50">50</option>
                       <option value="100">100</option>
@@ -936,15 +937,10 @@
                   </div>
                   <!--end:: 타이틀-->
                 </div>
-                <div class="d-flex justify-content-end" style="padding: 1rem 2.25rem;">
-                  <a href="/pages/company/contracts/newContract.html">
-                    <button type="button" class="btn btn-primary">새계약 추가</button>
-                  </a>
-                </div>
                 <!-- ////////////////////////////////////////////////////////////////////////////// -->
                 <!-- begin:: 컨텐트 -->
                 <div class="table-responsive">
-                  <table class="table table-hover table-striped border gy-7 gs-7">
+                  <table class="table table-hover table-striped  gy-7 gs-7">
                     <thead>
                       <tr class="fw-bold fs-6 text-gray-800 border-bottom-2 border-gray-200 ">
                         <th>인플루언서</th>
