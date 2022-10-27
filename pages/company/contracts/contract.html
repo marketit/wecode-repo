@@ -829,6 +829,39 @@ License: For each use you must have a valid license purchased only from above li
             <div class="menu menu-column menu-rounded menu-sub-indention px-3" data-kt-menu="true"
               data-kt-menu-expand="false">
               <!--begin:Menu item-->
+              <!--end:Menu item-->
+              <div data-kt-menu-trigger="click" class="menu-item menu-accordion input-group mb-5 flex-nowrap">
+                <!--begin:Menu link-->
+                <span class="menu-link">
+                  <span class="menu-title input-group-text d-flex justify-content-end" style="width:140px;">인플루언서</span>
+                  <span class="menu-arrow"></span>
+                </span>
+                <!--end:Menu link-->
+                <!--begin:Menu sub-->
+                <div class="menu-sub menu-sub-accordion">
+                  <div class="menu-item">
+                    <div class="form-control d-flex flex-wrap">
+                      <div class="col-md-4 fv-row fv-plugins-icon-container mb-5 me-2 ">
+                        <label class="form-label">상태</label>
+                        <select class="form-select form-select-solid form-control rounded-start-0"
+                          data-control="select2" data-placeholder="전체 상태" data-allow-clear="true"
+                          data-hide-search="true">
+                          <option></option>
+                          <option value="1">계약 등록</option>
+                          <option value="2">운영 업무 요청</option>
+                          <option value="3">계약 진행중</option>
+                          <option value="4">계약 갱신 필요</option>
+                          <option value="5">계약 종료 대기</option>
+                          <option value="6">계약 종료</option>
+                        </select>
+                      </div>
+
+                    </div>
+                  </div>
+                  <!--end:Menu sub-->
+                </div>
+              </div>
+
               <!-- begin:: 카드 -->
               <div class="col-xxl-12 mb-5 mb-xl-10">
                 <div class="card">
@@ -837,87 +870,49 @@ License: For each use you must have a valid license purchased only from above li
 
                     <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework" method="post"
                       id="kt_careers_form">
-
-                      <!--begin::Input group::관리-->
+                      <!--begin::Input group-->
                       <div class="row mb-5">
                         <!--begin::Col-->
-                        <div class="col-md-6 fv-row fv-plugins-icon-container">
-                          <!--begin::Label-->
-                          <label class=" fs-5 fw-semibold mb-2">영업 담당자</label>
-                          <!--end::Label-->
-                          <!--begin::Input-->
-                          <select class=" form-select" data-control="select2" data-placeholder="이름 입력 또는 선택" select box
-                            : data-allow-clear="true" data-hide-search="true">
-                            <option></option>
-                            <option value="1">엠마의 1004 사업장</option>
-                            <option value="2">sample1</option>
-                            <option value="3">sample12</option>
-                            <option value="4">sample3</option>
-                            <option value="5">sample4</option>
-                          </select>
-                          <!-- end::input -->
+                        <div class="col-md-6 fv-row fv-plugins-icon-container mb-2">
+                          <div class="input-group flex-nowrap">
+                            <span class="input-group-text">영업 담당자</span>
+                            <select class="form-select form-select rounded-start-0" data-control="select2"
+                              data-placeholder="이름 입력 또는 선택" data-allow-clear="true">
+                              <option></option>
+                              <option value="1">jacob</option>
+                              <option value="2">jack</option>
+                              <option value="3">raymon</option>
+                              <option value="4">chaem</option>
+                              <option value="5">yona</option>
+                            </select>
+                          </div>
                         </div>
                         <!--end::Col-->
-                        <!--begin::Col-->
-                        <div class="col-md-6 fv-row fv-plugins-icon-container">
-                          <!--begin::Label-->
-                          <label class=" fs-5 fw-semibold mb-2">운영 담당자</label>
-                          <!--end::Label-->
-                          <!--begin::Input-->
-                          <select class=" form-select" data-control="select2" data-placeholder="이름 입력 또는 선택" select box
-                            : data-allow-clear="true" data-hide-search="true">
-                            <option></option>
-                            <option value="1">엠마의 1004 사업장</option>
-                            <option value="2">sample1</option>
-                            <option value="3">sample12</option>
-                            <option value="4">sample3</option>
-                            <option value="5">sample4</option>
-                          </select>
-                          <!-- end::input -->
-                        </div>
-                        <!--begin::Input group::관리-->
-                      </div>
-                      <!-- end::input group::관리 -->
-
-                      <!--begin::Input group::제휴사-->
-                      <div class="row mb-5">
-                        <!--begin::Col-->
-                        <div class="col-md-4 fv-row fv-plugins-icon-container">
-                          <!--begin::Label-->
-                          <label class=" fs-5 fw-semibold mb-2">사업자명</label>
-                          <!--end::Label-->
-                          <!--begin::Input-->
-                          <input type="text" class="form-control" placeholder="이름 입력">
-                          <!--end::Input-->
-                          <div class="fv-plugins-message-container invalid-feedback"></div>
+                        <div class="col-md-6 fv-row fv-plugins-icon-container mb-2">
+                          <div class="input-group">
+                            <div class="input-group flex-nowrap">
+                              <span class="input-group-text">운영 담당자</span>
+                              <select class="form-select form-select rounded-start-0" data-control="select2"
+                                data-placeholder="이름 입력 또는 선택" data-allow-clear="true">
+                                <option></option>
+                                <option value="1">jacob</option>
+                                <option value="2">jack</option>
+                                <option value="3">raymon</option>
+                                <option value="4">chaem</option>
+                                <option value="5">yona</option>
+                              </select>
+                            </div>
+                          </div>
                         </div>
                         <!--end::Col-->
-
-
-
-
-
-
-                        <!-- begin::Col -->
-                        <div class="col-md-4 fv-row fv-plugins-icon-container">
-                          <!--end::Label-->
-                          <label class=" fs-5 fw-semibold mb-2">플랫폼 ID</label>
-                          <!--end::Label-->
-                          <!--end::Input-->
-                          <input type="text" class="form-control" placeholder="아이디 입력" name="last_name">
-                          <!--end::Input-->
-                          <div class="fv-plugins-message-container invalid-feedback"></div>
-                        </div>
                       </div>
-                      <!--end::Input group::제휴사-->
-
-
+                      <!--end::Input group-->
                       <!--begin::Input group-->
                       <div class="row mb-5">
                         <!--begin::Col-->
                         <div class="col-md-3 fv-row fv-plugins-icon-container mb-2">
                           <div class="input-group flex-nowrap">
-                            <span class="input-group-text">영업 담당자</span>
+                            <span class="input-group-text">사업자명</span>
                             <select class="form-select form-select rounded-start-0" data-control="select2"
                               data-placeholder="사업자명 입력" data-allow-clear="true">
                               <option></option>
