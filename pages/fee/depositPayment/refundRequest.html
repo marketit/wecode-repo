@@ -15,6 +15,7 @@
     <link href="/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
     <link href="/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
     <!--end::Global Stylesheets Bundle-->
+    <link rel="stylesheet" href="https://uicdn.toast.com/grid/latest/tui-grid.css" />
 </head>
 <!--end::Head-->
 <!--begin::Body-->
@@ -810,25 +811,28 @@
                         <div class="page-title d-flex flex-column justify-content-center flex-wrap me-3">
                             <h1
                                 class="page-heading d-flex text-dark fw-bold fs-3 flex-column justify-content-center my-0">
-                                <p>캠페인 상세 정보: <span style="color: var(--bs-primary);">엠마의 1025-2 캠페인(157)</span></p>
+                                파트너캐시 거래 요청
                             </h1>
-                            <ul class="nav nav-tabs nav-line-tabs nav-line-tabs-2x mb-5 fs-6">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="/pages/campaign/campaigns/campaignDetail.html">기본
-                                        정보</a>
+                            <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
+                                <li class="breadcrumb-item text-muted">
+                                    정산
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/pages/campaign/campaigns/cashback.html">캐시백</a>
+                                <li class="breadcrumb-item">
+                                    <span class="bullet bg-gray-400 w-5px h-2px"></span>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/pages/campaign/campaigns/usageGuide.html">이용 정보</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/pages/campaign/campaigns/postingGuide.html">포스팅</a>
-                                </li>
+                                <li class="breadcrumb-item text-muted">파트너캐시 거래 요청</li>
                             </ul>
                         </div>
                         <!--end::Actions-->
+                        <ul class="nav nav-tabs nav-line-tabs nav-line-tabs-2x mb-5 fs-6">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/pages/fee/depositPayment/depositPayment.html">파트너캐시
+                                    충전</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/fee/depositPayment/refundRequest.html">파트너캐시 환불</a>
+                            </li>
+                        </ul>
                     </div>
                     <!--end::Toolbar container-->
                 </div>
@@ -844,539 +848,802 @@
                                 <div class="card-header">
                                     <!--begin:: 타이틀-->
                                     <h3 class="card-title align-items-start flex-column">
-                                        <span class="card-label fw-bold text-dark">일정</span>
+                                        <span class="card-label fw-bold text-dark">검색</span>
                                     </h3>
                                     <!--end:: 타이틀-->
                                 </div>
                                 <!-- end:: card-header -->
                                 <!-- begin:: card-body -->
                                 <div class="card-body">
-                                    <!--begin::Input group-->
-                                    <div class="row mb-5">
-                                        <!--begin::Col-->
-                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
-                                            <!--begin::Label-->
-                                            <label class="required fs-5 fw-semibold mb-2">포스팅 연동</label>
-                                            <!--end::Label-->
-                                            <!--begin::Input-->
-                                            <div class="d-flex align-items-center">
-                                                <span class="fs-5">캠페인 생성일 ~</span>
-                                                <input type="number" class="form-control w-80px me-4 ms-4" value="3" />
-                                                <span class="fs-5">일 23:59까지</span>
-                                            </div>
-                                            <!--end::Input-->
-                                        </div>
-                                        <!--end::Col-->
-                                        <!--begin::Col-->
-                                        <div class="col-md-6 fv-row">
-                                            <!--end::Label-->
-                                            <label class="fs-5 fw-semibold mb-2">포스팅 유지</label>
-                                            <!--end::Label-->
-                                            <!--end::Input-->
-                                            <div class="d-flex align-items-center">
-                                                <span class="fs-5">캠페인 생성일 ~</span>
-                                                <input type="number" class="form-control w-80px me-4 ms-4" value="14"
-                                                    min="0" />
-                                                <span class="fs-5">일 23:59까지</span>
-                                            </div>
-                                            <!--end::Input-->
-                                        </div>
-                                        <!--end::Col-->
-                                    </div>
-                                    <!--end::Input group-->
-                                </div>
-                                <!-- end::card-body-->
-                            </div>
-                        </div>
-                        <!-- end: 카드 -->
-                        <!-- begin:: 카드 -->
-                        <div class="col-xxl-12 mb-5 mb-xl-10">
-                            <div class="card">
-                                <!-- begin:: card-header -->
-                                <div class="card-header">
-                                    <!--begin:: 타이틀-->
-                                    <h3 class="card-title align-items-start flex-column">
-                                        <span class="card-label fw-bold text-dark">콘텐츠</span>
-                                    </h3>
-                                    <!--end:: 타이틀-->
-                                </div>
-                                <!-- end:: card-header -->
-                                <!-- begin:: card-body -->
-                                <div class="card-body">
-                                    <!--begin::Input group-->
-                                    <div class="row mb-5">
-                                        <!--begin::Col-->
-                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
-                                            <!--begin::Label-->
-                                            <label class="required fs-5 fw-semibold mb-2">포스팅 1번째
-                                                장</label>
-                                            <!--end::Label-->
-                                            <!--begin::Input-->
-                                            <div class="row form-control d-flex">
-                                                <div class="col-md-4">
-                                                    <div class="form-check form-check-custom form-check-solid ">
-                                                        <input class="form-check-input" type="radio" value=""
-                                                            id="flexRadioDefault" name="postFirst" />
-                                                        <label class="form-check-label" for="flexRadioDefault">
-                                                            무관
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="form-check form-check-custom form-check-solid">
-                                                        <input class="form-check-input" type="radio" value=""
-                                                            id="flexRadioDefault" name="postFirst" />
-                                                        <label class="form-check-label" for="flexRadioDefault">
-                                                            영상
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="form-check form-check-custom form-check-solid">
-                                                        <input class="form-check-input" type="radio" value=""
-                                                            id="flexRadioDefault" name="postFirst" />
-                                                        <label class="form-check-label" for="flexRadioDefault">
-                                                            이미지
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--end::Input-->
-                                        </div>
-                                        <!--end::Col-->
-                                        <!--begin::Col-->
-                                        <div class="col-md-6 fv-row">
-                                            <!--end::Label-->
-                                            <label class="required fs-5 fw-semibold mb-2">콘텐츠 개수</label>
-                                            <!--end::Label-->
-                                            <!--end::Input-->
-                                            <div class="d-flex align-items-center">
-                                                <span class="fs-5">사진</span>
-                                                <input type="number" class="form-control w-80px me-4 ms-4" min="0"
-                                                    value="3" min="0" />
-                                                <span class="fs-5">+ 영상</span>
-                                                <input type="number" class="form-control w-80px me-4 ms-4" min="0"
-                                                    value="0" />
-                                                <span class="fs-5">포함</span>
-                                            </div>
-                                            <!--end::Input-->
-                                        </div>
-                                        <!--end::Col-->
-                                    </div>
-                                    <!--end::Input group-->
-                                </div>
-                                <!-- end::card-body-->
-                            </div>
-                        </div>
-                        <!-- end: 카드 -->
-                        <!-- begin:: 카드 -->
-                        <div class="col-xxl-12 mb-5 mb-xl-10">
-                            <div class="card">
-                                <!-- begin:: card-header -->
-                                <div class="card-header">
-                                    <!--begin:: 타이틀-->
-                                    <h3 class="card-title align-items-start flex-column">
-                                        <span class="card-label fw-bold text-dark">문구</span>
-                                    </h3>
-                                    <!--end:: 타이틀-->
-                                </div>
-                                <!-- end:: card-header -->
-                                <!-- begin:: card-body -->
-                                <div class="card-body">
-                                    <div class="row mb-5">
-                                        <!--begin::Col-->
-                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
-                                            <!--begin::Label-->
-                                            <div class="d-flex align-items-center">
-                                                <label class="fs-5 fw-semibold mb-2">포스팅 본문 최상단 노출</label>
-                                                <div
-                                                    class="form-check form-switch form-check-custom form-check-solid ms-2">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexSwitchDefault">
-                                                </div>
-                                            </div>
-                                            <!--end::Label-->
-                                            <!--begin::Input-->
-                                            <!--begin::Input group-->
-                                            <div class="mb-5 d-flex align-items-center justify-content-between">
-                                                <!--begin::Col-->
-                                                <select class="form-select rounded-start-0" data-control="select2"
-                                                    data-placeholder="광고 표시 선택 또는 입력" data-hide-search="true">
-                                                    <option></option>
-                                                    <option value="1">Option 1</option>
-                                                    <option value="2">Option 2</option>
-                                                    <option value="3">Option 3</option>
-                                                    <option value="4">Option 4</option>
-                                                    <option value="5">Option 5</option>
-                                                </select>
-                                                <!--end::Col-->
+                                    <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework"
+                                        method="post" id="kt_careers_form">
+                                        <!--begin::Input group3 ::2개짜리-->
+                                        <div class="row mb-5">
+                                            <!--begin::Col-->
+                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                <!--begin::Label-->
+                                                <label class=" fs-5 fw-semibold mb-2">사업자명</label>
+                                                <!--end::Label-->
+                                                <!--begin::Input-->
+                                                <input type="text" class="form-control" placeholder="사업자명 입력"
+                                                    name="first_name">
                                                 <!--end::Input-->
+                                                <div class="fv-plugins-message-container invalid-feedback"></div>
+                                            </div>
+                                            <!--end::Col-->
+                                            <!--begin::Col-->
+                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                <!--end::Label-->
+                                                <label class=" fs-5 fw-semibold mb-2">영업 담당자</label>
+                                                <!--end::Label-->
+                                                <!--end::Input-->
+                                                <select class="form-select form-select" data-control="select2"
+                                                    data-placeholder="이름 입력 또는 선택" data-allow-clear="true">
+                                                    <option></option>
+                                                    <option value="1">jacob</option>
+                                                    <option value="2">jack</option>
+                                                    <option value="3">raymon</option>
+                                                    <option value="4">chaem</option>
+                                                    <option value="5">yona</option>
+                                                </select>
+                                                <!--end::Input-->
+                                                <div class="fv-plugins-message-container invalid-feedback"></div>
                                             </div>
                                             <!--end::Col-->
                                         </div>
-                                        <!--end::Col-->
-                                        <!--begin::Col-->
-                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
-                                            <!--begin::Label-->
-                                            <div class="d-flex align-items-center">
-                                                <label class="fs-5 fw-semibold mb-2">포스팅 본문 최하단 노출</label>
-                                                <div
-                                                    class="form-check form-switch form-check-custom form-check-solid ms-2">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexSwitchDefault">
+                                        <!--end::Input group3 ::2개짜리-->
+                                        <!--begin::Input group3 ::3개짜리-->
+                                        <div class="row mb-5">
+                                            <!--begin::Col-->
+                                            <div class="col-md-4 fv-row fv-plugins-icon-container">
+                                                <!--begin::Label-->
+                                                <label class=" fs-5 fw-semibold mb-2">거래 상태</label>
+                                                <!--end::Label-->
+                                                <!--begin::Input-->
+                                                <div class="d-flex align-items-center">
+                                                    <label class="form-check form-check-custom form-check-solid me-10">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            value="1" /><span class="form-check-label">
+                                                            환불 요청
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check form-check-custom form-check-solid"><input
+                                                            class="form-check-input" type="checkbox" value="1" /><span
+                                                            class="form-check-label">
+                                                            환불 완료
+                                                        </span>
+                                                    </label>
                                                 </div>
-                                            </div>
-                                            <!--end::Label-->
-                                            <!--begin::Input-->
-                                            <!--begin::Input group-->
-                                            <div class="mb-5 d-flex align-items-center justify-content-between">
-                                                <!--begin::Col-->
-                                                <select class="form-select rounded-start-0" data-control="select2"
-                                                    data-placeholder="광고 표시 선택 또는 입력" data-hide-search="true">
-                                                    <option></option>
-                                                    <option value="1">Option 1</option>
-                                                    <option value="2">Option 2</option>
-                                                    <option value="3">Option 3</option>
-                                                    <option value="4">Option 4</option>
-                                                    <option value="5">Option 5</option>
-                                                </select>
-                                                <!--end::Col-->
                                                 <!--end::Input-->
+                                                <div class="fv-plugins-message-container invalid-feedback"></div>
                                             </div>
                                             <!--end::Col-->
-
-                                        </div>
-                                        <!--end::Col-->
-                                        <!--end::Input group-->
-                                    </div>
-                                    <!--  -->
-                                    <div class="row mb-5">
-                                        <!--begin::Col-->
-                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
-                                            <!--begin::Label-->
-                                            <div class="d-flex align-items-center">
-                                                <label class="fs-5 fw-semibold mb-2">필수
-                                                    계정 태그 여부</label>
-                                                <div
-                                                    class="form-check form-switch form-check-custom form-check-solid ms-2">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexSwitchDefault">
+                                            <!--begin::Col-->
+                                            <div class="col-md-4 fv-row fv-plugins-icon-container">
+                                                <!--end::Label-->
+                                                <label class=" fs-5 fw-semibold mb-2">입금 여부</label>
+                                                <!--end::Label-->
+                                                <!--end::Input-->
+                                                <div class="d-flex align-items-center">
+                                                    <label
+                                                        class="form-check form-check-custom form-check-solid me-10"><input
+                                                            class="form-check-input" type="checkbox" value="1" /><span
+                                                            class="form-check-label">
+                                                            충전 요청
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check form-check-custom form-check-solid"><input
+                                                            class="form-check-input" type="checkbox" value="1" /><span
+                                                            class="form-check-label">
+                                                            충전 완료(승인)
+                                                        </span>
+                                                    </label>
                                                 </div>
+                                                <!--end::Input-->
+                                                <div class="fv-plugins-message-container invalid-feedback"></div>
                                             </div>
-                                            <!--end::Label-->
-                                            <!--begin::Input-->
-                                            <!--begin::Input group-->
-                                            <div class="mb-5 d-flex align-items-center justify-content-between">
-                                                <!--begin::Col-->
-                                                <select class="form-select rounded-start-0" data-control="select2"
-                                                    data-placeholder="@brand_official (2개 이상 입력 시 ,로 구분)"
+                                            <!--end::Col-->
+                                            <!-- begin::Col -->
+                                            <div class="col-md-4 fv-row fv-plugins-icon-container">
+                                                <!--end::Label-->
+                                                <label class=" fs-5 fw-semibold mb-2">충전액</label>
+                                                <!--end::Label-->
+                                                <!--end::Input-->
+                                                <div class="row">
+                                                    <div class="col-md-"></div>
+                                                </div>
+                                                <input type="number" class="form-control" placeholder="숫자만 입력">
+                                                <!--end::Input-->
+                                                <div class="fv-plugins-message-container invalid-feedback"></div>
+                                            </div>
+                                        </div>
+                                        <!--end::Input group3 ::3개짜리-->
+                                        <!--begin::Input group-->
+                                        <div class="row mb-5">
+                                            <!--begin::Col-->
+                                            <div class="col-md-2 fv-row fv-plugins-icon-container mb-5">
+                                                <label class="fs-5 fw-semibold mb-2">기간 유형</label>
+                                                <select class=" form-select" data-control="select2"
+                                                    data-placeholder="기간 유형" select box : data-allow-clear="true"
                                                     data-hide-search="true">
                                                     <option></option>
-                                                    <option value="1">Option 1</option>
-                                                    <option value="2">Option 2</option>
-                                                    <option value="3">Option 3</option>
-                                                    <option value="4">Option 4</option>
-                                                    <option value="5">Option 5</option>
+                                                    <option value="1">충전 요청일</option>
+                                                    <option value="2">충전 승인일</option>
+                                                    <option value="3">입금일</option>
                                                 </select>
-                                                <!--end::Col-->
-                                                <!--end::Input-->
                                             </div>
                                             <!--end::Col-->
-                                        </div>
-                                        <!--end::Col-->
-                                        <!--begin::Col-->
-                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
-                                            <!--begin::Label-->
-                                            <div class="d-flex align-items-center">
-                                                <label class="required fs-5 fw-semibold mb-2">해시 태그</label>
+                                            <div class="col-md-10 fv-row fv-plugins-icon-container mb-5">
+                                                <!--begin::Label-->
+                                                <label class="fs-5 fw-semibold mb-2">기간</label>
+                                                <!--end::Label-->
+                                                <!--begin::col-->
+                                                <div class="row">
+                                                    <div class="col-md-8 d-flex mb-5 align-items-center">
+                                                        <input type="datetime-local" class="form-control">
+                                                        <span class="ms-4 me-4">~</span>
+                                                        <input type="datetime-local" class="form-control">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button
+                                                            class="btn btn-white btn-outline btn-active-light-primary">
+                                                            최근7일
+                                                        </button>
+                                                        <button
+                                                            class="btn btn-white btn-outline btn-active-light-primary">
+                                                            최근 1개월
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <!--end::Label-->
-                                            <!--begin::Input-->
-                                            <!--begin::Input group-->
-                                            <div class="mb-5 d-flex align-items-center justify-content-between">
-                                                <!--begin::Col-->
-                                                <select class="form-select rounded-start-0" data-control="select2"
-                                                    data-placeholder="#브랜드명(2개 이상 입력 시 ,로 구분)" data-hide-search="true">
-                                                    <option></option>
-                                                    <option value="1">Option 1</option>
-                                                    <option value="2">Option 2</option>
-                                                    <option value="3">Option 3</option>
-                                                    <option value="4">Option 4</option>
-                                                    <option value="5">Option 5</option>
-                                                </select>
-                                                <!--end::Col-->
-                                                <!--end::Input-->
-                                            </div>
-                                            <!--end::Col-->
-
+                                            <!-- end::col -->
                                         </div>
-                                        <!--end::Col-->
-                                        <!--end::Input group-->
-                                    </div>
-                                    <!-- end::card-body-->
                                 </div>
+                                <!--end::Input group -->
+                                <div class="row mb-5">
+                                    <div class="col-md-12 d-flex justify-content-center">
+                                        <button type="button" class="btn btn-white btn-outline me-2">초기화</button>
+                                        <button type="button" class="btn btn-primary">검색</button>
+                                    </div>
+                                </div>
+                                </form>
                             </div>
-                            <!-- end: 카드 -->
-
-                            <!-- end:: 컨텐트 -->
+                            <!-- end::card-body-->
                         </div>
-                        <!-- begin:: 카드 -->
-                        <div class="col-xxl-12 mb-5 mb-xl-10">
-                            <div class="card">
-                                <!-- begin:: card-header -->
-                                <div class="card-header">
-                                    <!--begin:: 타이틀-->
-                                    <h3 class="card-title align-items-start flex-column">
-                                        <span class="card-label fw-bold text-dark">가이드</span>
-                                    </h3>
-                                    <!--end:: 타이틀-->
-                                </div>
-                                <!-- end:: card-header -->
-                                <!-- begin:: card-body -->
-                                <div class="card-body">
-                                    <!--begin::Input group-->
-                                    <div class="row mb-5">
-                                        <!--begin::Col-->
-                                        <!--begin::Label-->
-                                        <label class="required fs-5 fw-semibold mb-5">콘텐츠</label>
-                                        <!--end::Label-->
-                                        <!--end::Col-->
-                                        <textarea id="kt_docs_tinymce_basic" name="kt_docs_tinymce_basic"
-                                            class="tox-target" placeholder="내용을 입력하세요."></textarea>
-                                    </div>
-                                    <!--end::Input group-->
-                                    <!--begin::Input group-->
-                                    <div class="row mb-5">
-                                        <!--begin::Col-->
-                                        <!--begin::Label-->
-                                        <label class="required fs-5 fw-semibold mb-5">문구</label>
-                                        <!--end::Label-->
-                                        <!--end::Col-->
-                                        <textarea id="kt_docs_tinymce_basic2" name="kt_docs_tinymce_basic"
-                                            class="tox-target" placeholder="내용을 입력하세요."></textarea>
-                                    </div>
-                                    <!--end::Input group-->
-                                    <!--begin::Input group-->
-                                    <div class="row mb-5">
-                                        <!--begin::Col-->
-                                        <!--begin::Label-->
-                                        <label class="fs-5 fw-semibold mb-5">포스팅 유의사항</label>
-                                        <!--end::Label-->
-                                        <!--end::Col-->
-                                        <textarea id="kt_docs_tinymce_basic3" name="kt_docs_tinymce_basic"
-                                            class="tox-target" placeholder="내용을 입력하세요."></textarea>
-                                    </div>
-                                    <!--end::Input group-->
-                                </div>
-                                <!-- end::card-body-->
-                            </div>
-                        </div>
-                        <!-- end: 카드 -->
                     </div>
-                    <!-- 바디: 끝 -->
-                    <!--end:::Main-->
+                    <!-- end:: 카드 -->
+                    <!-- begin:: 카드 -->
+                    <div class="col-xxl-12 mb-5 mb-xl-10">
+                        <div class="card">
+                            <!-- begin:: card-header -->
+                            <div class="card-header">
+                                <!--begin:: 타이틀-->
+                                <h3 class="card-title align-items-start flex-column">
+                                    <span class="card-label fw-bold text-dark">파트너캐시 충전 리스트(137)</span>
+                                </h3>
+                                <div class="d-flex">
+                                    <select class="me-2 form-select" style="width: 100px; margin: 1rem 0">
+                                        <option value="DESC">최신순</option>
+                                        <option value="ASC">과거순</option>
+                                    </select>
+                                    <select class="form-select" style="width: 78px; margin: 1rem 0">
+                                        <option value="30">30</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select>
+                                </div>
+                                <!--end:: 타이틀-->
+                            </div>
+                            <!-- end:: card-header -->
+                            <!-- begin:: card-body -->
+                            <div class="d-flex justify-content-between" style="padding: 1rem 2.25rem;">
+                                <button class="btn btn-light-danger btn-outline">요청 건 삭제</button>
+                                <div>
+                                    <a href="/pages/fee/depositPayment/chargeRequest.html">
+                                        <button class="btn btn-danger fs-6">파트너캐시 환불 요청</button>
+                                    </a>
+                                </div>
+                                <!-- begin:: Modal -->
+                                <div class="modal modal-xl fade" tabindex="-1" id="kt_modal_1">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h3 class="modal-title">전자거래 명세서</h3>
+
+                                                <!--begin::Close-->
+                                                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2"
+                                                    data-bs-dismiss="modal" aria-label="Close">
+                                                    <span class="svg-icon svg-icon-1"></span>
+                                                </div>
+                                                <!--end::Close-->
+                                            </div>
+                                            <!-- begin:: Card -->
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h3 class="card-title align-items-start flex-column pb-2"
+                                                        style="border-bottom:1px solid var(--bs-gray)">
+                                                        <span class="card-label fw-bold text-dark">공급받는자</span>
+                                                    </h3>
+                                                    <div class="row mb-5">
+                                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                            <label class="form-label mb-2">상호명</label>
+                                                            <p type="text" class="form-control form-control-solid">
+                                                                린다1</p>
+                                                        </div>
+                                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                            <label class="form-label mb-2">사업자등록번호</label>
+                                                            <p type="text" class="form-control form-control-solid">
+                                                                111-11-11113</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-5">
+                                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                            <label class="form-label mb-2">사업장 주소</label>
+                                                            <p type="text" class="form-control form-control-solid">
+                                                                서울 성동구 왕십리로 16</p>
+                                                        </div>
+                                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                            <label class="form-label mb-2">대표자명</label>
+                                                            <p type="text" class="form-control form-control-solid">
+                                                                김채린</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h3 class="align-items-start flex-column pb-2"
+                                                        style="border-bottom:1px solid var(--bs-gray)">
+                                                        <span class="card-label fw-bold text-dark">공급자</span>
+                                                    </h3>
+                                                    <div class="row mb-5">
+                                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                            <label class="form-label mb-2">상호명</label>
+                                                            <p type="text" class="form-control form-control-solid">
+                                                                린다1</p>
+                                                        </div>
+                                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                            <label class="form-label mb-2">사업자등록번호</label>
+                                                            <p type="text" class="form-control form-control-solid">
+                                                                111-11-11113</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-5">
+                                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                            <label class="form-label mb-2">사업장 주소</label>
+                                                            <p type="text" class="form-control form-control-solid">
+                                                                서울 성동구 왕십리로 16</p>
+                                                        </div>
+                                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                            <label class="form-label mb-2">대표자명</label>
+                                                            <p type="text" class="form-control form-control-solid">
+                                                                김채린</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end:: Card -->
+                                            <!-- begin:: Card -->
+                                            <div class="col-xxl-6">
+
+                                            </div>
+                                            <div class="card">
+
+                                            </div>
+                                            <!-- end:: Card -->
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h3 class="card-title align-items-start flex-column pb-2"
+                                                        style="border-bottom:1px solid var(--bs-gray)">
+                                                        <span class="card-label fw-bold text-dark">검색 내역</span>
+                                                    </h3>
+                                                    <div class="table-responsive">
+                                                        <table class="table table-hover table-striped border gy-7 gs-7">
+                                                            <thead>
+                                                                <tr
+                                                                    class="fw-bold fs-6 text-gray-800 border-bottom-2 border-gray-200 ">
+                                                                    <th class="text-center">거래 일자</th>
+                                                                    <th class="text-center">거래 아이디</th>
+                                                                    <th class="text-center">상세 내용</th>
+                                                                    <th class="text-center">결제 수단</th>
+                                                                    <th class="text-center">금액</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="text-center">
+                                                                        2022-10-21<span
+                                                                            style="margin-left:5px;color:var(--bs-gray-600)">18:50</span>
+                                                                    </td>
+                                                                    <td class="text-center">170
+                                                                    </td>
+                                                                    <td class="text-center">파트너캐시 충전
+                                                                    </td>
+                                                                    <td class="text-center">계좌이체</td>
+                                                                    <td class="text-end">700,000원</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-center">
+                                                                        2022-10-21<span
+                                                                            style="margin-left:5px;color:var(--bs-gray-600)">18:50</span>
+                                                                    </td>
+                                                                    <td class="text-center">170
+                                                                    </td>
+                                                                    <td class="text-center">파트너캐시 충전
+                                                                    </td>
+                                                                    <td class="text-center">계좌이체</td>
+                                                                    <td class="text-end">700,000원</td>
+                                                                </tr>
+                                                                <tr class="text-end">
+                                                                    <td colspan="5">
+                                                                        금액 합계:
+                                                                        <span
+                                                                            style="color: var(--bs-blue);">1,700,000원</span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--begin::Text-->
+                                            <div class="col-md-12 x  fv-plugins-icon-container mb-2">
+                                                <div class="mb-0 fs-6">
+                                                    <div class="lh-lg mb-1 text-bg-light p-10 ">
+                                                        <ul>
+                                                            <span class="fw-semibold">안내 사항</span>
+                                                            <div class="ps-5">
+                                                                <li>거래명세서는 법적 효력이 없습니다.</li>
+                                                                <li>거래명세서는 세무 상 증빙자료로 활용할 수 없습니다.</li>
+                                                                <li>거래명세서는 소득공제용 영수증 및 세금계산서로 활용할 수 없습니다.</li>
+                                                            </div>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end::Text-->
+                                            <div class="modal-footer flex-center">
+                                                <button type="button" class="btn btn-light"
+                                                    data-bs-dismiss="modal">닫기</button>
+                                                <button type="button" id="kt_docs_sweetalert_basic"
+                                                    class="btn btn-primary">인쇄하기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end:: Modal -->
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-hover table-striped border gy-7 gs-7">
+                                    <thead>
+                                        <tr class="fw-bold fs-6 text-gray-800 border-bottom-2 border-gray-200 ">
+                                            <th class="text-center">선택</th>
+                                            <th class="text-center">거래 아이디</th>
+                                            <th class="text-center">사업자명</th>
+                                            <th class="text-center">영업 담당자</th>
+                                            <th class="text-center">거래 상태</th>
+                                            <th class="text-center">환불액</th>
+                                            <th class="text-center">입금 여부</th>
+                                            <th class="text-center">환불 승인일</th>
+                                            <th class="text-center">환불 요청일</th>
+                                            <th class="text-center">환불 정보</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center align-middle">
+                                                <div
+                                                    class="form-check form-check-custom form-check-solid justify-content-center">
+                                                    <input class="form-check-input" type="checkbox" value="1"
+                                                        id="flexCheckDefault" checked />
+                                                </div>
+                                            </td>
+                                            <td class="text-center  align-middle">20200606</td>
+                                            <td class="text-center  align-middle">(주)챔스프리 업그레이드</td>
+                                            <td class="text-center  align-middle">chaem</td>
+                                            <td class="text-center align-middle">충전 승인</td>
+                                            <td class="text-end align-middle">
+                                                <span style="color:var(--bs-danger)">-50,000 원</span><br>
+                                                <span style="color:var(--bs-gray-600)">환불 후 잔액:</span> 250,000원
+                                            </td>
+                                            <td class="text-center align-middle">입금 완료</td>
+                                            <td class="text-end align-middle">
+                                                <span>2022-03-15</span><br>
+                                                <span style="color:var(--bs-gray-600)">10:10</span>
+                                            </td>
+                                            <td class="text-end align-middle">
+                                                <span>2022-03-15</span><br>
+                                                <span style="color:var(--bs-gray-600)">10:10</span>
+                                            </td>
+                                            <td class="text-center align-middle">
+                                                <div class="text-start">
+                                                    <div><span style="color:var(--bs-gray-600)">환불은행: </span>우리은행</div>
+                                                    <div><span style="color:var(--bs-gray-600)">환불계좌:
+                                                        </span>111-111-1111
+                                                    </div>
+                                                    <div><span style="color:var(--bs-gray-600)">예금주: </span>(주) 챔스프리
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <ul class="pagination mb-5">
+                                    <li class="page-item previous disabled"><a href="#" class="page-link"><i
+                                                class="previous"></i></a>
+                                    </li>
+                                    <li class="page-item ">
+                                        <a href="#" class="page-link">1</a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a href="#" class="page-link">2</a>
+                                    </li>
+                                    <li class="page-item ">
+                                        <a href="#" class="page-link">3</a>
+                                    </li>
+                                    <li class="page-item ">
+                                        <a href="#" class="page-link">4</a>
+                                    </li>
+                                    <li class="page-item ">
+                                        <a href="#" class="page-link">5</a>
+                                    </li>
+                                    <li class="page-item ">
+                                        <a href="#" class="page-link">6</a>
+                                    </li>
+                                    <li class="page-item next">
+                                        <a href="#" class="page-link">
+                                            <i class="next"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- end::card-body-->
+
+                        </div>
+
+                    </div>
+                    <!-- end:: 카드 -->
+                    <!-- end:: 컨텐트 -->
                 </div>
-                <!--end::Wrapper-->
             </div>
-            <!--end::Page-->
+            <!-- 바디: 끝 -->
+            <!--end:::Main-->
         </div>
-        <!--end::App-->
+        <!--end::Wrapper-->
+    </div>
+    <!--end::Page-->
+    </div>
+    <!--end::App-->
 
-        <!--begin::Scrolltop-->
-        <div id=" kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
-            <!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg-->
-            <span class="svg-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect opacity="0.5" x="13" y="6" width="13" height="2" rx="1" transform="rotate(90 13 6)"
-                        fill="currentColor">
-                    </rect>
-                    <path
-                        d="M12.5657 8.56569L16.75 12.75C17.1642 13.1642 17.8358 13.1642 18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25L12.7071 5.70711C12.3166 5.31658 11.6834 5.31658 11.2929 5.70711L5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75C6.16421 13.1642 6.83579 13.1642 7.25 12.75L11.4343 8.56569C11.7467 8.25327 12.2533 8.25327 12.5657 8.56569Z"
-                        fill="currentColor"></path>
-                </svg>
-            </span>
-            <!--end::Svg Icon-->
-        </div>
-        <!--end::Scrolltop-->
+    <!--begin::Scrolltop-->
+    <div id=" kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+        <!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg-->
+        <span class="svg-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect opacity="0.5" x="13" y="6" width="13" height="2" rx="1" transform="rotate(90 13 6)"
+                    fill="currentColor">
+                </rect>
+                <path
+                    d="M12.5657 8.56569L16.75 12.75C17.1642 13.1642 17.8358 13.1642 18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25L12.7071 5.70711C12.3166 5.31658 11.6834 5.31658 11.2929 5.70711L5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75C6.16421 13.1642 6.83579 13.1642 7.25 12.75L11.4343 8.56569C11.7467 8.25327 12.2533 8.25327 12.5657 8.56569Z"
+                    fill="currentColor"></path>
+            </svg>
+        </span>
+        <!--end::Svg Icon-->
+    </div>
+    <!--end::Scrolltop-->
 
-        <!--begin::Javascript-->
-        <script>
-            var hostUrl = "assets/";
-        </script>
-        <!--begin::Global Javascript Bundle(used by all pages)-->
-        <script src="/assets/plugins/global/plugins.bundle.js"></script>
-        <script src="/assets/js/scripts.bundle.js"></script>
-        <!--end::Global Javascript Bundle-->
-        <!--begin::Vendors Javascript(used by this page)-->
-        <script src="/assets/plugins/custom/datatables/datatables.bundle.js"></script>
-        <!--end::Vendors Javascript-->
-        <!--begin::Custom Javascript(used by this page)-->
-        <script src="/assets/js/custom/apps/customers/view/add-payment.js"></script>
-        <script src="/assets/js/custom/apps/customers/view/adjust-balance.js"></script>
-        <script src="/assets/js/custom/apps/customers/view/invoices.js"></script>
-        <script src="/assets/js/custom/apps/customers/view/payment-method.js"></script>
-        <script src="/assets/js/custom/apps/customers/view/payment-table.js"></script>
-        <script src="/assets/js/custom/apps/customers/view/statement.js"></script>
-        <script src="/assets/js/custom/apps/customers/update.js"></script>
-        <script src="/assets/js/widgets.bundle.js"></script>
-        <script src="/assets/js/custom/widgets.js"></script>
-        <script src="/assets/js/custom/apps/chat/chat.js"></script>
-        <script src="/assets/js/custom/utilities/modals/upgrade-plan.js"></script>
-        <script src="/assets/js/custom/utilities/modals/create-app.js"></script>
-        <script src="/assets/js/custom/utilities/modals/new-card.js"></script>
-        <script src="/assets/js/custom/utilities/modals/users-search.js"></script>
-        <!--end::Custom Javascript-->
-        <!--end::Javascript-->
+    <!--begin::Javascript-->
+    <script>
+        var hostUrl = "assets/";
+    </script>
+    <!--begin::Global Javascript Bundle(used by all pages)-->
+    <script src="/assets/plugins/global/plugins.bundle.js"></script>
+    <script src="/assets/js/scripts.bundle.js"></script>
+    <!--end::Global Javascript Bundle-->
+    <!--begin::Vendors Javascript(used by this page)-->
+    <script src="/assets/plugins/custom/datatables/datatables.bundle.js"></script>
+    <!--end::Vendors Javascript-->
+    <!--begin::Custom Javascript(used by this page)-->
+    <script src="/assets/js/custom/apps/customers/view/add-payment.js"></script>
+    <script src="/assets/js/custom/apps/customers/view/adjust-balance.js"></script>
+    <script src="/assets/js/custom/apps/customers/view/invoices.js"></script>
+    <script src="/assets/js/custom/apps/customers/view/payment-method.js"></script>
+    <script src="/assets/js/custom/apps/customers/view/payment-table.js"></script>
+    <script src="/assets/js/custom/apps/customers/view/statement.js"></script>
+    <script src="/assets/js/custom/apps/customers/update.js"></script>
+    <script src="/assets/js/widgets.bundle.js"></script>
+    <script src="/assets/js/custom/widgets.js"></script>
+    <script src="/assets/js/custom/apps/chat/chat.js"></script>
+    <script src="/assets/js/custom/utilities/modals/upgrade-plan.js"></script>
+    <script src="/assets/js/custom/utilities/modals/create-app.js"></script>
+    <script src="/assets/js/custom/utilities/modals/new-card.js"></script>
+    <script src="/assets/js/custom/utilities/modals/users-search.js"></script>
+    <!--end::Custom Javascript-->
+    <!--end::Javascript-->
 
-        <!--end::Body-->
-        <svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1"
-            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="
+    <!--end::Body-->
+    <svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1"
+        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="
         overflow: hidden;
         top: -100%;
         left: -100%;
         position: absolute;
         opacity: 0;
       ">
-            <defs id="SvgjsDefs1002"></defs>
-            <polyline id="SvgjsPolyline1003" points="0,0"></polyline>
-            <path id="SvgjsPath1004" d="M0 0 "></path>
-        </svg><!-- Code injected by live-server -->
-        <script>
-            // <![CDATA[  <-- For SVG support
-            if ("WebSocket" in window) {
-                (function () {
-                    function refreshCSS() {
-                        var sheets = [].slice.call(document.getElementsByTagName("link"));
-                        var head = document.getElementsByTagName("head")[0];
-                        for (var i = 0; i < sheets.length; ++i) {
-                            var elem = sheets[i];
-                            var parent = elem.parentElement || head;
-                            parent.removeChild(elem);
-                            var rel = elem.rel;
-                            if (
-                                (elem.href && typeof rel != "string") ||
-                                rel.length == 0 ||
-                                rel.toLowerCase() == "stylesheet"
-                            ) {
-                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
-                                elem.href =
-                                    url +
-                                    (url.indexOf("?") >= 0 ? "&" : "?") +
-                                    "_cacheOverride=" +
-                                    new Date().valueOf();
-                            }
-                            parent.appendChild(elem);
+        <defs id="SvgjsDefs1002"></defs>
+        <polyline id="SvgjsPolyline1003" points="0,0"></polyline>
+        <path id="SvgjsPath1004" d="M0 0 "></path>
+    </svg><!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ("WebSocket" in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (
+                            (elem.href && typeof rel != "string") ||
+                            rel.length == 0 ||
+                            rel.toLowerCase() == "stylesheet"
+                        ) {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                            elem.href =
+                                url +
+                                (url.indexOf("?") >= 0 ? "&" : "?") +
+                                "_cacheOverride=" +
+                                new Date().valueOf();
                         }
+                        parent.appendChild(elem);
                     }
-                    var protocol =
-                        window.location.protocol === "http:" ? "ws://" : "wss://";
-                    var address =
-                        protocol + window.location.host + window.location.pathname + "/ws";
-                    var socket = new WebSocket(address);
-                    socket.onmessage = function (msg) {
-                        if (msg.data == "reload") window.location.reload();
-                        else if (msg.data == "refreshcss") refreshCSS();
-                    };
-                    if (
-                        sessionStorage &&
-                        !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
-                    ) {
-                        console.log("Live reload enabled.");
-                        sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
-                    }
-                })();
-            } else {
-                console.error(
-                    "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
-                );
-            }
+                }
+                var protocol =
+                    window.location.protocol === "http:" ? "ws://" : "wss://";
+                var address =
+                    protocol + window.location.host + window.location.pathname + "/ws";
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == "reload") window.location.reload();
+                    else if (msg.data == "refreshcss") refreshCSS();
+                };
+                if (
+                    sessionStorage &&
+                    !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+                ) {
+                    console.log("Live reload enabled.");
+                    sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+                }
+            })();
+        } else {
+            console.error(
+                "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+            );
+        }
       // ]]>
-        </script>
+    </script>
 
-        <!-- Code injected by live-server -->
-        <script>
-            // <![CDATA[  <-- For SVG support
-            if ("WebSocket" in window) {
-                (function () {
-                    function refreshCSS() {
-                        var sheets = [].slice.call(document.getElementsByTagName("link"));
-                        var head = document.getElementsByTagName("head")[0];
-                        for (var i = 0; i < sheets.length; ++i) {
-                            var elem = sheets[i];
-                            var parent = elem.parentElement || head;
-                            parent.removeChild(elem);
-                            var rel = elem.rel;
-                            if (
-                                (elem.href && typeof rel != "string") ||
-                                rel.length == 0 ||
-                                rel.toLowerCase() == "stylesheet"
-                            ) {
-                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
-                                elem.href =
-                                    url +
-                                    (url.indexOf("?") >= 0 ? "&" : "?") +
-                                    "_cacheOverride=" +
-                                    new Date().valueOf();
-                            }
-                            parent.appendChild(elem);
+    <!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ("WebSocket" in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (
+                            (elem.href && typeof rel != "string") ||
+                            rel.length == 0 ||
+                            rel.toLowerCase() == "stylesheet"
+                        ) {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                            elem.href =
+                                url +
+                                (url.indexOf("?") >= 0 ? "&" : "?") +
+                                "_cacheOverride=" +
+                                new Date().valueOf();
                         }
+                        parent.appendChild(elem);
                     }
-                    var protocol =
-                        window.location.protocol === "http:" ? "ws://" : "wss://";
-                    var address =
-                        protocol + window.location.host + window.location.pathname + "/ws";
-                    var socket = new WebSocket(address);
-                    socket.onmessage = function (msg) {
-                        if (msg.data == "reload") window.location.reload();
-                        else if (msg.data == "refreshcss") refreshCSS();
-                    };
-                    if (
-                        sessionStorage &&
-                        !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
-                    ) {
-                        console.log("Live reload enabled.");
-                        sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
-                    }
-                })();
-            } else {
-                console.error(
-                    "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
-                );
-            }
+                }
+                var protocol =
+                    window.location.protocol === "http:" ? "ws://" : "wss://";
+                var address =
+                    protocol + window.location.host + window.location.pathname + "/ws";
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == "reload") window.location.reload();
+                    else if (msg.data == "refreshcss") refreshCSS();
+                };
+                if (
+                    sessionStorage &&
+                    !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+                ) {
+                    console.log("Live reload enabled.");
+                    sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+                }
+            })();
+        } else {
+            console.error(
+                "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+            );
+        }
       // ]]>
-        </script>
-        <script src="/assets/plugins/custom/tinymce/tinymce.bundle.js"></script>
-        <script>
-            var options = { selector: "#kt_docs_tinymce_basic", height: "480" };
+    </script>
+    <script src="https://uicdn.toast.com/grid/latest/tui-grid.js"></script>
+    <script>
+        function getTuiData(brandId) {
+            document.getElementById('grid').innerHTML = "";
+            const grid = new tui.Grid({
+                el: document.getElementById('grid'),
+                keyColumnName: 'campaignId',
+                bodyHeight: 500,
+                scrollY: false,
+                scrollX: true,
+                data: [
+                    {
+                        campaignId: "1"
+                        , companyName: "비스트로 피자"
+                        , brandName: "비스트로피자"
+                        , campaign: "dasd"
+                        , influencer: "조찬아"
+                        , price: "79,400원"
+                        , poastingPay: "12%"
+                        , activity: "ID : 113"
+                        , vat: "43,670원"
+                        , paymentMethod: "예치금"
+                        , status: "결제에정 취소"
+                    }
+                ],
+                // {
+                //     // api: {
+                //     //     readData: { url: "/campaigns/ajax", method: "GET", initParams: { brandId: brandId } }
+                //     // }
+                // },
+                columns: [
+                    {
+                        header: '번호',
+                        name: 'campaignId',
+                        align: 'center',
+                        width: 'auto',
+                        height: 20,
+                    },
+                    {
+                        header: '사업자명',
+                        name: 'companyName',
+                        align: 'center',
+                        width: 'auto',
+                        height: 20,
+                    },
+                    {
+                        header: '제휴사명',
+                        name: 'brandName',
+                        align: 'center',
+                        width: 'auto',
 
-            if (KTThemeMode.getMode() === "dark") {
-                options["skin"] = "oxide-dark";
-                options["content_css"] = "dark";
+                        height: 20,
+                    },
+                    {
+                        header: '캠페인명',
+                        name: 'campaign',
+                        align: 'center',
+                        width: 'auto',
+
+                        height: 20,
+                    },
+                    {
+                        header: '인플루언서'
+                        , name: 'influencer'
+                        , align: 'center'
+                        , width: 'auto'
+                        , height: 20
+                    },
+                    {
+                        header: '결제금액'
+                        , name: 'price'
+                        , align: 'center'
+                        , width: 'auto'
+                        , height: 20
+                    }, {
+                        header: '포스팅 수수료'
+                        , name: 'poastingPay'
+                        , align: 'center'
+                        , width: 'auto'
+                        , height: 20
+                    },
+                    {
+                        header: '인플카 액티비티'
+                        , name: 'activity'
+                        , align: 'center'
+                        , width: 'auto'
+                        , height: 20
+                    },
+                    {
+                        header: '수수료 금액(vat 포함)'
+                        , name: 'vat'
+                        , align: 'center'
+                        , width: 'auto'
+                        , height: 20
+                    },
+                    {
+                        header: '결제 수단'
+                        , name: 'paymentMethod'
+                        , align: 'center'
+                        , width: 'auto'
+                        , height: 20
+
+                    },
+                    {
+                        header: '수수료 결제 상태'
+                        , name: 'status'
+                        , align: 'center'
+                        , width: 'auto'
+                        , height: 20
+                    }
+                ],
+                showDummyRows: true,
+                pageOptions: {
+                    page: 5,
+                    perPage: 6
+                }
+            })
+        }
+
+        class CustomButtonRenderer {
+            constructor(props) {
+                const el = document.createElement('button');
+                const { value } = props.columnInfo.renderer.options;
+
+                el.type = 'button';
+                el.value = value;
+                el.textContent = '상세';
+                el.className = 'btn btn-light-primary btn-outline';
+                const rowValue = props.rowKey;
+                el.addEventListener('click', function () {
+                    location.href = "/campaigns/applications/" + rowValue;
+                });
+
+                this.el = el;
             }
 
-            tinymce.init(options);
-        </script>
-        <script>
-            var options = { selector: "#kt_docs_tinymce_basic2", height: "480" };
-
-            if (KTThemeMode.getMode() === "dark") {
-                options["skin"] = "oxide-dark";
-                options["content_css"] = "dark";
+            getElement() {
+                return this.el;
             }
+        }
+        $(document).ready(function () {
+            getTuiData(0);
+            class CustomButtonRenderer {
+                constructor(props) {
+                    const el = document.createElement('button');
+                    const { value } = props.columnInfo.renderer.options;
 
-            tinymce.init(options);
-        </script>
-        <script>
-            var options = { selector: "#kt_docs_tinymce_basic3", height: "480" };
+                    el.type = 'button';
+                    el.value = value;
+                    el.textContent = '상세';
+                    el.className = 'btn btn-light-primary';
+                    const rowValue = props.rowKey;
+                    el.addEventListener('click', function () {
+                        location.href = "/campaigns/applications/" + rowValue;
+                    });
 
-            if (KTThemeMode.getMode() === "dark") {
-                options["skin"] = "oxide-dark";
-                options["content_css"] = "dark";
+                    this.el = el;
+                }
+
+                getElement() {
+                    return this.el;
+                }
             }
+        });
 
-            tinymce.init(options);
-        </script>
-
+    </script>
 </body>
 <!--end::Body-->
 
