@@ -14,6 +14,7 @@
   <!--end::Global Stylesheets Bundle-->
 </head>
 <!--end::Head-->
+
 <!--begin::Body-->
 
 <body id="kt_app_body" data-kt-app-layout="dark-sidebar" data-kt-app-header-fixed="true"
@@ -87,6 +88,7 @@
               data-kt-swapper-parent="{default: '#kt_app_body', lg: '#kt_app_header_wrapper'}" style=""></div>
             <!--begin::Menu wrapper-->
             <!--end::Menu wrapper-->
+            <!--begin::Navbar-->
             <div class="app-navbar flex-shrink-0">
               <div class="app-navbar-item ms-1 ms-lg-3">
                 <!--begin::Menu toggle-->
@@ -150,7 +152,7 @@
                 <!--begin::Menu-->
                 <div
                   class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-title-gray-700 menu-icon-muted menu-active-bg menu-state-color fw-semibold py-4 fs-base w-175px"
-                  data-kt-menu="true" data-kt-element="theme-mode-menu">
+                  data-kt-menu="true" data-kt-element="theme-mode-menu" style="">
                   <!--begin::Menu item-->
                   <div class="menu-item px-3 my-0">
                     <a href="#" class="menu-link px-3 py-2 active" data-kt-element="mode" data-kt-value="light">
@@ -316,6 +318,7 @@
               </div>
               <!--end::Header menu toggle-->
             </div>
+            <!--end::Navbar-->
           </div>
           <!--end::Header wrapper-->
         </div>
@@ -787,16 +790,16 @@
           <div id="kt_app_toolbar_container" class="app-container flex-column-fluid d-flex flex-stack">
             <div class="page-title d-flex flex-column justify-content-center flex-wrap me-3">
               <h1 class="page-heading d-flex text-dark fw-bold fs-3 flex-column justify-content-center my-0">
-                인플루언서 검색
+                계정 및 권한
               </h1>
               <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
                 <li class="breadcrumb-item text-muted">
-                  <a href="/" class="text-muted text-hover-primary">인플루언서</a>
+                  <a href="/" class="text-muted text-hover-primary">제휴사</a>
                 </li>
                 <li class="breadcrumb-item">
                   <span class="bullet bg-gray-400 w-5px h-2px"></span>
                 </li>
-                <li class="breadcrumb-item text-muted">인플루언서 검색</li>
+                <li class="breadcrumb-item text-muted">계정 및 권한</li>
               </ul>
             </div>
             <!--end::Actions-->
@@ -804,7 +807,6 @@
           <!--end::Toolbar container-->
         </div>
         <!-- 헤더:끝 -->
-
         <!-- 바디: 시작 -->
         <div id="kt_app_content" class="app-content flex-column-fluid">
           <div id="kt_app_content_container" class="app-container flex-column-fluid">
@@ -814,9 +816,29 @@
               <div class="card">
                 <!-- begin:: 컨텐트 -->
                 <div class="card-body">
-                  <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework">
-                    <!--begin::Input group-->
-                    <div class="row mb-5">
+                  <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework" method="post"
+                    id="kt_careers_form">
+
+
+                    <!--begin::Input group1 ::1개짜리-->
+                    1<div class="row mb-5">
+                      <!--begin::Col-->
+                      <div class="col-md-12 fv-row fv-plugins-icon-container">
+                        <!--begin::Label-->
+                        <label class=" fs-5 fw-semibold mb-2">이름</label>
+                        <!--end::Label-->
+                        <!--begin::Input-->
+                        <input type="text" class="form-control" placeholder="이름 입력" name="first_name">
+                        <!--end::Input-->
+                        <div class="fv-plugins-message-container invalid-feedback"></div>
+                      </div>
+                      <!--end::Col-->
+                    </div>
+                    <!--end::Input group1 ::1개짜리-->
+
+
+                    <!--begin::Input group3 ::2개짜리-->
+                    2<div class="row mb-5">
                       <!--begin::Col-->
                       <div class="col-md-6 fv-row fv-plugins-icon-container">
                         <!--begin::Label-->
@@ -840,53 +862,97 @@
                       </div>
                       <!--end::Col-->
                     </div>
-                    <!--end::Input group-->
-                    <!--begin::Input group-->
-                    <div class="row">
+                    <!--end::Input group3 ::2개짜리-->
+
+
+                    <!--begin::Input group3 ::3개짜리-->
+                    3<div class="row mb-5">
+                      <!--begin::Col-->
+                      <div class="col-md-4 fv-row fv-plugins-icon-container">
+                        <!--begin::Label-->
+                        <label class=" fs-5 fw-semibold mb-2">이름</label>
+                        <!--end::Label-->
+                        <!--begin::Input-->
+                        <input type="text" class="form-control" placeholder="이름 입력">
+                        <!--end::Input-->
+                        <div class="fv-plugins-message-container invalid-feedback"></div>
+                      </div>
+                      <!--end::Col-->
+                      <!--begin::Col-->
+                      <div class="col-md-4 fv-row fv-plugins-icon-container">
+                        <!--end::Label-->
+                        <label class=" fs-5 fw-semibold mb-2">계정 번호</label>
+                        <!--end::Label-->
+                        <!--end::Input-->
+                        <input type="text" class="form-control" placeholder="숫자 입력">
+                        <!--end::Input-->
+                        <div class="fv-plugins-message-container invalid-feedback"></div>
+                      </div>
+                      <!--end::Col-->
                       <!-- begin::Col -->
                       <div class="col-md-4 fv-row fv-plugins-icon-container">
                         <!--end::Label-->
                         <label class=" fs-5 fw-semibold mb-2">플랫폼 ID</label>
                         <!--end::Label-->
                         <!--end::Input-->
-                        <input type="text" class="form-control" placeholder="아이디 입력" name="last_name">
+                        <input type="text" class="form-control" placeholder="아이디 입력">
                         <!--end::Input-->
                         <div class="fv-plugins-message-container invalid-feedback"></div>
                       </div>
-                      <!-- end::col -->
-                      <!--begin::Col-->
-                      <div class="col-md-4 fv-row fv-plugins-icon-container">
-                        <label class="form-label">혜택 등급</label>
-                        <select class=" form-select" data-control="select2" data-placeholder="혜택 등급 입력 또는 선택" select box
-                          : data-allow-clear="true" data-hide-search="true">
-                          <option></option>
-                          <option value="1">MEGA</option>
-                          <option value="2">MACRO</option>
-                          <option value="3">MICRO</option>
-                          <option value="4">NANO</option>
-                          <option value="5">CELL</option>
-                          <option value="6">등급없음</option>
-                        </select>
-                      </div>
-                      <!--begin::Col-->
-                      <div class="col-md-4 fv-row fv-plugins-icon-container mb-5">
-                        <label class="form-label">카드 종류</label>
-                        <select class=" form-select" data-control="select2" data-placeholder="카드 종류 선택" select box :
-                          data-allow-clear="true" data-hide-search="true">
-                          <option></option>
-                          <option value="1">신용카드</option>
-                          <option value="2">등록 완료</option>
-                        </select>
-                      </div>
-                      <!--end::Col-->
                     </div>
-                    <!--end::Input group-->
+                    <!--end::Input group3 ::3개짜리-->
+
+
+
+                    <!-- 인풋유형 -->
+
+
+                    <!-- select box -->
+
+                    <!--begin::Col-->
+                    <div class="col-md-4 fv-row fv-plugins-icon-container mb-5">
+                      <label class="form-label">사업자명 검색</label>
+                      <select class=" form-select" data-control="select2" data-placeholder="사업자명 입력" select box :
+                        data-allow-clear="true" data-hide-search="true">
+                        <option></option>
+                        <option value="1">엠마의 1004 사업장</option>
+                        <option value="2">sample1</option>
+                        <option value="3">sample12</option>
+                        <option value="4">sample3</option>
+                        <option value="5">sample4</option>
+                      </select>
+                    </div>
+                    <!--end::Col-->
+
+
+                    <!-- tagify -->
+
+                    <!--begin::Col-->
+                    <div class="col-md-4 fv-row fv-plugins-icon-container">
+                      <label class="form-label">tagtify</label>
+                      <input class="form-control" placeholder="2개이상 입력시 ,로 구분" value="" id="kt_tagify_2" />
+                    </div>
+                    <!--end::Col-->
+
+                    <!-- tagify 자스 -->
+                    <!-- 
+                      // The DOM elements you wish to replace with Tagify
+                          var input1 = document.querySelector("#kt_tagify_1");
+                          var input2 = document.querySelector("#kt_tagify_2");
+
+                          // Initialize Tagify components on the above inputs
+                          new Tagify(input1);
+                          new Tagify(input2); -->
+
+
+
+
                     <!-- begin::button -->
-                    <div class="row mb-5">
-                      <div class="col-md-12 d-flex justify-content-center">
-                        <button type="button" class="btn btn-white btn-outline me-2">초기화</button>
-                        <button type="button" class="btn btn-primary">검색</button>
-                      </div>
+                    ​<div style="display: flex; justify-content: center;" class="basic-btn">
+                      <button class="btn btn-white btn-outline me-3">
+                        초기화
+                      </button>
+                      <button class="btn btn-primary">검색</button>
                     </div>
                     <!-- end::button -->
                 </div>
@@ -895,94 +961,17 @@
               </div>
               <!-- end:: 컨텐트 -->
             </div>
-            <!-- end::카드 -->
-            <!-- begin:: 카드 -->
-            <div class="col-xxl-12 mb-5 mb-xl-10">
-              <div class="card">
-                <div class="card-header pt-5">
-                  <!--begin:: 타이틀-->
-                  <h3 class="card-title align-items-start flex-column">
-                    <span class="card-label fw-bold text-dark">검색 내역(19)</span>
-                  </h3>
-                  <div class="d-flex">
-                    <select class="form-select" style="width: 78px; margin-bottom: 0.75rem;">
-                      <option value="30">30</option>
-                      <option value="50">50</option>
-                      <option value="100">100</option>
-                    </select>
-                  </div>
-                  <!--end:: 타이틀-->
-                </div>
-                <!-- ////////////////////////////////////////////////////////////////////////////// -->
-                <!-- begin:: 컨텐트 -->
-                <div class="table-responsive">
-                  <table class="table table-hover table-striped  gy-7 gs-7">
-                    <thead>
-                      <tr class="fw-bold fs-6 text-gray-800 border-bottom-2 border-gray-200 ">
-                        <th>인플루언서</th>
-                        <th>플랫폼</th>
-                        <th>역략 정보</th>
-                        <th>혜택 등급</th>
-                        <th>카드 종류</th>
-                        <th>자세히</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          주재현<span style="color: var(--bs-gray-600);">(90)</span>
-                        </td>
-                        <td style="color: var(--bs-gray-600);">SNS연결 시 정보가 표시됩니다 </td>
-                        <td>
-                          <p class="mb-0"></p>
-                        </td>
-                        <td>
-                          등급 없음
-                        </td>
-                        <td>미등록</td>
-                        <td>
-                          <a href="/pages/company/contracts/contractDetail.html" target="_blank">
-                            <button type="button" class="btn btn-white btn-outline  ">계약 상세 정보</button>
-                          </a>
-                        </td>
-                      </tr>
-
-                    </tbody>
-                  </table>
-                  <ul class="pagination mb-5">
-                    <li class="page-item previous disabled"><a href="#" class="page-link"><i class="previous"></i></a>
-                    </li>
-                    <li class="page-item "><a href="#" class="page-link">1</a></li>
-                    <li class="page-item active"><a href="#" class="page-link">2</a></li>
-                    <li class="page-item "><a href="#" class="page-link">3</a></li>
-                    <li class="page-item "><a href="#" class="page-link">4</a></li>
-                    <li class="page-item "><a href="#" class="page-link">5</a></li>
-                    <li class="page-item "><a href="#" class="page-link">6</a></li>
-                    <li class="page-item next"><a href="#" class="page-link"><i class="next"></i></a></li>
-                  </ul>
-                </div>
-                <!-- end:: 컨텐트 -->
-              </div>
-            </div>
-            <!-- end:: 카드 -->
-
-
             <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-
             <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-
           </div>
         </div>
         <!-- 바디: 끝 -->
-
-        <!--end:::Main-->
       </div>
       <!--end::Wrapper-->
     </div>
     <!--end::Page-->
   </div>
   <!--end::App-->
-
   <!--begin::Scrolltop-->
   <div id=" kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
     <!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg-->
@@ -1000,32 +989,10 @@
   <!--end::Scrolltop-->
 
   <!--begin::Javascript-->
-  <script>
-    var hostUrl = "assets/";
-  </script>
   <!--begin::Global Javascript Bundle(used by all pages)-->
   <script src="/assets/plugins/global/plugins.bundle.js"></script>
   <script src="/assets/js/scripts.bundle.js"></script>
   <!--end::Global Javascript Bundle-->
-  <!--begin::Vendors Javascript(used by this page)-->
-  <script src="/assets/plugins/custom/datatables/datatables.bundle.js"></script>
-  <!--end::Vendors Javascript-->
-  <!--begin::Custom Javascript(used by this page)-->
-  <script src="/assets/js/custom/apps/customers/view/add-payment.js"></script>
-  <script src="/assets/js/custom/apps/customers/view/adjust-balance.js"></script>
-  <script src="/assets/js/custom/apps/customers/view/invoices.js"></script>
-  <script src="/assets/js/custom/apps/customers/view/payment-method.js"></script>
-  <script src="/assets/js/custom/apps/customers/view/payment-table.js"></script>
-  <script src="/assets/js/custom/apps/customers/view/statement.js"></script>
-  <script src="/assets/js/custom/apps/customers/update.js"></script>
-  <script src="/assets/js/widgets.bundle.js"></script>
-  <script src="/assets/js/custom/widgets.js"></script>
-  <script src="/assets/js/custom/apps/chat/chat.js"></script>
-  <script src="/assets/js/custom/utilities/modals/upgrade-plan.js"></script>
-  <script src="/assets/js/custom/utilities/modals/create-app.js"></script>
-  <script src="/assets/js/custom/utilities/modals/new-card.js"></script>
-  <script src="/assets/js/custom/utilities/modals/users-search.js"></script>
-  <!--end::Custom Javascript-->
   <!--end::Javascript-->
 
   <!--end::Body-->
@@ -1145,14 +1112,11 @@
     }
       // ]]>
   </script>
-
-  <!-- tagify -->
   <script>
-    // The DOM elements you wish to replace with Tagify
+
     var input1 = document.querySelector("#kt_tagify_1");
     var input2 = document.querySelector("#kt_tagify_2");
 
-    // Initialize Tagify components on the above inputs
     new Tagify(input1);
     new Tagify(input2);
   </script>
