@@ -871,6 +871,7 @@
               <!-- end:: 카드 -->
             </div>
             <!-- end:: 관리 카드 -->
+
             <!-- begin:: 계정 정보 카드 -->
             <div class="col-xxl-12 mb-5 mb-xl-10">
               <div class="card">
@@ -994,14 +995,17 @@
               <!-- end:: 카드 -->
             </div>
             <!-- end:: 계정 정보 카드 -->
+
             <!-- begin:: 사업자 정보 카드 -->
             <div class="col-xxl-12 mb-5 mb-xl-10">
               <div class="card">
                 <!-- begin::카드 타이틀 -->
-                <div class="card-header pt-5">
-                  <h3 class="card-title align-items-start flex-column">
-                    <span class="card-label fw-bold text-dark">사업자 정보</span>
+                <div class="card-header pt-5 d-flex justify-content-between align-items-center">
+                  <h3 class="card-title">
+                    <span class="card-label fw-bold text-dark">사업자 정보<i
+                        class="fas fa-exclamation-circle ms-2 fs-7"></i></span>
                   </h3>
+                  <span class="required">필수정보</span>
                 </div>
                 <!-- end::카드 타이클 -->
                 <!-- begin:: 컨텐트 -->
@@ -1024,8 +1028,7 @@
                       <!--begin::Col-->
                       <div class="col-md-6 fv-row fv-plugins-icon-container">
                         <!--end::Label-->
-                        <label class="required fs-5 fw-semibold mb-2">사업자등록번호<i
-                            class="fas fa-exclamation-circle ms-2 fs-7"></i></label>
+                        <label class="required fs-5 fw-semibold mb-2">사업자등록번호</label>
                         <!--end::Label-->
                         <!--begin::Input-->
                         <div class="d-flex">
@@ -1042,7 +1045,8 @@
                       <!--end::Col-->
                     </div>
                     <!--end::Input group-->
-                    <!--begin::Input group-->
+
+                    <!--begin::대표자 성명-->
                     <div class="row mb-5">
                       <!--begin::Col-->
                       <div class="col-md-12 fv-row fv-plugins-icon-container">
@@ -1055,8 +1059,9 @@
                       </div>
                       <!--end::Col-->
                     </div>
-                    <!--end::Input group-->
-                    <!--begin::Input group-->
+                    <!--end::대표자 성명-->
+
+                    <!--begin::사업의 종류-->
                     <div class="row mb-5">
                       <!--begin::Col-->
                       <div class="col-md-12 fv-row fv-plugins-icon-container">
@@ -1088,126 +1093,130 @@
                       <!--end::Col-->
                       <!--begin::Col-->
                       <!--begin::Input group-->
-                      <div class="row mb-5">
-                        <div class="col-md-6 fv-plugins-icon-container">
-                          <!--begin::Label-->
-                          <label class="required fs-5 fw-semibold mb-2">사업장 주소(소재지)</label>
-                          <div class="d-flex mb-2">
-                            <!--end::Label-->
-                            <input class=" form-control form-control-solid col me-2" placeholder="주소검색을 해주세요">
-                            <button type="submit" class="btn btn-white btn-outline">
-                              <!--begin::Indicator label-->
-                              <span class="indicator-label">주소검색</span>
-                              <!--end::Indicator label-->
-                            </button>
-                          </div>
-                        </div>
-                        <div class="col-md-12 fv-plugins-icon-container">
-                          <input class=" form-control col" placeholder="상세주소 입력">
-                        </div>
-                      </div>
-                      <!--end::Input group-->
-                      <!--begin::Input group 사업자 등록증-->
-                      <div class="mb-7">
-                        <!--begin::Label-->
-                        <label class="required fs-6 fw-semibold mb-3">
-                          <span>사업자등록증</span>
-                        </label>
-                        <!--end::Label-->
-                        <!--begin::Image input wrapper-->
-                        <div class="mt-1">
-                          <!--begin::Image input-->
-                          <div class="image-input image-input-outline image-input-empty" data-kt-image-input="true"
-                            style="background-image: url(/assets/media/svg/avatars/blank.svg)">
-                            <!--begin::Image preview wrapper-->
-                            <div class="image-input-wrapper w-125px h-125px"></div>
-                            <!--end::Image preview wrapper-->
-                            <!--begin::Edit button-->
-                            <label
-                              class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
-                              data-kt-image-input-action="change" data-bs-toggle="tooltip" data-bs-dismiss="click"
-                              aria-label="Change avatar" data-kt-initialized="1">
-                              <i class="bi bi-pencil-fill fs-7"></i>
-                              <!--begin::Inputs-->
-                              <input type="file" name="avatar" accept=".png, .jpg, .jpeg">
-                              <input type="hidden" name="avatar_remove" value="0">
-                              <!--end::Inputs-->
-                            </label>
-                            <!--end::Edit button-->
-                            <!--begin::Cancel button-->
-                            <span
-                              class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
-                              data-kt-image-input-action="cancel" data-bs-toggle="tooltip" data-bs-dismiss="click"
-                              aria-label="Cancel avatar" data-kt-initialized="1">
-                              <i class="bi bi-x fs-2"></i>
-                            </span>
-                            <!--end::Cancel button-->
-                            <!--begin::Remove button-->
-                            <span
-                              class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
-                              data-kt-image-input-action="remove" data-bs-toggle="tooltip" data-bs-dismiss="click"
-                              aria-label="Remove avatar" data-kt-initialized="1">
-                              <i class="bi bi-x fs-2"></i>
-                            </span>
-                            <!--end::Remove button-->
-                          </div>
-                          <!--end::Image input-->
-                        </div>
-                        <!--end::Image input wrapper-->
-                      </div>
-                      <!--end::Input group 사업자 등록증-->
-                      <!--begin::Input group 세금계산서-->
-                      <div class="row mb-5">
-                        <div class="col-md-12 x fv-plugins-icon-container">
-                          <!--begin::Label-->
-                          <label class="required fs-5 fw-semibold mb-2">세금계산서 발행 이메일</label>
-                          <!--end::Label-->
-                          <div class="d-flex align-items-center">
-                            <button type="submit" class="btn btn-primary me-2">
-                              <!--begin::Indicator label-->
-                              <span class="indicator-label">이메일 추가</span>
-                              <!--end::Indicator label-->
-                            </button>
-                            <div class="col">
-                              <input class=" form-control form-control-solid " placeholder="text@tax.com">
-                            </div>
-                            <button class="btn btn-icon btn-active-light-primary w-42px h-42px ms-4"
-                              data-kt-permissions-table-filter="delete_row">
-                              <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-                              <span class="svg-icon svg-icon-3">
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path
-                                    d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z"
-                                    fill="currentColor"></path>
-                                  <path opacity="0.5"
-                                    d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z"
-                                    fill="currentColor"></path>
-                                  <path opacity="0.5"
-                                    d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z"
-                                    fill="currentColor">
-                                  </path>
-                                </svg>
-                              </span>
-                              <!--end::Svg Icon-->
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-
-
-
-                      <!--end::Input group 세금계산서-->
                     </div>
-                    <!-- end:: 컨텐트 -->
+                    <!-- end::사업의 종류 -->
+
+                    <!-- begin::사업장 주소지 -->
+                    <div class="row mb-5">
+                      <div class="col-md-6 fv-plugins-icon-container">
+                        <!--begin::Label-->
+                        <label class="required fs-5 fw-semibold mb-2">사업장 주소(소재지)</label>
+                        <div class="d-flex mb-2">
+                          <!--end::Label-->
+                          <input class=" form-control form-control-solid col me-2" placeholder="주소검색을 해주세요">
+                          <button type="submit" class="btn btn-white btn-outline">
+                            <!--begin::Indicator label-->
+                            <span class="indicator-label">주소검색</span>
+                            <!--end::Indicator label-->
+                          </button>
+                        </div>
+                      </div>
+                      <div class="col-md-12 fv-plugins-icon-container">
+                        <input class=" form-control col" placeholder="상세주소 입력">
+                      </div>
+                    </div>
+                    <!-- end::사업장 주소지 -->
+
+                    <!--begin::Input group 사업자 등록증-->
+                    <div class="mb-7">
+                      <!--begin::Label-->
+                      <label class="required fs-6 fw-semibold mb-3">
+                        <span>사업자등록증</span>
+                      </label>
+                      <!--end::Label-->
+                      <!--begin::Image input wrapper-->
+                      <div class="mt-1">
+                        <!--begin::Image input-->
+                        <div class="image-input image-input-outline image-input-empty" data-kt-image-input="true"
+                          style="background-image: url(/assets/media/svg/avatars/blank.svg)">
+                          <!--begin::Image preview wrapper-->
+                          <div class="image-input-wrapper w-125px h-125px"></div>
+                          <!--end::Image preview wrapper-->
+                          <!--begin::Edit button-->
+                          <label
+                            class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
+                            data-kt-image-input-action="change" data-bs-toggle="tooltip" data-bs-dismiss="click"
+                            aria-label="Change avatar" data-kt-initialized="1">
+                            <i class="bi bi-pencil-fill fs-7"></i>
+                            <!--begin::Inputs-->
+                            <input type="file" name="avatar" accept=".png, .jpg, .jpeg">
+                            <input type="hidden" name="avatar_remove" value="0">
+                            <!--end::Inputs-->
+                          </label>
+                          <!--end::Edit button-->
+                          <!--begin::Cancel button-->
+                          <span
+                            class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
+                            data-kt-image-input-action="cancel" data-bs-toggle="tooltip" data-bs-dismiss="click"
+                            aria-label="Cancel avatar" data-kt-initialized="1">
+                            <i class="bi bi-x fs-2"></i>
+                          </span>
+                          <!--end::Cancel button-->
+                          <!--begin::Remove button-->
+                          <span
+                            class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
+                            data-kt-image-input-action="remove" data-bs-toggle="tooltip" data-bs-dismiss="click"
+                            aria-label="Remove avatar" data-kt-initialized="1">
+                            <i class="bi bi-x fs-2"></i>
+                          </span>
+                          <!--end::Remove button-->
+                        </div>
+                        <!--end::Image input-->
+                      </div>
+                      <!--end::Image input wrapper-->
+                    </div>
+                    <!--end::Input group 사업자 등록증-->
+
+                    <!-- begin::세금계산서 발행 이메일추가 -->
+                    <div class="row mb-5">
+                      <!--begin::Col-->
+                      <div class="col-md-12 fv-row fv-plugins-icon-container">
+                        <!--begin::Label-->
+                        <div>
+                          <label class="required fs-5 fw-semibold mb-2 me-5">세금계산서 발행 이메일</label>
+                          <div>
+                            <button type="button" class="btn btn-light-primary mb-2" data-bs-toggle="modal"
+                              data-bs-target="#kt_modal_1">이메일 추가
+                              추가</button>
+                          </div>
+
+                        </div>
+                        <!--end::Label-->
+                        <div class="d-flex">
+                          <input class="form-control form-control-solid" placeholder="tax@tax.com">
+                          </input>
+                          <button class="btn btn-icon btn-active-light-primary w-42px h-42px ms-4"
+                            data-kt-permissions-table-filter="delete_row">
+                            <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
+                            <span class="svg-icon svg-icon-3">
+                              <svg width="40" height="40" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z"
+                                  fill="currentColor"></path>
+                                <path opacity="0.5"
+                                  d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z"
+                                  fill="currentColor"></path>
+                                <path opacity="0.5"
+                                  d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z"
+                                  fill="currentColor">
+                                </path>
+                              </svg>
+                            </span>
+                            <!--end::Svg Icon-->
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end::세금계산서 발행 이메일 -->
+                  </form>
                 </div>
+                <!-- end:: 컨텐트 -->
               </div>
             </div>
             <!-- end:: 사업자 정보 카드 -->
 
-
             <!-- begin::제휴사 정보 카드 -->
-            <!-- begin::컨텐트 -->
             <div class="col-xxl-12 mb-5 mb-xl-10">
               <!-- begin::카드 -->
               <div class="card">
@@ -1216,7 +1225,6 @@
                   <h3 class="card-title align-items-start flex-column">
                     <span class="card-label fw-bold text-dark">제휴사 정보<i
                         class="fas fa-exclamation-circle ms-2 fs-7"></i></span>
-                  </h3>
                   </h3>
                 </div>
                 <!-- end::카드 타이클 -->
@@ -1246,7 +1254,7 @@
                         <label class="fs-5 fw-semibold mb-2">제휴사 번호</label>
                         <!--end::Label-->
                         <!--begin::Input-->
-                        <span class="form-control col">승인 이후 자동생성 됩니다 </span>
+                        <span class="form-control form-control-solid col">승인 이후 자동생성 됩니다 </span>
                         <!--end::Input-->
                       </div>
                       <!--end::Col-->
@@ -1269,7 +1277,6 @@
                       <!--end::Col-->
                     </div>
                     <!--end::Input group-->
-
 
                     <!-- begin::input group -->
                     <div class="row mb-5">
@@ -1346,9 +1353,9 @@
                       </div>
                     </div>
                     <!--end::Input group-->
+
                     <!--begin::Input group-->
                     <div class="mb-5">
-
                       <div class="col-md-12 x fv-plugins-icon-container">
                         <!--begin::Label-->
                         <label class="required fs-5 fw-semibold mb-5">현대카드 가맹점 정보</label>
@@ -1447,82 +1454,72 @@
 
                     </div>
                     <!--end::Input group-->
-
-
-
-
+                  </form>
                 </div>
                 <!--end::Input group-->
-
-
               </div>
               <!--end::Input group-->
-
               </form>
             </div>
-            <!-- end:: card-body -->
-          </div>
-          <!-- end:: 카드 -->
-        </div>
-        <!-- end::컨텐트 -->
-        <!-- end:: 제휴사 정보 카드 -->
-        <!-- begin:: 승인 상태 카드 -->
-        <div class="col-xxl-12 mb-5 mb-xl-10">
-          <div class="card">
-            <!-- begin::카드 타이틀 -->
-            <div class="card-header pt-5">
-              <h3 class="card-title align-items-start flex-column">
-                <span class="card-label fw-bold text-dark">승인 상태</span>
-              </h3>
-            </div>
-            <!-- end::카드 타이클 -->
-            <!-- begin:: 컨텐트 -->
-            <div class="card-body">
-              <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework" method="post"
-                id="kt_careers_form">
-                <!--begin::Input group-->
-                <div class="row mb-5">
-                  <!--begin::Col-->
-                  <div class="fv-row d-flex align-items-center">
-                    <!--begin::Label-->
-                    <label class="fs-5 fw-semibold me-4">상태</label>
-                    <!--end::Label-->
-                    <!--begin::Input-->
-                    <span class="form-control form-control-solid col">승인 대기 </span>
-                    <!--end::Input-->
-                  </div>
-                  <!--end::Col-->
+            <!-- end:: 제휴사 정보 카드 -->
+
+            <!-- begin:: 승인 상태 카드 -->
+            <div class="col-xxl-12 mb-5 mb-xl-10">
+              <div class="card">
+                <!-- begin::카드 타이틀 -->
+                <div class="card-header pt-5">
+                  <h3 class="card-title align-items-start flex-column">
+                    <span class="card-label fw-bold text-dark">승인 상태</span>
+                  </h3>
                 </div>
-                <!--end::Input group-->
-                <!--end::card-body-->
-              </form>
+                <!-- end::카드 타이클 -->
+                <!-- begin:: 컨텐트 -->
+                <div class="card-body">
+                  <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework" method="post"
+                    id="kt_careers_form">
+                    <!--begin::Input group-->
+                    <div class="row mb-5">
+                      <!--begin::Col-->
+                      <div class="fv-row d-flex align-items-center">
+                        <!--begin::Label-->
+                        <label class="fs-5 fw-semibold me-4">상태</label>
+                        <!--end::Label-->
+                        <!--begin::Input-->
+                        <span class="form-control form-control-solid col">승인 대기 </span>
+                        <!--end::Input-->
+                      </div>
+                      <!--end::Col-->
+                    </div>
+                    <!--end::Input group-->
+                    <!--end::card-body-->
+                  </form>
+                </div>
+                <!-- end:: 컨텐트 -->
+              </div>
+              <!-- end:: 카드 -->
             </div>
-            <!-- end:: 컨텐트 -->
-          </div>
-          <!-- end:: 카드 -->
-        </div>
-        <!-- end:: 승인 상태 카드 -->
+            <!-- end:: 승인 상태 카드 -->
 
-        <!-- begin::button -->
-        <div class="d-flex flex-column align-items-center basic-btn mt-12
+            <!-- begin::button -->
+            <div class="d-flex flex-column align-items-center basic-btn mt-12
             ">
-          <div class="basic-btn mb-3">
-            <button type="button" class="btn btn-danger me-3">승인 거절</button>
-            <button type="button" class="btn btn-primary">승인
-            </button>
-          </div>
-          <p style="color: var(--bs-blue); border-bottom: 1px solid var(--bs-blue); cursor: pointer;">변경 사항 저장</p>
-        </div>
-        <!-- end::button -->
+              <div class="basic-btn mb-3">
+                <button type="button" class="btn btn-danger me-3">승인 거절</button>
+                <button type="button" class="btn btn-primary">승인
+                </button>
+              </div>
+              <p style="color: var(--bs-blue); border-bottom: 1px solid var(--bs-blue); cursor: pointer;">변경 사항 저장</p>
+            </div>
+            <!-- end::button -->
 
+          </div>
+        </div>
+        <!-- 바디: 끝 -->
+        <!--end:::Main-->
       </div>
+      <!--end::Wrapper-->
     </div>
-    <!-- 바디: 끝 -->
-    <!--end:::Main-->
-  </div>
-  <!--end::Wrapper-->
-  </div>
-  <!--end::Page-->
+    <!--end::Page-->
   </div>
   <!--end::App-->
   <!--begin::Scrolltop-->
