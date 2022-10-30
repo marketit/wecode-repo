@@ -1098,7 +1098,7 @@
                         </select>
                         <select class="form-select" style="width: 78px; margin-bottom: 0.75rem;">
                           <option value="30">30</option>
-                          <option value="50">50</option>
+                          <option value="50" selected="selected">50</option>
                           <option value="100">100</option>
                         </select>
                       </div>
@@ -1106,35 +1106,43 @@
                     </div>
                     <!-- begin:: 컨텐트 -->
                     <div class="table-responsive">
-                      <table class="table table-hover table-rounded table-striped border gy-7 gs-7">
+                      <table class="table table-striped gy-3 gs-7">
                         <thead>
-                          <tr class="fw-semibold fs-6 text-gray-800 border-bottom-2 border-gray-200">
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>Office</th>
-                            <th>Age</th>
-                            <th>Start date</th>
-                            <th>Salary</th>
-
+                          <tr class="fw-semibold fs-6 text-gray-800 border-bottom border-gray-200 text-center">
+                            <th>ID</th>
+                            <th>사업자 정보</th>
+                            <th>제휴사명</th>
+                            <th>영업 담당자</th>
+                            <th>가입 정보 확인</th>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="align-middle">
                           <tr>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
+                            <td style="width:18%">DSVJKAJLsdk
+                            </td>
+                            <td style="width:20%">
+                              <span>챔스프리</span><br />
+                              <span>123-45-67891</span>
+                            </td>
+                            <td>
+                              <span>챔스프리 오가닉라이저</span>
+                              <span class="text-gray-600"> + 1개</span>
+                            </td>
+                            <td style="width:15%">
+                              홍길동
+                            </td>
+                            <td class="text-center" style="width:12%">
+                              <a href="/pages/company/accounts/subscriptionInformationRejection.html">
+                                <button type="submit" class="btn btn-white btn-outline" style="width:100%">
+                                  <!--begin::Indicator label-->
+                                  <span class="indicator-label">가입 정보 확인</span>
+                                  <!--end::Indicator label-->
+                                </button>
+                              </a>
+                            </td>
                           </tr>
-                          <tr>
-                            <td>Garrett Winters</td>
-                            <td>Accountant</td>
-                            <td>Tokyo</td>
-                            <td>63</td>
-                            <td>2011/07/25</td>
-                            <td>$170,750</td>
-                          </tr>
+
+
                         </tbody>
                       </table>
                     </div>
