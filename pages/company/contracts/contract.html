@@ -839,8 +839,8 @@ License: For each use you must have a valid license purchased only from above li
                     <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework" method="post"
                       id="kt_careers_form">
                       <div class="accordion" id="kt_accordion_1">
-                        <div class="accordion-item card-body">
-                          <h2 class="accordion-header d-flex align-items-baseline" id="kt_accordion_1_header_1">
+                        <div class="card-body">
+                          <h2 class="accordion-header d-flex align-items-baseline mb-2" id="kt_accordion_1_header_1">
                             <button class="accordion-button fs-7 fw-semibold" type="button" data-bs-toggle="collapse"
                               data-bs-target="#kt_accordion_1_body_1" aria-expanded="true"
                               aria-controls="kt_accordion_1_body_1"
@@ -850,7 +850,7 @@ License: For each use you must have a valid license purchased only from above li
                           <div class=" col-xxl-12">
                             <div class="row">
                               <!--begin::Col-->
-                              <div class="col-md-6 fv-row fv-plugins-icon-container mb-5">
+                              <div class="col-md-6 mb-5">
                                 <select class=" form-select" data-control="select2" data-placeholder="영업 담당자 이름 선택"
                                   select box : data-allow-clear="true" data-hide-search="true">
                                   <option></option>
@@ -879,7 +879,7 @@ License: For each use you must have a valid license purchased only from above li
                           </div>
 
                           <!--begin::아코디언 바디 -->
-                          <div id="kt_accordion_1_body_1" class="accordion-collapse collapse show"
+                          <div id="kt_accordion_1_body_1" class="accordion-collapse collapse"
                             aria-labelledby="kt_accordion_1_header_1" data-bs-parent="#kt_accordion_1">
                             <div>
                               <!--begin::Input group 7-->
@@ -959,23 +959,17 @@ License: For each use you must have a valid license purchased only from above li
                                   <label class="fs-5 fw-semibold mb-2">계약 등록일</label>
                                   <!--end::Label-->
                                   <!--begin::col-->
-                                  <div class="col-md-12 fv-row fv-plugins-icon-container mb-5 d-flex flex-wrap">
-                                    <form>
-                                      <div class="col-md-3 me-3 d-flex flex-nowrap mb-5">
-                                        <input type="datetime-local" class="form-control me-3">
-                                        <span>~</span>
-                                      </div>
-                                    </form>
-                                    <form class="col-md-3 me-3 mb-3">
-                                      <div>
-                                        <input type="datetime-local" class="form-control">
-                                      </div>
-                                    </form>
-                                    <div class="col">
-                                      <button class="btn btn-light btn-active-light-primary me-3">
+                                  <div class="row">
+                                    <div class="col-md-8 d-flex mb-5 align-items-center">
+                                      <input type="datetime-local" class="form-control">
+                                      <span class="ms-4 me-4">~</span>
+                                      <input type="datetime-local" class="form-control">
+                                    </div>
+                                    <div class="col-md-4">
+                                      <button class="btn btn-white btn-outline btn-active-light-primary">
                                         최근7일
                                       </button>
-                                      <button class="btn btn-light btn-active-light-primary">
+                                      <button class="btn btn-white btn-outline btn-active-light-primary">
                                         최근 1개월
                                       </button>
                                     </div>
