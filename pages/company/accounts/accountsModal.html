@@ -4,17 +4,19 @@
 
 <head>
   <base href="../" />
-  <title>Inflca</title>
+  <title>Infleca</title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+  <!--begin::Vendor Stylesheets(used by this page)-->
+  <link href="/assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+  <!--end::Vendor Stylesheets-->
   <!--begin::Global Stylesheets Bundle(used by all pages)-->
   <link href="/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
   <link href="/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
   <!--end::Global Stylesheets Bundle-->
 </head>
 <!--end::Head-->
-
 <!--begin::Body-->
 
 <body id="kt_app_body" data-kt-app-layout="dark-sidebar" data-kt-app-header-fixed="true"
@@ -85,9 +87,9 @@
               data-kt-drawer-overlay="true" data-kt-drawer-width="250px" data-kt-drawer-direction="end"
               data-kt-drawer-toggle="#kt_app_header_menu_toggle" data-kt-swapper="true"
               data-kt-swapper-mode="{default: 'append', lg: 'prepend'}"
-              data-kt-swapper-parent="{default: '#kt_app_body', lg: '#kt_app_header_wrapper'}" style=""></div>
+              data-kt-swapper-parent="{default: '#kt_app_body', lg: '#kt_app_header_wrapper'}"></div>
             <!--begin::Menu wrapper-->
-            <!--end::Menu wrapper-->
+            <!--end::Menu wrgit apper-->
             <!--begin::Navbar-->
             <div class="app-navbar flex-shrink-0">
               <div class="app-navbar-item ms-1 ms-lg-3">
@@ -152,7 +154,7 @@
                 <!--begin::Menu-->
                 <div
                   class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-title-gray-700 menu-icon-muted menu-active-bg menu-state-color fw-semibold py-4 fs-base w-175px"
-                  data-kt-menu="true" data-kt-element="theme-mode-menu" style="">
+                  data-kt-menu="true" data-kt-element="theme-mode-menu">
                   <!--begin::Menu item-->
                   <div class="menu-item px-3 my-0">
                     <a href="#" class="menu-link px-3 py-2 active" data-kt-element="mode" data-kt-value="light">
@@ -281,7 +283,8 @@
                   <!--end::Menu separator-->
                   <!--begin::Menu item-->
                   <div class="menu-item px-5">
-                    <a href="../../demo1/dist/account/overview.html" class="menu-link px-5">비밀번호 재설정</a>
+                    <a href="../../demo1/dist/account/overview.html" class="menu-link px-5">비밀번호
+                      재설정</a>
                   </div>
                   <!--end::Menu item-->
                   <!--begin::Menu item-->
@@ -373,6 +376,7 @@
               <div class="menu menu-column menu-rounded menu-sub-indention px-3" id="#kt_app_sidebar_menu"
                 data-kt-menu="true" data-kt-menu-expand="false">
                 <!--begin:Menu item-->
+
                 <!--end:Menu item-->
                 <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
                   <!--begin:Menu link-->
@@ -393,7 +397,7 @@
                     <!--begin:Menu item-->
                     <div class="menu-item">
                       <!--begin:Menu link-->
-                      <a class="menu-link" href="/pages/Influencer/influencers2.html">
+                      <a class="menu-link" href="/pages/Influencer/influencers/influencers.html">
                         <span class="menu-bullet">
                           <span class="bullet bullet-dot"></span>
                         </span>
@@ -405,14 +409,20 @@
                     <!--begin:Menu item-->
                     <div class="menu-item">
                       <!--begin:Menu link-->
-                      <a class="menu-link" href="/pages/Influencer/rewards.html">
+                      <a class="menu-link" href="../../demo1/dist/pages/team.html">
                         <span class="menu-bullet">
                           <span class="bullet bullet-dot"></span>
                         </span>
-                        <span class="menu-title">리워드</span>
+                        <span class="menu-title">인플카 캐시백 적립</span>
                       </a>
                       <!--end:Menu link-->
                     </div>
+                    <!--end:Menu item-->
+                    <!--begin:Menu item-->
+
+                    <!--end:Menu item-->
+                    <!--begin:Menu item-->
+
                     <!--end:Menu item-->
                   </div>
                   <!--end:Menu sub-->
@@ -449,7 +459,7 @@
                     <!--begin:Menu item-->
                     <div class="menu-item">
                       <!--begin:Menu link-->
-                      <a class="menu-link" href="/pages/company/accounts/partnersAccounts.html">
+                      <a class="menu-link" href="/pages/accounts/partnersAccounts.html">
                         <span class="menu-bullet">
                           <span class="bullet bullet-dot"></span>
                         </span>
@@ -508,7 +518,7 @@
                     <!--begin:Menu item-->
                     <div class="menu-item">
                       <!--begin:Menu link-->
-                      <a class="menu-link" href="/pages/campaign/applications.html">
+                      <a class="menu-link" href="../../demo1/dist/pages/social/activity.html">
                         <span class="menu-bullet">
                           <span class="bullet bullet-dot"></span>
                         </span>
@@ -520,7 +530,7 @@
                     <!--begin:Menu item-->
                     <div class="menu-item">
                       <!--begin:Menu link-->
-                      <a class="menu-link" href="/pages/social/followers.html">
+                      <a class="menu-link" href="../../demo1/dist/pages/social/followers.html">
                         <span class="menu-bullet">
                           <span class="bullet bullet-dot"></span>
                         </span>
@@ -556,7 +566,7 @@
                     <!--begin:Menu item-->
                     <div class="menu-item">
                       <!--begin:Menu link-->
-                      <a class="menu-link" href="/pages/posting/postManagement.html">
+                      <a class="menu-link" href="../../demo1/dist/pages/faq/classic.html">
                         <span class="menu-bullet">
                           <span class="bullet bullet-dot"></span>
                         </span>
@@ -568,7 +578,7 @@
                     <!--begin:Menu item-->
                     <div class="menu-item">
                       <!--begin:Menu link-->
-                      <a class="menu-link" href="/pages/faq/extended.html">
+                      <a class="menu-link" href="../../demo1/dist/pages/faq/extended.html">
                         <span class="menu-bullet">
                           <span class="bullet bullet-dot"></span>
                         </span>
@@ -601,7 +611,7 @@
                     <!--begin:Menu item-->
                     <div class="menu-item">
                       <!--begin:Menu link-->
-                      <a class="menu-link" href="/pages/pricing/column.html">
+                      <a class="menu-link" href="../../demo1/dist/pages/pricing/column.html">
                         <span class="menu-bullet">
                           <span class="bullet bullet-dot"></span>
                         </span>
@@ -613,7 +623,7 @@
                     <!--begin:Menu item-->
                     <div class="menu-item">
                       <!--begin:Menu link-->
-                      <a class="menu-link" href="/pages/pricing/table.html">
+                      <a class="menu-link" href="../../demo1/dist/pages/pricing/table.html">
                         <span class="menu-bullet">
                           <span class="bullet bullet-dot"></span>
                         </span>
@@ -625,7 +635,7 @@
                     <!--begin:Menu item-->
                     <div class="menu-item">
                       <!--begin:Menu link-->
-                      <a class="menu-link" href="/pages/pricing/table.html">
+                      <a class="menu-link" href="../../demo1/dist/pages/pricing/table.html">
                         <span class="menu-bullet">
                           <span class="bullet bullet-dot"></span>
                         </span>
@@ -637,7 +647,7 @@
                     <!--begin:Menu item-->
                     <div class="menu-item">
                       <!--begin:Menu link-->
-                      <a class="menu-link" href="/pages/pricing/table.html">
+                      <a class="menu-link" href="../../demo1/dist/pages/pricing/table.html">
                         <span class="menu-bullet">
                           <span class="bullet bullet-dot"></span>
                         </span>
@@ -670,7 +680,7 @@
                     <!--begin:Menu item-->
                     <div class="menu-item">
                       <!--begin:Menu link-->
-                      <a class="menu-link" href="/pages/careers/list.html">
+                      <a class="menu-link" href="../../demo1/dist/pages/careers/list.html">
                         <span class="menu-bullet">
                           <span class="bullet bullet-dot"></span>
                         </span>
@@ -790,16 +800,16 @@
           <div id="kt_app_toolbar_container" class="app-container flex-column-fluid d-flex flex-stack">
             <div class="page-title d-flex flex-column justify-content-center flex-wrap me-3">
               <h1 class="page-heading d-flex text-dark fw-bold fs-3 flex-column justify-content-center my-0">
-                계정 및 권한
+                계약
               </h1>
               <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
                 <li class="breadcrumb-item text-muted">
-                  <a href="/" class="text-muted text-hover-primary">제휴사</a>
+                  제휴사
                 </li>
                 <li class="breadcrumb-item">
                   <span class="bullet bg-gray-400 w-5px h-2px"></span>
                 </li>
-                <li class="breadcrumb-item text-muted">계정 및 권한</li>
+                <li class="breadcrumb-item text-muted">계약</li>
               </ul>
             </div>
             <!--end::Actions-->
@@ -815,182 +825,408 @@
             <div class="col-xxl-12 mb-5 mb-xl-10">
               <div class="card">
                 <!-- begin:: 컨텐트 -->
-                <div class="card-body">
-                  <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework" method="post"
-                    id="kt_careers_form">
-
-
-                    <!--begin::Input group1 ::1개짜리-->
-                    1<div class="row mb-5">
-                      <!--begin::Col-->
-                      <div class="col-md-12 fv-row fv-plugins-icon-container">
-                        <!--begin::Label-->
-                        <label class=" fs-5 fw-semibold mb-2">이름</label>
-                        <!--end::Label-->
-                        <!--begin::Input-->
-                        <input type="text" class="form-control" placeholder="이름 입력" name="first_name">
-                        <!--end::Input-->
-                        <div class="fv-plugins-message-container invalid-feedback"></div>
-                      </div>
-                      <!--end::Col-->
-                    </div>
-                    <!--end::Input group1 ::1개짜리-->
-
-
-                    <!--begin::Input group3 ::2개짜리-->
-                    2<div class="row mb-5">
-                      <!--begin::Col-->
-                      <div class="col-md-6 fv-row fv-plugins-icon-container">
-                        <!--begin::Label-->
-                        <label class=" fs-5 fw-semibold mb-2">이름</label>
-                        <!--end::Label-->
-                        <!--begin::Input-->
-                        <input type="text" class="form-control" placeholder="이름 입력" name="first_name">
-                        <!--end::Input-->
-                        <div class="fv-plugins-message-container invalid-feedback"></div>
-                      </div>
-                      <!--end::Col-->
-                      <!--begin::Col-->
-                      <div class="col-md-6 fv-row fv-plugins-icon-container">
-                        <!--end::Label-->
-                        <label class=" fs-5 fw-semibold mb-2">계정 번호</label>
-                        <!--end::Label-->
-                        <!--end::Input-->
-                        <input type="text" class="form-control" placeholder="숫자 입력" name="last_name">
-                        <!--end::Input-->
-                        <div class="fv-plugins-message-container invalid-feedback"></div>
-                      </div>
-                      <!--end::Col-->
-                    </div>
-                    <!--end::Input group3 ::2개짜리-->
-
-
-                    <!--begin::Input group3 ::3개짜리-->
-                    3<div class="row mb-5">
-                      <!--begin::Col-->
-                      <div class="col-md-4 fv-row fv-plugins-icon-container">
-                        <!--begin::Label-->
-                        <label class=" fs-5 fw-semibold mb-2">이름</label>
-                        <!--end::Label-->
-                        <!--begin::Input-->
-                        <input type="text" class="form-control" placeholder="이름 입력">
-                        <!--end::Input-->
-                        <div class="fv-plugins-message-container invalid-feedback"></div>
-                      </div>
-                      <!--end::Col-->
-                      <!--begin::Col-->
-                      <div class="col-md-4 fv-row fv-plugins-icon-container">
-                        <!--end::Label-->
-                        <label class=" fs-5 fw-semibold mb-2">계정 번호</label>
-                        <!--end::Label-->
-                        <!--end::Input-->
-                        <input type="text" class="form-control" placeholder="숫자 입력">
-                        <!--end::Input-->
-                        <div class="fv-plugins-message-container invalid-feedback"></div>
-                      </div>
-                      <!--end::Col-->
-                      <!-- begin::Col -->
-                      <div class="col-md-4 fv-row fv-plugins-icon-container">
-                        <!--end::Label-->
-                        <label class=" fs-5 fw-semibold mb-2">플랫폼 ID</label>
-                        <!--end::Label-->
-                        <!--end::Input-->
-                        <input type="text" class="form-control" placeholder="아이디 입력">
-                        <!--end::Input-->
-                        <div class="fv-plugins-message-container invalid-feedback"></div>
-                      </div>
-                    </div>
-                    <!--end::Input group3 ::3개짜리-->
+                <div class="card-header">
 
 
 
-                    <!-- 인풋유형 -->
-
-
-                    <!-- select box -->
-
-                    <!--begin::Col-->
-                    <div class="col-md-4 fv-row fv-plugins-icon-container mb-5">
-                      <label class="form-label">사업자명 검색</label>
-                      <select class=" form-select" data-control="select2" data-placeholder="사업자명 입력" select box :
-                        data-allow-clear="true" data-hide-search="true">
-                        <option></option>
-                        <option value="1">엠마의 1004 사업장</option>
-                        <option value="2">sample1</option>
-                        <option value="3">sample12</option>
-                        <option value="4">sample3</option>
-                        <option value="5">sample4</option>
-                      </select>
-                    </div>
-                    <!--end::Col-->
-
-
-                    <!-- tagify -->
-
-                    <!--begin::Col-->
-                    <div class="col-md-4 fv-row fv-plugins-icon-container">
-                      <label class="form-label">tagtify</label>
-                      <input class="form-control" placeholder="2개이상 입력시 ,로 구분" value="" id="kt_tagify_2" />
-                    </div>
-                    <!--end::Col-->
-
-                    <!-- tagify 자스 -->
-                    <!-- 
-                      // The DOM elements you wish to replace with Tagify
-                          var input1 = document.querySelector("#kt_tagify_1");
-                          var input2 = document.querySelector("#kt_tagify_2");
-
-                          // Initialize Tagify components on the above inputs
-                          new Tagify(input1);
-                          new Tagify(input2); -->
-
-
-
-
-                    <!-- 이메일 추가 -->
-
-                    <!-- begin:세금계산서 발행 이메일 -->
-                    <div class="row mb-5">
-                      <!--begin::Col-->
-                      <div class="col-md-12 fv-row fv-plugins-icon-container mb-2">
-                        <!--begin::Label-->
-                        <div>
-                          <label class="required fs-5 fw-semibold mb-2 me-5">세금계산서 발행 이메일</label>
-                          <div>
-                            <button type="button" class="btn btn-light-primary mb-2" data-bs-toggle="modal"
-                              data-bs-target="#kt_modal_1">이메일
-                              추가</button>
+                  <!-- begin:: Modal -->
+                  <div class="modal fade" tabindex="-1" id="kt_modal_33" style="--bs-modal-width: 800px;">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h3 class="modal-title">제휴사 연결</h3>
+                          <!--begin::Close-->
+                          <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
+                            aria-label="Close">
+                            <span class="svg-icon svg-icon-1"></span>
                           </div>
-
+                          <!--end::Close-->
                         </div>
-                        <!--end::Label-->
-                        <div class="d-flex">
-                          <span class="form-control form-control-solid">tax@tax.com
-                          </span>
-                          <button class="btn btn-icon btn-active-light-primary w-42px h-42px ms-4"
-                            data-kt-permissions-table-filter="delete_row">
-                            <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-                            <span class="svg-icon svg-icon-3">
-                              <svg width="40" height="40" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z"
-                                  fill="currentColor"></path>
-                                <path opacity="0.5"
-                                  d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z"
-                                  fill="currentColor"></path>
-                                <path opacity="0.5"
-                                  d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z"
-                                  fill="currentColor">
-                                </path>
-                              </svg>
-                            </span>
-                            <!--end::Svg Icon-->
-                          </button>
+                        <!-- begin:: Card -->
+                        <!-- begin::제휴사 정보 카드 -->
+                        <div class="col-xxl-12 mb-5 mb-xl-10">
+                          <!-- begin::카드 -->
+                          <div class="card">
+                            <!-- begin::카드 타이틀 -->
+                            <div class="card-header pt-5">
+                              <h3 class="card-title align-items-start flex-column">
+                                <span class="card-label fw-bold text-dark">제휴사 정보<i
+                                    class="fas fa-exclamation-circle ms-2 fs-7"></i></span>
+                              </h3>
+                            </div>
+                            <!-- end::카드 타이클 -->
+                            <!-- begin:: card-body -->
+                            <div class="card-body">
+                              <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework" method="post"
+                                id="kt_careers_form">
+
+                                <!--begin::제휴사-->
+                                <div class="row mb-5">
+                                  <!--begin::Col-->
+                                  <div class="col-md-4 fv-row fv-plugins-icon-container mb-2">
+                                    <!--begin::Label-->
+                                    <!--end::Label-->
+                                    <label class="required fs-5 fw-semibold mb-2">제휴사명<i
+                                        class="fas fa-exclamation-circle ms-2 fs-7"></i></label>
+                                    <!--end::Label-->
+                                    <!--end::Label-->
+                                    <!--begin::Input-->
+                                    <input class="form-control " placeholder="홍길동">
+                                    <!--end::Input-->
+                                  </div>
+                                  <!--end::Col-->
+                                  <!--begin::Col-->
+                                  <div class="col-md-4 fv-row mb-2">
+                                    <!--begin::Label-->
+                                    <label class="fs-5 fw-semibold mb-2">제휴사 번호</label>
+                                    <!--end::Label-->
+                                    <!--begin::Input-->
+                                    <span class="form-control form-control-solid col">승인 이후 자동생성 됩니다 </span>
+                                    <!--end::Input-->
+                                  </div>
+                                  <!--end::Col-->
+                                  <!--begin::Col-->
+                                  <div class="col-md-4 fv-row">
+                                    <!--end::Label-->
+                                    <label class="fs-5 fw-semibold mb-2">제휴사 생성 여부</label>
+                                    <!--end::Label-->
+                                    <div class="form-control ps-sm-3">
+                                      <input class="form-check-input " type="radio" value="" />
+                                      <label class="form-check-label me-4">
+                                        입력한 정보로 새 제휴사 생성
+                                      </label>
+                                      <input class="form-check-input " type="radio" value="" />
+                                      <label class="form-check-label me-4">
+                                        미생성
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <!--end::Col-->
+                                </div>
+                                <!--end::제휴사-->
+
+                                <!-- begin::상품/서비스 제공방식 -->
+                                <div class="row mb-5">
+                                  <!--begin::Col-->
+                                  <div class="col-md-12 fv-row fv-plugins-icon-container mb-2 mb-5">
+                                    <!--begin::Label-->
+                                    <label class="required fs-5 fw-semibold mb-2">상품/서비스 제공 방식</label>
+                                    <!--end::Label-->
+
+                                    <!--begin::상품 제공 방식-->
+                                    <div class="form-control" style="border: 0;">
+                                      <div style="display: flex;">
+                                        <div class="form-check form-check-custom form-check-solid"
+                                          style="margin-right: 20px;">
+                                          <input class="form-check-input" type="checkbox" value="1"
+                                            id="flexCheckDefault" />
+                                          <label class="form-check-label" for="flexCheckDefault">
+                                            인플루언서에게 온라인/배송으로 제공
+                                          </label>
+                                        </div>
+
+                                        <label class="form-check form-check-custom form-check-solid">
+                                          <input class="form-check-input" type="checkbox" value="1" />
+                                          <span class="form-check-label">
+                                            인플루언서가 직접 방문
+                                          </span>
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!--end::상품 제공 방식-->
+                                </div>
+                                <!-- end::상품/서비스 제공방식 -->
+
+                                <!--begin::전화번호-->
+                                <div class="row mb-5">
+                                  <div class="col-md-12 fv-plugins-icon-container mb-2">
+                                    <!--begin::Label-->
+                                    <label class="required fs-5 fw-semibold mb-2">전화번호</label>
+                                    <!--end::Label-->
+                                    <input class=" form-control col" placeholder="02-123-4567">
+                                  </div>
+                                </div>
+                                <!--end::전화번호-->
+
+                                <!--begin::주소-->
+                                <div class="row mb-5">
+                                  <div class="col-md-6 fv-plugins-icon-container mb-2">
+                                    <!--begin::Label-->
+                                    <div class="d-flex mb-2">
+                                      <label class="required fs-5 fw-semibold mt-1 me-4">주소</label>
+                                      <div class="form-check form-check-custom form-check-solid">
+                                        <input class="form-check-input" type="checkbox" value="" id="partnerAdress"
+                                          checked="checked">
+                                        <label class="form-check-label ms-3" for="partnerAdress">사업장 주소(소재지)와 동일</label>
+                                      </div>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                      <!--end::Label-->
+                                      <input class=" form-control form-control-solid col me-2" placeholder="주소검색을 해주세요">
+                                      <button type="submit" class="btn btn-white btn-outline">
+                                        <!--begin::Indicator label-->
+                                        <span class="indicator-label">주소검색</span>
+                                        <!--end::Indicator label-->
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-12 fv-plugins-icon-container mb-2">
+                                    <input class=" form-control col" placeholder="상세주소 입력">
+                                  </div>
+                                </div>
+                                <!--end::주소-->
+
+                                <!-- begin:웹사이트 -->
+                                <div class="row mb-5">
+                                  <!--begin::Col-->
+                                  <div class="col-md-12 fv-row fv-plugins-icon-container mb-2">
+                                    <!--begin::Label-->
+                                    <div>
+                                      <label class="required fs-5 fw-semibold mb-2 me-5">웹사이트</label>
+                                      <div>
+                                        <button type="button" class="btn btn-light-primary mb-2" data-bs-toggle="modal"
+                                          data-bs-target="#kt_modal_1">웹사이트 추가</button>
+                                      </div>
+                                    </div>
+                                    <div class="row mb-5">
+                                      <!--begin::Col-->
+                                      <div class="col-md-6 fv-row fv-plugins-icon-container mb-2">
+                                        <div class="d-flex" data-select2-id="select2-data-6-2yuh">
+                                          <div class="overflow-hidden flex-grow-1"
+                                            data-select2-id="select2-data-5-drzp">
+                                            <select class="form-select form-select" data-control="select2"
+                                              data-placeholder="유형" data-allow-clear="true" data-hide-search="true">
+                                              <option></option>
+                                              <option value="1">공식홈페이지</option>
+                                              <option value="2">인스타그램</option>
+                                              <option value="3">블로그</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!--end::Col-->
+                                      <!--begin::Col-->
+                                      <div class="col-md-6 fv-row">
+                                        <!--end::Input-->
+                                        <div class="d-flex">
+                                          <span class="form-control">URL
+                                          </span>
+                                          <button class="btn btn-icon btn-active-light-primary w-42px h-42px ms-4"
+                                            data-kt-permissions-table-filter="delete_row">
+                                            <span class="svg-icon svg-icon-3">
+                                              <svg width="40" height="40" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                  d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z"
+                                                  fill="currentColor"></path>
+                                                <path opacity="0.5"
+                                                  d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z"
+                                                  fill="currentColor"></path>
+                                                <path opacity="0.5"
+                                                  d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z"
+                                                  fill="currentColor">
+                                                </path>
+                                              </svg>
+                                            </span>
+                                            <!--end::Svg Icon-->
+                                          </button>
+                                        </div>
+                                        <!--end::Input-->
+                                      </div>
+                                      <!--end::Col-->
+                                    </div>
+                                  </div>
+                                  <!-- end::Col -->
+                                </div>
+                                <!-- end::웹사이트 -->
+
+                                <!-- begin::카드 가맹점 정보 -->
+                                <div class="row">
+                                  <!--begin::Col-->
+                                  <div class="col-md-12 fv-row fv-plugins-icon-container mb-2">
+                                    <!--begin::Label-->
+                                    <div>
+                                      <div>
+                                        <label class="fs-5 fw-semibold mb-2 me-5">현대카드 가맹점
+                                          정보</label>
+                                      </div>
+                                      <div>
+                                        <button type="button" class="btn btn-light-primary mb-2" data-bs-toggle="modal"
+                                          data-bs-target="#kt_modal_1">가맹점
+                                          정보 추가</button>
+                                      </div>
+                                    </div>
+                                    <!--end::Label-->
+
+                                    <!--begin::Input-->
+                                    <div class="row mb-5">
+                                      <div class="col-md-12 x fv-plugins-icon-container mb-2 mb-2">
+                                        <div class="row">
+                                          <div class="col-md-2 x fv-plugins-icon-container mb-2 mb-2">
+                                            <select class="form-select form-select" data-control="select2"
+                                              data-placeholder="PG사 여부" data-allow-clear="true" data-hide-search="true">
+                                              <option></option>
+                                              <option value="1">해당</option>
+                                              <option value="2">해당 없음</option>
+                                              <option value="3">알 수 없음</option>
+                                            </select>
+                                          </div>
+                                          <div class="col-md-3 x fv-plugins-icon-container mb-2">
+                                            <select class="form-select form-select" data-control="select2"
+                                              data-placeholder="결제건-캠페인 매칭 방식" data-allow-clear="true"
+                                              data-hide-search="true">
+                                              <option></option>
+                                              <option value="1">자동 매칭</option>
+                                              <option value="2">수동 매칭</option>
+                                            </select>
+                                          </div>
+                                          <div class="col-md-2 x fv-plugins-icon-container mb-2">
+                                            <input type="text" class="form-control" placeholder="사업자등록번호"
+                                              name="first_name">
+                                          </div>
+                                          <div class="col-md-2 x fv-plugins-icon-container mb-2">
+                                            <input type="text" class="form-control" placeholder="가맹점명 입력"
+                                              name="first_name">
+                                          </div>
+                                          <div class="d-flex col-md-3 x fv-plugins-icon-container mb-2">
+                                            <input type="text" class="form-control" placeholder="가맹점 번호 입력"
+                                              name="first_name">
+                                            <button class="btn btn-icon btn-active-light-primary w-42px h-42px ms-4"
+                                              data-kt-permissions-table-filter="delete_row">
+                                              <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
+                                              <span class="svg-icon svg-icon-3">
+                                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path
+                                                    d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z"
+                                                    fill="currentColor"></path>
+                                                  <path opacity="0.5"
+                                                    d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z"
+                                                    fill="currentColor"></path>
+                                                  <path opacity="0.5"
+                                                    d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z"
+                                                    fill="currentColor">
+                                                  </path>
+                                                </svg>
+                                              </span>
+                                              <!--end::Svg Icon-->
+                                            </button>
+                                          </div>
+                                          <div class="d-flex align-items-center card-rounded p-5 mb-1">
+
+                                            <!--begin::Text-->
+                                            <div class="col-md-12 x  fv-plugins-icon-container mb-2">
+                                              <div class="mb-0 fs-6">
+                                                <div class="lh-lg mb-1 text-bg-light p-10 ">
+                                                  <ul>
+                                                    <span class="fw-semibold">[현대카드
+                                                      가맹점
+                                                      정보]</span>
+                                                    <div class="ps-5">
+                                                      <li><a href="https://www.hyundaicard.com/csa/mb/STOREMAIN.hc"
+                                                          class="text-decoration-underline" target="_blank"
+                                                          rel="noreferrer">현대카드
+                                                          가맹점 페이지 &gt; 가맹점 번호
+                                                          조회</a>
+                                                        버튼을 눌러 조회할 수 있습니다.</li>
+                                                      <li>정확한 가맹점 정보를 입력해주셔야
+                                                        인플루언서의 결제
+                                                        정보에 맞는 캠페인 안내가 가능합니다.
+                                                      </li>
+                                                    </div>
+
+                                                  </ul>
+                                                  <ul>
+                                                    <span class="fw-semibold">[PG사
+                                                      여부]
+                                                    </span>
+                                                    <div class="ps-5">
+                                                      <li>PG사 예시 : KG이니시스,나이스페이 등
+                                                      </li>
+                                                    </div>
+                                                  </ul>
+                                                  <ul>
+                                                    <span class="fw-semibold">[결제건-캠페인
+                                                      매칭
+                                                      방식]</span>
+                                                    <div class="ps-5">
+                                                      <li>자동 매칭</li>
+                                                      <ul>
+                                                        <li>제휴사의 단독 가맹점 정보일 경우
+                                                          선택해
+                                                          주세요.</li>
+                                                        <li>해당 가맹점 정보의 결제건 확인 시,
+                                                          인플카
+                                                          액티비티가 바로 생성됨니다.</li>
+                                                      </ul>
+                                                    </div>
+                                                  </ul>
+                                                  <div class="ps-5">
+                                                    <ul>
+                                                      <li>수동 매칭</li>
+                                                      <ul>
+                                                        <li>진행하는 제휴사 외 다른 사업자가
+                                                          해당
+                                                          가맹점 정보를 함께 사용하는 경우
+                                                          선택해
+                                                          주세요. (PG사, 몰에 입점한 매장
+                                                          등이
+                                                          해당됨)</li>
+                                                        <li>인플루언서가 결제건에 맞는 캠페인을
+                                                          직접
+                                                          선택해야 합니다.</li>
+                                                      </ul>
+                                                    </ul>
+                                                  </div>
+                                                  <ul>
+                                                    <span class="fw-semibold">[사업자등록번호]
+                                                    </span>
+                                                    <div class="ps-5">
+                                                      <li>영수증이나 카드 전표에 표시되는
+                                                        사업자등록번호를
+                                                        입력해주세요.</li>
+                                                      <li>・PG사 가맹점 정보를 등록할 경우 PG사의
+                                                        사업자등록번호를 입력해주세요.</li>
+                                                    </div>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <!--end::Text-->
+
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!--end::Input-->
+                                  <div class="col-xxl-12 mb-5 mb-xl-10">
+                                    <div class="d-flex flex-center">
+                                      <button class="btn btn-primary" style="width: 100px;">저장</button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- end::카드 가맹점 정보 -->
+
+                              </form>
+                            </div>
+                            <!--end::Input group-->
+                          </div>
+                          <!--end::Input group-->
+                          </form>
+                        </div>
+                        <!-- end:: 제휴사 정보 카드 -->
+                        <!-- end:: Card -->
+
+                        <div class="modal-footer flex-center">
+                          <button type="button" class="btn btn-light" data-bs-dismiss="modal">닫기</button>
+                          <button type="button" id="kt_docs_sweetalert_basic" class="btn btn-primary">연결</button>
                         </div>
                       </div>
                     </div>
-                    <!-- end::세금계산서 발행 이메일 -->
+                  </div>
+                  <!-- end:: Modal -->
 
 
 
@@ -999,31 +1235,28 @@
 
 
 
-                    <!-- begin::button -->
-                    ​<div style="display: flex; justify-content: center;" class="basic-btn">
-                      <button class="btn btn-white btn-outline me-3">
-                        초기화
-                      </button>
-                      <button class="btn btn-primary">검색</button>
-                    </div>
-                    <!-- end::button -->
+
+
                 </div>
-                <!--end::card-body-->
-                </form>
+                <!-- begin:: card-body -->
+                <div class="card-body">
+                </div>
+                <!-- end::card-body-->
               </div>
               <!-- end:: 컨텐트 -->
             </div>
-            <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-            <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            <!-- end:: 컨텐트 -->
           </div>
         </div>
         <!-- 바디: 끝 -->
+        <!--end:::Main-->
       </div>
       <!--end::Wrapper-->
     </div>
     <!--end::Page-->
   </div>
   <!--end::App-->
+
   <!--begin::Scrolltop-->
   <div id=" kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
     <!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg-->
@@ -1041,10 +1274,32 @@
   <!--end::Scrolltop-->
 
   <!--begin::Javascript-->
+  <script>
+    var hostUrl = "assets/";
+  </script>
   <!--begin::Global Javascript Bundle(used by all pages)-->
   <script src="/assets/plugins/global/plugins.bundle.js"></script>
   <script src="/assets/js/scripts.bundle.js"></script>
   <!--end::Global Javascript Bundle-->
+  <!--begin::Vendors Javascript(used by this page)-->
+  <script src="/assets/plugins/custom/datatables/datatables.bundle.js"></script>
+  <!--end::Vendors Javascript-->
+  <!--begin::Custom Javascript(used by this page)-->
+  <script src="/assets/js/custom/apps/customers/view/add-payment.js"></script>
+  <script src="/assets/js/custom/apps/customers/view/adjust-balance.js"></script>
+  <script src="/assets/js/custom/apps/customers/view/invoices.js"></script>
+  <script src="/assets/js/custom/apps/customers/view/payment-method.js"></script>
+  <script src="/assets/js/custom/apps/customers/view/payment-table.js"></script>
+  <script src="/assets/js/custom/apps/customers/view/statement.js"></script>
+  <script src="/assets/js/custom/apps/customers/update.js"></script>
+  <script src="/assets/js/widgets.bundle.js"></script>
+  <script src="/assets/js/custom/widgets.js"></script>
+  <script src="/assets/js/custom/apps/chat/chat.js"></script>
+  <script src="/assets/js/custom/utilities/modals/upgrade-plan.js"></script>
+  <script src="/assets/js/custom/utilities/modals/create-app.js"></script>
+  <script src="/assets/js/custom/utilities/modals/new-card.js"></script>
+  <script src="/assets/js/custom/utilities/modals/users-search.js"></script>
+  <!--end::Custom Javascript-->
   <!--end::Javascript-->
 
   <!--end::Body-->
@@ -1163,14 +1418,6 @@
       );
     }
       // ]]>
-  </script>
-  <script>
-
-    var input1 = document.querySelector("#kt_tagify_1");
-    var input2 = document.querySelector("#kt_tagify_2");
-
-    new Tagify(input1);
-    new Tagify(input2);
   </script>
 </body>
 <!--end::Body-->
