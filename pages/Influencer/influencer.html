@@ -905,20 +905,20 @@ License: For each use you must have a valid license purchased only from above li
                         <div class="page-title d-flex flex-column justify-content-center flex-wrap me-3">
                             <h1
                                 class="page-heading d-flex text-dark fw-bold fs-3 flex-column justify-content-center my-0">
-                                새 그룹 제휴사 추가
+                                인플루언서 상세 정보 : 임채명(1234)
                             </h1>
                             <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
                                 <li class="breadcrumb-item text-muted">
-                                    <a href="/" class="text-muted text-hover-primary">제휴사</a>
+                                    <a href="/" class="text-muted text-hover-primary">인플루언서</a>
                                 </li>
                                 <li class="breadcrumb-item">
                                     <span class="bullet bg-gray-400 w-5px h-2px"></span>
                                 </li>
-                                <li class="breadcrumb-item text-muted">제휴사 현황</li>
+                                <li class="breadcrumb-item text-muted">인플루언서 검색</li>
                                 <li class="breadcrumb-item">
                                     <span class="bullet bg-gray-400 w-5px h-2px"></span>
                                 </li>
-                                <li class="breadcrumb-item text-muted">새 그룹 제휴사 추가</li>
+                                <li class="breadcrumb-item text-muted">자세히</li>
                             </ul>
                         </div>
                         <!--end::Actions-->
@@ -936,11 +936,19 @@ License: For each use you must have a valid license purchased only from above li
                         <div class="card-header pt-5">
                             <ul class="nav nav-tabs nav-line-tabs nav-line-tabs-2x mb-5 fs-6">
                                 <li class="nav-item">
-                                    <a class="nav-link active" data-bs-toggle="tab" href="#kt_tab_pane_4">계정 및
-                                        제휴사 정보</a>
+                                    <a class="nav-link active" data-bs-toggle="tab" href="#kt_tab_pane_4">기본 정보</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-bs-toggle="tab" href="#kt_tab_pane_5">계약 및 캠페인</a>
+                                    <a class="nav-link" data-bs-toggle="tab" href="#kt_tab_pane_5">플랫폼</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#kt_tab_pane_6">인플카 및 캠페인</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#kt_tab_pane_7">적립금</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#kt_tab_pane_8">메시지</a>
                                 </li>
                             </ul>
                         </div>
@@ -952,33 +960,91 @@ License: For each use you must have a valid license purchased only from above li
                         <!-- begin::tab -->
                         <div class="tab-content" id="myTabContent">
 
-                            <!-- begin::first tab -->
+                            <!-- begin::1st tab -->
                             <div class="tab-pane fade show active" id="kt_tab_pane_4" role="tabpanel">
 
                                 <!-- begin::카드 -->
                                 <div class="col-xxl-12 mb-5 mb-xl-10">
                                     <div class="card">
+
                                         <!-- begin:: card-body -->
                                         <div class="card-body">
                                             <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework"
                                                 method="post" id="kt_careers_form">
 
-                                                <!--begin::영업 담당자-->
-                                                <div class="row mb-5">
+                                                <!--begin::Input group-->
+                                                <div class="row mb-1">
+
                                                     <!--begin::Col-->
-                                                    <div class="col-md-12 fv-row fv-plugins-icon-container">
+                                                    <div class="col-md-4 fv-row fv-plugins-icon-container">
                                                         <!--begin::Label-->
-                                                        <label class="required fs-5 fw-semibold mb-2">영업 담당자</label>
+                                                        <label class="fs-5 fw-semibold mb-2">이름</label>
                                                         <!--end::Label-->
 
                                                         <!--begin::Input-->
-                                                        <input type="text" class="form-control" placeholder="이름 입력"
-                                                            name="first_name">
+                                                        <p class="form-control form-control-solid">임채명</p>
+                                                        <!--end::Input-->
+                                                    </div>
+                                                    <!--end::Col-->
+
+                                                    <!--begin::Col-->
+                                                    <div class="col-md-4 fv-row fv-plugins-icon-container">
+                                                        <!--begin::Label-->
+                                                        <label class="fs-5 fw-semibold mb-2">성별</label>
+                                                        <!--end::Label-->
+
+                                                        <!--begin::Input-->
+                                                        <p class="form-control form-control-solid">남성</p>
+                                                        <!--end::Input-->
+                                                    </div>
+                                                    <!--end::Col-->
+
+                                                    <!--begin::Col-->
+                                                    <div class="col-md-4 fv-row fv-plugins-icon-container">
+                                                        <!--begin::Label-->
+                                                        <label class="fs-5 fw-semibold mb-2">생년월일</label>
+                                                        <!--end::Label-->
+
+                                                        <!--begin::Input-->
+                                                        <p class="form-control form-control-solid">1996-04-07</p>
                                                         <!--end::Input-->
                                                     </div>
                                                     <!--end::Col-->
                                                 </div>
-                                                <!--end::영업 담당자-->
+                                                <!--end::Input group-->
+
+
+                                                <!--begin::Input group-->
+                                                <div class="row mb-1">
+
+                                                    <!--begin::Col-->
+                                                    <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                        <!--begin::Label-->
+                                                        <label class="fs-5 fw-semibold mb-2">휴대폰 번호</label>
+                                                        <!--end::Label-->
+
+                                                        <!--begin::Input-->
+                                                        <p class="form-control form-control-solid">010-1234-5678</p>
+                                                        <!--end::Input-->
+                                                    </div>
+                                                    <!--end::Col-->
+
+                                                    <!--begin::Col-->
+                                                    <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                        <!--begin::Label-->
+                                                        <label class="fs-5 fw-semibold mb-2">이메일</label>
+                                                        <!--end::Label-->
+
+                                                        <!--begin::Input-->
+                                                        <p class="form-control form-control-solid">chaem@marketit.asia
+                                                        </p>
+                                                        <!--end::Input-->
+                                                    </div>
+                                                    <!--end::Col-->
+
+                                                </div>
+                                                <!--end::Input group-->
+
 
                                             </form>
                                         </div>
@@ -990,937 +1056,55 @@ License: For each use you must have a valid license purchased only from above li
                                 <!-- begin::카드 -->
                                 <div class="col-xxl-12 mb-5 mb-xl-10">
                                     <div class="card">
+
                                         <!-- begin:: card-body -->
                                         <div class="card-body">
                                             <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework"
                                                 method="post" id="kt_careers_form">
+
                                                 <!--begin::Input group-->
-                                                <div class="row mb-5">
+                                                <div class="row mb-1">
 
-                                                    <div class="col-md-12 fv-row fv-plugins-icon-container">
-                                                        <!-- begin::연결된 계정 -->
-                                                        <div
-                                                            style="border-bottom: 1px solid var(--kt-card-border-color);">
-                                                            <!--begin::Label-->
-                                                            <label class="fs-2 fw-semibold mb-2">연결된 계정</label>
-                                                            <!--end::Label-->
-                                                        </div>
-                                                        <!-- end::연결된 계정 -->
+                                                    <!--begin::Col-->
+                                                    <div class="col-md-11 fv-row fv-plugins-icon-container">
+                                                        <!--begin::Label-->
+                                                        <label class="fs-5 fw-semibold mb-2">비고</label>
+                                                        <!--end::Label-->
 
-                                                        <!-- begin::연결된 계정 없을 때, 계정 연결 -->
-                                                        <div class="no-account-search-list text-center mt-12 mb-12"><i
-                                                                class="marketit-icon_search_list"></i>
-                                                            <h5 class="mt-4 mb-2" style="font-weight: bold;">연결된 계정이
-                                                                없습니다.</h5>
-                                                            <p>
-                                                                <span style="color: var(--red-6);">*</span> 그룹 제휴사를 관리할
-                                                                마스터 계정 1개를 연결해 주세요.
-                                                            </p>
-                                                            <div class="mt-3">
-                                                                <button type="button" class="btn btn-light-primary"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#kt_modal_1">계정
-                                                                    연결</button>
-                                                            </div>
-                                                        </div>
-                                                        <!-- end::연결된 계정 없을 때, 계정 연결 -->
-
-
-
-                                                        <!-- begin::연결된 계정 있을 때 -->
-
-                                                        <!--begin::Col-->
-                                                        <!-- 계정 정보의 id -->
-                                                        <div class="col-md-12 fv-row fv-plugins-icon-container">
-                                                            <!--begin::Label-->
-                                                            <label class=" fs-5 fw-semibold mb-2">ID</label>
-                                                            <!--end::Label-->
-                                                            <!--begin::Input-->
-                                                            <p class="form-control form-control-solid">chaem [마스터 계정]
-                                                            </p>
-                                                            <!--end::Input-->
-                                                            <div class="fv-plugins-message-container invalid-feedback">
-                                                            </div>
-                                                        </div>
-                                                        <!-- 계정 정보의 id -->
-
-
-                                                        <!-- 계정 정보/이름 직급 -->
-                                                        <div class="row mb-2">
-                                                            <!--begin::Col-->
-                                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
-                                                                <!--begin::Label-->
-                                                                <label class=" fs-5 fw-semibold mb-2">이름</label>
-                                                                <!--end::Label-->
-                                                                <!--begin::Input-->
-                                                                <p class="form-control form-control-solid">임채명</p>
-                                                                <!--end::Input-->
-                                                                <div
-                                                                    class="fv-plugins-message-container invalid-feedback">
-                                                                </div>
-                                                            </div>
-                                                            <!--end::Col-->
-                                                            <!--begin::Col-->
-                                                            <div class="col-md-6 fv-row">
-                                                                <!--end::Label-->
-                                                                <div
-                                                                    style="display: flex; justify-content: space-between;">
-                                                                    <label class=" fs-5 fw-semibold mb-2">직급(직책)</label>
-                                                                </div>
-                                                                <!--end::Label-->
-                                                                <!--end::Input-->
-                                                                <p class="form-control form-control-solid">대표</p>
-                                                                <!--end::Input-->
-                                                            </div>
-                                                            <!--end::Col-->
-                                                        </div>
-                                                        <!-- 계정 정보/이름 직급 -->
-
-                                                        <!-- 계정 정보/휴대폰 번호, 이메일 -->
-                                                        <div class="row mb-2">
-                                                            <!--begin::Col-->
-                                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
-                                                                <!--begin::Label-->
-                                                                <div class="d-flex">
-                                                                    <label class=" fs-5 fw-semibold mb-2">휴대폰 번호</label>
-                                                                    <div
-                                                                        class="form-check form-switch form-check-custom form-check-solid me-10 ms-5">
-                                                                        <input class="form-check-input h-20px w-35px"
-                                                                            type="checkbox" value=""
-                                                                            id="flexSwitch30x50">
-                                                                        <label class="form-check-label"
-                                                                            for="flexSwitch30x50">
-                                                                            메시지 수신 동의
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                                <!--end::Label-->
-                                                                <!--begin::Input-->
-                                                                <p class="form-control form-control-solid">010-1234-5678
-                                                                </p>
-                                                                <!--end::Input-->
-                                                                <div
-                                                                    class="fv-plugins-message-container invalid-feedback">
-                                                                </div>
-                                                            </div>
-                                                            <!--end::Col-->
-                                                            <!--begin::Col-->
-                                                            <div class="col-md-6 fv-row">
-                                                                <!--end::Label-->
-                                                                <div
-                                                                    style="display: flex; justify-content: space-between;">
-                                                                    <label class=" fs-5 fw-semibold mb-2">연락 이메일</label>
-                                                                </div>
-                                                                <!--end::Label-->
-                                                                <!--end::Input-->
-                                                                <p class="form-control form-control-solid">
-                                                                    chaem@gmail.com</p>
-                                                                <!--end::Input-->
-                                                            </div>
-                                                            <!--end::Col-->
-                                                        </div>
-                                                        <!-- 계정 정보/휴대폰 번호, 이메일 -->
-
-                                                        <!-- 사업자 정보/이름 등록번호 -->
-                                                        <div class="row mb-2">
-                                                            <!--begin::Col-->
-                                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
-                                                                <!--begin::Label-->
-                                                                <label class=" fs-5 fw-semibold mb-2">사업자명</label>
-                                                                <!--end::Label-->
-                                                                <!--begin::Input-->
-                                                                <p class="form-control form-control-solid">챔스프리</p>
-                                                                <!--end::Input-->
-                                                                <div
-                                                                    class="fv-plugins-message-container invalid-feedback">
-                                                                </div>
-                                                            </div>
-                                                            <!--end::Col-->
-                                                            <!--begin::Col-->
-                                                            <div class="col-md-6 fv-row">
-                                                                <!--end::Label-->
-                                                                <div
-                                                                    style="display: flex; justify-content: space-between;">
-                                                                    <label
-                                                                        class=" fs-5 fw-semibold mb-2">사업자등록번호</label>
-                                                                </div>
-                                                                <!--end::Label-->
-                                                                <!--end::Input-->
-                                                                <p class="form-control form-control-solid">123-45-67890
-                                                                </p>
-                                                                <!--end::Input-->
-                                                            </div>
-                                                            <!--end::Col-->
-                                                        </div>
-                                                        <!-- 사업자 정보/이름 등록번호 -->
-
-                                                        <!-- 사업자등록증 -->
-                                                        <div class="row mb-2">
-                                                            <div
-                                                                class="fv-row fv-plugins-icon-container align-items-center">
-                                                                <!--end::Label-->
-                                                                <label class="fs-5 fw-semibold mb-5">사업자등록증</label>
-                                                                <!--end::Label-->
-                                                            </div>
-                                                            <div class="col-md-3 fv-row fv-plugins-icon-container">
-                                                                <!--begin::Image input-->
-                                                                <div class="image-input image-input-empty me-3"
-                                                                    data-kt-image-input="true"
-                                                                    style="background-image: url(/assets/media/svg/avatars/blank.svg)">
-                                                                    <!--begin::Image preview wrapper-->
-                                                                    <div class="image-input-wrapper w-125px h-125px">
-                                                                    </div>
-                                                                    <!--end::Image preview wrapper-->
-                                                                </div>
-                                                                <!--end::Image input-->
-                                                                <a href="../../../assets/media/svg/avatars/blank.svg"
-                                                                    class="text-decoration-underline"
-                                                                    download="blank.svg">이미지 다운로드</a>
-                                                            </div>
-                                                            <!-- 사업자등록증 -->
-
-                                                            <!--end::Col-->
-
-                                                            <!-- end::연결된 계정 있을 때 -->
-
-
-                                                        </div>
-
+                                                        <!--begin::Input-->
+                                                        <input type="text" class="form-control" placeholder="비고 입력">
+                                                        <!--end::Input-->
                                                     </div>
-                                                    <!--end::Input group-->
+
+                                                    <div class="col-md-1 fv-row fv-plugins-icon-container">
+                                                        <!--begin::Label-->
+                                                        <label class="fs-5 fw-semibold mb-2">&nbsp;</label>
+                                                        <!--end::Label-->
+
+                                                        <!--begin::Input-->
+                                                        <button class="btn btn-primary"
+                                                            style="width: 100px;">저장</button>
+                                                        <!--end::Input-->
+                                                    </div>
+                                                    <!--end::Col-->
+
                                                 </div>
+                                                <!--end::Input group-->
+
+
                                             </form>
                                         </div>
                                         <!-- end::card-body-->
                                     </div>
                                 </div>
                                 <!-- end:: 카드 -->
-
-                                <!-- begin::카드 -->
-                                <div class="col-xxl-12 mb-5 mb-xl-10">
-                                    <div class="card">
-                                        <!-- begin:: card-body -->
-                                        <div class="card-body">
-                                            <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework"
-                                                method="post" id="kt_careers_form">
-                                                <!--begin::Input group-->
-                                                <div class="row mb-5">
-
-                                                    <div class="col-md-12 fv-row fv-plugins-icon-container">
-
-                                                        <!-- begin::card title // 사업자정보 -->
-                                                        <div
-                                                            style="border-bottom: 1px solid var(--kt-card-border-color);">
-                                                            <!--begin::Label-->
-                                                            <label class="fs-2 fw-semibold mb-2">사업자 정보</label>
-                                                            <!--end::Label-->
-                                                        </div>
-                                                        <!-- end::card title // 사업자정보 -->
-
-
-
-                                                        <!-- begin::그룹 제휴사명, 번호 -->
-                                                        <div class="row mb-2 mt-5">
-                                                            <!--begin::Col-->
-                                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
-                                                                <!--begin::Label-->
-                                                                <label class="required fs-5 fw-semibold mb-2">그룹
-                                                                    제휴사명</label>
-                                                                <!--end::Label-->
-                                                                <!--begin::Input-->
-                                                                <input class="form-control" placeholder="그룹 제휴사명 입력">
-                                                                <!--end::Input-->
-                                                                <div
-                                                                    class="fv-plugins-message-container invalid-feedback">
-                                                                </div>
-                                                            </div>
-                                                            <!--end::Col-->
-                                                            <!--begin::Col-->
-                                                            <div class="col-md-6 fv-row">
-                                                                <!--end::Label-->
-                                                                <div
-                                                                    style="display: flex; justify-content: space-between;">
-                                                                    <label class=" fs-5 fw-semibold mb-2">그룹 제휴사
-                                                                        번호</label>
-                                                                </div>
-                                                                <!--end::Label-->
-                                                                <!--end::Input-->
-                                                                <p class="form-control form-control-solid">저장 이후 자동
-                                                                    생성됩니다.</p>
-                                                                <!--end::Input-->
-                                                            </div>
-                                                            <!--end::Col-->
-                                                        </div>
-                                                        <!-- end::그룹 제휴사명, 번호 -->
-
-
-                                                        <!--begin::영업 담당자-->
-                                                        <div class="row mb-5">
-                                                            <!--begin::Col-->
-                                                            <div class="col-md-12 fv-row fv-plugins-icon-container">
-                                                                <!--begin::Label-->
-                                                                <label class="fs-5 fw-semibold mb-2">설명</label>
-                                                                <!--end::Label-->
-
-                                                                <!--begin::Input-->
-                                                                <input type="text" class="form-control"
-                                                                    placeholder="그룹 제휴사에 대한 설명 입력" name="company_info">
-                                                                <!--end::Input-->
-                                                            </div>
-                                                            <!--end::Col-->
-                                                        </div>
-                                                        <!--end::영업 담당자-->
-
-
-                                                        <div class="row g-5 g-xl-8 d-flex justify-content-between">
-
-                                                            <!--begin::left box-->
-                                                            <div class="col-xl-5">
-                                                                <div class="card card-xl-stretch mb-xl-8">
-
-                                                                    <!--begin::title-->
-                                                                    <div class="card-header border-0 pt-5">
-                                                                        <h3
-                                                                            class="card-title align-items-start flex-column">
-                                                                            그룹 구성 제휴사 1개
-                                                                        </h3>
-                                                                    </div>
-                                                                    <!--end::title-->
-
-                                                                    <!--begin::Body-->
-                                                                    <div class="card-body">
-
-
-                                                                        <!--begin::Chart-->
-                                                                        <table
-                                                                            class="table table-hover table-striped border gy-7 gs-7">
-                                                                            <thead>
-                                                                                <tr
-                                                                                    class="fw-bold fs-6 text-gray-800 border-bottom-2 border-gray-200 ">
-                                                                                    <th><label
-                                                                                            class="form-check form-check-custom">
-                                                                                            <input
-                                                                                                class="form-check-input"
-                                                                                                type="checkbox"
-                                                                                                value="1"></label></th>
-                                                                                    <th>제휴사명</th>
-                                                                                    <th>삭제</th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td><label
-                                                                                            class="form-check form-check-custom">
-                                                                                            <input
-                                                                                                class="form-check-input"
-                                                                                                type="checkbox"
-                                                                                                value="1"></label></td>
-                                                                                    <td>
-                                                                                        챔스프리 스프라이트<span
-                                                                                            style="color: var(--bs-gray-600);">(90)</span>
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <button
-                                                                                            class="btn-active-light-primary"
-                                                                                            style="background: transparent; border: 0;"
-                                                                                            data-kt-permissions-table-filter="delete_row">
-                                                                                            <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-                                                                                            <span
-                                                                                                class="svg-icon svg-icon-3">
-                                                                                                <svg viewBox="0 0 24 24"
-                                                                                                    fill="none"
-                                                                                                    xmlns="http://www.w3.org/2000/svg">
-                                                                                                    <path
-                                                                                                        d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z"
-                                                                                                        fill="currentColor">
-                                                                                                    </path>
-                                                                                                    <path opacity="0.5"
-                                                                                                        d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z"
-                                                                                                        fill="currentColor">
-                                                                                                    </path>
-                                                                                                    <path opacity="0.5"
-                                                                                                        d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z"
-                                                                                                        fill="currentColor">
-                                                                                                    </path>
-                                                                                                </svg>
-                                                                                            </span>
-                                                                                            <!--end::Svg Icon-->
-                                                                                        </button>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                            </tbody>
-                                                                        </table>
-                                                                        <!--end::Chart-->
-
-                                                                    </div>
-                                                                    <!--end::Body-->
-                                                                </div>
-                                                            </div>
-                                                            <!--end::left box-->
-
-                                                            <!-- start::추가 / 제거 -->
-                                                            <!-- begin::Col -->
-                                                            <div
-                                                                class="col-md-1 fv-row fv-plugins-icon-container d-flex flex-column justify-content-center p-0">
-                                                                <button type="submit"
-                                                                    class="btn btn-outline btn-outline-primary mb-4 p-1">
-                                                                    &lsaquo; 추가
-                                                                    <!--end::Indicator label-->
-                                                                </button>
-                                                                <button type="submit"
-                                                                    class="btn btn-outline btn-outline-danger p-1">
-                                                                    <!--begin::Indicator label-->
-                                                                    <span class="indicator-label">삭제 &rsaquo;
-                                                                    </span>
-                                                                    <!--end::Indicator label-->
-                                                                </button>
-                                                            </div>
-                                                            <!--begin::Col-->
-                                                            <!-- end::추가/ 제거 -->
-
-
-                                                            <!--begin::right box-->
-                                                            <div class="col-xl-5">
-                                                                <div class="card card-xl-stretch mb-5 mb-xl-8">
-                                                                    <!--begin::Header-->
-                                                                    <div
-                                                                        class="d-flex card-header border-0 pt-5 align-content-xl-end">
-                                                                        <div>
-                                                                            <h3
-                                                                                class="card-title align-items-start flex-column">
-                                                                                구성 가능 제휴사 ( 1 )
-                                                                            </h3>
-                                                                        </div>
-
-                                                                        <div>
-                                                                            <input class="form-control"
-                                                                                placeholder="제휴사명 입력" value="" id="">
-                                                                        </div>
-
-                                                                    </div>
-                                                                    <!--end::Header-->
-                                                                    <!--begin::Body-->
-                                                                    <div class="card-body">
-
-                                                                        <!--begin::Chart-->
-                                                                        <table
-                                                                            class="table table-hover table-striped border gy-7 gs-7">
-                                                                            <thead>
-                                                                                <tr
-                                                                                    class="fw-bold fs-6 text-gray-800 border-bottom-2 border-gray-200 ">
-                                                                                    <th><label
-                                                                                            class="form-check form-check-custom">
-                                                                                            <input
-                                                                                                class="form-check-input"
-                                                                                                type="checkbox"
-                                                                                                value="1"></label></th>
-                                                                                    <th>제휴사명</th>
-                                                                                    <th>추가</th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td><label
-                                                                                            class="form-check form-check-custom">
-                                                                                            <input
-                                                                                                class="form-check-input"
-                                                                                                type="checkbox"
-                                                                                                value="1"></label></td>
-                                                                                    <td>
-                                                                                        챔스프리 스프라이트<span
-                                                                                            style="color: var(--bs-gray-600);">(90)</span>
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <button
-                                                                                            class="btn-active-light-primary"
-                                                                                            style="background: transparent; border: 0;"
-                                                                                            data-kt-permissions-table-filter="delete_row">
-                                                                                            <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-                                                                                            <span
-                                                                                                class="svg-icon svg-icon-3">
-                                                                                                <svg width="24"
-                                                                                                    height="24"
-                                                                                                    viewBox="0 0 24 24"
-                                                                                                    fill="none"
-                                                                                                    xmlns="http://www.w3.org/2000/svg">
-                                                                                                    <rect opacity="0.5"
-                                                                                                        x="11.364"
-                                                                                                        y="20.364"
-                                                                                                        width="16"
-                                                                                                        height="2"
-                                                                                                        rx="1"
-                                                                                                        transform="rotate(-90 11.364 20.364)"
-                                                                                                        fill="currentColor">
-                                                                                                    </rect>
-                                                                                                    <rect x="4.36396"
-                                                                                                        y="11.364"
-                                                                                                        width="16"
-                                                                                                        height="2"
-                                                                                                        rx="1"
-                                                                                                        fill="currentColor">
-                                                                                                    </rect>
-                                                                                                </svg>
-                                                                                            </span>
-                                                                                            <!--end::Svg Icon-->
-                                                                                        </button>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                            </tbody>
-                                                                        </table>
-                                                                        <!--end::Chart-->
-
-                                                                    </div>
-                                                                    <!--end::Body-->
-                                                                </div>
-                                                                <!--end::right box-->
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
-                                                    <!--end::Input group-->
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <!-- end::card-body-->
-                                    </div>
-                                </div>
-                                <!-- end:: 카드 -->
-
-                                <div class="col-xxl-12 mb-5 mb-xl-10">
-                                    <div class="d-flex flex-center">
-                                        <button class="btn btn-primary" style="width: 100px;">저장</button>
-                                    </div>
-                                </div>
-
                             </div>
-                            <!-- end::first tab -->
+                            <!-- end::1st tab -->
 
 
 
-                            <!-- begin::second tab -->
+                            <!-- begin::2nd tab -->
                             <div class="tab-pane fade" id="kt_tab_pane_5" role="tabpanel">
-
-                                <!-- begin::카드 -->
-                                <div class="col-xxl-12 mb-5 mb-xl-10">
-                                    <div class="card">
-                                        <!-- begin:: card-body -->
-                                        <div>
-                                            <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework"
-                                                method="post" id="kt_careers_form">
-
-
-
-                                                <!--begin:: 타이틀-->
-                                                <div class="card-header pt-5">
-                                                    <!--begin::Label-->
-                                                    <label class="d-flex flex-center fs-2 fw-semibold mb-2">진행
-                                                        중인 계약
-                                                        및
-                                                        캠페인</label>
-                                                    <!--end::Label-->
-                                                </div>
-                                                <!--end:: 타이틀-->
-
-                                                <!-- begin:: 컨텐트 -->
-                                                <div class="card-body">
-                                                    <div class="no-account-search-list text-center">
-                                                        <i class="marketit-icon_search_list"></i>
-                                                        <h5 class="mt-4 mb-8 fw-bold">연결된 계약 및 캠페인이
-                                                            없습니다.
-                                                        </h5>
-                                                        <div class="mt-3">
-                                                            <button type="button" class="btn btn-light-primary"
-                                                                data-bs-toggle="modal" data-bs-target="#kt_modal_1">새
-                                                                계약서 추가</button>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!-- begin:: Modal -->
-                                                <div class="modal fade" tabindex="-1" id="kt_modal_1"
-                                                    style="--bs-modal-width: 800px;">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h3 class="modal-title">제휴사 및 계약 연결</h3>
-
-                                                                <!--begin::Close-->
-                                                                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2"
-                                                                    data-bs-dismiss="modal" aria-label="Close">
-                                                                    <span class="svg-icon svg-icon-1"></span>
-                                                                </div>
-                                                                <!--end::Close-->
-                                                            </div>
-                                                            <!-- begin:: Card -->
-                                                            <div class="card">
-                                                                <div class="card-header">
-                                                                    <h3
-                                                                        class="card-title align-items-start flex-column">
-                                                                        <span
-                                                                            class="card-label fw-bold text-dark">검색</span>
-                                                                    </h3>
-                                                                </div>
-                                                                <div class="card-body">
-                                                                    <div class="row mb-5">
-                                                                        <div
-                                                                            class="col-md-12 fv-row fv-plugins-icon-container">
-                                                                            <div class="input-group flex-nowrap">
-                                                                                <span class="input-group-text">영업
-                                                                                    담당자</span>
-                                                                                <select
-                                                                                    class="form-select select2-hidden-accessible"
-                                                                                    data-control="select2"
-                                                                                    data-placeholder="이름 입력 또는 선택"
-                                                                                    data-allow-clear="true"
-                                                                                    data-select2-id="select2-data-1-xdji"
-                                                                                    tabindex="-1" aria-hidden="true"
-                                                                                    data-kt-initialized="1">
-                                                                                    <option
-                                                                                        data-select2-id="select2-data-3-lcz4">
-                                                                                    </option>
-                                                                                    <option value="1">jacob
-                                                                                    </option>
-                                                                                    <option value="2">jack
-                                                                                    </option>
-                                                                                    <option value="3">raymon
-                                                                                    </option>
-                                                                                    <option value="4">chaem
-                                                                                    </option>
-                                                                                    <option value="5">yona
-                                                                                    </option>
-                                                                                </select><span
-                                                                                    class="select2 select2-container select2-container--bootstrap5"
-                                                                                    dir="ltr"
-                                                                                    data-select2-id="select2-data-2-no0l"
-                                                                                    style="width: 100%;"><span
-                                                                                        class="selection"><span
-                                                                                            class="select2-selection select2-selection--single form-select"
-                                                                                            role="combobox"
-                                                                                            aria-haspopup="true"
-                                                                                            aria-expanded="false"
-                                                                                            tabindex="0"
-                                                                                            aria-disabled="false"
-                                                                                            aria-labelledby="select2-tjk6-container"
-                                                                                            aria-controls="select2-tjk6-container"><span
-                                                                                                class="select2-selection__rendered"
-                                                                                                id="select2-tjk6-container"
-                                                                                                role="textbox"
-                                                                                                aria-readonly="true"
-                                                                                                title="이름 입력 또는 선택"><span
-                                                                                                    class="select2-selection__placeholder">이름
-                                                                                                    입력 또는
-                                                                                                    선택</span></span><span
-                                                                                                class="select2-selection__arrow"
-                                                                                                role="presentation"><b
-                                                                                                    role="presentation"></b></span></span></span><span
-                                                                                        class="dropdown-wrapper"
-                                                                                        aria-hidden="true"></span></span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row mb-5">
-                                                                        <div
-                                                                            class="col-md-12 fv-row fv-plugins-icon-container">
-                                                                            <div class="input-group flex-nowrap">
-                                                                                <span class="input-group-text">운영
-                                                                                    담당자</span>
-                                                                                <select
-                                                                                    class="form-select select2-hidden-accessible"
-                                                                                    data-control="select2"
-                                                                                    data-placeholder="사업자등록증에 표시된 상호 법인명 단체명 입력"
-                                                                                    data-allow-clear="true"
-                                                                                    data-select2-id="select2-data-4-uyol"
-                                                                                    tabindex="-1" aria-hidden="true"
-                                                                                    data-kt-initialized="1">
-                                                                                    <option
-                                                                                        data-select2-id="select2-data-6-fqgo">
-                                                                                    </option>
-                                                                                    <option value="1">jacob
-                                                                                    </option>
-                                                                                    <option value="2">jack
-                                                                                    </option>
-                                                                                    <option value="3">raymon
-                                                                                    </option>
-                                                                                    <option value="4">chaem
-                                                                                    </option>
-                                                                                    <option value="5">yona
-                                                                                    </option>
-                                                                                </select><span
-                                                                                    class="select2 select2-container select2-container--bootstrap5"
-                                                                                    dir="ltr"
-                                                                                    data-select2-id="select2-data-5-aa8y"
-                                                                                    style="width: 100%;"><span
-                                                                                        class="selection"><span
-                                                                                            class="select2-selection select2-selection--single form-select"
-                                                                                            role="combobox"
-                                                                                            aria-haspopup="true"
-                                                                                            aria-expanded="false"
-                                                                                            tabindex="0"
-                                                                                            aria-disabled="false"
-                                                                                            aria-labelledby="select2-sdvn-container"
-                                                                                            aria-controls="select2-sdvn-container"><span
-                                                                                                class="select2-selection__rendered"
-                                                                                                id="select2-sdvn-container"
-                                                                                                role="textbox"
-                                                                                                aria-readonly="true"
-                                                                                                title="사업자등록증에 표시된 상호 법인명 단체명 입력"><span
-                                                                                                    class="select2-selection__placeholder">사업자등록증에
-                                                                                                    표시된 상호
-                                                                                                    법인명
-                                                                                                    단체명
-                                                                                                    입력</span></span><span
-                                                                                                class="select2-selection__arrow"
-                                                                                                role="presentation"><b
-                                                                                                    role="presentation"></b></span></span></span><span
-                                                                                        class="dropdown-wrapper"
-                                                                                        aria-hidden="true"></span></span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <!--begin::Input group-->
-                                                                    <div class="row mb-5">
-                                                                        <!--begin::Col-->
-                                                                        <div
-                                                                            class="col-md-4 fv-row fv-plugins-icon-container">
-                                                                            <div class="input-group flex-nowrap">
-                                                                                <span class="input-group-text">유형</span>
-                                                                                <select
-                                                                                    class="form-select rounded-start-0 select2-hidden-accessible"
-                                                                                    data-control="select2"
-                                                                                    data-placeholder="전체"
-                                                                                    data-allow-clear="true"
-                                                                                    data-select2-id="select2-data-7-trx4"
-                                                                                    tabindex="-1" aria-hidden="true"
-                                                                                    data-kt-initialized="1">
-                                                                                    <option
-                                                                                        data-select2-id="select2-data-9-9wj9">
-                                                                                    </option>
-                                                                                    <option value="1">싱글
-                                                                                    </option>
-                                                                                    <option value="2">그룹
-                                                                                    </option>
-                                                                                </select><span
-                                                                                    class="select2 select2-container select2-container--bootstrap5"
-                                                                                    dir="ltr"
-                                                                                    data-select2-id="select2-data-8-fe16"
-                                                                                    style="width: 100%;"><span
-                                                                                        class="selection"><span
-                                                                                            class="select2-selection select2-selection--single form-select rounded-start-0"
-                                                                                            role="combobox"
-                                                                                            aria-haspopup="true"
-                                                                                            aria-expanded="false"
-                                                                                            tabindex="0"
-                                                                                            aria-disabled="false"
-                                                                                            aria-labelledby="select2-blgu-container"
-                                                                                            aria-controls="select2-blgu-container"><span
-                                                                                                class="select2-selection__rendered"
-                                                                                                id="select2-blgu-container"
-                                                                                                role="textbox"
-                                                                                                aria-readonly="true"
-                                                                                                title="전체"><span
-                                                                                                    class="select2-selection__placeholder">전체</span></span><span
-                                                                                                class="select2-selection__arrow"
-                                                                                                role="presentation"><b
-                                                                                                    role="presentation"></b></span></span></span><span
-                                                                                        class="dropdown-wrapper"
-                                                                                        aria-hidden="true"></span></span>
-                                                                            </div>
-                                                                        </div>
-                                                                        <!--end::Col-->
-                                                                        <div
-                                                                            class="col-md-8 fv-row fv-plugins-icon-container">
-                                                                            <div class="input-group">
-                                                                                <div class="input-group flex-nowrap">
-                                                                                    <span
-                                                                                        class="input-group-text">제휴사명</span>
-                                                                                    <select
-                                                                                        class="form-select rounded-start-0 select2-hidden-accessible"
-                                                                                        data-control="select2"
-                                                                                        data-placeholder="이름 입력 또는 선택"
-                                                                                        data-allow-clear="true"
-                                                                                        data-select2-id="select2-data-10-lbat"
-                                                                                        tabindex="-1" aria-hidden="true"
-                                                                                        data-kt-initialized="1">
-                                                                                        <option
-                                                                                            data-select2-id="select2-data-12-2jl8">
-                                                                                        </option>
-                                                                                        <option value="1">
-                                                                                            세컨라이프
-                                                                                        </option>
-                                                                                        <option value="2">
-                                                                                            마켓잇
-                                                                                        </option>
-                                                                                        <option value="3">
-                                                                                            인플카
-                                                                                        </option>
-                                                                                        <option value="4">삼성
-                                                                                        </option>
-                                                                                        <option value="5">Lg
-                                                                                        </option>
-                                                                                    </select><span
-                                                                                        class="select2 select2-container select2-container--bootstrap5"
-                                                                                        dir="ltr"
-                                                                                        data-select2-id="select2-data-11-k898"
-                                                                                        style="width: 100%;"><span
-                                                                                            class="selection"><span
-                                                                                                class="select2-selection select2-selection--single form-select rounded-start-0"
-                                                                                                role="combobox"
-                                                                                                aria-haspopup="true"
-                                                                                                aria-expanded="false"
-                                                                                                tabindex="0"
-                                                                                                aria-disabled="false"
-                                                                                                aria-labelledby="select2-bl5c-container"
-                                                                                                aria-controls="select2-bl5c-container"><span
-                                                                                                    class="select2-selection__rendered"
-                                                                                                    id="select2-bl5c-container"
-                                                                                                    role="textbox"
-                                                                                                    aria-readonly="true"
-                                                                                                    title="이름 입력 또는 선택"><span
-                                                                                                        class="select2-selection__placeholder">이름
-                                                                                                        입력
-                                                                                                        또는
-                                                                                                        선택</span></span><span
-                                                                                                    class="select2-selection__arrow"
-                                                                                                    role="presentation"><b
-                                                                                                        role="presentation"></b></span></span></span><span
-                                                                                            class="dropdown-wrapper"
-                                                                                            aria-hidden="true"></span></span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <!--end::Col-->
-                                                                    </div>
-                                                                    <!--end::Input group-->
-                                                                    <div class="row mb-5">
-                                                                        <div
-                                                                            class="col-md-12 fv-row fv-plugins-icon-container">
-                                                                            <div class="input-group">
-                                                                                <span class="input-group-text">계약
-                                                                                    번호</span>
-                                                                                <input type=" text" class="form-control"
-                                                                                    placeholder="숫자만 입력">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row mb-5">
-                                                                        <div
-                                                                            class="col-md-12 d-flex justify-content-center">
-                                                                            <button type="button"
-                                                                                class="btn btn-white btn-outline me-2">초기화</button>
-                                                                            <button type="button"
-                                                                                class="btn btn-primary">검색</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!-- end:: Card -->
-                                                            <div class="card">
-                                                                <div class="card-header">
-                                                                    <h3
-                                                                        class="card-title align-items-start flex-column">
-                                                                        <span class="card-label fw-bold text-dark">검색
-                                                                            내역</span>
-                                                                    </h3>
-                                                                </div>
-                                                                <div class="card-body">
-                                                                    <!-- <div class="no-account-search-list text-center"><i
-                                                        class="marketit-icon_search_list"></i>
-                                                    <h5 class="mt-4 mb-2" style="font-weight: bold;"> 검색 내역이
-                                                        없습니다.</h5>
-                                                    <p>
-                                                        검색 조건을 새로 입력하세요.
-                                                    </p>
-                                                </div> -->
-                                                                    <div class="table-responsive">
-                                                                        <table
-                                                                            class="table table-hover table-rounded table-striped border gy-7 gs-7">
-                                                                            <thead>
-                                                                                <tr
-                                                                                    class="fw-semibold fs-6 text-gray-800 border-bottom-2 border-gray-200 ">
-                                                                                    <th>제휴사명</th>
-                                                                                    <th>유형</th>
-                                                                                    <th>계약</th>
-                                                                                    <th>관리</th>
-                                                                                    <th>연결</th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td>챔프프리 성수 (4321)</td>
-                                                                                    <td>싱글</td>
-                                                                                    <td>계약번호 : 145<br> 등록일 :
-                                                                                        2022-10-24</td>
-                                                                                    <td>영업담당자 : chame<br>
-                                                                                        운영담당자
-                                                                                        : </td>
-                                                                                    <td>
-                                                                                        <div
-                                                                                            class="form-check form-switch form-check-custom form-check-solid">
-                                                                                            <input
-                                                                                                class="form-check-input"
-                                                                                                type="checkbox" value=""
-                                                                                                id="flexSwitchDefault">
-                                                                                        </div>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </div>
-                                                                    <ul class="pagination">
-                                                                        <li class="page-item previous disabled">
-                                                                            <a href="#" class="page-link"><i
-                                                                                    class="previous"></i></a>
-                                                                        </li>
-                                                                        <li class="page-item "><a href="#"
-                                                                                class="page-link">1</a></li>
-                                                                        <li class="page-item active"><a href="#"
-                                                                                class="page-link">2</a></li>
-                                                                        <li class="page-item "><a href="#"
-                                                                                class="page-link">3</a></li>
-                                                                        <li class="page-item "><a href="#"
-                                                                                class="page-link">4</a></li>
-                                                                        <li class="page-item "><a href="#"
-                                                                                class="page-link">5</a></li>
-                                                                        <li class="page-item "><a href="#"
-                                                                                class="page-link">6</a></li>
-                                                                        <li class="page-item next"><a href="#"
-                                                                                class="page-link"><i
-                                                                                    class="next"></i></a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="modal-footer flex-center">
-                                                                <button type="button" class="btn btn-light"
-                                                                    data-bs-dismiss="modal">닫기</button>
-                                                                <button type="button" id="kt_docs_sweetalert_basic"
-                                                                    class="btn btn-primary">연결</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- end:: Modal -->
-                                                <!-- end:: 컨텐트 -->
-                                            </form>
-                                        </div>
-                                        <!-- end::card-body-->
-                                    </div>
-                                </div>
-                                <!-- end:: 카드 -->
-
-                                <!-- begin::저장버튼 -->
-                                <div class="col-xxl-12 mb-5 mb-xl-10">
-                                    <div class="d-flex flex-center">
-                                        <button class="btn btn-primary" style="width: 100px;">저장</button>
-                                    </div>
-                                </div>
-                                <!-- end::저장버튼 -->
 
 
                                 <!-- begin::카드 -->
@@ -1930,62 +1114,137 @@ License: For each use you must have a valid license purchased only from above li
                                         <!--begin::카드  타이틀-->
                                         <div class="card-header pt-5">
                                             <h3 class="card-title align-items-start flex-column">
-                                                <span class="card-label fw-bold text-dark">진행 중인 계약 및
-                                                    계약서</span>
+                                                <span class="card-label fw-bold text-dark">내역</span>
                                             </h3>
-                                            <button type="button" class="btn btn-primary">새 계약서 추가</button>
                                         </div>
+                                        <!--end:: 카드 타이틀-->
 
+                                        <div class="card-body">
+                                            <!-- begin:: 카드 컨텐트 -->
+                                            <div class="table-responsive text-center">
+                                                <table
+                                                    class="table table-hover table-rounded table-striped border gy-7 gs-7">
+                                                    <thead>
+                                                        <tr class="fw-semibold fs-6 text-gray-800 border-bottom-2 border-gray-200" "="">
+                                                                                    <th>플랫폼</th>
+                                                                                    <th>연결 시각</th>
+                                                                                    <th>역량정보</th>
+                                                                                    <th>인플카 등급</th>
+                                                                                    <th>연결 상태</th>
+                                                                                    <th>연결 해제</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr style=" vertical-align: middle;">
+                                                            <td><a href="">플랫폼 아이디 (링크 연결하기)</a></td>
+                                                            <td>yyyy-mm-dd &nbsp; hh:mm:ss</td>
+                                                            <td>
+                                                                <p>팔로워 : </p>
+                                                                <p>활성 팔로워 : </p>
+                                                            </td>
+                                                            <td>
+                                                                CELL
+                                                            </td>
+                                                            <td>정상</td>
+                                                            <td>
+                                                                <button class="btn btn-primary" style="width: 100px;">
+                                                                    연동 해제</button>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- end:: 카드 컨텐트 -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end:: 카드 -->
+
+                                <!-- begin::카드 -->
+                                <div class="col-xxl-12 mb-5 mb-xl-10">
+                                    <div class="card">
+                                        <!--begin::카드  타이틀-->
+                                        <div class="card-header pt-5">
+                                            <h3 class="card-title align-items-start flex-column">
+                                                <span class="card-label fw-bold text-dark">내역</span>
+                                            </h3>
+                                        </div>
+                                        <!--end:: 카드 타이틀-->
+
+                                        <div class="card-body">
+                                            <!-- begin:: 카드 컨텐트 -->
+                                            <div class="table-responsive text-center">
+                                                <table
+                                                    class="table table-hover table-rounded table-striped border gy-7 gs-7">
+                                                    <thead>
+                                                        <tr class="fw-semibold fs-6 text-gray-800 border-bottom-2 border-gray-200" "="">
+                                                            <th>플랫폼</th>
+                                                            <th>연결 시각</th>
+                                                            <th>역량정보</th>
+                                                            <th>인플카 등급</th>
+                                                            <th>연결 상태</th>
+                                                            <th>연결 해제</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr style=" vertical-align: middle;">
+                                                            <td>SNS 연결 시 정보가 표시됩니다.</td>
+                                                            <td>-</td>
+                                                            <td>-</td>
+                                                            <td>-</td>
+                                                            <td>-</td>
+                                                            <td>-</td>
+                                                        </tr>
+                                                        </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- end:: 카드 컨텐트 -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end:: 카드 -->
+
+                            </div>
+                            <!-- end::2nd tab -->
+
+
+                            <!-- begin::3rd tab -->
+                            <div class="tab-pane fade" id="kt_tab_pane_6" role="tabpanel">
+
+
+                                <!-- begin::카드 -->
+                                <div class="col-xxl-12 mb-5 mb-xl-10">
+                                    <div class="card">
+
+                                        <!--begin::카드  타이틀-->
+                                        <div class="card-header pt-5">
+                                            <h3 class="card-title align-items-start flex-column">
+                                                <span class="card-label fw-bold text-dark">인플카</span>
+                                            </h3>
+                                        </div>
                                         <!--end:: 카드 타이틀-->
 
                                         <div class="card-body">
 
                                             <!-- begin:: 카드 컨텐트 -->
-                                            <div class="table-responsive">
+                                            <div class="table-responsive text-center">
                                                 <table
                                                     class="table table-hover table-rounded table-striped border gy-7 gs-7">
                                                     <thead>
                                                         <tr class="fw-semibold fs-6 text-gray-800 border-bottom-2 border-gray-200" "="">
-                                                                                    <th>계약</th>
-                                                                                    <th>계약 상태</th>
-                                                                                    <th>캠페인</th>
-                                                                                    <th>캠페인 상태</th>
-                                                                                    <th>영업 담당자</th>
-                                                                                    <th>운영 담당자</th>
-                                                                                    <th>인플루언서 모집 시작일</th>
-                                                                                    <th>인플루언서 모집 종료일</th>
-                                                                                    <th>계약 종료일</th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr style=" vertical-align: middle;">
-                                                            <td><a href="">124</a></td>
-                                                            <td>계약 이행 중</td>
+                                                                                                                <th>종류</th>
+                                                                                                                <th>카드번호</th>
+                                                                                                                <th>앱에 인플카 등록 여부</th>
+                                                                                                            </tr>
+                                                                                                        </thead>
+                                                                                                        <tbody>
+                                                                                                            <tr style="
+                                                            vertical-align: middle;">
+                                                            <td>신용카드</td>
+                                                            <td>1111-2222-3333-4444</td>
                                                             <td>
-                                                                바이탈릭 - 콜라겐 멜팅 패키지(1234)
+                                                                등록 완료
                                                             </td>
-                                                            <td>
-                                                                진행중
-                                                            </td>
-                                                            <td>chaem</td>
-                                                            <td>
-                                                                chaem
-                                                            </td>
-                                                            <td>
-                                                                <p>2022-03-15</p>
-                                                                <p>20:15:12</p>
-                                                            </td>
-                                                            <td>
-                                                                <p>2022-03-15</p>
-                                                                <p>20:15:12</p>
-                                                                <p></p>D-7
-                                                            </td>
-                                                            <td>
-                                                                <p>
-                                                                    2022-03-15</p>
-                                                                <p>20:15:12</p>
-                                                            </td>
-
                                                         </tr>
                                                         </tbody>
                                                 </table>
@@ -1998,30 +1257,739 @@ License: For each use you must have a valid license purchased only from above li
                                 </div>
                                 <!-- end:: 카드 -->
 
+                                <!-- begin::카드 -->
+                                <div class="col-xxl-12 mb-5 mb-xl-10">
+                                    <div class="card">
+
+                                        <!--begin::카드  타이틀-->
+                                        <div class="card-header pt-5">
+                                            <h3 class="card-title align-items-start flex-column">
+                                                <span class="card-label fw-bold text-dark">인플카</span>
+                                            </h3>
+                                        </div>
+                                        <!--end:: 카드 타이틀-->
+
+                                        <div class="card-body">
+
+                                            <!-- begin:: 카드 컨텐트 -->
+                                            <div class="table-responsive text-center">
+                                                <table
+                                                    class="table table-hover table-rounded table-striped border gy-7 gs-7">
+                                                    <thead>
+                                                        <tr class="fw-semibold fs-6 text-gray-800 border-bottom-2 border-gray-200" "="">
+                                                                                                                                                <th>종류</th>
+                                                                                                                                                <th>카드번호</th>
+                                                                                                                                                <th>앱에 인플카 등록 여부</th>
+                                                                                                                                            </tr>
+                                                                                                                                        </thead>
+                                                                                                                                        <tbody>
+                                                                                                                                            <tr style="
+                                                            vertical-align: middle;">
+                                                            <td>-</td>
+                                                            <td>-</td>
+                                                            <td>
+                                                                미등록
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- end:: 카드 컨텐트 -->
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- end:: 카드 -->
+
+                                <!-- begin::카드 -->
+                                <div class="col-xxl-12 mb-5 mb-xl-10">
+                                    <div class="card">
+
+                                        <!--begin::카드  타이틀-->
+                                        <div class="d-flex card-header pt-5 ">
+                                            <h3 class="card-title align-items-start flex-column">
+                                                <span class="card-label fw-bold text-dark">캠페인(캠페인 갯수)</span>
+                                            </h3>
+                                            <div class="d-flex">
+                                                <input class="form-check-input me-3" type="checkbox" value="1" /><span
+                                                    class="form-check-label me-5">
+                                                    포스팅 대기
+                                                </span>
+                                                <input class="form-check-input me-3" type="checkbox" value="1" /><span
+                                                    class="form-check-label me-5">
+                                                    포스팅 검수중
+                                                </span>
+                                                <input class="form-check-input me-3" type="checkbox" value="1" /><span
+                                                    class="form-check-label me-5">
+                                                    포스팅 연동 오류
+                                                </span>
+                                                <input class="form-check-input me-3" type="checkbox" value="1" /><span
+                                                    class="form-check-label me-5">
+                                                    포스팅 유지중
+                                                </span>
+                                                <input class="form-check-input me-3" type="checkbox" value="1" /><span
+                                                    class="form-check-label me-5">
+                                                    포스팅 유지 완료
+                                                </span>
+                                                <input class="form-check-input me-3" type="checkbox" value="1" /><span
+                                                    class="form-check-label me-5">
+                                                    만료
+                                                </span>
+                                            </div>
+                                        </div>
+
+
+                                        <!--end:: 카드 타이틀-->
+
+                                        <!-- start:: 카드 컨텐트 -->
+                                        <div class="card-body">
+                                            <!-- begin:: 카드 컨텐트 -->
+                                            <div class="table-responsive text-center">
+                                                <table
+                                                    class="table table-hover table-rounded table-striped border gy-7 gs-7">
+                                                    <thead>
+                                                        <tr class="fw-semibold fs-6 text-gray-800 border-bottom-2 border-gray-200" "="">
+                                                            <th>상태</th>
+                                                            <th>액티비티 ID</th>
+                                                            <th>캠페인</th>
+                                                            <th>결제</th>
+                                                            <th>캐시백</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                                                        <tr style=" vertical-align:
+                                                            middle;">
+                                                            <td>포스팅 유지 완료</td>
+                                                            <td>[33372257]</td>
+                                                            <td>바이탈릭 - 콜라겐 멜팅 패키티_n회차(9393)</td>
+                                                            <td>
+                                                                <p>yyyy-mm-dd &nbsp; hh:mm:ss</p>
+                                                                <p>100,000 원</p>
+                                                            </td>
+                                                            <td>
+                                                                <p>yyyy-mm-dd &nbsp; hh:mm:ss</p>
+                                                                <p>10,000 원</p>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    <tbody>
+                                                        <tr
+                                                            style=" vertical-align:
+                                                                                                                    middle;">
+                                                            <td>만료</td>
+                                                            <td>[33372257]</td>
+                                                            <td>바이탈릭 - 콜라겐 멜팅 패키티_n회차(9393)</td>
+                                                            <td>
+                                                                <p>yyyy-mm-dd &nbsp; hh:mm:ss</p>
+                                                                <p>100,000 원</p>
+                                                            </td>
+                                                            <td>
+                                                                <p>0 원</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tbody>
+                                                        <tr
+                                                            style=" vertical-align:
+                                                                                                                                                                        middle;">
+                                                            <td>포스팅 유지 완료</td>
+                                                            <td>[33372257]</td>
+                                                            <td>바이탈릭 - 콜라겐 멜팅 패키티_n회차(9393)</td>
+                                                            <td>
+                                                                <p>yyyy-mm-dd &nbsp; hh:mm:ss</p>
+                                                                <p>100,000 원</p>
+                                                            </td>
+                                                            <td>
+                                                                <p>0 원</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tbody>
+                                                        <tr
+                                                            style=" vertical-align:
+                                                                                                                                                                        middle;">
+                                                            <td>만료</td>
+                                                            <td>[33372257]</td>
+                                                            <td>바이탈릭 - 콜라겐 멜팅 패키티_n회차(9393)</td>
+                                                            <td>
+                                                                <p>yyyy-mm-dd &nbsp; 이후 적립 예정</p>
+                                                                <p>100,000 원</p>
+                                                            </td>
+                                                            <td>
+                                                                <p>0 원</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tbody>
+                                                        <tr
+                                                            style=" vertical-align:
+                                                                                                                                                                        middle;">
+                                                            <td>만료</td>
+                                                            <td>[33372257]</td>
+                                                            <td>바이탈릭 - 콜라겐 멜팅 패키티_n회차(9393)</td>
+                                                            <td>
+                                                                <p>yyyy-mm-dd &nbsp; hh:mm:ss</p>
+                                                                <p>100,000 원</p>
+                                                            </td>
+                                                            <td>
+                                                                <p>0 원</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- end:: 카드 컨텐트 -->
+                                        </div>
+
+                                        <!-- end:: 카드 컨텐트 -->
+
+                                        <!-- start::페이지네이션 -->
+                                        <div class="mb-10">
+                                            <ul class="pagination">
+                                                <li class="page-item previous disabled"><a href="#" class="page-link"><i
+                                                            class="previous"></i></a></li>
+                                                <li class="page-item "><a href="#" class="page-link">1</a></li>
+                                                <li class="page-item active"><a href="#" class="page-link">2</a></li>
+                                                <li class="page-item "><a href="#" class="page-link">3</a></li>
+                                                <li class="page-item "><a href="#" class="page-link">4</a></li>
+                                                <li class="page-item "><a href="#" class="page-link">5</a></li>
+                                                <li class="page-item "><a href="#" class="page-link">6</a></li>
+                                                <li class="page-item next"><a href="#" class="page-link"><i
+                                                            class="next"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- end::페이지네이션 -->
+
+                                    </div>
+                                </div>
+                                <!-- end:: 카드 -->
+
                             </div>
-                            <!-- end::second tab -->
+                            <!-- end::3rd tab -->
+
+
+                            <!-- begin::4th tab -->
+                            <div class="tab-pane fade" id="kt_tab_pane_7" role="tabpanel">
+
+                                <!-- begin::카드 -->
+                                <div class="col-xxl-12 mb-5 mb-xl-10">
+                                    <div class="card">
+
+                                        <!--begin::카드  타이틀-->
+                                        <div class="card-header pt-5">
+                                            <h3 class="card-title align-items-start flex-column">
+                                                <span class="card-label fw-bold text-dark">적립금 총액 : 1,000,000원</span>
+                                                페이지네이션 10개씩
+                                            </h3>
+                                        </div>
+                                        <!--end:: 카드 타이틀-->
+
+                                        <div class="card-body">
+
+                                            <!-- begin:: 카드 컨텐트 -->
+                                            <div class="table-responsive">
+                                                <table
+                                                    class="table table-hover table-rounded table-striped border gy-7 gs-7">
+                                                    <thead>
+                                                        <tr class="fw-semibold fs-6 text-gray-800 border-bottom-2 border-gray-200" "="">
+                                                            <th>액티비티 ID</th>
+                                                            <th>적립 시각</th>
+                                                            <th>적립금</th>
+                                                            <th>적립 유형</th>
+                                                            <th>적립 사유</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr style=" vertical-align: middle;">
+                                                            <td>
+                                                                <a href="">00000001</a>
+                                                                <button type="button"
+                                                                    class="btn btn-icon btn-sm h-auto btn-color-gray-400 btn-active-color-primary justify-content-end">
+                                                                    <!--begin::Svg Icon | path: icons/duotune/arrows/arr095.svg-->
+                                                                    <span class="svg-icon svg-icon-2">
+                                                                        <svg width="15px" height="15px"
+                                                                            viewBox="0 0 24 24" fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path opacity="0.3"
+                                                                                d="M4.7 17.3V7.7C4.7 6.59543 5.59543 5.7 6.7 5.7H9.8C10.2694 5.7 10.65 5.31944 10.65 4.85C10.65 4.38056 10.2694 4 9.8 4H5C3.89543 4 3 4.89543 3 6V19C3 20.1046 3.89543 21 5 21H18C19.1046 21 20 20.1046 20 19V14.2C20 13.7306 19.6194 13.35 19.15 13.35C18.6806 13.35 18.3 13.7306 18.3 14.2V17.3C18.3 18.4046 17.4046 19.3 16.3 19.3H6.7C5.59543 19.3 4.7 18.4046 4.7 17.3Z"
+                                                                                fill="currentColor"></path>
+                                                                            <rect x="21.9497" y="3.46448" width="13"
+                                                                                height="2" rx="1"
+                                                                                transform="rotate(135 21.9497 3.46448)"
+                                                                                fill="currentColor"></rect>
+                                                                            <path
+                                                                                d="M19.8284 4.97161L19.8284 9.93937C19.8284 10.5252 20.3033 11 20.8891 11C21.4749 11 21.9497 10.5252 21.9497 9.93937L21.9497 3.05029C21.9497 2.498 21.502 2.05028 20.9497 2.05028L14.0607 2.05027C13.4749 2.05027 13 2.52514 13 3.11094C13 3.69673 13.4749 4.17161 14.0607 4.17161L19.0284 4.17161C19.4702 4.17161 19.8284 4.52978 19.8284 4.97161Z"
+                                                                                fill="currentColor"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <!--end::Svg Icon-->
+                                                                </button>
+                                                            </td>
+                                                            <td>yyyy-mm-dd &nbsp; hh:mm:ss</td>
+                                                            <td>
+                                                                100,000원
+                                                            </td>
+                                                            <td>
+                                                                캐시백
+                                                            </td>
+                                                            <td>바이탈릭 - 콜라겐 멜팅 패키지(9393)</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    <tbody>
+                                                        <tr style=" vertical-align: middle;">
+                                                            <td>
+                                                                <a href="">00000001</a>
+                                                                <button type="button"
+                                                                    class="btn btn-icon btn-sm h-auto btn-color-gray-400 btn-active-color-primary justify-content-end">
+                                                                    <!--begin::Svg Icon | path: icons/duotune/arrows/arr095.svg-->
+                                                                    <span class="svg-icon svg-icon-2">
+                                                                        <svg width="15px" height="15px"
+                                                                            viewBox="0 0 24 24" fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path opacity="0.3"
+                                                                                d="M4.7 17.3V7.7C4.7 6.59543 5.59543 5.7 6.7 5.7H9.8C10.2694 5.7 10.65 5.31944 10.65 4.85C10.65 4.38056 10.2694 4 9.8 4H5C3.89543 4 3 4.89543 3 6V19C3 20.1046 3.89543 21 5 21H18C19.1046 21 20 20.1046 20 19V14.2C20 13.7306 19.6194 13.35 19.15 13.35C18.6806 13.35 18.3 13.7306 18.3 14.2V17.3C18.3 18.4046 17.4046 19.3 16.3 19.3H6.7C5.59543 19.3 4.7 18.4046 4.7 17.3Z"
+                                                                                fill="currentColor"></path>
+                                                                            <rect x="21.9497" y="3.46448" width="13"
+                                                                                height="2" rx="1"
+                                                                                transform="rotate(135 21.9497 3.46448)"
+                                                                                fill="currentColor"></rect>
+                                                                            <path
+                                                                                d="M19.8284 4.97161L19.8284 9.93937C19.8284 10.5252 20.3033 11 20.8891 11C21.4749 11 21.9497 10.5252 21.9497 9.93937L21.9497 3.05029C21.9497 2.498 21.502 2.05028 20.9497 2.05028L14.0607 2.05027C13.4749 2.05027 13 2.52514 13 3.11094C13 3.69673 13.4749 4.17161 14.0607 4.17161L19.0284 4.17161C19.4702 4.17161 19.8284 4.52978 19.8284 4.97161Z"
+                                                                                fill="currentColor"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <!--end::Svg Icon-->
+                                                                </button>
+                                                            </td>
+                                                            <td>yyyy-mm-dd &nbsp; hh:mm:ss</td>
+                                                            <td>
+                                                                100,000원
+                                                            </td>
+                                                            <td>
+                                                                친구 초대
+                                                            </td>
+                                                            <td>바이탈릭 - 콜라겐 멜팅 패키지(9393)</td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tbody>
+                                                        <tr style=" vertical-align: middle;">
+                                                            <td>
+                                                                <a href="">00000001</a>
+                                                                <button type="button"
+                                                                    class="btn btn-icon btn-sm h-auto btn-color-gray-400 btn-active-color-primary justify-content-end">
+                                                                    <!--begin::Svg Icon | path: icons/duotune/arrows/arr095.svg-->
+                                                                    <span class="svg-icon svg-icon-2">
+                                                                        <svg width="15px" height="15px"
+                                                                            viewBox="0 0 24 24" fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path opacity="0.3"
+                                                                                d="M4.7 17.3V7.7C4.7 6.59543 5.59543 5.7 6.7 5.7H9.8C10.2694 5.7 10.65 5.31944 10.65 4.85C10.65 4.38056 10.2694 4 9.8 4H5C3.89543 4 3 4.89543 3 6V19C3 20.1046 3.89543 21 5 21H18C19.1046 21 20 20.1046 20 19V14.2C20 13.7306 19.6194 13.35 19.15 13.35C18.6806 13.35 18.3 13.7306 18.3 14.2V17.3C18.3 18.4046 17.4046 19.3 16.3 19.3H6.7C5.59543 19.3 4.7 18.4046 4.7 17.3Z"
+                                                                                fill="currentColor"></path>
+                                                                            <rect x="21.9497" y="3.46448" width="13"
+                                                                                height="2" rx="1"
+                                                                                transform="rotate(135 21.9497 3.46448)"
+                                                                                fill="currentColor"></rect>
+                                                                            <path
+                                                                                d="M19.8284 4.97161L19.8284 9.93937C19.8284 10.5252 20.3033 11 20.8891 11C21.4749 11 21.9497 10.5252 21.9497 9.93937L21.9497 3.05029C21.9497 2.498 21.502 2.05028 20.9497 2.05028L14.0607 2.05027C13.4749 2.05027 13 2.52514 13 3.11094C13 3.69673 13.4749 4.17161 14.0607 4.17161L19.0284 4.17161C19.4702 4.17161 19.8284 4.52978 19.8284 4.97161Z"
+                                                                                fill="currentColor"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <!--end::Svg Icon-->
+                                                                </button>
+                                                            </td>
+                                                            <td>yyyy-mm-dd &nbsp; hh:mm:ss</td>
+                                                            <td>
+                                                                100,000원
+                                                            </td>
+                                                            <td>
+                                                                캐시백
+                                                            </td>
+                                                            <td>나의 첫 가입 미션 완료</td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tbody>
+                                                        <tr style=" vertical-align: middle;">
+                                                            <td>
+                                                                <a href="">00000001</a>
+                                                                <button type="button"
+                                                                    class="btn btn-icon btn-sm h-auto btn-color-gray-400 btn-active-color-primary justify-content-end">
+                                                                    <!--begin::Svg Icon | path: icons/duotune/arrows/arr095.svg-->
+                                                                    <span class="svg-icon svg-icon-2">
+                                                                        <svg width="15px" height="15px"
+                                                                            viewBox="0 0 24 24" fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path opacity="0.3"
+                                                                                d="M4.7 17.3V7.7C4.7 6.59543 5.59543 5.7 6.7 5.7H9.8C10.2694 5.7 10.65 5.31944 10.65 4.85C10.65 4.38056 10.2694 4 9.8 4H5C3.89543 4 3 4.89543 3 6V19C3 20.1046 3.89543 21 5 21H18C19.1046 21 20 20.1046 20 19V14.2C20 13.7306 19.6194 13.35 19.15 13.35C18.6806 13.35 18.3 13.7306 18.3 14.2V17.3C18.3 18.4046 17.4046 19.3 16.3 19.3H6.7C5.59543 19.3 4.7 18.4046 4.7 17.3Z"
+                                                                                fill="currentColor"></path>
+                                                                            <rect x="21.9497" y="3.46448" width="13"
+                                                                                height="2" rx="1"
+                                                                                transform="rotate(135 21.9497 3.46448)"
+                                                                                fill="currentColor"></rect>
+                                                                            <path
+                                                                                d="M19.8284 4.97161L19.8284 9.93937C19.8284 10.5252 20.3033 11 20.8891 11C21.4749 11 21.9497 10.5252 21.9497 9.93937L21.9497 3.05029C21.9497 2.498 21.502 2.05028 20.9497 2.05028L14.0607 2.05027C13.4749 2.05027 13 2.52514 13 3.11094C13 3.69673 13.4749 4.17161 14.0607 4.17161L19.0284 4.17161C19.4702 4.17161 19.8284 4.52978 19.8284 4.97161Z"
+                                                                                fill="currentColor"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <!--end::Svg Icon-->
+                                                                </button>
+                                                            </td>
+                                                            <td>yyyy-mm-dd &nbsp; hh:mm:ss</td>
+                                                            <td>
+                                                                100,000원
+                                                            </td>
+                                                            <td>
+                                                                캐시백
+                                                            </td>
+                                                            <td>나의 첫 캠페인 진행 미션 완료</td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tbody>
+                                                        <tr style=" vertical-align: middle;">
+                                                            <td>
+                                                                <a href="">00000001</a>
+                                                                <button type="button"
+                                                                    class="btn btn-icon btn-sm h-auto btn-color-gray-400 btn-active-color-primary justify-content-end">
+                                                                    <!--begin::Svg Icon | path: icons/duotune/arrows/arr095.svg-->
+                                                                    <span class="svg-icon svg-icon-2">
+                                                                        <svg width="15px" height="15px"
+                                                                            viewBox="0 0 24 24" fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path opacity="0.3"
+                                                                                d="M4.7 17.3V7.7C4.7 6.59543 5.59543 5.7 6.7 5.7H9.8C10.2694 5.7 10.65 5.31944 10.65 4.85C10.65 4.38056 10.2694 4 9.8 4H5C3.89543 4 3 4.89543 3 6V19C3 20.1046 3.89543 21 5 21H18C19.1046 21 20 20.1046 20 19V14.2C20 13.7306 19.6194 13.35 19.15 13.35C18.6806 13.35 18.3 13.7306 18.3 14.2V17.3C18.3 18.4046 17.4046 19.3 16.3 19.3H6.7C5.59543 19.3 4.7 18.4046 4.7 17.3Z"
+                                                                                fill="currentColor"></path>
+                                                                            <rect x="21.9497" y="3.46448" width="13"
+                                                                                height="2" rx="1"
+                                                                                transform="rotate(135 21.9497 3.46448)"
+                                                                                fill="currentColor"></rect>
+                                                                            <path
+                                                                                d="M19.8284 4.97161L19.8284 9.93937C19.8284 10.5252 20.3033 11 20.8891 11C21.4749 11 21.9497 10.5252 21.9497 9.93937L21.9497 3.05029C21.9497 2.498 21.502 2.05028 20.9497 2.05028L14.0607 2.05027C13.4749 2.05027 13 2.52514 13 3.11094C13 3.69673 13.4749 4.17161 14.0607 4.17161L19.0284 4.17161C19.4702 4.17161 19.8284 4.52978 19.8284 4.97161Z"
+                                                                                fill="currentColor"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <!--end::Svg Icon-->
+                                                                </button>
+                                                            </td>
+                                                            <td>yyyy-mm-dd &nbsp; hh:mm:ss</td>
+                                                            <td>
+                                                                100,000원
+                                                            </td>
+                                                            <td>
+                                                                캐시백
+                                                            </td>
+                                                            <td>친구의 첫 가입 미션 완료</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- end:: 카드 컨텐트 -->
+
+                                        </div>
+                                        <!-- begin::페이지네이션 -->
+                                        <div class="mb-10">
+                                            <ul class="pagination">
+                                                <li class="page-item previous disabled"><a href="#" class="page-link"><i
+                                                            class="previous"></i></a></li>
+                                                <li class="page-item "><a href="#" class="page-link">1</a></li>
+                                                <li class="page-item active"><a href="#" class="page-link">2</a></li>
+                                                <li class="page-item "><a href="#" class="page-link">3</a></li>
+                                                <li class="page-item "><a href="#" class="page-link">4</a></li>
+                                                <li class="page-item "><a href="#" class="page-link">5</a></li>
+                                                <li class="page-item "><a href="#" class="page-link">6</a></li>
+                                                <li class="page-item "><a href="#" class="page-link">7</a></li>
+                                                <li class="page-item "><a href="#" class="page-link">8</a></li>
+                                                <li class="page-item "><a href="#" class="page-link">9</a></li>
+                                                <li class="page-item "><a href="#" class="page-link">10</a></li>
+                                                <li class="page-item next"><a href="#" class="page-link"><i
+                                                            class="next"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- end::페이지네이션 -->
+                                    </div>
+                                </div>
+
+
+                                <!-- end:: 카드 -->
+
+                            </div>
+                            <!-- end::4th tab -->
+
+
+                            <!-- begin::5th tab -->
+                            <div class="tab-pane fade" id="kt_tab_pane_8" role="tabpanel">
+
+                                <!-- begin::카드 -->
+                                <div class="col-xxl-12 mb-5 mb-xl-10">
+                                    <div class="card">
+
+                                        <!--begin::카드  타이틀-->
+                                        <div class="card-header pt-5">
+                                            <h3 class="card-title align-items-start flex-column">
+                                                <span class="card-label fw-bold text-dark">메시지 수신</span>
+                                            </h3>
+                                        </div>
+                                        <!--end:: 카드 타이틀-->
+
+                                        <div class="card-body">
+
+                                            <!-- begin:: 카드 컨텐트 -->
+                                            <div class="row mb-5">
+
+                                                <!--begin::Col-->
+                                                <div class="col-md-4 fv-row fv-plugins-icon-container">
+                                                    <!--begin::Label-->
+                                                    <label class=" fs-5 fw-semibold mb-2">PUSH 수신 여부</label>
+                                                    <!--end::Label-->
+                                                    <!--begin::Input-->
+                                                    <div>
+                                                        <div
+                                                            class="form-check form-switch form-check-custom form-check-solid me-10">
+                                                            <input class="form-check-input h-20px w-35px"
+                                                                type="checkbox" value="" id="flexSwitch30x50">
+                                                            <label class="form-check-label" for="flexSwitch30x50">
+                                                                마케팅/혜택
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <!--end::Input-->
+                                                    <div class="fv-plugins-message-container invalid-feedback"></div>
+                                                </div>
+                                                <!--end::Col-->
+
+                                                <!--begin::Col-->
+                                                <div class="col-md-4 fv-row fv-plugins-icon-container">
+                                                    <!--end::Label-->
+                                                    <label class=" fs-5 fw-semibold mb-2">SMS 수신 여부</label>
+                                                    <!--end::Label-->
+                                                    <!--end::Input-->
+                                                    <div>
+                                                        <div
+                                                            class="form-check form-switch form-check-custom form-check-solid me-10">
+                                                            <input class="form-check-input h-20px w-35px"
+                                                                type="checkbox" value="" id="flexSwitch30x50">
+                                                            <label class="form-check-label" for="flexSwitch30x50">
+                                                                마케팅/혜택
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <!--end::Input-->
+                                                    <div class="fv-plugins-message-container invalid-feedback"></div>
+                                                </div>
+                                                <!--end::Col-->
+
+                                                <!-- begin::Col -->
+                                                <div class="col-md-4 fv-row fv-plugins-icon-container">
+                                                    <!--end::Label-->
+                                                    <label class=" fs-5 fw-semibold mb-2">메일</label>
+                                                    <!--end::Label-->
+                                                    <!--end::Input-->
+                                                    <div>
+                                                        <div
+                                                            class="form-check form-switch form-check-custom form-check-solid me-10">
+                                                            <input class="form-check-input h-20px w-35px"
+                                                                type="checkbox" value="" id="flexSwitch30x50">
+                                                            <label class="form-check-label" for="flexSwitch30x50">
+                                                                마케팅/혜택
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <!--end::Input-->
+                                                    <div class="fv-plugins-message-container invalid-feedback"></div>
+                                                </div>
+                                                <!--end::Col-->
+
+                                            </div>
+                                            <!-- end:: 카드 컨텐트 -->
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- end:: 카드 -->
+
+                                <!--begin:: 타이틀 이거 탭-->
+                                <div class="card-header pt-5">
+                                    <ul class="nav nav-tabs nav-line-tabs nav-line-tabs-2x mb-5 fs-6">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-bs-toggle="tab" href="#kt_tab_pane_9">PUSH
+                                                발송 기록 (갯수)</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#kt_tab_pane_10">SMS 발송
+                                                기록</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--end:: 타이틀 이거 탭-->
+
+                                <!-- begin::5th-1st tab -->
+                                <div class="tab-pane fade" id="kt_tab_pane_9" role="tabpanel">
+
+                                    <!-- begin::카드 -->
+                                    <div class="col-xxl-12 mb-5 mb-xl-10">
+                                        <div class="card">
+
+                                            <!--begin::카드  타이틀-->
+                                            <div class="card-header pt-5">
+                                                <h3 class="card-title align-items-start flex-column">
+                                                    <span class="card-label fw-bold text-dark">PUSH 발송기록</span>
+                                                </h3>
+                                            </div>
+                                            <!--end:: 카드 타이틀-->
+
+                                            <div class="card-body">
+
+                                                <!-- begin:: 카드 컨텐트 -->
+                                                <div class="table-responsive">
+                                                    <table
+                                                        class="table table-hover table-rounded table-striped border gy-7 gs-7">
+                                                        <thead>
+                                                            <tr class="fw-semibold fs-6 text-gray-800 border-bottom-2 border-gray-200" "="">
+                                                                                            <th>분류</th>
+                                                                                            <th>내용</th>
+                                                                                            <th>발송인</th>
+                                                                                            <th>발송 시각</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr style=" vertical-align:
+                                                                middle;">
+                                                                <td>정보성</td>
+                                                                <td>
+                                                                    <p>PUSH 제목이 입력되는 곳입니다.</p>
+                                                                    <p>메시지 내용이 입력되는 곳입니다.</p>
+                                                                </td>
+                                                                <td>
+                                                                    chaem
+                                                                </td>
+                                                                <td>
+                                                                    yyyy-mm-dd &nbsp; hh:mm:ss
+                                                                </td>
+
+                                                            </tr>
+                                                            </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- end:: 카드 컨텐트 -->
+
+                                                <!-- begin::페이지네이션 -->
+                                                <div>
+                                                    <ul class="pagination">
+                                                        <li class="page-item previous disabled"><a href="#"
+                                                                class="page-link"><i class="previous"></i></a></li>
+                                                        <li class="page-item "><a href="#" class="page-link">1</a></li>
+                                                        <li class="page-item active"><a href="#" class="page-link">2</a>
+                                                        </li>
+                                                        <li class="page-item "><a href="#" class="page-link">3</a></li>
+                                                        <li class="page-item "><a href="#" class="page-link">4</a></li>
+                                                        <li class="page-item "><a href="#" class="page-link">5</a></li>
+                                                        <li class="page-item "><a href="#" class="page-link">6</a></li>
+                                                        <li class="page-item "><a href="#" class="page-link">7</a></li>
+                                                        <li class="page-item "><a href="#" class="page-link">8</a></li>
+                                                        <li class="page-item "><a href="#" class="page-link">9</a></li>
+                                                        <li class="page-item "><a href="#" class="page-link">10</a></li>
+                                                        <li class="page-item next"><a href="#" class="page-link"><i
+                                                                    class="next"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- end::페이지네이션 -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- end:: 카드 -->
+
+                                </div>
+                                <!-- end::5th-1st tab -->
+
+                                <!-- begin::5th-2nd tab -->
+                                <div class="tab-pane fade" id="kt_tab_pane_10" role="tabpanel">
+
+                                    <!-- begin::카드 -->
+                                    <div class="col-xxl-12 mb-5 mb-xl-10">
+                                        <div class="card">
+
+                                            <!--begin::카드  타이틀-->
+                                            <div class="card-header pt-5">
+                                                <h3 class="card-title align-items-start flex-column">
+                                                    <span class="card-label fw-bold text-dark">SMS 발송기록 (갯수)</span>
+                                                </h3>
+                                            </div>
+                                            <!--end:: 카드 타이틀-->
+
+                                            <div class="card-body">
+
+                                                <!-- begin:: 카드 컨텐트 -->
+                                                <div class="table-responsive">
+                                                    <table
+                                                        class="table table-hover table-rounded table-striped border gy-7 gs-7">
+                                                        <thead>
+                                                            <tr class="fw-semibold fs-6 text-gray-800 border-bottom-2 border-gray-200" "="">
+                                                                                                                            <th>분류</th>
+                                                                                                                            <th>내용</th>
+                                                                                                                            <th>발송인</th>
+                                                                                                                            <th>발송 시각</th>
+                                                                                                                        </tr>
+                                                                                                                    </thead>
+                                                                                                                    <tbody>
+                                                                                                                        <tr style="
+                                                                vertical-align: middle;">
+                                                                <td>정보성</td>
+                                                                <td>
+                                                                    <p>SMS 제목이 입력되는 곳입니다.</p>
+                                                                    <p>메시지 내용이 입력되는 곳입니다.</p>
+                                                                </td>
+                                                                <td>
+                                                                    chaem
+                                                                </td>
+                                                                <td>
+                                                                    yyyy-mm-dd &nbsp; hh:mm:ss
+                                                                </td>
+
+                                                            </tr>
+                                                            </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- end:: 카드 컨텐트 -->
+
+                                                <!-- begin::페이지네이션 -->
+                                                <div>
+                                                    <ul class="pagination">
+                                                        <li class="page-item previous disabled"><a href="#"
+                                                                class="page-link"><i class="previous"></i></a></li>
+                                                        <li class="page-item "><a href="#" class="page-link">1</a></li>
+                                                        <li class="page-item active"><a href="#" class="page-link">2</a>
+                                                        </li>
+                                                        <li class="page-item "><a href="#" class="page-link">3</a></li>
+                                                        <li class="page-item "><a href="#" class="page-link">4</a></li>
+                                                        <li class="page-item "><a href="#" class="page-link">5</a></li>
+                                                        <li class="page-item "><a href="#" class="page-link">6</a></li>
+                                                        <li class="page-item "><a href="#" class="page-link">7</a></li>
+                                                        <li class="page-item "><a href="#" class="page-link">8</a></li>
+                                                        <li class="page-item "><a href="#" class="page-link">9</a></li>
+                                                        <li class="page-item "><a href="#" class="page-link">10</a></li>
+                                                        <li class="page-item next"><a href="#" class="page-link"><i
+                                                                    class="next"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- end::페이지네이션 -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- end:: 카드 -->
+
+                                </div>
+                                <!-- end::5th-2nd tab -->
+
+                            </div>
+                            <!-- end::5th tab -->
+
+
                         </div>
                         <!-- end::tab -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                     </div>
