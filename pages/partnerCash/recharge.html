@@ -15,6 +15,7 @@
     <link href="/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
     <link href="/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
     <!--end::Global Stylesheets Bundle-->
+    <link rel="stylesheet" href="https://uicdn.toast.com/grid/latest/tui-grid.css" />
 </head>
 <!--end::Head-->
 <!--begin::Body-->
@@ -810,25 +811,28 @@
                         <div class="page-title d-flex flex-column justify-content-center flex-wrap me-3">
                             <h1
                                 class="page-heading d-flex text-dark fw-bold fs-3 flex-column justify-content-center my-0">
-                                <p>캠페인 상세 정보: <span style="color: var(--bs-primary);">엠마의 1025-2 캠페인(157)</span></p>
+                                파트너캐시 충전 처리
                             </h1>
-                            <ul class="nav nav-tabs nav-line-tabs nav-line-tabs-2x mb-5 fs-6">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="/pages/campaign/campaigns/campaignDetail.html">기본
-                                        정보</a>
+                            <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
+                                <li class="breadcrumb-item text-muted">
+                                    재무
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/pages/campaign/campaigns/cashback.html">캐시백</a>
+                                <li class="breadcrumb-item">
+                                    <span class="bullet bg-gray-400 w-5px h-2px"></span>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/pages/campaign/campaigns/usageGuide.html">이용 정보</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/pages/campaign/campaigns/postingGuide.html">포스팅</a>
-                                </li>
+                                <li class="breadcrumb-item text-muted">파트너캐시 충전 처리</li>
                             </ul>
                         </div>
                         <!--end::Actions-->
+                        <ul class="nav nav-tabs nav-line-tabs nav-line-tabs-2x mb-5 fs-6">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/pages/fee/depositPayment/depositPayment.html">파트너캐시
+                                    충전</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/fee/depositPayment/refundRequest.html">파트너캐시 환불</a>
+                            </li>
+                        </ul>
                     </div>
                     <!--end::Toolbar container-->
                 </div>
@@ -838,296 +842,464 @@
                     <div id="kt_app_content_container" class="app-container flex-column-fluid">
                         <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
                         <!-- begin:: 카드 -->
-                        <!-- begin:: 카드 -->
                         <div class="col-xxl-12 mb-5 mb-xl-10">
                             <div class="card">
-                                <!-- begin:: 리스트 -->
-                                <div class="table-responsive">
-                                    <table class="table table-hover table-striped border gy-7 gs-7 align-items-center"
-                                        style="text-align: center;">
-                                        <thead>
-                                            <tr class="fw-bold fs-6 text-gray-800 border-bottom-2 border-gray-200 ">
-                                                <th>혜택 등급</th>
-                                                <th class="required min-w-100px">포스팅 수수료율</th>
-                                                <th>캐시백 비율</th>
-                                                <th>월 캐시백 한도 (1인당)</th>
-                                                <th>진행 여부</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody style="text-align: center; vertical-align:middle;">
-                                            <tr>
-                                                <td class="align-middle"><img src="/src/img/grade/card_grade_mega.svg"
-                                                        class="mb-0 figure-img img-fluid">
-                                                </td>
-                                                <td>
-                                                    <div class="align-items-center justify-content-center row">
-                                                        <div class="col-10" style="padding-right: 0px; width: 238px;">
-                                                            <input min="0" type="number" class="form-control" value="50"
-                                                                style="width: 100%; border-radius: 5px; border: 1px solid var(--bs-gray-500);">
-                                                            <div class="invalid-feedback" style="text-align: left;">1%
-                                                                이상의 값을 입력해 주세요.</div>
-                                                        </div>
-                                                        <div
-                                                            class="d-flex align-items-center justify-content-center col-1">
-                                                            %</div>
-                                                    </div>
-                                                </td>
-                                                <td class="align-middle">90%</td>
-
-                                                <td>
-                                                    <div class=" justify-content-center row">
-                                                        <div style="width: 54px;">
-                                                            <div class="form-switch" style="padding-top: 10px;"><input
-                                                                    type="checkbox" class="form-check-input"></div>
-                                                        </div>
-                                                        <div style="width: 238px; padding-right: 0px;"><input
-                                                                disabled="" type="text" class="form-control" value="0"
-                                                                style="width: 100%; border-radius: 5px;">
-                                                        </div>
-                                                        <div class="d-flex justify-content-center col-1"
-                                                            style="padding-top: 14px;">원</div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div style="width: 54px;">
-                                                        <div class="form-switch" style="padding-top: 10px;"><input
-                                                                type="checkbox" class="form-check-input"></div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="align-middle"><img src="/src/img/grade/card_grade_macro.svg"
-                                                        class="mb-0 figure-img img-fluid">
-                                                </td>
-                                                <td>
-                                                    <div class="align-items-center justify-content-center row">
-                                                        <div class="col-10" style="padding-right: 0px; width: 238px;">
-                                                            <input min="0" type="number" class="form-control" value="40"
-                                                                style="width: 100%; border-radius: 5px; border: 1px solid var(--bs-gray-500);">
-                                                            <div class="invalid-feedback" style="text-align: left;">1%
-                                                                이상의 값을 입력해 주세요.</div>
-                                                        </div>
-                                                        <div
-                                                            class="d-flex align-items-center justify-content-center col-1">
-                                                            %</div>
-                                                    </div>
-                                                </td>
-                                                <td class="align-middle">45%</td>
-
-                                                <td>
-                                                    <div class=" justify-content-center row">
-                                                        <div style="width: 54px;">
-                                                            <div class="form-switch" style="padding-top: 10px;"><input
-                                                                    type="checkbox" class="form-check-input">
-                                                            </div>
-                                                        </div>
-                                                        <div style="width: 238px; padding-right: 0px;"><input
-                                                                disabled="" type="text" class="form-control" value="0"
-                                                                style="width: 100%; border-radius: 5px;">
-                                                        </div>
-                                                        <div class="d-flex justify-content-center col-1"
-                                                            style="padding-top: 14px;">원</div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div style="width: 54px;">
-                                                        <div class="form-switch" style="padding-top: 10px;"><input
-                                                                type="checkbox" class="form-check-input"></div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="align-middle"><img src="/src/img/grade/card_grade_micro.svg"
-                                                        class="mb-0 figure-img img-fluid">
-                                                </td>
-                                                <td>
-                                                    <div class="align-items-center justify-content-center row">
-                                                        <div class="col-10" style="padding-right: 0px; width: 238px;">
-                                                            <input min="0" type="number" class="form-control" value="30"
-                                                                style="width: 100%; border-radius: 5px; border: 1px solid var(--bs-gray-500);">
-                                                            <div class="invalid-feedback" style="text-align: left;">1%
-                                                                이상의 값을 입력해 주세요.</div>
-                                                        </div>
-                                                        <div
-                                                            class="d-flex align-items-center justify-content-center col-1">
-                                                            %</div>
-                                                    </div>
-                                                </td>
-                                                <td class="align-middle">27%</td>
-
-                                                <td>
-                                                    <div class=" justify-content-center row">
-                                                        <div style="width: 54px;">
-                                                            <div class="form-switch" style="padding-top: 10px;"><input
-                                                                    type="checkbox" class="form-check-input">
-                                                            </div>
-                                                        </div>
-                                                        <div style="width: 238px; padding-right: 0px;"><input
-                                                                disabled="" type="text" class="form-control" value="0"
-                                                                style="width: 100%; border-radius: 5px;">
-                                                        </div>
-                                                        <div class="d-flex justify-content-center col-1"
-                                                            style="padding-top: 14px;">원</div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div style="width: 54px;">
-                                                        <div class="form-switch" style="padding-top: 10px;"><input
-                                                                type="checkbox" class="form-check-input"></div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="align-middle"><img src="/src/img/grade/card_grade_nano.svg"
-                                                        class="mb-0 figure-img img-fluid">
-                                                </td>
-                                                <td>
-                                                    <div class="align-items-center justify-content-center row">
-                                                        <div class="col-10" style="padding-right: 0px; width: 238px;">
-                                                            <input min="0" type="number" class="form-control" value="20"
-                                                                style="width: 100%; border-radius: 5px; border: 1px solid var(--bs-gray-500);">
-                                                            <div class="invalid-feedback" style="text-align: left;">1%
-                                                                이상의 값을 입력해 주세요.</div>
-                                                        </div>
-                                                        <div
-                                                            class="d-flex align-items-center justify-content-center col-1">
-                                                            %</div>
-                                                    </div>
-                                                </td>
-                                                <td class="align-middle">18%</td>
-
-                                                <td>
-                                                    <div class=" justify-content-center row">
-                                                        <div style="width: 54px;">
-                                                            <div class="form-switch" style="padding-top: 10px;"><input
-                                                                    type="checkbox" class="form-check-input">
-                                                            </div>
-                                                        </div>
-                                                        <div style="width: 238px; padding-right: 0px;"><input
-                                                                disabled="" type="text" class="form-control" value="0"
-                                                                style="width: 100%; border-radius: 5px;">
-                                                        </div>
-                                                        <div class="d-flex justify-content-center col-1"
-                                                            style="padding-top: 14px;">원</div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div style="width: 54px;">
-                                                        <div class="form-switch" style="padding-top: 10px;"><input
-                                                                type="checkbox" class="form-check-input"></div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="align-middle"><img src="/src/img/grade/card_grade_cell.svg"
-                                                        class="mb-0 figure-img img-fluid">
-                                                </td>
-                                                <td>
-                                                    <div class="align-items-center justify-content-center row">
-                                                        <div class="col-10" style="padding-right: 0px; width: 238px;">
-                                                            <input min="0" type="number" class="form-control" value="10"
-                                                                style="width: 100%; border-radius: 5px; border: 1px solid var(--bs-gray-500);">
-                                                            <div class="invalid-feedback" style="text-align: left;">1%
-                                                                이상의 값을 입력해 주세요.</div>
-                                                        </div>
-                                                        <div
-                                                            class="d-flex align-items-center justify-content-center col-1">
-                                                            %</div>
-                                                    </div>
-                                                </td>
-                                                <td class="align-middle">9%</td>
-
-                                                <td>
-                                                    <div class=" justify-content-center row">
-                                                        <div style="width: 54px;">
-                                                            <div class="form-switch" style="padding-top: 10px;"><input
-                                                                    type="checkbox" class="form-check-input">
-                                                            </div>
-                                                        </div>
-                                                        <div style="width: 238px; padding-right: 0px;"><input
-                                                                disabled="" type="text" class="form-control" value="0"
-                                                                style="width: 100%; border-radius: 5px;">
-                                                        </div>
-                                                        <div class="d-flex justify-content-center col-1"
-                                                            style="padding-top: 14px;">원</div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div style="width: 54px;">
-                                                        <div class="form-switch" style="padding-top: 10px;"><input
-                                                                type="checkbox" class="form-check-input"></div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <ul class="pagination mb-5">
-                                        <li class="page-item previous disabled"><a href="#" class="page-link"><i
-                                                    class="previous"></i></a>
-                                        </li>
-                                        <li class="page-item "><a href="#" class="page-link">1</a></li>
-                                        <li class="page-item active"><a href="#" class="page-link">2</a></li>
-                                        <li class="page-item "><a href="#" class="page-link">3</a></li>
-                                        <li class="page-item "><a href="#" class="page-link">4</a></li>
-                                        <li class="page-item "><a href="#" class="page-link">5</a></li>
-                                        <li class="page-item "><a href="#" class="page-link">6</a></li>
-                                        <li class="page-item next"><a href="#" class="page-link"><i
-                                                    class="next"></i></a></li>
-                                    </ul>
-                                </div>
-                                <!-- end:: 컨텐트 -->
-                            </div>
-
-                        </div>
-                        <!-- end:: 카드 -->
-                        <!-- begin:: 카드 -->
-                        <div class="col-xxl-12 mb-5 mb-xl-10">
-                            <div class="card">
-
                                 <!-- begin:: card-body -->
                                 <div class="card-body">
-                                    <div class="cashback-info-area">
-                                        <div class="d-flex">
-                                            <p class="fw-bold" style=" margin-top: 2px;"> 혜택 등급</p>
+                                    <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework"
+                                        method="post" id="kt_careers_form">
+                                        <!--begin::Input group3 ::2개짜리-->
+                                        <div class="row mb-5">
+                                            <!--begin::Col-->
+                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                <!--begin::Label-->
+                                                <label class=" fs-5 fw-semibold mb-2">사업자명</label>
+                                                <!--end::Label-->
+                                                <!--begin::Input-->
+                                                <input type="text" class="form-control" placeholder="사업자명 입력"
+                                                    name="first_name">
+                                                <!--end::Input-->
+                                                <div class="fv-plugins-message-container invalid-feedback"></div>
+                                            </div>
+                                            <!--end::Col-->
+                                            <!--begin::Col-->
+                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                <!--end::Label-->
+                                                <label class=" fs-5 fw-semibold mb-2">영업 담당자</label>
+                                                <!--end::Label-->
+                                                <!--end::Input-->
+                                                <select class="form-select form-select" data-control="select2"
+                                                    data-placeholder="이름 입력 또는 선택" data-allow-clear="true">
+                                                    <option></option>
+                                                    <option value="1">jacob</option>
+                                                    <option value="2">jack</option>
+                                                    <option value="3">raymon</option>
+                                                    <option value="4">chaem</option>
+                                                    <option value="5">yona</option>
+                                                </select>
+                                                <!--end::Input-->
+                                                <div class="fv-plugins-message-container invalid-feedback"></div>
+                                            </div>
+                                            <!--end::Col-->
                                         </div>
-                                        <ul>
-                                            <li>MEGA : 내부 기준에 의해 수동 부여한 등급</li>
-                                            <li>MACRO : 활성 팔로워 수 50K 이상</li>
-                                            <li>MICRO : 활성 팔로워 수 10K 이상 50K 미만</li>
-                                            <li>NANO : 활성 팔로워 수 1K 이상 10K 미만</li>
-                                            <li>CELL : 활성 팔로워 수 100명 이상 1K 미만</li>
-                                        </ul>
-                                        <p class="fw-bold">등급별 제휴 수수료율</p>
-                                        <ul>
-                                            <li>1% 이상의 값을 입력해 주세요.</li>
-                                            <li>입력값의 90%가 인플카 캐시백 혜택으로 제공됩니다.</li>
-                                            <li>상위 등급은 하위 등급보다 같거나 큰 값으로 설정되어야 합니다.</li>
-                                        </ul>
-                                        <p class="fw-bold">월 캐시백 한도(1인당)</p>
-                                        <ul>
-                                            <li>1만원 이상의 값을 입력해 주세요.</li>
-                                            <li>한도를 설정하면, 인플루언서 1명이 해당 월에 받을 수 있는 최대 캐시백 금액이 제한됩니다.</li>
-                                        </ul>
-                                        <p class="fw-bold">진행 여부</p>
-                                        <ul>
-                                            <li>최소 1개 등급은 진행 여부를 켜주세요.</li>
-                                            <li>진행 여부가 꺼진 등급의 인플루언서는 하위 등급의 혜택을 제공받습니다.</li>
-                                        </ul>
+                                        <!--end::Input group3 ::2개짜리-->
+                                        <!--begin::Input group3 ::3개짜리-->
+                                        <div class="row mb-5">
+                                            <!--begin::Col-->
+                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                <!--end::Label-->
+                                                <label class=" fs-5 fw-semibold mb-2">거래 상태</label>
+                                                <!--end::Label-->
+                                                <!--end::Input-->
+                                                <div class="d-flex align-items-center flex-nowrap form-control">
+                                                    <label class="form-check form-check-custom form-check me-10"><input
+                                                            class="form-check-input" type="checkbox" value="1" /><span
+                                                            class="form-check-label">
+                                                            충전 요청
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check form-check-custom form-check"><input
+                                                            class="form-check-input" type="checkbox" value="1" /><span
+                                                            class="form-check-label">
+                                                            충전 완료(승인)
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <!--end::Input-->
+                                                <div class="fv-plugins-message-container invalid-feedback"></div>
+                                            </div>
+                                            <!--end::Col-->
+                                            <!--begin::Col-->
+                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                <!--end::Label-->
+                                                <label class=" fs-5 fw-semibold mb-2">입금 여부</label>
+                                                <!--end::Label-->
+                                                <!--end::Input-->
+                                                <div class="d-flex align-items-center flex-nowrap form-control">
+                                                    <label class="form-check form-check-custom form-check me-10"><input
+                                                            class="form-check-input" type="checkbox" value="1" /><span
+                                                            class="form-check-label">
+                                                            입금 대기
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check form-check-custom form-check"><input
+                                                            class="form-check-input" type="checkbox" value="1" /><span
+                                                            class="form-check-label">
+                                                            입금 완료
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <!--end::Input-->
+                                                <div class="fv-plugins-message-container invalid-feedback"></div>
+                                            </div>
+                                            <!--end::Col-->
+                                        </div>
+                                        <div class="row mb-5">
+                                            <div class="col-md-12 fv-row fv-plugins-icon-container">
+                                                <!--end::Label-->
+                                                <label class=" fs-5 fw-semibold mb-2">충전액</label>
+                                                <!--end::Label-->
+                                                <!--end::Input-->
+                                                <div class="col-md-8 d-flex align-items-center">
+                                                    <input type="number" class="form-control" min="0" placeholder="최소액">
+                                                    <span class="ms-4 me-4">~</span>
+                                                    <input type="number" class="form-control" min="0" placeholder="최대액">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-5">
+                                            <!--begin::Col-->
+                                            <div class="col-md-2 fv-row fv-plugins-icon-container">
+                                                <label class="fs-5 fw-semibold mb-2">기간 유형</label>
+                                                <select class=" form-select" data-control="select2"
+                                                    data-placeholder="기간 유형" select box : data-allow-clear="true"
+                                                    data-hide-search="true">
+                                                    <option></option>
+                                                    <option value="1">충전 요청일</option>
+                                                    <option value="2">충전 승인일</option>
+                                                    <option value="3">입금일</option>
+                                                </select>
+                                            </div>
+                                            <!--end::Col-->
+                                            <div class="col-md-10 fv-row fv-plugins-icon-container mb-5">
+                                                <!--begin::Label-->
+                                                <label class="fs-5 fw-semibold mb-2">기간</label>
+                                                <!--end::Label-->
+                                                <!--begin::col-->
+                                                <div class="row">
+                                                    <div class="col-md-8 d-flex mb-5 align-items-center">
+                                                        <input type="datetime-local" class="form-control">
+                                                        <span class="ms-4 me-4">~</span>
+                                                        <input type="datetime-local" class="form-control">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button
+                                                            class="btn btn-white btn-outline btn-active-light-primary">
+                                                            최근7일
+                                                        </button>
+                                                        <button
+                                                            class="btn btn-white btn-outline btn-active-light-primary">
+                                                            최근 1개월
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end::col -->
+                                        </div>
+                                </div>
+                                <!--end::Input group -->
+                                <div class="row mb-5">
+                                    <div class="col-md-12 d-flex justify-content-center">
+                                        <button type="button" class="btn btn-white btn-outline me-2">초기화</button>
+                                        <button type="button" class="btn btn-primary">검색</button>
                                     </div>
                                 </div>
-                                <!-- end::card-body-->
+                                </form>
                             </div>
+                            <!-- end::card-body-->
                         </div>
-                        <!-- end:: 카드 -->
-                        <!-- end:: 컨텐트 -->
                     </div>
+                    <!-- end:: 카드 -->
+                    <!-- begin:: 카드 -->
+                    <div class="col-xxl-12 mb-5 mb-xl-10">
+                        <div class="card">
+                            <!-- begin:: card-header -->
+                            <div class="card-header">
+                                <!--begin:: 타이틀-->
+                                <h3 class="card-title align-items-start flex-column">
+                                    <span class="card-label fw-bold text-dark">파트너캐시 충전 리스트(137)</span>
+                                </h3>
+                                <div class="d-flex">
+                                    <select class="me-2 form-select" style="width: 100px; margin: 1rem 0">
+                                        <option value="DESC">최신순</option>
+                                        <option value="ASC">과거순</option>
+                                    </select>
+                                    <select class="form-select" style="width: 78px; margin: 1rem 0">
+                                        <option value="30">30</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select>
+                                </div>
+                                <!--end:: 타이틀-->
+                            </div>
+                            <!-- end:: card-header -->
+                            <!-- begin:: card-body -->
+                            <div class="d-flex justify-content-between" style="padding: 1rem 2.25rem;">
+                                <button class="btn btn-light-danger btn-outline">요청 건 삭제</button>
+                                <div>
+                                    <button type="button" class="btn btn-white-primary btn-outline fs-6"
+                                        data-bs-toggle="modal" data-bs-target="#kt_modal_1">검색 결과 거래명세서
+                                        출력하기</button>
+                                    </button>
+                                    <a href="/pages/fee/depositPayment/chargeRequest.html">
+                                        <button class="btn btn-primary fs-6">파트너캐시 충전 요청</button>
+                                    </a>
+                                </div>
+                                <!-- begin:: Modal -->
+                                <div class="modal modal-xl fade" tabindex="-1" id="kt_modal_1">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h3 class="modal-title">전자거래 명세서</h3>
+
+                                                <!--begin::Close-->
+                                                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2"
+                                                    data-bs-dismiss="modal" aria-label="Close">
+                                                    <span class="svg-icon svg-icon-1"></span>
+                                                </div>
+                                                <!--end::Close-->
+                                            </div>
+                                            <!-- begin:: Card -->
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h3 class="card-title align-items-start flex-column pb-2"
+                                                        style="border-bottom:1px solid var(--bs-gray)">
+                                                        <span class="card-label fw-bold text-dark">공급받는자</span>
+                                                    </h3>
+                                                    <div class="row mb-5">
+                                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                            <label class="form-label mb-2">상호명</label>
+                                                            <p type="text" class="form-control form-control-solid">
+                                                                린다1</p>
+                                                        </div>
+                                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                            <label class="form-label mb-2">사업자등록번호</label>
+                                                            <p type="text" class="form-control form-control-solid">
+                                                                111-11-11113</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-5">
+                                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                            <label class="form-label mb-2">사업장 주소</label>
+                                                            <p type="text" class="form-control form-control-solid">
+                                                                서울 성동구 왕십리로 16</p>
+                                                        </div>
+                                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                            <label class="form-label mb-2">대표자명</label>
+                                                            <p type="text" class="form-control form-control-solid">
+                                                                김채린</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h3 class="align-items-start flex-column pb-2"
+                                                        style="border-bottom:1px solid var(--bs-gray)">
+                                                        <span class="card-label fw-bold text-dark">공급자</span>
+                                                    </h3>
+                                                    <div class="row mb-5">
+                                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                            <label class="form-label mb-2">상호명</label>
+                                                            <p type="text" class="form-control form-control-solid">
+                                                                린다1</p>
+                                                        </div>
+                                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                            <label class="form-label mb-2">사업자등록번호</label>
+                                                            <p type="text" class="form-control form-control-solid">
+                                                                111-11-11113</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-5">
+                                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                            <label class="form-label mb-2">사업장 주소</label>
+                                                            <p type="text" class="form-control form-control-solid">
+                                                                서울 성동구 왕십리로 16</p>
+                                                        </div>
+                                                        <div class="col-md-6 fv-row fv-plugins-icon-container">
+                                                            <label class="form-label mb-2">대표자명</label>
+                                                            <p type="text" class="form-control form-control-solid">
+                                                                김채린</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end:: Card -->
+                                            <!-- begin:: Card -->
+                                            <div class="col-xxl-6">
+
+                                            </div>
+                                            <div class="card">
+
+                                            </div>
+                                            <!-- end:: Card -->
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h3 class="card-title align-items-start flex-column pb-2"
+                                                        style="border-bottom:1px solid var(--bs-gray)">
+                                                        <span class="card-label fw-bold text-dark">검색 내역</span>
+                                                    </h3>
+                                                    <div class="table-responsive">
+                                                        <table class="table table-hover table-striped border gy-7 gs-7">
+                                                            <thead>
+                                                                <tr
+                                                                    class="fw-bold fs-6 text-gray-800 border-bottom-2 border-gray-200 ">
+                                                                    <th class="text-center">거래 일자</th>
+                                                                    <th class="text-center">거래 아이디</th>
+                                                                    <th class="text-center">상세 내용</th>
+                                                                    <th class="text-center">결제 수단</th>
+                                                                    <th class="text-center">금액</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="text-center align-middle">
+                                                                        2022-10-21<span
+                                                                            style="margin-left:5px;color:var(--bs-gray-600)">18:50</span>
+                                                                    </td>
+                                                                    <td class="text-center align-middle">170
+                                                                    </td>
+                                                                    <td class="text-center align-middle">파트너캐시 충전
+                                                                    </td>
+                                                                    <td class="text-center align-middle">계좌이체</td>
+                                                                    <td class="text-end align-middle">700,000원</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-center align-middle">
+                                                                        2022-10-21<span
+                                                                            style="margin-left:5px;color:var(--bs-gray-600)">18:50</span>
+                                                                    </td>
+                                                                    <td class="text-center align-middle">170
+                                                                    </td>
+                                                                    <td class="text-center align-middle">파트너캐시 충전
+                                                                    </td>
+                                                                    <td class="text-center align-middle">계좌이체</td>
+                                                                    <td class="text-end align-middle">700,000원</td>
+                                                                </tr>
+                                                                <tr class="text-end align-middle">
+                                                                    <td colspan="5">
+                                                                        금액 합계:
+                                                                        <span
+                                                                            style="color: var(--bs-blue);">1,700,000원</span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--begin::Text-->
+                                            <div class="col-md-12  fv-plugins-icon-container mb-2">
+                                                <div class="mb-0 fs-6">
+                                                    <div class="lh-lg mb-1 text-bg-light p-10 ">
+                                                        <ul>
+                                                            <span class="fw-semibold">안내 사항</span>
+                                                            <div class="ps-5">
+                                                                <li>거래명세서는 법적 효력이 없습니다.</li>
+                                                                <li>거래명세서는 세무 상 증빙자료로 활용할 수 없습니다.</li>
+                                                                <li>거래명세서는 소득공제용 영수증 및 세금계산서로 활용할 수 없습니다.</li>
+                                                            </div>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end::Text-->
+                                            <div class="modal-footer flex-center">
+                                                <button type="button" class="btn btn-light"
+                                                    data-bs-dismiss="modal">닫기</button>
+                                                <button type="button" id="kt_docs_sweetalert_basic"
+                                                    class="btn btn-primary">인쇄하기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end:: Modal -->
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-hover table-striped border gy-7 gs-7">
+                                    <thead>
+                                        <tr class="fw-bold fs-6 text-gray-800 border-bottom-2 border-gray-200 ">
+                                            <th class="text-center">선택</th>
+                                            <th class="text-center">거래 아이디</th>
+                                            <th class="text-center">사업자명</th>
+                                            <th class="text-center">영업 담당자</th>
+                                            <th class="text-center">거래 상태</th>
+                                            <th class="text-center">충전액</th>
+                                            <th class="text-center">요청 경로</th>
+                                            <th class="text-center">입금 여부</th>
+                                            <th class="text-center">입금일</th>
+                                            <th class="text-center">충전 승인일</th>
+                                            <th class="text-center">충전 요청일</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class=" text-center align-middle">
+                                                <div
+                                                    class="form-check form-check-custom form-check-solid justify-content-center">
+                                                    <input class="form-check-input" type="checkbox" value="1"
+                                                        id="flexCheckDefault" checked />
+                                                </div>
+                                            </td>
+                                            <td class="text-center align-middle">20200606</td>
+                                            <td class="text-center align-middle">(주)챔스프리 업그레이드</td>
+                                            <td class="text-center align-middle">chaem</td>
+                                            <td class="text-center align-middle">충전 승인</td>
+                                            <td class="text-end align-middle">
+                                                <span class="text-primary">+50,000 원</span><br>
+                                                <span>충전 후 잔액 : 250,000원</span>
+                                            </td>
+                                            <td class="text-center align-middle">어드민</td>
+                                            <td class="text-center align-middle">입금 완료</td>
+                                            <td class="text-end align-middle">
+                                                <span>2022-03-15</span><br>
+                                                <span>10:10</span>
+                                            </td>
+                                            <td class="text-end align-middle">
+                                                <span>2022-03-15</span><br>
+                                                <span>10:10</span>
+                                            </td>
+                                            <td class="text-end">
+                                                <span>2022-03-15</span><br>
+                                                <span>10:10</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <ul class="pagination mb-5">
+                                    <li class="page-item previous disabled"><a href="#" class="page-link"><i
+                                                class="previous"></i></a>
+                                    </li>
+                                    <li class="page-item ">
+                                        <a href="#" class="page-link">1</a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a href="#" class="page-link">2</a>
+                                    </li>
+                                    <li class="page-item ">
+                                        <a href="#" class="page-link">3</a>
+                                    </li>
+                                    <li class="page-item ">
+                                        <a href="#" class="page-link">4</a>
+                                    </li>
+                                    <li class="page-item ">
+                                        <a href="#" class="page-link">5</a>
+                                    </li>
+                                    <li class="page-item ">
+                                        <a href="#" class="page-link">6</a>
+                                    </li>
+                                    <li class="page-item next">
+                                        <a href="#" class="page-link">
+                                            <i class="next"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- end::card-body-->
+
+                        </div>
+
+                    </div>
+                    <!-- end:: 카드 -->
+                    <!-- end:: 컨텐트 -->
                 </div>
-                <!-- 바디: 끝 -->
-                <!--end:::Main-->
             </div>
-            <!--end::Wrapper-->
+            <!-- 바디: 끝 -->
+            <!--end:::Main-->
         </div>
-        <!--end::Page-->
+        <!--end::Wrapper-->
+    </div>
+    <!--end::Page-->
     </div>
     <!--end::App-->
 
@@ -1293,6 +1465,172 @@
             );
         }
       // ]]>
+    </script>
+    <script src="https://uicdn.toast.com/grid/latest/tui-grid.js"></script>
+    <script>
+        function getTuiData(brandId) {
+            document.getElementById('grid').innerHTML = "";
+            const grid = new tui.Grid({
+                el: document.getElementById('grid'),
+                keyColumnName: 'campaignId',
+                bodyHeight: 500,
+                scrollY: false,
+                scrollX: true,
+                data: [
+                    {
+                        campaignId: "1"
+                        , companyName: "비스트로 피자"
+                        , brandName: "비스트로피자"
+                        , campaign: "dasd"
+                        , influencer: "조찬아"
+                        , price: "79,400원"
+                        , poastingPay: "12%"
+                        , activity: "ID : 113"
+                        , vat: "43,670원"
+                        , paymentMethod: "예치금"
+                        , status: "결제에정 취소"
+                    }
+                ],
+                // {
+                //     // api: {
+                //     //     readData: { url: "/campaigns/ajax", method: "GET", initParams: { brandId: brandId } }
+                //     // }
+                // },
+                columns: [
+                    {
+                        header: '번호',
+                        name: 'campaignId',
+                        align: 'center',
+                        width: 'auto',
+                        height: 20,
+                    },
+                    {
+                        header: '사업자명',
+                        name: 'companyName',
+                        align: 'center',
+                        width: 'auto',
+                        height: 20,
+                    },
+                    {
+                        header: '제휴사명',
+                        name: 'brandName',
+                        align: 'center',
+                        width: 'auto',
+
+                        height: 20,
+                    },
+                    {
+                        header: '캠페인명',
+                        name: 'campaign',
+                        align: 'center',
+                        width: 'auto',
+
+                        height: 20,
+                    },
+                    {
+                        header: '인플루언서'
+                        , name: 'influencer'
+                        , align: 'center'
+                        , width: 'auto'
+                        , height: 20
+                    },
+                    {
+                        header: '결제금액'
+                        , name: 'price'
+                        , align: 'center'
+                        , width: 'auto'
+                        , height: 20
+                    }, {
+                        header: '포스팅 수수료'
+                        , name: 'poastingPay'
+                        , align: 'center'
+                        , width: 'auto'
+                        , height: 20
+                    },
+                    {
+                        header: '인플카 액티비티'
+                        , name: 'activity'
+                        , align: 'center'
+                        , width: 'auto'
+                        , height: 20
+                    },
+                    {
+                        header: '수수료 금액(vat 포함)'
+                        , name: 'vat'
+                        , align: 'center'
+                        , width: 'auto'
+                        , height: 20
+                    },
+                    {
+                        header: '결제 수단'
+                        , name: 'paymentMethod'
+                        , align: 'center'
+                        , width: 'auto'
+                        , height: 20
+
+                    },
+                    {
+                        header: '수수료 결제 상태'
+                        , name: 'status'
+                        , align: 'center'
+                        , width: 'auto'
+                        , height: 20
+                    }
+                ],
+                showDummyRows: true,
+                pageOptions: {
+                    page: 5,
+                    perPage: 6
+                }
+            })
+        }
+
+        class CustomButtonRenderer {
+            constructor(props) {
+                const el = document.createElement('button');
+                const { value } = props.columnInfo.renderer.options;
+
+                el.type = 'button';
+                el.value = value;
+                el.textContent = '상세';
+                el.className = 'btn btn-light-primary btn-outline';
+                const rowValue = props.rowKey;
+                el.addEventListener('click', function () {
+                    location.href = "/campaigns/applications/" + rowValue;
+                });
+
+                this.el = el;
+            }
+
+            getElement() {
+                return this.el;
+            }
+        }
+        $(document).ready(function () {
+            getTuiData(0);
+            class CustomButtonRenderer {
+                constructor(props) {
+                    const el = document.createElement('button');
+                    const { value } = props.columnInfo.renderer.options;
+
+                    el.type = 'button';
+                    el.value = value;
+                    el.textContent = '상세';
+                    el.className = 'btn btn-light-primary';
+                    const rowValue = props.rowKey;
+                    el.addEventListener('click', function () {
+                        location.href = "/campaigns/applications/" + rowValue;
+                    });
+
+                    this.el = el;
+                }
+
+                getElement() {
+                    return this.el;
+                }
+            }
+        });
+
     </script>
 </body>
 <!--end::Body-->

@@ -635,7 +635,7 @@
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
-                                                <span class="menu-title">파트너캐시 거래요청</span>
+                                                <span class="menu-title">파트너캐시 거래 요청</span>
                                             </a>
                                             <!--end:Menu link-->
                                         </div>
@@ -746,7 +746,7 @@
                                         <!--begin:Menu item-->
                                         <div class="menu-item">
                                             <!--begin:Menu link-->
-                                            <a class="menu-link" href="../../demo1/dist/pages/careers/list.html">
+                                            <a class="menu-link" href="/pages/partnerCash/recharge.html">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
@@ -758,7 +758,7 @@
                                         <!--begin:Menu item-->
                                         <div class="menu-item">
                                             <!--begin:Menu link-->
-                                            <a class="menu-link" href="../../demo1/dist/pages/careers/apply.html">
+                                            <a class="menu-link" href="/pages/partnerCash/influencerRequest.html">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
@@ -811,7 +811,7 @@
                         <div class="page-title d-flex flex-column justify-content-center flex-wrap me-3">
                             <h1
                                 class="page-heading d-flex text-dark fw-bold fs-3 flex-column justify-content-center my-0">
-                                파트너캐시 거래 요청
+                                파트너캐시 환불 요청
                             </h1>
                             <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
                                 <li class="breadcrumb-item text-muted">
@@ -820,7 +820,7 @@
                                 <li class="breadcrumb-item">
                                     <span class="bullet bg-gray-400 w-5px h-2px"></span>
                                 </li>
-                                <li class="breadcrumb-item text-muted">파트너캐시 거래 요청</li>
+                                <li class="breadcrumb-item text-muted">파트너캐시 환불 요청</li>
                             </ul>
                         </div>
                         <!--end::Actions-->
@@ -895,21 +895,21 @@
                                         <!--begin::Input group3 ::3개짜리-->
                                         <div class="row mb-5">
                                             <!--begin::Col-->
-                                            <div class="col-md-4 fv-row fv-plugins-icon-container">
+                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
                                                 <!--begin::Label-->
                                                 <label class=" fs-5 fw-semibold mb-2">거래 상태</label>
                                                 <!--end::Label-->
                                                 <!--begin::Input-->
-                                                <div class="d-flex align-items-center">
-                                                    <label class="form-check form-check-custom form-check-solid me-10">
+                                                <div class="d-flex align-items-center form-control">
+                                                    <label class="form-check form-check-custom me-10">
                                                         <input class="form-check-input" type="checkbox"
                                                             value="1" /><span class="form-check-label">
                                                             환불 요청
                                                         </span>
                                                     </label>
-                                                    <label class="form-check form-check-custom form-check-solid"><input
-                                                            class="form-check-input" type="checkbox" value="1" /><span
-                                                            class="form-check-label">
+                                                    <label class="form-check form-check-custom">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            value="1" /><span class="form-check-label">
                                                             환불 완료
                                                         </span>
                                                     </label>
@@ -919,43 +919,19 @@
                                             </div>
                                             <!--end::Col-->
                                             <!--begin::Col-->
-                                            <div class="col-md-4 fv-row fv-plugins-icon-container">
-                                                <!--end::Label-->
-                                                <label class=" fs-5 fw-semibold mb-2">입금 여부</label>
-                                                <!--end::Label-->
-                                                <!--end::Input-->
-                                                <div class="d-flex align-items-center">
-                                                    <label
-                                                        class="form-check form-check-custom form-check-solid me-10"><input
-                                                            class="form-check-input" type="checkbox" value="1" /><span
-                                                            class="form-check-label">
-                                                            충전 요청
-                                                        </span>
-                                                    </label>
-                                                    <label class="form-check form-check-custom form-check-solid"><input
-                                                            class="form-check-input" type="checkbox" value="1" /><span
-                                                            class="form-check-label">
-                                                            충전 완료(승인)
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <!--end::Input-->
-                                                <div class="fv-plugins-message-container invalid-feedback"></div>
-                                            </div>
-                                            <!--end::Col-->
-                                            <!-- begin::Col -->
-                                            <div class="col-md-4 fv-row fv-plugins-icon-container">
+                                            <div class="col-md-6 fv-row fv-plugins-icon-container">
                                                 <!--end::Label-->
                                                 <label class=" fs-5 fw-semibold mb-2">충전액</label>
                                                 <!--end::Label-->
                                                 <!--end::Input-->
-                                                <div class="row">
-                                                    <div class="col-md-"></div>
+                                                <div class="d-flex align-items-center">
+                                                    <input type="number" class="form-control" min="0" placeholder="최소액">
+                                                    <span class="ms-4 me-4">~</span>
+                                                    <input type="number" class="form-control" min="0" placeholder="최대액">
                                                 </div>
-                                                <input type="number" class="form-control" placeholder="숫자만 입력">
-                                                <!--end::Input-->
-                                                <div class="fv-plugins-message-container invalid-feedback"></div>
                                             </div>
+                                            <!--end::Col-->
+                                            <!-- begin::Col -->
                                         </div>
                                         <!--end::Input group3 ::3개짜리-->
                                         <!--begin::Input group-->
@@ -1232,7 +1208,7 @@
                                         <tr>
                                             <td class="text-center align-middle">
                                                 <div
-                                                    class="form-check form-check-custom form-check-solid justify-content-center">
+                                                    class="form-check form-check-custom form-check justify-content-center">
                                                     <input class="form-check-input" type="checkbox" value="1"
                                                         id="flexCheckDefault" checked />
                                                 </div>
@@ -1242,25 +1218,25 @@
                                             <td class="text-center  align-middle">chaem</td>
                                             <td class="text-center align-middle">충전 승인</td>
                                             <td class="text-end align-middle">
-                                                <span style="color:var(--bs-danger)">-50,000 원</span><br>
-                                                <span style="color:var(--bs-gray-600)">환불 후 잔액:</span> 250,000원
+                                                <span class="text-danger">-50,000 원</span><br>
+                                                <span><span class="text-gray-600">환불 후 잔액:</span> 250,000원</span>
                                             </td>
                                             <td class="text-center align-middle">입금 완료</td>
                                             <td class="text-end align-middle">
                                                 <span>2022-03-15</span><br>
-                                                <span style="color:var(--bs-gray-600)">10:10</span>
+                                                <span class="text-gray-600">10:10</span>
                                             </td>
                                             <td class="text-end align-middle">
                                                 <span>2022-03-15</span><br>
-                                                <span style="color:var(--bs-gray-600)">10:10</span>
+                                                <span class="text-gray-600">10:10</span>
                                             </td>
                                             <td class="text-center align-middle">
                                                 <div class="text-start">
-                                                    <div><span style="color:var(--bs-gray-600)">환불은행: </span>우리은행</div>
-                                                    <div><span style="color:var(--bs-gray-600)">환불계좌:
+                                                    <div><span class="text-gray-600">환불은행: </span>우리은행</div>
+                                                    <div><span class="text-gray-600">환불계좌:
                                                         </span>111-111-1111
                                                     </div>
-                                                    <div><span style="color:var(--bs-gray-600)">예금주: </span>(주) 챔스프리
+                                                    <div><span class="text-gray-600">예금주: </span>(주) 챔스프리
                                                     </div>
                                                 </div>
                                             </td>
