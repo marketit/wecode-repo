@@ -827,7 +827,7 @@
                     <!--begin::Input group-->
                     <div class="row mb-5">
                       <!--begin::Col-->
-                      <div class="col-md-6 fv-row fv-plugins-icon-container">
+                      <div class="col-md-6 fv-row fv-plugins-icon-container mb-2">
                         <!--begin::Label-->
                         <label class="required fs-5 fw-semibold mb-2">제휴 문의 담당자</label>
                         <!--end::Label-->
@@ -837,7 +837,7 @@
                       </div>
                       <!--end::Col-->
                       <!--begin::Col-->
-                      <div class="col-md-6 fv-row fv-plugins-icon-container">
+                      <div class="col-md-6 fv-row fv-plugins-icon-container mb-2">
                         <!--begin::Label-->
                         <label class="fs-5 fw-semibold mb-2">영업 담당자</label>
                         <!--end::Label-->
@@ -871,6 +871,7 @@
               <!-- end:: 카드 -->
             </div>
             <!-- end:: 관리 카드 -->
+
             <!-- begin:: 계정 정보 카드 -->
             <div class="col-xxl-12 mb-5 mb-xl-10">
               <div class="card">
@@ -888,7 +889,7 @@
                     <!--begin::Input group-->
                     <div class="row mb-5">
                       <!--begin::Col-->
-                      <div class="col-md-6 fv-row fv-plugins-icon-container">
+                      <div class="col-md-6 fv-row fv-plugins-icon-container mb-2">
                         <!--begin::Label-->
                         <label class="fs-5 fw-semibold mb-2">ID</label>
                         <!--end::Label-->
@@ -898,7 +899,7 @@
                       </div>
                       <!--end::Col-->
                       <!--begin::Col-->
-                      <div class="col-md-6 fv-row fv-plugins-icon-container">
+                      <div class="col-md-6 fv-row fv-plugins-icon-container mb-2">
                         <!--end::Label-->
                         <label class="required fs-5 fw-semibold mb-2">권한<i
                             class="fas fa-exclamation-circle ms-2 fs-7"></i></label>
@@ -922,7 +923,7 @@
                     <!--begin::Input group-->
                     <div class="row mb-5">
                       <!--begin::Col-->
-                      <div class="col-md-6 fv-row fv-plugins-icon-container">
+                      <div class="col-md-6 fv-row fv-plugins-icon-container mb-2">
                         <!--begin::Label-->
                         <label class="required fs-5 fw-semibold mb-2">이름</label>
                         <!--end::Label-->
@@ -946,7 +947,7 @@
                     <!--begin::Input group-->
                     <div class="row mb-5">
                       <!--begin::Col-->
-                      <div class="col-md-6 fv-row fv-plugins-icon-container">
+                      <div class="col-md-6 fv-row fv-plugins-icon-container mb-2">
                         <!--begin::Label-->
                         <label class="required fs-5 fw-semibold mb-2">휴대폰 번호<i
                             class="fas fa-exclamation-circle ms-2 fs-7"></i></label>
@@ -966,7 +967,7 @@
                       </div>
                       <!--end::Col-->
                       <!--begin::Col-->
-                      <div class="col-md-6 fv-row fv-plugins-icon-container">
+                      <div class="col-md-6 fv-row fv-plugins-icon-container mb-2">
                         <!--begin::Label-->
                         <label class="required fs-5 fw-semibold mb-2">연락 이메일</label>
                         <!--end::Label-->
@@ -994,14 +995,17 @@
               <!-- end:: 카드 -->
             </div>
             <!-- end:: 계정 정보 카드 -->
+
             <!-- begin:: 사업자 정보 카드 -->
             <div class="col-xxl-12 mb-5 mb-xl-10">
               <div class="card">
                 <!-- begin::카드 타이틀 -->
-                <div class="card-header pt-5">
-                  <h3 class="card-title align-items-start flex-column">
-                    <span class="card-label fw-bold text-dark">사업자 정보</span>
+                <div class="card-header pt-5 d-flex justify-content-between align-items-center">
+                  <h3 class="card-title">
+                    <span class="card-label fw-bold text-dark">사업자 정보<i
+                        class="fas fa-exclamation-circle ms-2 fs-7"></i></span>
                   </h3>
+                  <span class="required">필수정보</span>
                 </div>
                 <!-- end::카드 타이클 -->
                 <!-- begin:: 컨텐트 -->
@@ -1012,7 +1016,7 @@
                     <!--begin::Input group-->
                     <div class="row mb-5">
                       <!--begin::Col-->
-                      <div class="col-md-6 fv-row fv-plugins-icon-container">
+                      <div class="col-md-6 fv-row fv-plugins-icon-container mb-2">
                         <!--begin::Label-->
                         <label class="required fs-5 fw-semibold mb-2">사업자명</label>
                         <!--end::Label-->
@@ -1022,10 +1026,9 @@
                       </div>
                       <!--end::Col-->
                       <!--begin::Col-->
-                      <div class="col-md-6 fv-row fv-plugins-icon-container">
+                      <div class="col-md-6 fv-row fv-plugins-icon-container mb-2">
                         <!--end::Label-->
-                        <label class="required fs-5 fw-semibold mb-2">사업자등록번호<i
-                            class="fas fa-exclamation-circle ms-2 fs-7"></i></label>
+                        <label class="required fs-5 fw-semibold mb-2">사업자등록번호</label>
                         <!--end::Label-->
                         <!--begin::Input-->
                         <div class="d-flex">
@@ -1042,10 +1045,11 @@
                       <!--end::Col-->
                     </div>
                     <!--end::Input group-->
-                    <!--begin::Input group-->
+
+                    <!--begin::대표자 성명-->
                     <div class="row mb-5">
                       <!--begin::Col-->
-                      <div class="col-md-12 fv-row fv-plugins-icon-container">
+                      <div class="col-md-12 fv-row fv-plugins-icon-container mb-2">
                         <!--begin::Label-->
                         <label class="required fs-5 fw-semibold mb-2">대표자 성명</label>
                         <!--end::Label-->
@@ -1055,11 +1059,12 @@
                       </div>
                       <!--end::Col-->
                     </div>
-                    <!--end::Input group-->
-                    <!--begin::Input group-->
+                    <!--end::대표자 성명-->
+
+                    <!--begin::사업의 종류-->
                     <div class="row mb-5">
                       <!--begin::Col-->
-                      <div class="col-md-12 fv-row fv-plugins-icon-container">
+                      <div class="col-md-12 fv-row fv-plugins-icon-container mb-2">
                         <!--begin::Label-->
                         <label class="required fs-5 fw-semibold mb-2">사업의 종류<i
                             class="fas fa-exclamation-circle ms-2 fs-7"></i></label>
@@ -1067,7 +1072,7 @@
                       </div>
                       <!--end::Col-->
                       <!--begin::Col-->
-                      <div class="col-md-6 fv-row fv-plugins-icon-container">
+                      <div class="col-md-6 fv-row fv-plugins-icon-container mb-2">
                         <!--begin::Input group-->
                         <div class="input-group mb-5">
                           <span class="input-group-text" id="basic-addon1">업태</span>
@@ -1077,7 +1082,7 @@
                       </div>
                       <!--end::Col-->
                       <!--begin::Col-->
-                      <div class="col-md-6 fv-row fv-plugins-icon-container">
+                      <div class="col-md-6 fv-row fv-plugins-icon-container mb-2">
                         <!--begin::Input group-->
                         <div class="input-group mb-5">
                           <span class="input-group-text" id="basic-addon1">종목</span>
@@ -1088,126 +1093,129 @@
                       <!--end::Col-->
                       <!--begin::Col-->
                       <!--begin::Input group-->
-                      <div class="row mb-5">
-                        <div class="col-md-6 fv-plugins-icon-container">
-                          <!--begin::Label-->
-                          <label class="required fs-5 fw-semibold mb-2">사업장 주소(소재지)</label>
-                          <div class="d-flex mb-2">
-                            <!--end::Label-->
-                            <input class=" form-control form-control-solid col me-2" placeholder="주소검색을 해주세요">
-                            <button type="submit" class="btn btn-white btn-outline">
-                              <!--begin::Indicator label-->
-                              <span class="indicator-label">주소검색</span>
-                              <!--end::Indicator label-->
-                            </button>
-                          </div>
-                        </div>
-                        <div class="col-md-12 fv-plugins-icon-container">
-                          <input class=" form-control col" placeholder="상세주소 입력">
-                        </div>
-                      </div>
-                      <!--end::Input group-->
-                      <!--begin::Input group 사업자 등록증-->
-                      <div class="mb-7">
-                        <!--begin::Label-->
-                        <label class="required fs-6 fw-semibold mb-3">
-                          <span>사업자등록증</span>
-                        </label>
-                        <!--end::Label-->
-                        <!--begin::Image input wrapper-->
-                        <div class="mt-1">
-                          <!--begin::Image input-->
-                          <div class="image-input image-input-outline image-input-empty" data-kt-image-input="true"
-                            style="background-image: url(/assets/media/svg/avatars/blank.svg)">
-                            <!--begin::Image preview wrapper-->
-                            <div class="image-input-wrapper w-125px h-125px"></div>
-                            <!--end::Image preview wrapper-->
-                            <!--begin::Edit button-->
-                            <label
-                              class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
-                              data-kt-image-input-action="change" data-bs-toggle="tooltip" data-bs-dismiss="click"
-                              aria-label="Change avatar" data-kt-initialized="1">
-                              <i class="bi bi-pencil-fill fs-7"></i>
-                              <!--begin::Inputs-->
-                              <input type="file" name="avatar" accept=".png, .jpg, .jpeg">
-                              <input type="hidden" name="avatar_remove" value="0">
-                              <!--end::Inputs-->
-                            </label>
-                            <!--end::Edit button-->
-                            <!--begin::Cancel button-->
-                            <span
-                              class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
-                              data-kt-image-input-action="cancel" data-bs-toggle="tooltip" data-bs-dismiss="click"
-                              aria-label="Cancel avatar" data-kt-initialized="1">
-                              <i class="bi bi-x fs-2"></i>
-                            </span>
-                            <!--end::Cancel button-->
-                            <!--begin::Remove button-->
-                            <span
-                              class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
-                              data-kt-image-input-action="remove" data-bs-toggle="tooltip" data-bs-dismiss="click"
-                              aria-label="Remove avatar" data-kt-initialized="1">
-                              <i class="bi bi-x fs-2"></i>
-                            </span>
-                            <!--end::Remove button-->
-                          </div>
-                          <!--end::Image input-->
-                        </div>
-                        <!--end::Image input wrapper-->
-                      </div>
-                      <!--end::Input group 사업자 등록증-->
-                      <!--begin::Input group 세금계산서-->
-                      <div class="row mb-5">
-                        <div class="col-md-12 x fv-plugins-icon-container">
-                          <!--begin::Label-->
-                          <label class="required fs-5 fw-semibold mb-2">세금계산서 발행 이메일</label>
-                          <!--end::Label-->
-                          <div class="d-flex align-items-center">
-                            <button type="submit" class="btn btn-primary me-2">
-                              <!--begin::Indicator label-->
-                              <span class="indicator-label">이메일 추가</span>
-                              <!--end::Indicator label-->
-                            </button>
-                            <div class="col">
-                              <input class=" form-control form-control-solid " placeholder="text@tax.com">
-                            </div>
-                            <button class="btn btn-icon btn-active-light-primary w-42px h-42px ms-4"
-                              data-kt-permissions-table-filter="delete_row">
-                              <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-                              <span class="svg-icon svg-icon-3">
-                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path
-                                    d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z"
-                                    fill="currentColor"></path>
-                                  <path opacity="0.5"
-                                    d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z"
-                                    fill="currentColor"></path>
-                                  <path opacity="0.5"
-                                    d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z"
-                                    fill="currentColor">
-                                  </path>
-                                </svg>
-                              </span>
-                              <!--end::Svg Icon-->
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-
-
-
-                      <!--end::Input group 세금계산서-->
                     </div>
-                    <!-- end:: 컨텐트 -->
+                    <!-- end::사업의 종류 -->
+
+                    <!-- begin::사업장 주소지 -->
+                    <div class="row mb-5">
+                      <div class="col-md-6 fv-plugins-icon-container mb-2">
+                        <!--begin::Label-->
+                        <label class="required fs-5 fw-semibold mb-2">사업장 주소(소재지)</label>
+                        <div class="d-flex mb-2">
+                          <!--end::Label-->
+                          <input class=" form-control form-control-solid col me-2" placeholder="주소검색을 해주세요">
+                          <button type="submit" class="btn btn-white btn-outline">
+                            <!--begin::Indicator label-->
+                            <span class="indicator-label">주소검색</span>
+                            <!--end::Indicator label-->
+                          </button>
+                        </div>
+                      </div>
+                      <div class="col-md-12 fv-plugins-icon-container mb-2">
+                        <input class=" form-control col" placeholder="상세주소 입력">
+                      </div>
+                    </div>
+                    <!-- end::사업장 주소지 -->
+
+                    <!--begin::Input group 사업자 등록증-->
+                    <div class="mb-7">
+                      <!--begin::Label-->
+                      <label class="required fs-6 fw-semibold mb-3">
+                        <span>사업자등록증</span>
+                      </label>
+                      <!--end::Label-->
+                      <!--begin::Image input wrapper-->
+                      <div class="mt-1">
+                        <!--begin::Image input-->
+                        <div class="image-input image-input-outline image-input-empty" data-kt-image-input="true"
+                          style="background-image: url(/assets/media/svg/avatars/blank.svg)">
+                          <!--begin::Image preview wrapper-->
+                          <div class="image-input-wrapper w-125px h-125px"></div>
+                          <!--end::Image preview wrapper-->
+                          <!--begin::Edit button-->
+                          <label
+                            class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
+                            data-kt-image-input-action="change" data-bs-toggle="tooltip" data-bs-dismiss="click"
+                            aria-label="Change avatar" data-kt-initialized="1">
+                            <i class="bi bi-pencil-fill fs-7"></i>
+                            <!--begin::Inputs-->
+                            <input type="file" name="avatar" accept=".png, .jpg, .jpeg">
+                            <input type="hidden" name="avatar_remove" value="0">
+                            <!--end::Inputs-->
+                          </label>
+                          <!--end::Edit button-->
+                          <!--begin::Cancel button-->
+                          <span
+                            class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
+                            data-kt-image-input-action="cancel" data-bs-toggle="tooltip" data-bs-dismiss="click"
+                            aria-label="Cancel avatar" data-kt-initialized="1">
+                            <i class="bi bi-x fs-2"></i>
+                          </span>
+                          <!--end::Cancel button-->
+                          <!--begin::Remove button-->
+                          <span
+                            class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
+                            data-kt-image-input-action="remove" data-bs-toggle="tooltip" data-bs-dismiss="click"
+                            aria-label="Remove avatar" data-kt-initialized="1">
+                            <i class="bi bi-x fs-2"></i>
+                          </span>
+                          <!--end::Remove button-->
+                        </div>
+                        <!--end::Image input-->
+                      </div>
+                      <!--end::Image input wrapper-->
+                    </div>
+                    <!--end::Input group 사업자 등록증-->
+
+                    <!-- begin:세금계산서 발행 이메일 -->
+                    <div class="row mb-5">
+                      <!--begin::Col-->
+                      <div class="col-md-12 fv-row fv-plugins-icon-container mb-2">
+                        <!--begin::Label-->
+                        <div>
+                          <label class="required fs-5 fw-semibold mb-2 me-5">세금계산서 발행 이메일</label>
+                          <div>
+                            <button type="button" class="btn btn-light-primary mb-2" data-bs-toggle="modal"
+                              data-bs-target="#kt_modal_1">이메일 추가</button>
+                          </div>
+
+                        </div>
+                        <!--end::Label-->
+                        <div class="d-flex">
+                          <span class="form-control form-control-solid">tax@tax.com
+                          </span>
+                          <button class="btn btn-icon btn-active-light-primary w-42px h-42px ms-4"
+                            data-kt-permissions-table-filter="delete_row">
+                            <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
+                            <span class="svg-icon svg-icon-3">
+                              <svg width="40" height="40" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z"
+                                  fill="currentColor"></path>
+                                <path opacity="0.5"
+                                  d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z"
+                                  fill="currentColor"></path>
+                                <path opacity="0.5"
+                                  d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z"
+                                  fill="currentColor">
+                                </path>
+                              </svg>
+                            </span>
+                            <!--end::Svg Icon-->
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end::세금계산서 발행 이메일 -->
+                  </form>
                 </div>
+                <!-- end:: 컨텐트 -->
               </div>
             </div>
             <!-- end:: 사업자 정보 카드 -->
 
-
             <!-- begin::제휴사 정보 카드 -->
-            <!-- begin::컨텐트 -->
             <div class="col-xxl-12 mb-5 mb-xl-10">
               <!-- begin::카드 -->
               <div class="card">
@@ -1217,7 +1225,6 @@
                     <span class="card-label fw-bold text-dark">제휴사 정보<i
                         class="fas fa-exclamation-circle ms-2 fs-7"></i></span>
                   </h3>
-                  </h3>
                 </div>
                 <!-- end::카드 타이클 -->
                 <!-- begin:: card-body -->
@@ -1225,10 +1232,10 @@
                   <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework" method="post"
                     id="kt_careers_form">
 
-                    <!--begin::Input group-->
+                    <!--begin::제휴사-->
                     <div class="row mb-5">
                       <!--begin::Col-->
-                      <div class="col-md-4 fv-row fv-plugins-icon-container">
+                      <div class="col-md-4 fv-row fv-plugins-icon-container mb-2">
                         <!--begin::Label-->
                         <!--end::Label-->
                         <label class="required fs-5 fw-semibold mb-2">제휴사명<i
@@ -1241,12 +1248,12 @@
                       </div>
                       <!--end::Col-->
                       <!--begin::Col-->
-                      <div class="col-md-4 fv-row">
+                      <div class="col-md-4 fv-row mb-2">
                         <!--begin::Label-->
                         <label class="fs-5 fw-semibold mb-2">제휴사 번호</label>
                         <!--end::Label-->
                         <!--begin::Input-->
-                        <span class="form-control col">승인 이후 자동생성 됩니다 </span>
+                        <span class="form-control form-control-solid col">승인 이후 자동생성 됩니다 </span>
                         <!--end::Input-->
                       </div>
                       <!--end::Col-->
@@ -1268,64 +1275,57 @@
                       </div>
                       <!--end::Col-->
                     </div>
-                    <!--end::Input group-->
+                    <!--end::제휴사-->
 
-
-                    <!-- begin::input group -->
+                    <!-- begin::상품/서비스 제공방식 -->
                     <div class="row mb-5">
-                      <div class="col-md-12 fv-plugins-icon-container">
-                        <!--begin::Col-->
-                        <div class="fv-row fv-plugins-icon-container">
-                          <div class="required fs-5 mb-2 fw-semibold me-4">상품/서비스 제공방식</div>
-                        </div>
-                        <!--end::Col-->
-                        <!--begin::Col-->
-                        <div class="col-md-6 fv-plugins-icon-container">
-                          <div class="d-flex fw-semibold h-100">
-                            <div class="form-check form-check-custom me-9">
-                              <input class="form-check-input" type="checkbox" value="">
-                              <label class="form-check-label ms-3" for="email">인플루언서에게 온라인/배송으로 제공</label>
+                      <!--begin::Col-->
+                      <div class="col-md-12 fv-row fv-plugins-icon-container mb-2 mb-5">
+                        <!--begin::Label-->
+                        <label class="required fs-5 fw-semibold mb-2">상품/서비스 제공 방식</label>
+                        <!--end::Label-->
+
+                        <!--begin::상품 제공 방식-->
+                        <div class="form-control" style="border: 0;">
+                          <div style="display: flex;">
+                            <div class="form-check form-check-custom form-check-solid" style="margin-right: 20px;">
+                              <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault" />
+                              <label class="form-check-label" for="flexCheckDefault">
+                                인플루언서에게 온라인/배송으로 제공
+                              </label>
                             </div>
-                            <div class="form-check form-check-custom">
-                              <input class="form-check-input" type="checkbox" value="">
-                              <label class="form-check-label ms-3" for="phone">인플루언서가 직접 방문</label>
-                            </div>
+
+                            <label class="form-check form-check-custom form-check-solid">
+                              <input class="form-check-input" type="checkbox" value="1" />
+                              <span class="form-check-label">
+                                인플루언서가 직접 방문
+                              </span>
+                            </label>
                           </div>
                         </div>
-                        <!--end::Col-->
                       </div>
-                      <!-- end::input group -->
+                      <!--end::상품 제공 방식-->
                     </div>
+                    <!-- end::상품/서비스 제공방식 -->
 
-                    <!--begin::Input group-->
+                    <!--begin::전화번호-->
                     <div class="row mb-5">
-                      <div class="col-md-12 fv-plugins-icon-container">
-                        <!--begin::Label-->
-                        <label class="required fs-5 fw-semibold mb-2">세금계산서 발행 이메일</label>
-                        <!--end::Label-->
-                        <input class=" form-control col" placeholder="text@tax.com">
-                      </div>
-                    </div>
-                    <!--end::Input group-->
-
-                    <!--begin::Input group-->
-                    <div class="row mb-5">
-                      <div class="col-md-12 fv-plugins-icon-container">
+                      <div class="col-md-12 fv-plugins-icon-container mb-2">
                         <!--begin::Label-->
                         <label class="required fs-5 fw-semibold mb-2">전화번호</label>
                         <!--end::Label-->
                         <input class=" form-control col" placeholder="02-123-4567">
                       </div>
                     </div>
-                    <!--end::Input group-->
+                    <!--end::전화번호-->
 
-                    <!--begin::Input group-->
+                    <!--begin::주소-->
                     <div class="row mb-5">
-                      <div class="col-md-6 fv-plugins-icon-container">
+                      <div class="col-md-6 fv-plugins-icon-container mb-2">
                         <!--begin::Label-->
                         <div class="d-flex mb-2">
                           <label class="required fs-5 fw-semibold mt-1 me-4">주소</label>
-                          <div class="form-check form-check-custom ">
+                          <div class="form-check form-check-custom form-check-solid">
                             <input class="form-check-input" type="checkbox" value="" id="partnerAdress"
                               checked="checked">
                             <label class="form-check-label ms-3" for="partnerAdress">사업장 주소(소재지)와 동일</label>
@@ -1341,190 +1341,765 @@
                           </button>
                         </div>
                       </div>
-                      <div class="col-md-12 fv-plugins-icon-container">
+                      <div class="col-md-12 fv-plugins-icon-container mb-2">
                         <input class=" form-control col" placeholder="상세주소 입력">
                       </div>
                     </div>
-                    <!--end::Input group-->
-                    <!--begin::Input group-->
-                    <div class="mb-5">
+                    <!--end::주소-->
 
-                      <div class="col-md-12 x fv-plugins-icon-container">
+                    <!-- begin:웹사이트 -->
+                    <div class="row mb-5">
+                      <!--begin::Col-->
+                      <div class="col-md-12 fv-row fv-plugins-icon-container mb-2">
                         <!--begin::Label-->
-                        <label class="required fs-5 fw-semibold mb-5">현대카드 가맹점 정보</label>
-                        <!--end::Label-->
-                        <!--begin::Input group-->
-                        <div class="d-flex mb-5">
-                          <!--begin::Col-->
-                          <div class="col-md-2 fv-row fv-plugins-icon-container me-2">
-                            <!--begin::Label-->
-                            <label class="required fs-5 fw-semibold mb-2">PG사 여부</label>
-                            <!--end::Label-->
-                            <!--begin::Input-->
-                            <input class="form-control form-control-solid" placeholder="바꿔야함">
-                            <!--end::Input-->
-                          </div>
-                          <!--end::Col-->
-                          <!--begin::Col-->
-                          <div class="col-md-2 fv-row me-2">
-                            <!--end::Label-->
-                            <label class="fs-7 fw-semibold mb-3">결제건-캠페인 매칭 방식</label>
-                            <!--end::Label-->
-                            <!--end::Input-->
-                            <input type="text" class="form-control form-control-solid" placeholder="바꿔야함">
-                            <!--end::Input-->
-                          </div>
-                          <!--end::Col-->
-                          <!--begin::Col-->
-                          <div class="col-md-2 fv-row me-2">
-                            <!--end::Label-->
-                            <label class="fs-5 fw-semibold mb-2">사업자등록번호</label>
-                            <!--end::Label-->
-                            <!--end::Input-->
-                            <input type="text" class="form-control form-control-solid" placeholder="130-12-34567">
-                            <!--end::Input-->
-                          </div>
-                          <!--end::Col-->
-                          <div class="col-md-2 fv-row me-2">
-                            <!--end::Label-->
-                            <label class="fs-5 fw-semibold mb-2">가맹점명</label>
-                            <!--end::Label-->
-                            <!--end::Input-->
-                            <input type="text" class="form-control form-control-solid" placeholder="KD사옥점">
-                            <!--end::Input-->
-                          </div>
-                          <!--end::Col-->
-                          <div class="col fv-row">
-                            <!--end::Label-->
-                            <label class="fs-5 fw-semibold mb-2">직급(직책)</label>
-                            <!--end::Label-->
-                            <!--end::Input-->
-                            <input type="text" class="form-control form-control-solid" placeholder="매니저">
-                            <!--end::Input-->
-                          </div>
-                          <!--end::Col-->
-
-                        </div>
-                        <!--end::Input group-->
-                      </div>
-
-                      <!--begin::Input group-->
-                      <div class="d-flex align-items-center card-rounded p-5 p-lg-10 mb-1">
-                        <!--begin::Text-->
-                        <div class="mb-0 fs-6">
-                          <div class="text-muted fw-semibold lh-lg mb-2 text-bg-light p-20">
-                            <ul>[현대카드 가맹점 정보]
-                              <li>현대카드 가맹점 페이지 > 가맹점 번호 조회 버튼을 눌러 조회할 수 있습니다.</li>
-                              <li>정확한 가맹점 정보를 입력해주셔야 인플루언서의 결제 정보에 맞는 캠페인 안내가 가능합니다.</li>
-                              <li>계정 생성 완료 후, ID와 임시 PW를 계정 사용자에게 전달해 주세요.</li>
-                            </ul>
-                            <ul>[PG사 여부]
-                              <li>PG사 예시 : KG이니시스,나이스페이 등</li>
-                              <li>PG사를 통해 결제된 건은, 인플루언서의 캠페인 요청이 승인 되어야 App에 캠페인이 생성됩니다.</li>
-                              <li>계정 생성 완료 후, ID와 임시 PW를 계정 사용자에게 전달해 주세요.</li>
-                            </ul>
-                            <ul>[결제건-캠페인 매칭 방식]
-                              <ul>자동 매칭
-                                <li>제휴사의 단독 가맹점 정보일 경우 선택해 주세요.</li>
-                                <li>해당 가맹점 정보의 결제건 확인 시, 인플카 액티비티가 바로 생성됨니다.</li>
-                              </ul>
-                              <ul>수동 매칭
-                                <li>진행하는 제휴사 외 다른 사업자가 해당 가맹점 정보를 함께 사용하는 경우 선택해 주세요. (PG사, 몰에 입점한 매장 등이 해당됨)</li>
-                                <li>인플루언서가 결제건에 맞는 캠페인을 직접 선택해야 합니다.</li>
-                              </ul>
-                            </ul>
-                            <ul>[사업자등록번호]
-                              <li>영수증이나 카드 전표에 표시되는 사업자등록번호를 입력해주세요.</li>
-                              <li>・PG사 가맹점 정보를 등록할 경우 PG사의 사업자등록번호를 입력해주세요.</li>
-                            </ul>
+                        <div>
+                          <label class="required fs-5 fw-semibold mb-2 me-5">웹사이트</label>
+                          <div>
+                            <button type="button" class="btn btn-light-primary mb-2" data-bs-toggle="modal"
+                              data-bs-target="#kt_modal_1">웹사이트 추가</button>
                           </div>
                         </div>
-                        <!--end::Text-->
+                        <div class="row mb-5">
+                          <!--begin::Col-->
+                          <div class="col-md-6 fv-row fv-plugins-icon-container mb-2">
+                            <div class="d-flex" data-select2-id="select2-data-6-2yuh">
+                              <div class="overflow-hidden flex-grow-1" data-select2-id="select2-data-5-drzp">
+                                <select class="form-select form-select" data-control="select2" data-placeholder="유형"
+                                  data-allow-clear="true" data-hide-search="true">
+                                  <option></option>
+                                  <option value="1">공식홈페이지</option>
+                                  <option value="2">인스타그램</option>
+                                  <option value="3">블로그</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <!--end::Col-->
+                          <!--begin::Col-->
+                          <div class="col-md-6 fv-row">
+                            <!--end::Input-->
+                            <div class="d-flex">
+                              <span class="form-control">URL
+                              </span>
+                              <button class="btn btn-icon btn-active-light-primary w-42px h-42px ms-4"
+                                data-kt-permissions-table-filter="delete_row">
+                                <span class="svg-icon svg-icon-3">
+                                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z"
+                                      fill="currentColor"></path>
+                                    <path opacity="0.5"
+                                      d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z"
+                                      fill="currentColor"></path>
+                                    <path opacity="0.5"
+                                      d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z"
+                                      fill="currentColor">
+                                    </path>
+                                  </svg>
+                                </span>
+                                <!--end::Svg Icon-->
+                              </button>
+                            </div>
+                            <!--end::Input-->
+                          </div>
+                          <!--end::Col-->
+                        </div>
                       </div>
-                      <!--end::Input group-->
-
-
-
+                      <!-- end::Col -->
                     </div>
-                    <!--end::Input group-->
+                    <!-- end::웹사이트 -->
 
+                    <!-- begin::카드 가맹점 정보 -->
+                    <div class="row">
+                      <!--begin::Col-->
+                      <div class="col-md-12 fv-row fv-plugins-icon-container mb-2">
+                        <!--begin::Label-->
+                        <div>
+                          <div>
+                            <label class="fs-7 fw-semibold mb-2 me-5">현대카드 가맹점
+                              정보</label>
+                          </div>
+                          <div>
+                            <button type="button" class="btn btn-light-primary mb-2" data-bs-toggle="modal"
+                              data-bs-target="#kt_modal_1">가맹점
+                              정보 추가</button>
+                          </div>
+                        </div>
+                        <!--end::Label-->
 
+                        <!--begin::Input-->
+                        <div class="row mb-5">
+                          <div class="col-md-12 x fv-plugins-icon-container mb-2 mb-2">
+                            <div class="row">
+                              <div class="col-md-2 x fv-plugins-icon-container mb-2 mb-2">
+                                <select class="form-select form-select  fs-7" data-control="select2"
+                                  data-placeholder="PG사 여부" data-allow-clear="true" data-hide-search="true">
+                                  <option></option>
+                                  <option value="1">해당</option>
+                                  <option value="2">해당 없음</option>
+                                  <option value="3">알 수 없음</option>
+                                </select>
+                              </div>
+                              <div class="col-md-3 x fv-plugins-icon-container mb-2">
+                                <select class="form-select form-select" data-control="select2"
+                                  data-placeholder="결제건-캠페인 매칭 방식" data-allow-clear="true" data-hide-search="true">
+                                  <option></option>
+                                  <option value="1">자동 매칭</option>
+                                  <option value="2">수동 매칭</option>
+                                </select>
+                              </div>
+                              <div class="col-md-2 x fv-plugins-icon-container mb-2">
+                                <input type="text" class="form-control" placeholder="사업자등록번호" name="first_name">
+                              </div>
+                              <div class="col-md-2 x fv-plugins-icon-container mb-2">
+                                <input type="text" class="form-control" placeholder="가맹점명 입력" name="first_name">
+                              </div>
+                              <div class="d-flex col-md-3 x fv-plugins-icon-container mb-2">
+                                <input type="text" class="form-control" placeholder="가맹점 번호 입력" name="first_name">
+                                <button class="btn btn-icon btn-active-light-primary w-42px h-42px ms-4"
+                                  data-kt-permissions-table-filter="delete_row">
+                                  <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
+                                  <span class="svg-icon svg-icon-3">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z"
+                                        fill="currentColor"></path>
+                                      <path opacity="0.5"
+                                        d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z"
+                                        fill="currentColor"></path>
+                                      <path opacity="0.5"
+                                        d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z"
+                                        fill="currentColor">
+                                      </path>
+                                    </svg>
+                                  </span>
+                                  <!--end::Svg Icon-->
+                                </button>
+                              </div>
+                              <div class="d-flex align-items-center card-rounded p-5 mb-1">
 
+                                <!--begin::Text-->
+                                <div class="col-md-12 x  fv-plugins-icon-container mb-2">
+                                  <div class="mb-0 fs-6">
+                                    <div class="lh-lg mb-1 text-bg-light p-10 ">
+                                      <ul>
+                                        <span class="fw-semibold">[현대카드
+                                          가맹점
+                                          정보]</span>
+                                        <div class="ps-5">
+                                          <li><a href="https://www.hyundaicard.com/csa/mb/STOREMAIN.hc"
+                                              class="text-decoration-underline" target="_blank" rel="noreferrer">현대카드
+                                              가맹점 페이지 &gt; 가맹점 번호
+                                              조회</a>
+                                            버튼을 눌러 조회할 수 있습니다.</li>
+                                          <li>정확한 가맹점 정보를 입력해주셔야
+                                            인플루언서의 결제
+                                            정보에 맞는 캠페인 안내가 가능합니다.
+                                          </li>
+                                        </div>
 
+                                      </ul>
+                                      <ul>
+                                        <span class="fw-semibold">[PG사
+                                          여부]
+                                        </span>
+                                        <div class="ps-5">
+                                          <li>PG사 예시 : KG이니시스,나이스페이 등
+                                          </li>
+                                        </div>
+                                      </ul>
+                                      <ul>
+                                        <span class="fw-semibold">[결제건-캠페인
+                                          매칭
+                                          방식]</span>
+                                        <div class="ps-5">
+                                          <li>자동 매칭</li>
+                                          <ul>
+                                            <li>제휴사의 단독 가맹점 정보일 경우
+                                              선택해
+                                              주세요.</li>
+                                            <li>해당 가맹점 정보의 결제건 확인 시,
+                                              인플카
+                                              액티비티가 바로 생성됨니다.</li>
+                                          </ul>
+                                        </div>
+                                      </ul>
+                                      <div class="ps-5">
+                                        <ul>
+                                          <li>수동 매칭</li>
+                                          <ul>
+                                            <li>진행하는 제휴사 외 다른 사업자가
+                                              해당
+                                              가맹점 정보를 함께 사용하는 경우
+                                              선택해
+                                              주세요. (PG사, 몰에 입점한 매장
+                                              등이
+                                              해당됨)</li>
+                                            <li>인플루언서가 결제건에 맞는 캠페인을
+                                              직접
+                                              선택해야 합니다.</li>
+                                          </ul>
+                                        </ul>
+                                      </div>
+                                      <ul>
+                                        <span class="fw-semibold">[사업자등록번호]
+                                        </span>
+                                        <div class="ps-5">
+                                          <li>영수증이나 카드 전표에 표시되는
+                                            사업자등록번호를
+                                            입력해주세요.</li>
+                                          <li>・PG사 가맹점 정보를 등록할 경우 PG사의
+                                            사업자등록번호를 입력해주세요.</li>
+                                        </div>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!--end::Text-->
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--end::Input-->
+                      <div class="col-xxl-12 mb-5 mb-xl-10">
+                        <div class="d-flex flex-center">
+                          <button class="btn btn-primary" style="width: 100px;">저장</button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end::카드 가맹점 정보 -->
+
+                  </form>
                 </div>
                 <!--end::Input group-->
-
-
               </div>
               <!--end::Input group-->
-
               </form>
             </div>
-            <!-- end:: card-body -->
+            <!-- end:: 제휴사 정보 카드 -->
+
+            <!-- begin:: 재휴사 정보 리스트 카드 -->
+            <div class="col-xxl-12 mb-5 mb-xl-10">
+              <div class="card">
+                <!-- begin::카드 타이틀 -->
+                <div class="card-header pt-5">
+                  <h3 class="card-title align-items-start flex-column">
+                    <span class="card-label fw-bold text-dark">제휴사 정보(5)<i
+                        class="fas fa-exclamation-circle ms-2 fs-7"></i></span>
+                  </h3>
+                  <select class="form-select" style="width: 78px; margin: 0.75rem;">
+                    <option value="10">10</option>
+                    <option value="30">30</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                  </select>
+                </div>
+                <!-- end::카드 타이클 -->
+                <!-- begin:: 컨텐트 -->
+                <div class="card-body pt-0">
+                  <div class="table-responsive">
+                    <table class="table table-striped gy-7 gx-7">
+                      <thead>
+                        <tr class="fw-semibold fs-6 text-gray-800 border-bottom border-gray-200">
+                          <th>제휴사명</th>
+                          <th>제휴사 생성 여부</th>
+                          <th>정보 수정</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>리안헤어 성수점</td>
+                          <td>입력한 정보로 새 제휴사 생성</td>
+                          <td><button type="button" class="btn btn-white btn-outline btn-light-primary"
+                              data-bs-toggle="modal" data-bs-target="#kt_modal_33">정보수정</button>
+                            </button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <ul class="pagination mb-5">
+                    <li class="page-item previous disabled"><a href="#" class="page-link"><i class="previous"></i></a>
+                    </li>
+                    <li class="page-item "><a href="#" class="page-link">1</a></li>
+                    <li class="page-item active"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item "><a href="#" class="page-link">3</a></li>
+                    <li class="page-item "><a href="#" class="page-link">4</a></li>
+                    <li class="page-item "><a href="#" class="page-link">5</a></li>
+                    <li class="page-item "><a href="#" class="page-link">6</a></li>
+                    <li class="page-item next"><a href="#" class="page-link"><i class="next"></i></a></li>
+                  </ul>
+                </div>
+                <!-- end:: 컨텐트 -->
+              </div>
+              <!-- end:: 카드 -->
+            </div>
+            <!-- end:: 재휴사 정보 리스트 카드 -->
+
+            <!-- begin:: 승인 상태 카드 -->
+            <div class="col-xxl-12 mb-5 mb-xl-10">
+              <div class="card">
+                <!-- begin::카드 타이틀 -->
+                <div class="card-header pt-5">
+                  <h3 class="card-title align-items-start flex-column">
+                    <span class="card-label fw-bold text-dark">승인 상태</span>
+                  </h3>
+                </div>
+                <!-- end::카드 타이클 -->
+                <!-- begin:: 컨텐트 -->
+                <div class="card-body">
+                  <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework" method="post"
+                    id="kt_careers_form">
+                    <!--begin::Input group-->
+                    <div class="row mb-5">
+                      <!--begin::Col-->
+                      <div class="fv-row d-flex align-items-center">
+                        <!--begin::Label-->
+                        <label class="fs-5 fw-semibold me-4">상태</label>
+                        <!--end::Label-->
+                        <!--begin::Input-->
+                        <span class="form-control form-control-solid col">승인 대기 </span>
+                        <!--end::Input-->
+                      </div>
+                      <!--end::Col-->
+                    </div>
+                    <!--end::Input group-->
+                    <!--end::card-body-->
+                  </form>
+                </div>
+                <!-- end:: 컨텐트 -->
+              </div>
+              <!-- end:: 카드 -->
+            </div>
+            <!-- end:: 승인 상태 카드 -->
+
+
+            <!-- begin::button -->
+            <div class="d-flex flex-column align-items-center basic-btn mt-12
+            ">
+              <div class="basic-btn mb-6">
+                <button type="button" class="btn btn-danger me-3">승인 거절</button>
+                <button type="button" class="btn btn-primary">승인
+                </button>
+              </div>
+              <p style="color: var(--bs-blue); border-bottom: 1px solid var(--bs-blue); cursor: pointer;">변경 사항 저장</p>
+            </div>
+            <!-- end::button -->
+
           </div>
-          <!-- end:: 카드 -->
         </div>
-        <!-- end::컨텐트 -->
-        <!-- end:: 제휴사 정보 카드 -->
-        <!-- begin:: 승인 상태 카드 -->
+        <!-- 바디: 끝 -->
+        <!--end:::Main-->
+      </div>
+      <!--end::Wrapper-->
+    </div>
+    <!--end::Page-->
+  </div>
+  <!--end::App-->
+
+
+
+  <!-- modal -->
+
+  <!-- begin:: Modal -->
+  <div class="modal fade" tabindex="-1" id="kt_modal_33" style="--bs-modal-width: 1000px;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">제휴사 정보</h3>
+          <!--begin::Close-->
+          <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+            <span class="svg-icon svg-icon-1"></span>
+          </div>
+          <!--end::Close-->
+        </div>
+        <!-- begin:: Card -->
+        <!-- begin::제휴사 정보 카드 -->
         <div class="col-xxl-12 mb-5 mb-xl-10">
+          <!-- begin::카드 -->
           <div class="card">
             <!-- begin::카드 타이틀 -->
             <div class="card-header pt-5">
               <h3 class="card-title align-items-start flex-column">
-                <span class="card-label fw-bold text-dark">승인 상태</span>
+                <span class="card-label fw-bold text-dark">제휴사 정보<i
+                    class="fas fa-exclamation-circle ms-2 fs-7"></i></span>
               </h3>
             </div>
             <!-- end::카드 타이클 -->
-            <!-- begin:: 컨텐트 -->
+            <!-- begin:: card-body -->
             <div class="card-body">
               <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework" method="post"
                 id="kt_careers_form">
-                <!--begin::Input group-->
+
+                <!--begin::제휴사-->
                 <div class="row mb-5">
                   <!--begin::Col-->
-                  <div class="fv-row d-flex align-items-center">
+                  <div class="col-md-3 fv-row fv-plugins-icon-container mb-2">
                     <!--begin::Label-->
-                    <label class="fs-5 fw-semibold me-4">상태</label>
+                    <!--end::Label-->
+                    <label class="required fs-5 fw-semibold mb-2">제휴사명<i
+                        class="fas fa-exclamation-circle ms-2 fs-7"></i></label>
+                    <!--end::Label-->
                     <!--end::Label-->
                     <!--begin::Input-->
-                    <span class="form-control form-control-solid col">승인 대기 </span>
+                    <input class="form-control " placeholder="홍길동">
                     <!--end::Input-->
                   </div>
                   <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-md-3 fv-row mb-2">
+                    <!--begin::Label-->
+                    <label class="fs-5 fw-semibold mb-2">제휴사 번호</label>
+                    <!--end::Label-->
+                    <!--begin::Input-->
+                    <span class="form-control fs-7 form-control-solid col">승인 이후 자동생성 됩니다 </span>
+                    <!--end::Input-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-md-6 fv-row">
+                    <!--end::Label-->
+                    <label class="fs-5 fw-semibold mb-2">제휴사 생성 여부</label>
+                    <!--end::Label-->
+                    <div class="form-control ps-sm-3">
+                      <input class="form-check-input " type="radio" value="" />
+                      <label class="form-check-label fs-7 me-4">
+                        입력한 정보로 새 제휴사 생성
+                      </label>
+                      <input class="form-check-input " type="radio" value="" />
+                      <label class="form-check-label fs-7 me-4">
+                        미생성
+                      </label>
+                    </div>
+                  </div>
+                  <!--end::Col-->
                 </div>
-                <!--end::Input group-->
-                <!--end::card-body-->
+                <!--end::제휴사-->
+
+                <!-- begin::상품/서비스 제공방식 -->
+                <div class="row mb-5">
+                  <!--begin::Col-->
+                  <div class="col-md-12 fv-row fv-plugins-icon-container mb-2 mb-5">
+                    <!--begin::Label-->
+                    <label class="required fs-5 fw-semibold mb-2">상품/서비스 제공 방식</label>
+                    <!--end::Label-->
+
+                    <!--begin::상품 제공 방식-->
+                    <div class="form-control" style="border: 0;">
+                      <div style="display: flex;">
+                        <div class="form-check form-check-custom form-check-solid" style="margin-right: 20px;">
+                          <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault" />
+                          <label class="form-check-label" for="flexCheckDefault">
+                            인플루언서에게 온라인/배송으로 제공
+                          </label>
+                        </div>
+
+                        <label class="form-check form-check-custom form-check-solid">
+                          <input class="form-check-input" type="checkbox" value="1" />
+                          <span class="form-check-label">
+                            인플루언서가 직접 방문
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end::상품 제공 방식-->
+                </div>
+                <!-- end::상품/서비스 제공방식 -->
+
+                <!--begin::전화번호-->
+                <div class="row mb-5">
+                  <div class="col-md-12 fv-plugins-icon-container mb-2">
+                    <!--begin::Label-->
+                    <label class="required fs-5 fw-semibold mb-2">전화번호</label>
+                    <!--end::Label-->
+                    <input class=" form-control col" placeholder="02-123-4567">
+                  </div>
+                </div>
+                <!--end::전화번호-->
+
+                <!--begin::주소-->
+                <div class="row mb-5">
+                  <div class="col-md-6 fv-plugins-icon-container mb-2">
+                    <!--begin::Label-->
+                    <div class="d-flex mb-2">
+                      <label class="required fs-5 fw-semibold mt-1 me-4">주소</label>
+                      <div class="form-check form-check-custom form-check-solid">
+                        <input class="form-check-input" type="checkbox" value="" id="partnerAdress" checked="checked">
+                        <label class="form-check-label ms-3" for="partnerAdress">사업장 주소(소재지)와 동일</label>
+                      </div>
+                    </div>
+                    <div class="d-flex mb-2">
+                      <!--end::Label-->
+                      <input class=" form-control form-control-solid col me-2" placeholder="주소검색을 해주세요">
+                      <button type="submit" class="btn btn-white btn-outline">
+                        <!--begin::Indicator label-->
+                        <span class="indicator-label">주소검색</span>
+                        <!--end::Indicator label-->
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-12 fv-plugins-icon-container mb-2">
+                    <input class=" form-control col" placeholder="상세주소 입력">
+                  </div>
+                </div>
+                <!--end::주소-->
+
+                <!-- begin:웹사이트 -->
+                <div class="row mb-5">
+                  <!--begin::Col-->
+                  <div class="col-md-12 fv-row fv-plugins-icon-container mb-2">
+                    <!--begin::Label-->
+                    <div>
+                      <label class="required fs-5 fw-semibold mb-2 me-5">웹사이트</label>
+                      <div>
+                        <button type="button" class="btn btn-light-primary mb-2" data-bs-toggle="modal"
+                          data-bs-target="#kt_modal_1">웹사이트 추가</button>
+                      </div>
+                    </div>
+                    <div class="row mb-5">
+                      <!--begin::Col-->
+                      <div class="col-md-6 fv-row fv-plugins-icon-container mb-2">
+                        <div class="d-flex" data-select2-id="select2-data-6-2yuh">
+                          <div class="overflow-hidden flex-grow-1" data-select2-id="select2-data-5-drzp">
+                            <select class="form-select form-select" data-control="select2" data-placeholder="유형"
+                              data-allow-clear="true" data-hide-search="true">
+                              <option></option>
+                              <option value="1">공식홈페이지</option>
+                              <option value="2">인스타그램</option>
+                              <option value="3">블로그</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <!--end::Col-->
+                      <!--begin::Col-->
+                      <div class="col-md-6 fv-row">
+                        <!--end::Input-->
+                        <div class="d-flex">
+                          <span class="form-control">URL
+                          </span>
+                          <button class="btn btn-icon btn-active-light-primary w-42px h-42px ms-4"
+                            data-kt-permissions-table-filter="delete_row">
+                            <span class="svg-icon svg-icon-3">
+                              <svg width="40" height="40" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z"
+                                  fill="currentColor"></path>
+                                <path opacity="0.5"
+                                  d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z"
+                                  fill="currentColor"></path>
+                                <path opacity="0.5"
+                                  d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z"
+                                  fill="currentColor">
+                                </path>
+                              </svg>
+                            </span>
+                            <!--end::Svg Icon-->
+                          </button>
+                        </div>
+                        <!--end::Input-->
+                      </div>
+                      <!--end::Col-->
+                    </div>
+                  </div>
+                  <!-- end::Col -->
+                </div>
+                <!-- end::웹사이트 -->
+
+                <!-- begin::카드 가맹점 정보 -->
+                <div class="row">
+                  <!--begin::Col-->
+                  <div class="col-md-12 fv-row fv-plugins-icon-container mb-2">
+                    <!--begin::Label-->
+                    <div>
+                      <div>
+                        <label class="fs-5 fw-semibold me-5">현대카드 가맹점
+                          정보</label>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-light-primary mb-2" data-bs-toggle="modal"
+                          data-bs-target="#kt_modal_1">가맹점
+                          정보 추가</button>
+                      </div>
+                    </div>
+                    <!--end::Label-->
+
+                    <!--begin::Input-->
+                    <div class="row mb-5">
+                      <div class="col-md-12 x fv-plugins-icon-container mb-2 mb-2">
+                        <div class="row">
+                          <div class="col-md-2 x fv-plugins-icon-container mb-2 mb-2">
+                            <select class="form-select form-select" data-control="select2" data-placeholder="PG사 여부"
+                              data-allow-clear="true" data-hide-search="true">
+                              <option></option>
+                              <option value="1">해당</option>
+                              <option value="2">해당 없음</option>
+                              <option value="3">알 수 없음</option>
+                            </select>
+                          </div>
+                          <div class="col-md-3 x fv-plugins-icon-container mb-2">
+                            <select class="form-select form-select" data-control="select2"
+                              data-placeholder="결제건-캠페인 매칭 방식" data-allow-clear="true" data-hide-search="true">
+                              <option></option>
+                              <option value="1">자동 매칭</option>
+                              <option value="2">수동 매칭</option>
+                            </select>
+                          </div>
+                          <div class="col-md-2 x fv-plugins-icon-container mb-2">
+                            <input type="text" class="form-control" placeholder="사업자등록번호" name="first_name">
+                          </div>
+                          <div class="col-md-2 x fv-plugins-icon-container mb-2">
+                            <input type="text" class="form-control" placeholder="가맹점명 입력" name="first_name">
+                          </div>
+                          <div class="d-flex col-md-3 x fv-plugins-icon-container mb-2">
+                            <input type="text" class="form-control" placeholder="가맹점 번호 입력" name="first_name">
+                            <button class="btn btn-icon btn-active-light-primary w-42px h-42px ms-4"
+                              data-kt-permissions-table-filter="delete_row">
+                              <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
+                              <span class="svg-icon svg-icon-3">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z"
+                                    fill="currentColor"></path>
+                                  <path opacity="0.5"
+                                    d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z"
+                                    fill="currentColor"></path>
+                                  <path opacity="0.5"
+                                    d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z"
+                                    fill="currentColor">
+                                  </path>
+                                </svg>
+                              </span>
+                              <!--end::Svg Icon-->
+                            </button>
+                          </div>
+                          <div class="d-flex align-items-center card-rounded p-5 mb-1">
+
+                            <!--begin::Text-->
+                            <div class="col-md-12 x  fv-plugins-icon-container mb-2">
+                              <div class="mb-0 fs-6">
+                                <div class="lh-lg mb-1 text-bg-light p-10 ">
+                                  <ul>
+                                    <span class="fw-semibold">[현대카드
+                                      가맹점
+                                      정보]</span>
+                                    <div class="ps-5">
+                                      <li><a href="https://www.hyundaicard.com/csa/mb/STOREMAIN.hc"
+                                          class="text-decoration-underline" target="_blank" rel="noreferrer">현대카드
+                                          가맹점 페이지 &gt; 가맹점 번호
+                                          조회</a>
+                                        버튼을 눌러 조회할 수 있습니다.</li>
+                                      <li>정확한 가맹점 정보를 입력해주셔야
+                                        인플루언서의 결제
+                                        정보에 맞는 캠페인 안내가 가능합니다.
+                                      </li>
+                                    </div>
+
+                                  </ul>
+                                  <ul>
+                                    <span class="fw-semibold">[PG사
+                                      여부]
+                                    </span>
+                                    <div class="ps-5">
+                                      <li>PG사 예시 : KG이니시스,나이스페이 등
+                                      </li>
+                                    </div>
+                                  </ul>
+                                  <ul>
+                                    <span class="fw-semibold">[결제건-캠페인
+                                      매칭
+                                      방식]</span>
+                                    <div class="ps-5">
+                                      <li>자동 매칭</li>
+                                      <ul>
+                                        <li>제휴사의 단독 가맹점 정보일 경우
+                                          선택해
+                                          주세요.</li>
+                                        <li>해당 가맹점 정보의 결제건 확인 시,
+                                          인플카
+                                          액티비티가 바로 생성됨니다.</li>
+                                      </ul>
+                                    </div>
+                                  </ul>
+                                  <div class="ps-5">
+                                    <ul>
+                                      <li>수동 매칭</li>
+                                      <ul>
+                                        <li>진행하는 제휴사 외 다른 사업자가
+                                          해당
+                                          가맹점 정보를 함께 사용하는 경우
+                                          선택해
+                                          주세요. (PG사, 몰에 입점한 매장
+                                          등이
+                                          해당됨)</li>
+                                        <li>인플루언서가 결제건에 맞는 캠페인을
+                                          직접
+                                          선택해야 합니다.</li>
+                                      </ul>
+                                    </ul>
+                                  </div>
+                                  <ul>
+                                    <span class="fw-semibold">[사업자등록번호]
+                                    </span>
+                                    <div class="ps-5">
+                                      <li>영수증이나 카드 전표에 표시되는
+                                        사업자등록번호를
+                                        입력해주세요.</li>
+                                      <li>・PG사 가맹점 정보를 등록할 경우 PG사의
+                                        사업자등록번호를 입력해주세요.</li>
+                                    </div>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end::Text-->
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end::Input-->
+                </div>
+                <!-- end::카드 가맹점 정보 -->
+
               </form>
             </div>
-            <!-- end:: 컨텐트 -->
+            <!--end::Input group-->
           </div>
-          <!-- end:: 카드 -->
+          <!--end::Input group-->
+          </form>
         </div>
-        <!-- end:: 승인 상태 카드 -->
+        <!-- end:: 제휴사 정보 카드 -->
+        <!-- end:: Card -->
 
-        <!-- begin::button -->
-        <div class="d-flex flex-column align-items-center basic-btn mt-12
-            ">
-          <div class="basic-btn mb-3">
-            <button type="button" class="btn btn-danger me-3">승인 거절</button>
-            <button type="button" class="btn btn-primary">승인
-            </button>
-          </div>
-          <p style="color: var(--bs-blue); border-bottom: 1px solid var(--bs-blue); cursor: pointer;">변경 사항 저장</p>
+        <div class="modal-footer flex-center">
+          <button type="button" class="btn btn-light" data-bs-dismiss="modal">닫기</button>
+          <button type="button" id="kt_docs_sweetalert_basic" class="btn btn-primary">저장</button>
         </div>
-        <!-- end::button -->
-
       </div>
     </div>
-    <!-- 바디: 끝 -->
-    <!--end:::Main-->
   </div>
-  <!--end::Wrapper-->
-  </div>
-  <!--end::Page-->
-  </div>
-  <!--end::App-->
+  <!-- end:: Modal -->
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!--begin::Scrolltop-->
   <div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
     <!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg-->
@@ -1684,6 +2259,23 @@
   <script>
     var input1 = document.querySelector("#kt_tagify_1");
     var input2 = document.querySelector("#kt_tagify_2");
+  </script>
+  <script>
+    $('#kt_docs_repeater_basic').repeater({
+      initEmpty: false,
+
+      defaultValues: {
+        'text-input': 'foo'
+      },
+
+      show: function () {
+        $(this).slideDown();
+      },
+
+      hide: function (deleteElement) {
+        $(this).slideUp(deleteElement);
+      }
+    });
   </script>
   <script>
     $('#kt_docs_repeater_basic').repeater({
