@@ -626,7 +626,7 @@ License: For each use you must have a valid license purchased only from above li
                     <!--begin:Menu item-->
                     <div class="menu-item">
                       <!--begin:Menu link-->
-                      <a class="menu-link" href="/pages/pricing/column.html">
+                      <a class="menu-link" href="/pages/fee/businessPaymentInformationList.html">
                         <span class="menu-bullet">
                           <span class="bullet bullet-dot"></span>
                         </span>
@@ -650,7 +650,7 @@ License: For each use you must have a valid license purchased only from above li
                     <!--begin:Menu item-->
                     <div class="menu-item">
                       <!--begin:Menu link-->
-                      <a class="menu-link" href="/pages/pricing/table.html">
+                      <a class="menu-link" href="/pages/fee/feeGen/feeGen.html">
                         <span class="menu-bullet">
                           <span class="bullet bullet-dot"></span>
                         </span>
@@ -662,7 +662,7 @@ License: For each use you must have a valid license purchased only from above li
                     <!--begin:Menu item-->
                     <div class="menu-item">
                       <!--begin:Menu link-->
-                      <a class="menu-link" href="/pages/pricing/table.html">
+                      <a class="menu-link" href="/pages/fee/dailyFee.html">
                         <span class="menu-bullet">
                           <span class="bullet bullet-dot"></span>
                         </span>
@@ -815,16 +815,16 @@ License: For each use you must have a valid license purchased only from above li
           <div id="kt_app_toolbar_container" class="app-container flex-column-fluid d-flex flex-stack">
             <div class="page-title d-flex flex-column justify-content-center flex-wrap me-3">
               <h1 class="page-heading d-flex text-dark fw-bold fs-3 flex-column justify-content-center my-0">
-                포스팅 검수
+                사업자 결제 정보
               </h1>
               <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
                 <li class="breadcrumb-item text-muted">
-                  <a href="/" class="text-muted text-hover-primary">포스팅</a>
+                  <a href="/" class="text-muted text-hover-primary">정산</a>
                 </li>
                 <li class="breadcrumb-item">
                   <span class="bullet bg-gray-400 w-5px h-2px"></span>
                 </li>
-                <li class="breadcrumb-item text-muted">포스팅 검수</li>
+                <li class="breadcrumb-item text-muted">사업자 결제 정보 </li>
               </ul>
             </div>
             <!--end::Actions-->
@@ -839,769 +839,488 @@ License: For each use you must have a valid license purchased only from above li
 
 
 
-            <!-- begin::Accordion -->
-            <div class="menu menu-column menu-rounded menu-sub-indention" data-kt-menu="true"
-              data-kt-menu-expand="false">
-              <!--begin::카드-->
-              <div class="card mb-12">
-                <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework" method="post"
-                  id="kt_careers_form">
-                  <div class="accordion" id="kt_accordion_1">
-                    <div class="accordion-item card-body">
-                      <h2 class="accordion-header d-flex align-items-baseline" id="kt_accordion_1_header_1">
-                        <button class="accordion-button fs-7 fw-semibold" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#kt_accordion_1_body_1" aria-expanded="true"
-                          aria-controls="kt_accordion_1_body_1"
-                          style="background-color:#fff; border-style:none; padding:1rem 1.1rem 1rem 0;">상세검색
-                        </button>
-                      </h2>
-                      <div class=" col-xxl-12">
-                        <div class="row">
-                          <!--begin::Col-->
-                          <div class="col-md-6 fv-row fv-plugins-icon-container mb-5">
-                            <select class=" form-select" data-control="select2" data-placeholder="영업 담당자 이름 선택" select
-                              box : data-allow-clear="true" data-hide-search="true">
-                              <option></option>
-                              <option value="1">엠마의 1004 사업장</option>
-                              <option value="2">sample1</option>
-                              <option value="3">sample12</option>
-                              <option value="4">sample3</option>
-                              <option value="5">sample4</option>
-                            </select>
-                          </div>
-                          <!-- end::col -->
-                          <!--begin::Col-->
-                          <div class="col-md-6 fv-row fv-plugins-icon-container mb-5">
-                            <select class=" form-select" data-control="select2" data-placeholder="운영 담당자 이름 선택" select
-                              box : data-allow-clear="true" data-hide-search="true">
-                              <option></option>
-                              <option value="1">엠마의 1004 사업장</option>
-                              <option value="2">sample1</option>
-                              <option value="3">sample12</option>
-                              <option value="4">sample3</option>
-                              <option value="5">sample4</option>
-                            </select>
-                          </div>
-                          <!--end::Col-->
-                        </div>
+            <!-- begin::카드 -->
+            <div class="col-xxl-12 mb-5 mb-xl-10">
+              <div class="card">
+                <!-- begin:: 컨텐트 -->
+                <div class="card-body">
+                  <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework">
+
+                    <!-- begin::input group -->
+                    <div class="row mb-5">
+                      <!--begin::Col-->
+                      <div class="col-md-12 fv-row fv-plugins-icon-container">
+                        <!--begin::Label-->
+                        <label class=" fs-5 fw-semibold mb-2">사업자명</label>
+                        <!--end::Label-->
+                        <!--begin::Input-->
+                        <select class=" form-select" data-control="select2" data-placeholder="사업자명 입력" select box :
+                          data-allow-clear="true" data-hide-search="true">
+                          <option></option>
+                          <option value="1">엠마의 1004 사업장</option>
+                          <option value="2">sample1</option>
+                          <option value="3">sample12</option>
+                          <option value="4">sample3</option>
+                          <option value="5">sample4</option>
+                        </select>
+                        <!--end::Input-->
+                        <div class="fv-plugins-message-container invalid-feedback"></div>
                       </div>
-
-                      <!--begin::아코디언 바디 -->
-                      <div id="kt_accordion_1_body_1" class="accordion-collapse collapse show"
-                        aria-labelledby="kt_accordion_1_header_1" data-bs-parent="#kt_accordion_1">
-                        <div>
-                          <!--begin::Input group 1-->
-                          <div class="row">
-                            <!--begin::Col-->
-                            <div class="col-md-4 fv-row fv-plugins-icon-container mb-5">
-                              <label class="form-label">사업자명</label>
-                              <select class=" form-select" data-control="select2" data-placeholder="사업자명 선택"
-                                data-hide-search="true">
-                                <option></option>
-                                <option value="1">엠마의 1004 사업장</option>
-                                <option value="2">sample1</option>
-                                <option value="3">sample12</option>
-                                <option value="4">sample3</option>
-                                <option value="5">sample4</option>
-                              </select>
-                            </div>
-                            <div class="col-md-1 fv-row fv-plugins-icon-container mb-5">
-                              <label class="form-label">유형</label>
-                              <select class=" form-select" data-control="select2" data-placeholder="전체"
-                                data-hide-search="true">
-                                <option></option>
-                                <option value="1">싱글</option>
-                                <option value="2">그룹</option>
-                              </select>
-                            </div>
-                            <div class="col-md-3 fv-row fv-plugins-icon-container mb-5">
-                              <label class="form-label">제휴사명</label>
-                              <select class=" form-select" data-control="select2" data-placeholder="제휴사명 선택"
-                                data-hide-search="true">
-                                <option></option>
-                                <option value="1">세컨드라이프</option>
-                                <option value="2">마켓잇</option>
-                              </select>
-                            </div>
-                            <div class="col fv-row fv-plugins-icon-container mb-5">
-                              <label class="form-label">캠페인명</label>
-                              <select class=" form-select" data-control="select2" data-placeholder="캠페인명 선택"
-                                data-hide-search="true">
-                                <option></option>
-                                <option value="1">엠마의 1004 사업장</option>
-                                <option value="2">sample1</option>
-                                <option value="3">sample12</option>
-                                <option value="4">sample3</option>
-                                <option value="5">sample4</option>
-                              </select>
-                            </div>
-                            <!--end::Col-->
-                          </div>
-                          <!--end::Input group 1-->
-
-                          <!--begin::Input group 2-->
-                          <div class="row">
-                            <!--begin::Col-->
-                            <div class="col-md-4 fv-row fv-plugins-icon-container mb-5">
-                              <label class="form-label">인플루언서 이름</label>
-                              <input class="form-control" placeholder="2개이상 입력시 ,로 구분" value="" id="kt_tagify_2" />
-                            </div>
-                            <!--end::Col-->
-                            <!-- begin::col -->
-                            <div class="col-md-4 fv-row fv-plugins-icon-container mb-5">
-                              <label class="form-label">인플루언서 계정 번호</label>
-                              <input class="form-control" placeholder="2개이상 입력시 ,로 구분" value="" id="kt_tagify_2" />
-                              </select>
-                            </div>
-                            <!-- end::col -->
-                            <!--begin::Col-->
-                            <div class="col-md-4 fv-row fv-plugins-icon-container mb-5">
-                              <label class="form-label">액티비티ID</label>
-                              <input class="form-control" placeholder="2개이상 입력시 ,로 구분" value="" id="kt_tagify_2" />
-                            </div>
-                            <!--end::Col-->
-                          </div>
-                          <!--end::Input group 2-->
-
-                          <!--begin::Input group 3-->
-                          <div class="row">
-                            <div class="col-md-12 fv-row fv-plugins-icon-container mb-5">
-                              <!--begin::Label-->
-                              <label class="fs-5 fw-semibold mb-2">포스트 연동일</label>
-                              <!--end::Label-->
-                              <!--begin::col-->
-                              <div class="col-md-12 fv-row fv-plugins-icon-container mb-5 d-flex flex-wrap">
-                                <form>
-                                  <div class="col-md-3 me-3 d-flex flex-nowrap mb-5">
-                                    <input type="datetime-local" class="form-control me-3">
-                                    <span>~</span>
-                                  </div>
-                                </form>
-                                <form class="col-md-3 me-3 mb-3">
-                                  <div>
-                                    <input type="datetime-local" class="form-control">
-                                  </div>
-                                </form>
-                                <div class="col">
-                                  <button class="btn btn-light btn-active-light-primary me-3">
-                                    최근7일
-                                  </button>
-                                  <button class="btn btn-light btn-active-light-primary">
-                                    최근 1개월
-                                  </button>
-                                </div>
-                              </div>
-                              <!-- end::col -->
-                            </div>
-                          </div>
-                          <!--end::Input group 3-->
-
-
-                        </div>
-                      </div>
-                      <!-- begin::button -->
-                      <div class="row mb-5">
-                        <div class="col-md-12 d-flex justify-content-center">
-                          <button type="button" class="btn btn-white btn-outline me-2">초기화</button>
-                          <button type="button" class="btn btn-primary">검색</button>
-                        </div>
-                      </div>
-                      <!-- end::button -->
-                      <!-- end::아코디언 바디 -->
+                      <!--end::Col-->
                     </div>
-                  </div>
-                </form>
+                    <!--end::Input group-->
+
+                    <!-- begin::button -->
+                    ​<div style="display: flex; justify-content: center;" class="basic-btn">
+                      <button class="btn btn-white btn-outline me-3">
+                        초기화
+                      </button>
+                      <button class="btn btn-primary">검색</button>
+                    </div>
+                    <!-- end::button -->
+                  </form>
+                </div>
+                <!--end::card-body-->
               </div>
-              <!-- end::카드 -->
-
-
+              <!-- end:: 컨텐트 -->
             </div>
-            <!--end::Accordion-->
-
-
-            <ul class="nav nav-tabs nav-line-tabs nav-line-tabs-2x mb-5 fs-6">
-              <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="tab" href="#kt_tab_pane_4">검수 대기</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#kt_tab_pane_5">수정중</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#kt_tab_pane_6">검수완료</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#kt_tab_pane_6">만료(가이드 불일치)</a>
-              </li>
-            </ul>
-
-
+            <!-- end::카드 -->
 
 
             <!-- begin:: 카드 -->
             <div class="col-xxl-12 mb-5 mb-xl-10">
-              <div class="card">
-                <div class="card-header pt-5">
+              <div class="card" style="padding: 0 1rem">
+                <div class="card-header pt-5" style="padding : 0">
                   <!--begin:: 타이틀-->
                   <h3 class="card-title align-items-start flex-column">
-                    <span class="card-label fw-bold text-dark">검색 내역(19)</span>
+                    <span class="card-label fw-bold text-dark">사업자 결제 정보 리스트<span>(264)</span></span>
                   </h3>
                   <div class="d-flex">
-                    <select class="me-2 form-select" style="margin: 0.75rem;">
-                      <option value="DESC">최신순(포스팅 연동일)</option>
-                      <option value="ASC" selected="selected">과거순(포스팅 연동일)</option>
-                    </select>
-                    <select class="form-select" style="width: 78px; margin: 0.75rem;">
+                    <select class=" form-select" style="width: 78px; margin-bottom: 0.75rem;">
                       <option value="30">30</option>
-                      <option value="50">50</option>
+                      <option value="50" selected="selected">50</option>
                       <option value="100">100</option>
                     </select>
                   </div>
                   <!--end:: 타이틀-->
                 </div>
-                <div class="d-flex justify-content-start" style="padding: 1rem 2.25rem;">
-                  <a href="/pages/company/contracts/newContract.html">
-                    <button type="button" class="btn btn-white btn-outline">검수 완료</button>
-                  </a>
-                </div>
-                <!-- ////////////////////////////////////////////////////////////////////////////// -->
-
-
-
-
                 <!-- begin:: 컨텐트 -->
                 <div class="table-responsive">
-                  <table class="table table-hover table-striped border gy-7 gs-7">
-                    <thead>
-                      <tr class="fw-bold fs-6 text-gray-800 border-bottom-2 border-gray-200 ">
-                        <th><label class="form-check form-check-custom">
-                            <input class="form-check-input" type="checkbox" value="1" /></th>
-                        <th>인플루언서</th>
-                        <th>캠페인</th>
-                        <th>액티비티</th>
-                        <th></th>
-                        <th>포스팅</th>
-                        <th>수정 요청 이력</th>
-                        <th>수정 요청</th>
+                  <table class="table table-hover table-striped gy-5 gs-5">
+                    <thead class="align-middle">
+                      <tr class="fw-semibold fs-6 text-gray-800 border-bottom-2 border-gray-200">
+                        <th>사업자명</th>
+                        <th>예치금 잔액</th>
+                        <th>보증금</th>
+                        <th>결제 수단</th>
+                        <th>환불 은행</th>
+                        <th>환불 계좌</th>
+                        <th>예금주</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="align-middle">
                       <tr>
-                        <td><label class="form-check form-check-custom">
-                            <input class="form-check-input" type="checkbox" value="1" /></td>
-                        <td>
-                          임채명<span style="color: var(--bs-gray-600);">(90)</span>
-                          <a href="/pages/Influencer/influencers/influencer-detail.html">
-                            <span class="svg-icon svg-icon-2">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        <td>키캣1012
+                          <a href="/pages/fee/detail.html">
+                            <span class="svg-icon svg-icon-2 svg-icon-primary  top-50 translate-middle ms-1">
+                              <svg width="18" height="18" viewBox="0 0 18 29" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.3"
-                                  d="M4.7 17.3V7.7C4.7 6.59543 5.59543 5.7 6.7 5.7H9.8C10.2694 5.7 10.65 5.31944 10.65 4.85C10.65 4.38056 10.2694 4 9.8 4H5C3.89543 4 3 4.89543 3 6V19C3 20.1046 3.89543 21 5 21H18C19.1046 21 20 20.1046 20 19V14.2C20 13.7306 19.6194 13.35 19.15 13.35C18.6806 13.35 18.3 13.7306 18.3 14.2V17.3C18.3 18.4046 17.4046 19.3 16.3 19.3H6.7C5.59543 19.3 4.7 18.4046 4.7 17.3Z"
-                                  fill="currentColor"></path>
-                                <rect x="21.9497" y="3.46448" width="13" height="2" rx="1"
-                                  transform="rotate(135 21.9497 3.46448)" fill="currentColor"></rect>
+                                <rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2" rx="1"
+                                  transform="rotate(45 17.0365 15.1223)" fill="currentColor"></rect>
                                 <path
-                                  d="M19.8284 4.97161L19.8284 9.93937C19.8284 10.5252 20.3033 11 20.8891 11C21.4749 11 21.9497 10.5252 21.9497 9.93937L21.9497 3.05029C21.9497 2.498 21.502 2.05028 20.9497 2.05028L14.0607 2.05027C13.4749 2.05027 13 2.52514 13 3.11094C13 3.69673 13.4749 4.17161 14.0607 4.17161L19.0284 4.17161C19.4702 4.17161 19.8284 4.52978 19.8284 4.97161Z"
+                                  d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
                                   fill="currentColor"></path>
                               </svg>
                             </span>
-                            <!--end::Svg Icon-->
-                          </a>
+                            </type=>
                         </td>
-                        <td>국산 유기농 야채왕국_n회차<span style="color: var(--bs-gray-600);">(9393)</span>
-                          <br /><button class="btn" data-bs-toggle="modal" data-bs-target="#kt_modal_31">제휴사 연결</button>
-                          </button>
-                        </td>
-                        </td>
+                        <td class="text-end">0원</td>
                         <td>
-                          <p class="mb-0"></p>
+                          0/
+                          <span class="text-gray-600">100,000</span>
+                          원
                         </td>
-                        <td>
-                          등급 없음
-                        </td>
-                        <td>
-                          <textarea class="form-control" placeholder="내용" aria-label="With textarea"
-                            style="resize: none; height: 100px;"></textarea>
-                        </td>
-                        <td>
-                          <textarea class="form-control" placeholder="내용" aria-label="With textarea"
-                            style="resize: none; height: 100px;"></textarea>
-                        </td>
-                        <td>
-                          <button class="btn btn-white btn-outline" data-bs-toggle="modal"
-                            data-bs-target="#kt_modal_32">수정 요청</button>
-                        </td>
+                        <td>예치금</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
                       </tr>
-
                     </tbody>
                   </table>
-                  <ul class="pagination mb-5">
-                    <li class="page-item previous disabled"><a href="#" class="page-link"><i class="previous"></i></a>
-                    </li>
-                    <li class="page-item "><a href="#" class="page-link">1</a></li>
-                    <li class="page-item active"><a href="#" class="page-link">2</a></li>
-                    <li class="page-item "><a href="#" class="page-link">3</a></li>
-                    <li class="page-item "><a href="#" class="page-link">4</a></li>
-                    <li class="page-item "><a href="#" class="page-link">5</a></li>
-                    <li class="page-item "><a href="#" class="page-link">6</a></li>
-                    <li class="page-item next"><a href="#" class="page-link"><i class="next"></i></a></li>
-                  </ul>
                 </div>
+                <ul class="pagination mb-5">
+                  <li class="page-item previous disabled"><a href="#" class="page-link"><i class="previous"></i></a>
+                  </li>
+                  <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                  <li class="page-item "><a href="#" class="page-link">2</a></li>
+                  <li class="page-item "><a href="#" class="page-link">3</a></li>
+                  <li class="page-item "><a href="#" class="page-link">4</a></li>
+                  <li class="page-item "><a href="#" class="page-link">5</a></li>
+                  <li class="page-item "><a href="#" class="page-link">6</a></li>
+                  <li class="page-item next"><a href="#" class="page-link"><i class="next"></i></a></li>
+                </ul>
                 <!-- end:: 컨텐트 -->
               </div>
+
             </div>
             <!-- end:: 카드 -->
 
 
-
-
-
-
-
-
-            <!-- begin:: Modal::제휴사 연결-->
-            <div class="modal fade" tabindex="-1" id="kt_modal_31" style="--bs-modal-width: 800px;">
-              <div class="modal-dialog">
-                <d class="modal-content">
-                  <div class="modal-header">
-                    <h3 class="modal-title">포스팅 가이드: <span class="text-primary">바이탈릭-콜라겐 멜팅 풀 패키지_3회차(9393)</span></h3>
-
-                    <!--begin::Close-->
-                    <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
-                      aria-label="Close">
-                      <span class="svg-icon svg-icon-1"></span>
-                    </div>
-                    <!--end::Close-->
-                  </div>
-                  <!-- begin:: Card -->
-                  <div class="card">
-                    <div class="card-header">
-                      <h3 class="card-title align-items-start flex-column">
-                        <span class="card-label fw-bold text-dark">검색</span>
-                      </h3>
-                    </div>
-                    <div class="card-body">
-                      <!--begin::Input group-->
-                      <div class="input-group mb-5">
-                        <span class="input-group-text justify-content-end" style="width:8.75rem;" id="basic-addon1">1번째
-                          포스팅</span>
-                        <div class="form-control form-check form-check-custom form-check-solid ">
-                          <input class="form-check-input ms-sm-4" type="radio" value="" id="flexRadioDefault" />
-                          <label class="form-check-label" for="flexRadioDefault">
-                            무관
-                          </label>
-                          <input class="form-check-input ms-sm-4" type="radio" value="" id="flexRadioDefault" />
-                          <label class="form-check-label" for="flexRadioDefault">
-                            영상
-                          </label>
-                          <input class="form-check-input ms-sm-4" type="radio" value="" id="flexRadioDefault" />
-                          <label class="form-check-label" for="flexRadioDefault">
-                            이미지
-                          </label>
-                        </div>
-                      </div>
-                      <!--end::Input group-->
-                      <!--begin::Input group-->
-                      <div class="input-group mb-5">
-                        <span class="input-group-text justify-content-end" id="basic-addon1" style="width:8.75rem;">콘텐츠
-                          개수</span>
-                        <div class="form-control d-flex" aria-describedby="basic-addon1">
-                          <div class="d-flex align-items-center me-4">
-                            <span>사진개수</span>
-                            <span class="form-control form-control-solid" style="width:auto;">3</span>
-                          </div>
-                          <div class="d-flex align-items-center">
-                            <span>영상개수</span>
-                            <span class="form-control form-control-solid" style="width:auto;">0</span>
-                          </div>
-                        </div>
-                      </div>
-                      <!--end::Input group-->
-                    </div>
-                    <!-- end:: Card -->
-                    <div class=" card">
-                      <div class="card-header">
-                        <h3 class="card-title align-items-start flex-column">
-                          <span class="card-label fw-bold text-dark">가이드</span>
-                        </h3>
-                      </div>
-                      <div class="card-body">
-                        <!--begin::Input group-->
-                        <div class="input-group input-group-solid mb-5">
-                          <span class="input-group-text justify-content-end" style="width:8.75rem;">콘텐츠</span>
-                          <div class="form-control " style="height: 100px;"></div>
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Input group-->
-                        <div class="input-group input-group-solid mb-5">
-                          <span class="input-group-text justify-content-end" style="width:8.75rem;">문구</span>
-                          <div class="form-control " style="height: 100px;"></div>
-                        </div>
-                        <!--end::Input group-->
-                      </div>
-
-                      <div class="modal-footer flex-center">
-                        <button type="button" id="kt_docs_sweetalert_basic" class="btn btn-primary">확인</button>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-              <!-- end:: Modal -->
-
-
-              <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-
-              <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-
-            </div>
-            <!-- end::Modal::제휴사 연결 -->
-
-            <!-- begin:: Modal::수정 요청-->
-            <div class="modal fade" tabindex="-1" id="kt_modal_32" style="--bs-modal-width: 800px;">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h3 class="modal-title">포스팅 수정 요청: <span class="text-primary">임채명(1234)</span></h3>
-
-                    <!--begin::Close-->
-                    <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
-                      aria-label="Close">
-                      <span class="svg-icon svg-icon-1"></span>
-                    </div>
-                    <!--end::Close-->
-                  </div>
-                  <!-- begin:: Card -->
-                  <div class="card">
-                    <div class="card-header">
-                      <h3 class="card-title align-items-start flex-column">
-                        <span class="card-label fw-bold text-dark">검색</span>
-                      </h3>
-                    </div>
-                    <div class="card-body">
-                      <!--begin::Input group-->
-                      <!--begin::Input group-->
-                      <div class="input-group mb-5">
-                        <span class="input-group-text justify-content-end" style="width:8.75rem; height: auto;"
-                          id="basic-addon1">포스팅</span>
-                        <div class="form-control d-flex">
-                          <img class="me-4"
-                            src="https://images.unsplash.com/photo-1666883718630-c06f3432dc14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                            style="width: 15rem;" />
-                          <div class="input-group-text" style="width:100%;">Last Friday!!!!</div>
-                        </div>
-                      </div>
-                      <!--end::Input group-->
-                      <!--begin::Input group-->
-                      <div class="input-group mb-5">
-                        <span class="required input-group-text justify-content-end">수정 요청 내용</span>
-                        <textarea class="form-control" style="resize: none; width: 8.75rem; height: 100px;"
-                          aria-label="With textarea"></textarea>
-                      </div>
-                      <!--end::Input group-->
-
-                    </div>
-                    <!-- end::card-body -->
-                  </div>
-                  <!-- end:: Card -->
-
-                  <!-- begin::모달 버튼 -->
-                  <div class="modal-footer flex-center">
-                    <button type="button" id="kt_docs_sweetalert_basic" class="btn btn-primary">확인</button>
-                  </div>
-                  <!-- end::모달 버튼 -->
-
-                </div>
-                <!-- end:: Modal-content -->
-              </div>
-            </div>
-
-
             <!-- 바디: 끝 -->
-
             <!--end:::Main-->
           </div>
           <!--end::Wrapper-->
         </div>
         <!--end::Page-->
-      </div>
-      <!--end::App-->
 
-      <!--begin::Scrolltop-->
-      <div id=" kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
-        <!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg-->
-        <span class="svg-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect opacity="0.5" x="13" y="6" width="13" height="2" rx="1" transform="rotate(90 13 6)"
-              fill="currentColor">
-            </rect>
-            <path
-              d="M12.5657 8.56569L16.75 12.75C17.1642 13.1642 17.8358 13.1642 18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25L12.7071 5.70711C12.3166 5.31658 11.6834 5.31658 11.2929 5.70711L5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75C6.16421 13.1642 6.83579 13.1642 7.25 12.75L11.4343 8.56569C11.7467 8.25327 12.2533 8.25327 12.5657 8.56569Z"
-              fill="currentColor"></path>
-          </svg>
-        </span>
-        <!--end::Svg Icon-->
-      </div>
-      <!--end::Scrolltop-->
 
-      <!--begin::Javascript-->
-      <script>
-        var hostUrl = "assets/";
-      </script>
-      <!--begin::Global Javascript Bundle(used by all pages)-->
-      <script src="/assets/plugins/global/plugins.bundle.js"></script>
-      <script src="/assets/js/scripts.bundle.js"></script>
-      <!--end::Global Javascript Bundle-->
-      <!--begin::Vendors Javascript(used by this page)-->
-      <script src="/assets/plugins/custom/datatables/datatables.bundle.js"></script>
-      <!--end::Vendors Javascript-->
-      <!--begin::Custom Javascript(used by this page)-->
-      <script src="/assets/js/custom/apps/customers/view/add-payment.js"></script>
-      <script src="/assets/js/custom/apps/customers/view/adjust-balance.js"></script>
-      <script src="/assets/js/custom/apps/customers/view/invoices.js"></script>
-      <script src="/assets/js/custom/apps/customers/view/payment-method.js"></script>
-      <script src="/assets/js/custom/apps/customers/view/payment-table.js"></script>
-      <script src="/assets/js/custom/apps/customers/view/statement.js"></script>
-      <script src="/assets/js/custom/apps/customers/update.js"></script>
-      <script src="/assets/js/widgets.bundle.js"></script>
-      <script src="/assets/js/custom/widgets.js"></script>
-      <script src="/assets/js/custom/apps/chat/chat.js"></script>
-      <script src="/assets/js/custom/utilities/modals/upgrade-plan.js"></script>
-      <script src="/assets/js/custom/utilities/modals/create-app.js"></script>
-      <script src="/assets/js/custom/utilities/modals/new-card.js"></script>
-      <script src="/assets/js/custom/utilities/modals/users-search.js"></script>
-      <!--end::Custom Javascript-->
-      <!--end::Javascript-->
 
-      <!--end::Body-->
-      <svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1"
-        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="
+        <!-- 모달 시작 -->
+        <!-- begin:: Modal -->
+        <div class="modal fade" tabindex="-1" id="kt_modal_35" style="--bs-modal-width: 400px;">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">대상 인플루언서 <span>(1)</span></h3>
+
+                <!--begin::Close-->
+                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
+                  aria-label="Close">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)"
+                      fill="currentColor"></rect>
+                    <rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)"
+                      fill="currentColor">
+                    </rect>
+                  </svg>
+                </div>
+                <!--end::Close-->
+              </div>
+              <!-- begin:: Card -->
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title align-items-start flex-column">
+                    <span class="card-label fw-bold text-dark">인플루언서 계정번호</span>
+                  </h3>
+                </div>
+                <div class="card-body">
+                  <div class="row mb-5">
+                    <div class="col-md-12 fv-row fv-plugins-icon-container">
+                      <div class="input-group">
+                        <span class="badge badge-light-dark m-2">1235</span>
+                        <span class="badge badge-light-dark m-2">22</span>
+                        <span class="badge badge-light-dark m-2">12</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal-footer flex-center">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">확인</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- end:: Modal -->
+            <!-- 모달 끝 -->
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+          <!--end::App-->
+
+          <!--begin::Scrolltop-->
+          <div id=" kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+            <!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg-->
+            <span class="svg-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect opacity="0.5" x="13" y="6" width="13" height="2" rx="1" transform="rotate(90 13 6)"
+                  fill="currentColor">
+                </rect>
+                <path
+                  d="M12.5657 8.56569L16.75 12.75C17.1642 13.1642 17.8358 13.1642 18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25L12.7071 5.70711C12.3166 5.31658 11.6834 5.31658 11.2929 5.70711L5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75C6.16421 13.1642 6.83579 13.1642 7.25 12.75L11.4343 8.56569C11.7467 8.25327 12.2533 8.25327 12.5657 8.56569Z"
+                  fill="currentColor"></path>
+              </svg>
+            </span>
+            <!--end::Svg Icon-->
+          </div>
+          <!--end::Scrolltop-->
+
+          <!--begin::Javascript-->
+          <script>
+            var hostUrl = "assets/";
+          </script>
+          <!--begin::Global Javascript Bundle(used by all pages)-->
+          <script src="/assets/plugins/global/plugins.bundle.js"></script>
+          <script src="/assets/js/scripts.bundle.js"></script>
+          <!--end::Global Javascript Bundle-->
+          <!--begin::Vendors Javascript(used by this page)-->
+          <script src="/assets/plugins/custom/datatables/datatables.bundle.js"></script>
+          <!--end::Vendors Javascript-->
+          <!--begin::Custom Javascript(used by this page)-->
+          <script src="/assets/js/custom/apps/customers/view/add-payment.js"></script>
+          <script src="/assets/js/custom/apps/customers/view/adjust-balance.js"></script>
+          <script src="/assets/js/custom/apps/customers/view/invoices.js"></script>
+          <script src="/assets/js/custom/apps/customers/view/payment-method.js"></script>
+          <script src="/assets/js/custom/apps/customers/view/payment-table.js"></script>
+          <script src="/assets/js/custom/apps/customers/view/statement.js"></script>
+          <script src="/assets/js/custom/apps/customers/update.js"></script>
+          <script src="/assets/js/widgets.bundle.js"></script>
+          <script src="/assets/js/custom/widgets.js"></script>
+          <script src="/assets/js/custom/apps/chat/chat.js"></script>
+          <script src="/assets/js/custom/utilities/modals/upgrade-plan.js"></script>
+          <script src="/assets/js/custom/utilities/modals/create-app.js"></script>
+          <script src="/assets/js/custom/utilities/modals/new-card.js"></script>
+          <script src="/assets/js/custom/utilities/modals/users-search.js"></script>
+          <!--end::Custom Javascript-->
+          <!--end::Javascript-->
+
+          <!--end::Body-->
+          <svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1"
+            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="
         overflow: hidden;
         top: -100%;
         left: -100%;
         position: absolute;
         opacity: 0;
       ">
-        <defs id="SvgjsDefs1002"></defs>
-        <polyline id="SvgjsPolyline1003" points="0,0"></polyline>
-        <path id="SvgjsPath1004" d="M0 0 "></path>
-      </svg><!-- Code injected by live-server -->
-      <script>
-        // <![CDATA[  <-- For SVG support
-        if ("WebSocket" in window) {
-          (function () {
-            function refreshCSS() {
-              var sheets = [].slice.call(document.getElementsByTagName("link"));
-              var head = document.getElementsByTagName("head")[0];
-              for (var i = 0; i < sheets.length; ++i) {
-                var elem = sheets[i];
-                var parent = elem.parentElement || head;
-                parent.removeChild(elem);
-                var rel = elem.rel;
-                if (
-                  (elem.href && typeof rel != "string") ||
-                  rel.length == 0 ||
-                  rel.toLowerCase() == "stylesheet"
-                ) {
-                  var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
-                  elem.href =
-                    url +
-                    (url.indexOf("?") >= 0 ? "&" : "?") +
-                    "_cacheOverride=" +
-                    new Date().valueOf();
+            <defs id="SvgjsDefs1002"></defs>
+            <polyline id="SvgjsPolyline1003" points="0,0"></polyline>
+            <path id="SvgjsPath1004" d="M0 0 "></path>
+          </svg><!-- Code injected by live-server -->
+          <script>
+            // <![CDATA[  <-- For SVG support
+            if ("WebSocket" in window) {
+              (function () {
+                function refreshCSS() {
+                  var sheets = [].slice.call(document.getElementsByTagName("link"));
+                  var head = document.getElementsByTagName("head")[0];
+                  for (var i = 0; i < sheets.length; ++i) {
+                    var elem = sheets[i];
+                    var parent = elem.parentElement || head;
+                    parent.removeChild(elem);
+                    var rel = elem.rel;
+                    if (
+                      (elem.href && typeof rel != "string") ||
+                      rel.length == 0 ||
+                      rel.toLowerCase() == "stylesheet"
+                    ) {
+                      var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                      elem.href =
+                        url +
+                        (url.indexOf("?") >= 0 ? "&" : "?") +
+                        "_cacheOverride=" +
+                        new Date().valueOf();
+                    }
+                    parent.appendChild(elem);
+                  }
                 }
-                parent.appendChild(elem);
-              }
-            }
-            var protocol =
-              window.location.protocol === "http:" ? "ws://" : "wss://";
-            var address =
-              protocol + window.location.host + window.location.pathname + "/ws";
-            var socket = new WebSocket(address);
-            socket.onmessage = function (msg) {
-              if (msg.data == "reload") window.location.reload();
-              else if (msg.data == "refreshcss") refreshCSS();
-            };
-            if (
-              sessionStorage &&
-              !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
-            ) {
-              console.log("Live reload enabled.");
-              sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
-            }
-          })();
-        } else {
-          console.error(
-            "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
-          );
-        }
-      // ]]>
-      </script>
-
-      <!-- Code injected by live-server -->
-      <script>
-        // <![CDATA[  <-- For SVG support
-        if ("WebSocket" in window) {
-          (function () {
-            function refreshCSS() {
-              var sheets = [].slice.call(document.getElementsByTagName("link"));
-              var head = document.getElementsByTagName("head")[0];
-              for (var i = 0; i < sheets.length; ++i) {
-                var elem = sheets[i];
-                var parent = elem.parentElement || head;
-                parent.removeChild(elem);
-                var rel = elem.rel;
+                var protocol =
+                  window.location.protocol === "http:" ? "ws://" : "wss://";
+                var address =
+                  protocol + window.location.host + window.location.pathname + "/ws";
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                  if (msg.data == "reload") window.location.reload();
+                  else if (msg.data == "refreshcss") refreshCSS();
+                };
                 if (
-                  (elem.href && typeof rel != "string") ||
-                  rel.length == 0 ||
-                  rel.toLowerCase() == "stylesheet"
+                  sessionStorage &&
+                  !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
                 ) {
-                  var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
-                  elem.href =
-                    url +
-                    (url.indexOf("?") >= 0 ? "&" : "?") +
-                    "_cacheOverride=" +
-                    new Date().valueOf();
+                  console.log("Live reload enabled.");
+                  sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
                 }
-                parent.appendChild(elem);
-              }
+              })();
+            } else {
+              console.error(
+                "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+              );
             }
-            var protocol =
-              window.location.protocol === "http:" ? "ws://" : "wss://";
-            var address =
-              protocol + window.location.host + window.location.pathname + "/ws";
-            var socket = new WebSocket(address);
-            socket.onmessage = function (msg) {
-              if (msg.data == "reload") window.location.reload();
-              else if (msg.data == "refreshcss") refreshCSS();
-            };
-            if (
-              sessionStorage &&
-              !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
-            ) {
-              console.log("Live reload enabled.");
-              sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
-            }
-          })();
-        } else {
-          console.error(
-            "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
-          );
-        }
       // ]]>
-      </script>
-      <script>
-        // set the dropzone container id
-        const id = "#kt_dropzonejs_example_2";
-        const dropzone = document.querySelector(id);
+          </script>
 
-        // set the preview element template
-        var previewNode = dropzone.querySelector(".dropzone-item");
-        previewNode.id = "";
-        var previewTemplate = previewNode.parentNode.innerHTML;
-        previewNode.parentNode.removeChild(previewNode);
+          <!-- Code injected by live-server -->
+          <script>
+            // <![CDATA[  <-- For SVG support
+            if ("WebSocket" in window) {
+              (function () {
+                function refreshCSS() {
+                  var sheets = [].slice.call(document.getElementsByTagName("link"));
+                  var head = document.getElementsByTagName("head")[0];
+                  for (var i = 0; i < sheets.length; ++i) {
+                    var elem = sheets[i];
+                    var parent = elem.parentElement || head;
+                    parent.removeChild(elem);
+                    var rel = elem.rel;
+                    if (
+                      (elem.href && typeof rel != "string") ||
+                      rel.length == 0 ||
+                      rel.toLowerCase() == "stylesheet"
+                    ) {
+                      var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                      elem.href =
+                        url +
+                        (url.indexOf("?") >= 0 ? "&" : "?") +
+                        "_cacheOverride=" +
+                        new Date().valueOf();
+                    }
+                    parent.appendChild(elem);
+                  }
+                }
+                var protocol =
+                  window.location.protocol === "http:" ? "ws://" : "wss://";
+                var address =
+                  protocol + window.location.host + window.location.pathname + "/ws";
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                  if (msg.data == "reload") window.location.reload();
+                  else if (msg.data == "refreshcss") refreshCSS();
+                };
+                if (
+                  sessionStorage &&
+                  !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+                ) {
+                  console.log("Live reload enabled.");
+                  sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+                }
+              })();
+            } else {
+              console.error(
+                "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+              );
+            }
+      // ]]>
+          </script>
+          <script>
+            // set the dropzone container id
+            const id = "#kt_dropzonejs_example_2";
+            const dropzone = document.querySelector(id);
 
-        var myDropzone = new Dropzone(id, { // Make the whole body a dropzone
-          url: "https://keenthemes.com/scripts/void.php", // Set the url for your upload script location
-          parallelUploads: 20,
-          previewTemplate: previewTemplate,
-          maxFilesize: 1, // Max filesize in MB
-          autoQueue: false, // Make sure the files aren't queued until manually added
-          previewsContainer: id + " .dropzone-items", // Define the container to display the previews
-          clickable: id + " .dropzone-select" // Define the element that should be used as click trigger to select files.
-        });
+            // set the preview element template
+            var previewNode = dropzone.querySelector(".dropzone-item");
+            previewNode.id = "";
+            var previewTemplate = previewNode.parentNode.innerHTML;
+            previewNode.parentNode.removeChild(previewNode);
 
-        myDropzone.on("addedfile", function (file) {
-          // Hookup the start button
-          file.previewElement.querySelector(id + " .dropzone-start").onclick = function () { myDropzone.enqueueFile(file); };
-          const dropzoneItems = dropzone.querySelectorAll('.dropzone-item');
-          dropzoneItems.forEach(dropzoneItem => {
-            dropzoneItem.style.display = '';
-          });
-          dropzone.querySelector('.dropzone-upload').style.display = "inline-block";
-          dropzone.querySelector('.dropzone-remove-all').style.display = "inline-block";
-        });
-
-        // Update the total progress bar
-        myDropzone.on("totaluploadprogress", function (progress) {
-          const progressBars = dropzone.querySelectorAll('.progress-bar');
-          progressBars.forEach(progressBar => {
-            progressBar.style.width = progress + "%";
-          });
-        });
-
-        myDropzone.on("sending", function (file) {
-          // Show the total progress bar when upload starts
-          const progressBars = dropzone.querySelectorAll('.progress-bar');
-          progressBars.forEach(progressBar => {
-            progressBar.style.opacity = "1";
-          });
-          // And disable the start button
-          file.previewElement.querySelector(id + " .dropzone-start").setAttribute("disabled", "disabled");
-        });
-
-        // Hide the total progress bar when nothing's uploading anymore
-        myDropzone.on("complete", function (progress) {
-          const progressBars = dropzone.querySelectorAll('.dz-complete');
-
-          setTimeout(function () {
-            progressBars.forEach(progressBar => {
-              progressBar.querySelector('.progress-bar').style.opacity = "0";
-              progressBar.querySelector('.progress').style.opacity = "0";
-              progressBar.querySelector('.dropzone-start').style.opacity = "0";
+            var myDropzone = new Dropzone(id, { // Make the whole body a dropzone
+              url: "https://keenthemes.com/scripts/void.php", // Set the url for your upload script location
+              parallelUploads: 20,
+              previewTemplate: previewTemplate,
+              maxFilesize: 1, // Max filesize in MB
+              autoQueue: false, // Make sure the files aren't queued until manually added
+              previewsContainer: id + " .dropzone-items", // Define the container to display the previews
+              clickable: id + " .dropzone-select" // Define the element that should be used as click trigger to select files.
             });
-          }, 300);
-        });
 
-        // Setup the buttons for all transfers
-        dropzone.querySelector(".dropzone-upload").addEventListener('click', function () {
-          myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED));
-        });
+            myDropzone.on("addedfile", function (file) {
+              // Hookup the start button
+              file.previewElement.querySelector(id + " .dropzone-start").onclick = function () { myDropzone.enqueueFile(file); };
+              const dropzoneItems = dropzone.querySelectorAll('.dropzone-item');
+              dropzoneItems.forEach(dropzoneItem => {
+                dropzoneItem.style.display = '';
+              });
+              dropzone.querySelector('.dropzone-upload').style.display = "inline-block";
+              dropzone.querySelector('.dropzone-remove-all').style.display = "inline-block";
+            });
 
-        // Setup the button for remove all files
-        dropzone.querySelector(".dropzone-remove-all").addEventListener('click', function () {
-          dropzone.querySelector('.dropzone-upload').style.display = "none";
-          dropzone.querySelector('.dropzone-remove-all').style.display = "none";
-          myDropzone.removeAllFiles(true);
-        });
+            // Update the total progress bar
+            myDropzone.on("totaluploadprogress", function (progress) {
+              const progressBars = dropzone.querySelectorAll('.progress-bar');
+              progressBars.forEach(progressBar => {
+                progressBar.style.width = progress + "%";
+              });
+            });
 
-        // On all files completed upload
-        myDropzone.on("queuecomplete", function (progress) {
-          const uploadIcons = dropzone.querySelectorAll('.dropzone-upload');
-          uploadIcons.forEach(uploadIcon => {
-            uploadIcon.style.display = "none";
-          });
-        });
+            myDropzone.on("sending", function (file) {
+              // Show the total progress bar when upload starts
+              const progressBars = dropzone.querySelectorAll('.progress-bar');
+              progressBars.forEach(progressBar => {
+                progressBar.style.opacity = "1";
+              });
+              // And disable the start button
+              file.previewElement.querySelector(id + " .dropzone-start").setAttribute("disabled", "disabled");
+            });
 
-        // On all files removed
-        myDropzone.on("removedfile", function (file) {
-          if (myDropzone.files.length < 1) {
-            dropzone.querySelector('.dropzone-upload').style.display = "none";
-            dropzone.querySelector('.dropzone-remove-all').style.display = "none";
-          }
-        });
-      </script>
-      <!-- Single Date picker -->
-      <script>
-        $("#kt_daterangepicker_3").daterangepicker({
-          singleDatePicker: true,
-          showDropdowns: true,
-          minYear: 1901,
-          maxYear: parseInt(moment().format("YYYY"), 12)
-        }, function (start, end, label) {
-          var years = moment().diff(start, "years");
-          alert("You are " + years + " years old!");
-        }
-        );
-      </script>
-      <script>
-        // The DOM elements you wish to replace with Tagify
-        var input1 = document.querySelector("#kt_tagify_1");
-        var input2 = document.querySelector("#kt_tagify_2");
+            // Hide the total progress bar when nothing's uploading anymore
+            myDropzone.on("complete", function (progress) {
+              const progressBars = dropzone.querySelectorAll('.dz-complete');
 
-        // Initialize Tagify components on the above inputs
-        new Tagify(input1);
-        new Tagify(input2); -->
-      </script>
+              setTimeout(function () {
+                progressBars.forEach(progressBar => {
+                  progressBar.querySelector('.progress-bar').style.opacity = "0";
+                  progressBar.querySelector('.progress').style.opacity = "0";
+                  progressBar.querySelector('.dropzone-start').style.opacity = "0";
+                });
+              }, 300);
+            });
 
+            // Setup the buttons for all transfers
+            dropzone.querySelector(".dropzone-upload").addEventListener('click', function () {
+              myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED));
+            });
+
+            // Setup the button for remove all files
+            dropzone.querySelector(".dropzone-remove-all").addEventListener('click', function () {
+              dropzone.querySelector('.dropzone-upload').style.display = "none";
+              dropzone.querySelector('.dropzone-remove-all').style.display = "none";
+              myDropzone.removeAllFiles(true);
+            });
+
+            // On all files completed upload
+            myDropzone.on("queuecomplete", function (progress) {
+              const uploadIcons = dropzone.querySelectorAll('.dropzone-upload');
+              uploadIcons.forEach(uploadIcon => {
+                uploadIcon.style.display = "none";
+              });
+            });
+
+            // On all files removed
+            myDropzone.on("removedfile", function (file) {
+              if (myDropzone.files.length < 1) {
+                dropzone.querySelector('.dropzone-upload').style.display = "none";
+                dropzone.querySelector('.dropzone-remove-all').style.display = "none";
+              }
+            });
+          </script>
+          <!-- Single Date picker -->
+          <script>
+            $("#kt_daterangepicker_3").daterangepicker({
+              singleDatePicker: true,
+              showDropdowns: true,
+              minYear: 1901,
+              maxYear: parseInt(moment().format("YYYY"), 12)
+            }, function (start, end, label) {
+              var years = moment().diff(start, "years");
+              alert("You are " + years + " years old!");
+            }
+            );
+          </script>
+          <script>
+            // The DOM elements you wish to replace with Tagify
+            var input1 = document.querySelector("#kt_tagify_1");
+            var input2 = document.querySelector("#kt_tagify_2");
+
+            // Initialize Tagify components on the above inputs
+            new Tagify(input1);
+            new Tagify(input2);
+          </script>
+          <script>
+            // The DOM elements you wish to replace with Tagify
+            var input1 = document.querySelector("#kt_tagify_1");
+            var input2 = document.querySelector("#kt_tagify_2");
+
+            // Initialize Tagify components on the above inputs
+            new Tagify(input1);
+            new Tagify(input2);</script>
 </body>
 <!--end::Body-->
 
