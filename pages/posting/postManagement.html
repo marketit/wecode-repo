@@ -890,7 +890,7 @@ License: For each use you must have a valid license purchased only from above li
                       <div id="kt_accordion_1_body_1" class="accordion-collapse collapse show"
                         aria-labelledby="kt_accordion_1_header_1" data-bs-parent="#kt_accordion_1">
                         <div>
-                          <!--begin::Input group 1-->
+                          <!--begin::제휴사-->
                           <div class="row">
                             <!--begin::Col-->
                             <div class="col-md-4 fv-row fv-plugins-icon-container mb-5">
@@ -905,8 +905,8 @@ License: For each use you must have a valid license purchased only from above li
                                 <option value="5">sample4</option>
                               </select>
                             </div>
-                            <div class="col-md-1 fv-row fv-plugins-icon-container mb-5">
-                              <label class="form-label">유형</label>
+                            <div class="col-md-2 fv-row fv-plugins-icon-container mb-5">
+                              <label class="form-label">제휴사 유형</label>
                               <select class=" form-select" data-control="select2" data-placeholder="전체"
                                 data-hide-search="true">
                                 <option></option>
@@ -937,7 +937,7 @@ License: For each use you must have a valid license purchased only from above li
                             </div>
                             <!--end::Col-->
                           </div>
-                          <!--end::Input group 1-->
+                          <!--end::제휴사-->
 
                           <!--begin::Input group 2-->
                           <div class="row">
@@ -1071,23 +1071,18 @@ License: For each use you must have a valid license purchased only from above li
                 <!-- begin:: 컨텐트 -->
                 <div class="table-responsive">
                   <table class="table table-hover table-striped border gy-7 gs-7">
-                    <thead>
+                    <thead class="text-center">
                       <tr class="fw-bold fs-6 text-gray-800 border-bottom-2 border-gray-200 ">
-                        <th><label class="form-check form-check-custom">
-                            <input class="form-check-input" type="checkbox" value="1" /></th>
-                        <th>인플루언서</th>
-                        <th>캠페인</th>
-                        <th>액티비티</th>
-                        <th></th>
-                        <th>포스팅</th>
-                        <th>수정 요청 이력</th>
-                        <th>수정 요청</th>
+                        <th style="width:10%;">인플루언서</th>
+                        <th style="width:17%;">캠페인</th>
+                        <th style="width:20%;">액티비티</th>
+                        <th style="width:25%;">포스팅</th>
+                        <th style="width:17%;">수정 요청 이력</th>
+                        <th style="width:10%;">수정 요청</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="align-middle">
                       <tr>
-                        <td><label class="form-check form-check-custom">
-                            <input class="form-check-input" type="checkbox" value="1" /></td>
                         <td>
                           임채명<span style="color: var(--bs-gray-600);">(90)</span>
                           <a href="/pages/Influencer/influencers/influencer-detail.html">
@@ -1104,27 +1099,42 @@ License: For each use you must have a valid license purchased only from above li
                                   fill="currentColor"></path>
                               </svg>
                             </span>
-                            <!--end::Svg Icon-->
                           </a>
                         </td>
-                        <td>국산 유기농 야채왕국_n회차<span style="color: var(--bs-gray-600);">(9393)</span>
-                          <br /><button class="btn" data-bs-toggle="modal" data-bs-target="#kt_modal_31">제휴사 연결</button>
+                        <td>국산 유기농 야채왕국_n회차
+                          <span style="color: var(--bs-gray-600);">(9393)</span>
+                          <br />
+                          <button class="btn p-0 text-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_31">포스팅
+                            가이드
+                            보기</button>
                           </button>
                         </td>
+                        <td>
+                          <div><span class="text-gray-600">액티비티ID :</span><span>220408-0000001</span></div>
+                          <div><span class="text-gray-600">가맹점명 :</span><span>우아한 형제들</span></div>
+                          <div><span class="text-gray-600">결제금액 :</span><span>100,000원</span></div>
+                          <button type="button" class="btn btn-white btn-outline p-3">액티비티 상세보기</button>
                         </td>
                         <td>
-                          <p class="mb-0"></p>
-                        </td>
-                        <td>
-                          등급 없음
+                          <div class="d-flex">
+                            <div class="me-2">
+                              <img
+                                src="https://images.unsplash.com/photo-1667143297893-37626691122b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                style="width:11.25rem; height:11.25rem;" />
+                              <div class="text-end"><a href="">원본보기</a></div>
+                            </div>
+                            <div>
+                              <textarea class="form-control" placeholder="내용" aria-label="With textarea"
+                                style="resize: none; height: 11.25rem;" disabled="disabled"></textarea>
+                              <div><span class="text-gray-600">업로드일 :</span><span>2022-03-15</span></div>
+                              <div><span class="text-gray-600">연동일 :</span><span>2022-03-18</span></div>
+                            </div>
+                          </div>
                         </td>
                         <td>
                           <textarea class="form-control" placeholder="내용" aria-label="With textarea"
-                            style="resize: none; height: 100px;"></textarea>
-                        </td>
-                        <td>
-                          <textarea class="form-control" placeholder="내용" aria-label="With textarea"
-                            style="resize: none; height: 100px;"></textarea>
+                            style="resize: none; height: 11.25rem;" disabled="disabled"></textarea>
+                          <div><span class="text-gray-600">1차</span><span>(2022-03-17)</span></div>
                         </td>
                         <td>
                           <button class="btn btn-white btn-outline" data-bs-toggle="modal"
@@ -1280,7 +1290,7 @@ License: For each use you must have a valid license purchased only from above li
                       <!--begin::Input group-->
                       <!--begin::Input group-->
                       <div class="input-group mb-5">
-                        <span class="input-group-text justify-content-end" style="width:8.75rem; height: auto;"
+                        <span class="input-group-text justify-content-end" style="width:9rem; height: auto;"
                           id="basic-addon1">포스팅</span>
                         <div class="form-control d-flex">
                           <img class="me-4"
@@ -1292,9 +1302,9 @@ License: For each use you must have a valid license purchased only from above li
                       <!--end::Input group-->
                       <!--begin::Input group-->
                       <div class="input-group mb-5">
-                        <span class="required input-group-text justify-content-end">수정 요청 내용</span>
-                        <textarea class="form-control" style="resize: none; width: 8.75rem; height: 100px;"
-                          aria-label="With textarea"></textarea>
+                        <span class="required input-group-text justify-content-end"
+                          style="width: 8.75rem; height: 100px;">수정 요청 내용</span>
+                        <textarea class="form-control" style="resize: none;" aria-label="With textarea"></textarea>
                       </div>
                       <!--end::Input group-->
 
