@@ -598,7 +598,7 @@
                     <div class="menu-item">
                       <!--begin:Menu link-->
                       <a class="menu-link" href="/pages/fee/business/paymentInformationList.html"">
-                                  <span class=" menu-bullet">
+                                <span class=" menu-bullet">
                         <span class="bullet bullet-dot"></span>
                         </span>
                         <span class="menu-title">사업자 결제 정보</span>
@@ -880,13 +880,15 @@
                   <h3 class="card-title align-items-start flex-column">
                     <span class="card-label fw-bold text-dark">계정 정보</span>
                   </h3>
+                  <span class="required">필수 정보</span>
                 </div>
                 <!-- end::카드 타이클 -->
                 <!-- begin:: 컨텐트 -->
                 <div class="card-body flex-lg-row-fluid me-0">
                   <!--begin::Form-->
                   <form action="m-0" class="form fv-plugins-bootstrap5 fv-plugins-framework">
-                    <!--begin::Input group-->
+
+                    <!--begin::Input group ID-->
                     <div class="row mb-5">
                       <!--begin::Col-->
                       <div class="col-md-6 fv-row fv-plugins-icon-container mb-2">
@@ -919,8 +921,9 @@
                       </div>
                       <!--end::Col-->
                     </div>
-                    <!--end::Input group-->
-                    <!--begin::Input group-->
+                    <!--end::Input group ID-->
+
+                    <!--begin::Input group 이름-->
                     <div class="row mb-5">
                       <!--begin::Col-->
                       <div class="col-md-6 fv-row fv-plugins-icon-container mb-2">
@@ -928,7 +931,22 @@
                         <label class="required fs-5 fw-semibold mb-2">이름</label>
                         <!--end::Label-->
                         <!--begin::Input-->
-                        <input class="form-control" placeholder="홍길동">
+                        <div class="d-flex">
+                          <input class="form-control me-2" placeholder="홍길동">
+                          <button type="submit" class="btn btn-light">
+                            <span class="svg-icon svg-icon-2 svg-icon-gray-500">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.3"
+                                  d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z"
+                                  fill="currentColor"></path>
+                                <path
+                                  d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z"
+                                  fill="currentColor"></path>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
                         <!--end::Input-->
                       </div>
                       <!--end::Col-->
@@ -938,30 +956,62 @@
                         <label class="fs-5 fw-semibold mb-2">직급(직책)</label>
                         <!--end::Label-->
                         <!--end::Input-->
-                        <input type="text" class="form-control" placeholder="매니저">
+                        <div class="d-flex">
+                          <input type="text" class="form-control me-2" placeholder="매니저">
+                          <button type="submit" class="btn btn-light">
+                            <span class="svg-icon svg-icon-2 svg-icon-gray-500">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.3"
+                                  d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z"
+                                  fill="currentColor"></path>
+                                <path
+                                  d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z"
+                                  fill="currentColor"></path>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
                         <!--end::Input-->
                       </div>
                       <!--end::Col-->
                     </div>
-                    <!--end::Input group-->
-                    <!--begin::Input group-->
+                    <!--end::Input group 이름-->
+
+                    <!--begin::Input group 휴대폰 번호-->
                     <div class="row mb-5">
                       <!--begin::Col-->
                       <div class="col-md-6 fv-row fv-plugins-icon-container mb-2">
                         <!--begin::Label-->
-                        <label class="required fs-5 fw-semibold mb-2">휴대폰 번호<i
-                            class="fas fa-exclamation-circle ms-2 fs-7"></i></label>
-                        <!--end::Label-->
-                        <!--begin::Input-->
                         <div class="d-flex">
-                          <input type="text" class="form-control col me-2" placeholder="010-1234-5678">
+                          <label class="required fs-5 fw-semibold mb-2">휴대폰 번호<i
+                              class="fas fa-exclamation-circle ms-2 fs-7"></i>
+                          </label>
                           <div class="form-check form-switch form-check-custom form-check-solid ps-sm-3">
-                            <input class="form-check-input " type="checkbox" value="" id="flexSwitchDefault"
-                              checked="checked" />
+                            <input class="form-check-input  h-20px w-30px " type="checkbox" value=""
+                              id="flexSwitchDefault" checked="checked" />
                             <label class="form-check-label" for="flexSwitchDefault">
                               메세지 수신동의
                             </label>
                           </div>
+                        </div>
+                        <!--end::Label-->
+                        <!--begin::Input-->
+                        <div class="d-flex">
+                          <input type="text" class="form-control col me-2" placeholder="010-1234-5678">
+                          <button type="submit" class="btn btn-light">
+                            <span class="svg-icon svg-icon-2 svg-icon-gray-500">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.3"
+                                  d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z"
+                                  fill="currentColor"></path>
+                                <path
+                                  d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z"
+                                  fill="currentColor"></path>
+                              </svg>
+                            </span>
+                          </button>
                         </div>
                         <!--end::Input-->
                       </div>
@@ -972,22 +1022,58 @@
                         <label class="required fs-5 fw-semibold mb-2">연락 이메일</label>
                         <!--end::Label-->
                         <!--end::Input-->
-                        <input type="text" class="form-control" placeholder="test@inflca.com">
+                        <div class="d-flex">
+                          <input type="text" class="form-control" placeholder="test@inflca.com">
+                          <button type="submit" class="btn btn-light">
+                            <span class="svg-icon svg-icon-2 svg-icon-gray-500">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.3"
+                                  d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z"
+                                  fill="currentColor"></path>
+                                <path
+                                  d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z"
+                                  fill="currentColor"></path>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
                         <!--end::Input-->
                       </div>
                       <!--end::Col-->
                     </div>
-                    <!-- end::input group -->
-                    <!--begin::Col-->
-                    <div class="d-flex flex-column mb-5 fv-row">
-                      <!--begin::Label-->
-                      <label class="fs-5 fw-semibold mb-2">가입 시각</label>
-                      <!--end::Label-->
-                      <!--begin::Input-->
-                      <span class="form-control form-control-solid">2022-10-24 <span>12:19:46</span> </span>
-                      <!--end::Input-->
+                    <!-- end::input group 휴대폰 번호-->
+
+                    <!--begin::Input group 가입시각-->
+                    <div class="row mb-5">
+                      <!--begin::Col-->
+                      <div class="col-md-6 fv-row fv-plugins-icon-container mb-2">
+                        <!--begin::Label-->
+                        <label class="fs-5 fw-semibold mb-2">가입시각</label>
+                        <!--end::Label-->
+                        <!--begin::Input-->
+                        <p class="form-control form-control-solid">2022
+                          -04-01
+                          <span class="text-gray-600">16:12:11</span>
+                        </p>
+                        <!--end::Input-->
+                      </div>
+                      <!--end::Col-->
+                      <!--begin::Col-->
+                      <div class="col-md-6 fv-row">
+                        <!--end::Label-->
+                        <label class="fs-5 fw-semibold mb-2">승인 거절 시각</label>
+                        <!--end::Label-->
+                        <!--end::Input-->
+                        <p class="form-control form-control-solid">2022
+                          -04-02
+                          <span class="text-gray-600">16:12:11</span>
+                        </p>
+                        <!--end::Input-->
+                      </div>
+                      <!--end::Col-->
                     </div>
-                    <!--end::Col-->
+                    <!--end::Input group 가입시각-->
                     <!-- end:: 컨텐트 -->
                 </div>
                 <!-- end:: 컨텐트 -->
@@ -1118,29 +1204,30 @@
                     <!-- end::사업장 주소지 -->
 
                     <!--begin::Input group 사업자 등록증-->
-                    <div class="mb-7">
-                      <!--begin::Label-->
-                      <label class="required fs-6 fw-semibold mb-3">
-                        <span>사업자등록증</span>
-                      </label>
-                      <!--end::Label-->
-                      <!--begin::Image input wrapper-->
-                      <div class="mt-1">
+                    <div class="row mb-5">
+                      <div class="col-md-2 fv-row fv-plugins-icon-container align-items-center">
+                        <!--end::Label-->
+                        <label class="required fs-5 fw-semibold mb-2">사업자등록증</label>
+                        <!--end::Label-->
+                      </div>
+                      <div class="col-md-10 fv-row fv-plugins-icon-container d-flex align-items-end">
                         <!--begin::Image input-->
-                        <div class="image-input image-input-outline image-input-empty" data-kt-image-input="true"
+                        <div class="image-input image-input-empty" data-kt-image-input="true"
                           style="background-image: url(/assets/media/svg/avatars/blank.svg)">
                           <!--begin::Image preview wrapper-->
                           <div class="image-input-wrapper w-125px h-125px"></div>
                           <!--end::Image preview wrapper-->
+
                           <!--begin::Edit button-->
                           <label
                             class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
                             data-kt-image-input-action="change" data-bs-toggle="tooltip" data-bs-dismiss="click"
-                            aria-label="Change avatar" data-kt-initialized="1">
+                            title="Change avatar">
                             <i class="bi bi-pencil-fill fs-7"></i>
+
                             <!--begin::Inputs-->
-                            <input type="file" name="avatar" accept=".png, .jpg, .jpeg">
-                            <input type="hidden" name="avatar_remove" value="0">
+                            <input type="file" name="avatar" accept=".png, .jpg, .jpeg" />
+                            <input type="hidden" name="avatar_remove" />
                             <!--end::Inputs-->
                           </label>
                           <!--end::Edit button-->
@@ -1148,22 +1235,46 @@
                           <span
                             class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
                             data-kt-image-input-action="cancel" data-bs-toggle="tooltip" data-bs-dismiss="click"
-                            aria-label="Cancel avatar" data-kt-initialized="1">
+                            title="Cancel avatar">
                             <i class="bi bi-x fs-2"></i>
                           </span>
                           <!--end::Cancel button-->
+
                           <!--begin::Remove button-->
                           <span
                             class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
                             data-kt-image-input-action="remove" data-bs-toggle="tooltip" data-bs-dismiss="click"
-                            aria-label="Remove avatar" data-kt-initialized="1">
+                            title="Remove avatar">
                             <i class="bi bi-x fs-2"></i>
                           </span>
                           <!--end::Remove button-->
                         </div>
                         <!--end::Image input-->
+                        <button type="submit" class="btn btn-white btn-outline ms-2">
+                          <!--begin::Indicator label-->
+                          <span class="indicator-label">업무요청</span>
+                          <!--end::Indicator label-->
+                        </button>
+                        <button type="button"
+                          class="btn btn-icon btn-sm h-auto btn-color-gray-400 btn-active-color-primary justify-content-end me-2">
+                          <!--begin::Svg Icon | path: icons/duotune/arrows/arr095.svg-->
+                          <span class="svg-icon svg-icon-2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)">
+                              <path opacity="0.3"
+                                d="M4.7 17.3V7.7C4.7 6.59543 5.59543 5.7 6.7 5.7H9.8C10.2694 5.7 10.65 5.31944 10.65 4.85C10.65 4.38056 10.2694 4 9.8 4H5C3.89543 4 3 4.89543 3 6V19C3 20.1046 3.89543 21 5 21H18C19.1046 21 20 20.1046 20 19V14.2C20 13.7306 19.6194 13.35 19.15 13.35C18.6806 13.35 18.3 13.7306 18.3 14.2V17.3C18.3 18.4046 17.4046 19.3 16.3 19.3H6.7C5.59543 19.3 4.7 18.4046 4.7 17.3Z"
+                                fill="currentColor"></path>
+                              <rect x="21.9497" y="3.46448" width="13" height="2" rx="1"
+                                transform="rotate(135 21.9497 3.46448)" fill="currentColor"></rect>
+                              <path
+                                d="M19.8284 4.97161L19.8284 9.93937C19.8284 10.5252 20.3033 11 20.8891 11C21.4749 11 21.9497 10.5252 21.9497 9.93937L21.9497 3.05029C21.9497 2.498 21.502 2.05028 20.9497 2.05028L14.0607 2.05027C13.4749 2.05027 13 2.52514 13 3.11094C13 3.69673 13.4749 4.17161 14.0607 4.17161L19.0284 4.17161C19.4702 4.17161 19.8284 4.52978 19.8284 4.97161Z"
+                                fill="currentColor"></path>
+                            </svg>
+                          </span>
+                          <!--end::Svg Icon-->
+                        </button>
+                        <span>사업자등록증</span>
                       </div>
-                      <!--end::Image input wrapper-->
                     </div>
                     <!--end::Input group 사업자 등록증-->
 
@@ -1656,13 +1767,29 @@
                     <!--begin::Input group-->
                     <div class="row mb-5">
                       <!--begin::Col-->
-                      <div class="fv-row d-flex align-items-center">
-                        <!--begin::Label-->
-                        <label class="fs-5 fw-semibold me-4">상태</label>
-                        <!--end::Label-->
-                        <!--begin::Input-->
-                        <span class="form-control form-control-solid col">승인 대기 </span>
-                        <!--end::Input-->
+                      <div class="row mb-5">
+                        <!--begin::Col-->
+                        <div class="col-md-3 fv-row fv-plugins-icon-container mb-2">
+                          <!--begin::Input group-->
+                          <div class="input-group mb-5">
+                            <span class="input-group-text" id="basic-addon1">상태</span>
+                            <input type="text" class="form-control" placeholder="승인 거절" />
+                          </div>
+                          <!--end::Input group-->
+                        </div>
+                        <!--end::Col-->
+                        <!--begin::Col-->
+                        <div class="col-md-9 fv-row fv-plugins-icon-container mb-2">
+                          <!--begin::Input group-->
+                          <div class="input-group mb-5">
+                            <span class="input-group-text" id="basic-addon1">사유</span>
+                            <span type="text" class="form-control bg-gray-100">이러이러한 사유로 승인이 거절되었습니다</span>
+                          </div>
+                          <!--end::Input group-->
+                        </div>
+                        <!--end::Col-->
+                        <!--begin::Col-->
+                        <!--begin::Input group-->
                       </div>
                       <!--end::Col-->
                     </div>
@@ -2259,23 +2386,6 @@
   <script>
     var input1 = document.querySelector("#kt_tagify_1");
     var input2 = document.querySelector("#kt_tagify_2");
-  </script>
-  <script>
-    $('#kt_docs_repeater_basic').repeater({
-      initEmpty: false,
-
-      defaultValues: {
-        'text-input': 'foo'
-      },
-
-      show: function () {
-        $(this).slideDown();
-      },
-
-      hide: function (deleteElement) {
-        $(this).slideUp(deleteElement);
-      }
-    });
   </script>
   <script>
     $('#kt_docs_repeater_basic').repeater({
