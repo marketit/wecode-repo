@@ -843,7 +843,7 @@
 
                 <!-- begin:: 컨텐트 -->
                 <div class="card-body">
-                  <form action="m-0" class="form mb-15 fv-plugins-bootstrap5 fv-plugins-framework" method="post"
+                  <form action="m-0" class="form mb-5 fv-plugins-bootstrap5 fv-plugins-framework" method="post"
                     id="kt_careers_form">
                     <!--begin::Input group-->
                     <div class="row mb-5">
@@ -913,15 +913,19 @@
 
                           <!--begin::Checkbox-->
                           <label class="form-check form-check-custom form-check-solid me-10">
-                            <input class="form-check-input h-20px w-20px" type="checkbox" checked="checked">
-                            <span class="form-check-label fw-semibold">대기중</span>
+                            <input class="form-check-input" type="radio" value="" id="post" name="waiting" checked="">
+                            <label class="form-check-label me-10" for="post">
+                              대기중
+                            </label>
                           </label>
                           <!--end::Checkbox-->
 
                           <!--begin::Checkbox-->
                           <label class="form-check form-check-custom form-check-solid">
-                            <input class="form-check-input h-20px w-20px" type="checkbox">
-                            <span class="form-check-label fw-semibold">확인 완료</span>
+                            <input class="form-check-input" type="radio" value="" id="post" name="waiting" checked="">
+                            <label class="form-check-label me-10" for="post">
+                              확인 완료
+                            </label>
                           </label>
                           <!--end::Checkbox-->
 
@@ -1019,8 +1023,8 @@
                   <ul class="pagination">
                     <li class="page-item previous disabled"><a href="#" class="page-link"><i class="previous"></i></a>
                     </li>
-                    <li class="page-item "><a href="#" class="page-link">1</a></li>
-                    <li class="page-item active"><a href="#" class="page-link">2</a>
+                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item "><a href="#" class="page-link">2</a>
                     </li>
                     <li class="page-item "><a href="#" class="page-link">3</a></li>
                     <li class="page-item "><a href="#" class="page-link">4</a></li>
