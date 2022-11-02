@@ -734,7 +734,7 @@ License: For each use you must have a valid license purchased only from above li
                                         <!--begin:Menu item-->
                                         <div class="menu-item">
                                             <!--begin:Menu link-->
-                                            <a class="menu-link" href="../../demo1/dist/pages/careers/list.html">
+                                            <a class="menu-link" href="/pages/setting/appSettings.html">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
@@ -743,16 +743,10 @@ License: For each use you must have a valid license purchased only from above li
                                             <!--end:Menu link-->
                                         </div>
                                         <!--end:Menu item-->
+
                                         <!--begin:Menu item-->
                                         <div class="menu-item">
-                                            <!--begin:Menu link-->
-                                            <a class="menu-link" href="/pages/setting/app.html">
-                                                <span class="menu-bullet">
-                                                    <span class="bullet bullet-dot"></span>
-                                                </span>
-                                                <span class="menu-title">APP</span>
-                                            </a>
-                                            <!--end:Menu link-->
+
                                             <!--begin:Menu link-->
                                             <a class="menu-link" href="/pages/setting/message.html">
                                                 <span class="menu-bullet">
@@ -763,6 +757,7 @@ License: For each use you must have a valid license purchased only from above li
                                             <!--end:Menu link-->
                                         </div>
                                         <!--end:Menu item-->
+
                                         <!--begin:Menu item-->
                                         <div class="menu-item">
                                             <!--begin:Menu link-->
@@ -1011,205 +1006,432 @@ License: For each use you must have a valid license purchased only from above li
                         </div>
                         <!--end:: 타이틀 이거 탭-->
 
-                        <!-- begin::1st tab -->
-                        <div class="tab-pane fade show active" id="kt_tab_pane_9" role="tabpanel">
+                        <div class="tab-content" id="myTabContent">
+                            <!-- begin::1st tab -->
+                            <div class="tab-pane fade show active" id="kt_tab_pane_9" role="tabpanel">
 
-                            <!-- begin::카드 -->
-                            <div class="col-xxl-12 mb-5 mb-xl-10">
-                                <div class="card">
+                                <!-- begin::카드 -->
+                                <div class="col-xxl-12 mb-5 mb-xl-10">
+                                    <div class="card">
 
-                                    <!--begin::카드  타이틀-->
-                                    <div class="card-header pt-5 d-flex ">
-                                        <div>
-                                            <h3 class="card-title align-items-start flex-column">
-                                                <span class="card-label fw-bold text-dark">진행 예정 배너 리스트 (1)</span>
-                                            </h3>
-                                        </div>
-                                        <div>
-                                            <select class="form-select" style="width: 78px; margin: 0.75rem;">
-                                                <option value="30" selected="">30</option>
-                                                <option value="50">50</option>
-                                                <option value="100">100</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <!--end:: 카드 타이틀-->
-
-
-                                    <!-- begin:: 카드 컨텐트 -->
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between mb-5">
+                                        <!--begin::카드  타이틀-->
+                                        <div class="card-header pt-5 d-flex ">
                                             <div>
-                                                <button type="button"
-                                                    class="btn btn-outline btn-outline-danger">삭제</button>
+                                                <h3 class="card-title align-items-start flex-column">
+                                                    <span class="card-label fw-bold text-dark">진행 예정 배너 리스트 (1)</span>
+                                                </h3>
                                             </div>
                                             <div>
+                                                <select class="form-select" style="width: 78px; margin: 0.75rem;">
+                                                    <option value="30" selected="">30</option>
+                                                    <option value="50">50</option>
+                                                    <option value="100">100</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!--end:: 카드 타이틀-->
+
+
+                                        <!-- begin:: 카드 컨텐트 -->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between mb-5">
                                                 <div>
-                                                    <button type="button" class="btn btn-primary"
-                                                        onclick="location.href='/pages/setting/newPromotion.html'">배너
-                                                        추가</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline btn-outline-danger">삭제</button>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <button type="button" class="btn btn-primary"
+                                                            onclick="location.href='/pages/setting/newPromotion.html'">배너
+                                                            추가</button>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="table-responsive text-center">
-                                            <table
-                                                class="table table-hover table-rounded table-striped border gy-7 gs-7">
-                                                <thead>
-                                                    <tr class="fw-semibold fs-6 text-gray-800 border-bottom-2 border-gray-200" "="">
-                                                        <th>이동</th>                                                                                        
-                                                        <th>선택</th>
-                                                        <th>번호</th>
-                                                        <th>이미지</th>
-                                                        <th>비고</th>
-                                                        <th>기간</th>
-                                                        <th>배너 상세 정보</th>
-                                                        <th>상태</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr style=" vertical-align: middle;">
-                                                        <td>이동</td>
-                                                        <td>
-                                                            <label
-                                                                class="form-check form-check-custom form-check-solid">
-                                                                <input class="form-check-input" type="checkbox"
-                                                                    value="1">
-                                                            </label>
-                                                        </td>
-                                                        <td>1</td>
-                                                        <td>
-                                                            <div class="image-input image-input-empty"
-                                                                data-kt-image-input="true"
-                                                                style="background-image: url(../../../assets/media/avatars/300-10.jpg); object-fit: cover;">
-                                                                <!--begin::Image preview wrapper-->
-                                                                <div class="image-input-wrapper w-200px h-200px"
-                                                                    style="object-fit: scale-down; ">
-                                                                </div>
-                                                                <!--end::Image preview wrapper-->
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            비고란에 적은 내용
-                                                        </td>
-                                                        <td>yyyy-mm-dd hh:mm:ss ~ yyyy-mm-dd hh:mm:ss</td>
-                                                        <td>
-                                                            <button type="submit"
-                                                                class="btn btn-outline btn-outline-primary mb-4 p-1">
-                                                                배너 상세정보
-                                                            </button>
-                                                        </td>
-                                                        <td>
-                                                            <div
-                                                                class="form-check form-switch form-check-custom form-check-solid me-10 ms-5">
-                                                                <input class="form-check-input h-20px w-35px"
-                                                                    type="checkbox" value="" id="flexSwitch30x50">
-                                                                <label class="form-check-label" for="flexSwitch30x50">
+                                            <div class="table-responsive text-center">
+                                                <table
+                                                    class="table table-hover table-rounded table-striped border gy-7 gs-7">
+                                                    <thead>
+                                                        <tr
+                                                            class="fw-semibold fs-6 text-gray-800 border-bottom-2 border-gray-200">
+                                                            <th>이동</th>
+                                                            <th>선택</th>
+                                                            <th>번호</th>
+                                                            <th>이미지</th>
+                                                            <th>비고</th>
+                                                            <th>기간</th>
+                                                            <th>배너 상세 정보</th>
+                                                            <th>상태</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr style=" vertical-align: middle;">
+                                                            <td>이동</td>
+                                                            <td>
+                                                                <label
+                                                                    class="form-check form-check-custom form-check-solid">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="1">
                                                                 </label>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
+                                                            </td>
+                                                            <td>1</td>
+                                                            <td>
+                                                                <div class="image-input image-input-empty"
+                                                                    data-kt-image-input="true"
+                                                                    style="background-image: url(../../../assets/media/avatars/300-10.jpg); object-fit: cover;">
+                                                                    <!--begin::Image preview wrapper-->
+                                                                    <div class="image-input-wrapper w-200px h-200px"
+                                                                        style="object-fit: scale-down; ">
+                                                                    </div>
+                                                                    <!--end::Image preview wrapper-->
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                비고란에 적은 내용
+                                                            </td>
+                                                            <td>yyyy-mm-dd hh:mm:ss ~ yyyy-mm-dd hh:mm:ss</td>
+                                                            <td>
+                                                                <button type="submit"
+                                                                    class="btn btn-outline btn-outline-primary mb-4 p-1">
+                                                                    배너 상세정보
+                                                                </button>
+                                                            </td>
+                                                            <td>
+                                                                <div
+                                                                    class="form-check form-switch form-check-custom form-check-solid me-10 ms-5">
+                                                                    <input class="form-check-input h-20px w-35px"
+                                                                        type="checkbox" value="" id="flexSwitch30x50">
+                                                                    <label class="form-check-label"
+                                                                        for="flexSwitch30x50">
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
                                                     </tbody>
-                                            </table>
+                                                </table>
+                                            </div>
+                                            <!-- end:: 카드 컨텐트 -->
+
+                                            <!-- begin::페이지네이션 -->
+                                            <div class="mb-10 mt-10">
+                                                <ul class="pagination">
+                                                    <li class="page-item previous disabled"><a href="#"
+                                                            class="page-link"><i class="previous"></i></a>
+                                                    </li>
+                                                    <li class="page-item active"><a href="#" class="page-link">1</a>
+                                                    </li>
+                                                    <li class="page-item "><a href="#" class="page-link">2</a>
+                                                    </li>
+                                                    <li class="page-item "><a href="#" class="page-link">3</a></li>
+                                                    <li class="page-item "><a href="#" class="page-link">4</a></li>
+                                                    <li class="page-item "><a href="#" class="page-link">5</a></li>
+                                                    <li class="page-item "><a href="#" class="page-link">6</a></li>
+                                                    <li class="page-item "><a href="#" class="page-link">7</a></li>
+                                                    <li class="page-item "><a href="#" class="page-link">8</a></li>
+                                                    <li class="page-item "><a href="#" class="page-link">9</a></li>
+                                                    <li class="page-item "><a href="#" class="page-link">10</a></li>
+                                                    <li class="page-item next"><a href="#" class="page-link"><i
+                                                                class="next"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <!-- end::페이지네이션 -->
                                         </div>
                                         <!-- end:: 카드 컨텐트 -->
 
-                                        <!-- begin::페이지네이션 -->
-                                        <div class="mb-10 mt-10">
-                                            <ul class="pagination">
-                                                <li class="page-item previous disabled"><a href="#" class="page-link"><i
-                                                            class="previous"></i></a>
-                                                </li>
-                                                <li class="page-item "><a href="#" class="page-link">1</a></li>
-                                                <li class="page-item active"><a href="#" class="page-link">2</a>
-                                                </li>
-                                                <li class="page-item "><a href="#" class="page-link">3</a></li>
-                                                <li class="page-item "><a href="#" class="page-link">4</a></li>
-                                                <li class="page-item "><a href="#" class="page-link">5</a></li>
-                                                <li class="page-item "><a href="#" class="page-link">6</a></li>
-                                                <li class="page-item "><a href="#" class="page-link">7</a></li>
-                                                <li class="page-item "><a href="#" class="page-link">8</a></li>
-                                                <li class="page-item "><a href="#" class="page-link">9</a></li>
-                                                <li class="page-item "><a href="#" class="page-link">10</a></li>
-                                                <li class="page-item next"><a href="#" class="page-link"><i
-                                                            class="next"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <!-- end::페이지네이션 -->
                                     </div>
-                                    <!-- end:: 카드 컨텐트 -->
-
                                 </div>
+                                <!-- end:: 카드 -->
+
                             </div>
-                            <!-- end:: 카드 -->
+                            <!-- end::1st tab -->
 
-                        </div>
-                        <!-- end::1st tab -->
+                            <!-- begin::2nd tab -->
+                            <div class="tab-pane fade" id="kt_tab_pane_10" role="tabpanel">
 
-                        <!-- begin::2nd tab -->
-                        <div class="tab-pane fade" id="kt_tab_pane_10" role="tabpanel">
+                                <!-- begin::카드 -->
+                                <div class="col-xxl-12 mb-5 mb-xl-10">
+                                    <div class="card">
+                                        <div class="card-header pt-5">
 
-                            <!-- begin::카드 -->
-                            <div class="col-xxl-12 mb-5 mb-xl-10">
-                                <div class="card">
-                                    <div class="card-header pt-5">
+                                            <!--begin:: 타이틀-->
+                                            <h3 class="card-title align-items-start flex-column">
+                                                <span class="card-label fw-bold text-dark">진행중 배너 리스트(1/10)</span>
+                                            </h3>
+                                            <!--end:: 타이틀-->
+                                        </div>
 
-                                        <!--begin:: 타이틀-->
-                                        <h3 class="card-title align-items-start flex-column">
-                                            <span class="card-label fw-bold text-dark">진행중 배너 리스트(1/10)</span>
-                                        </h3>
-                                        <!--end:: 타이틀-->
-                                    </div>
+                                        <!-- begin:: 컨텐트 -->
+                                        <div class="card-body">
+                                            <div class="no-account-search-list text-center"><i
+                                                    class="marketit-icon_search_list"></i>
+                                                <h5 class="mt-4 mb-2" style="font-weight: bold;">추가된 배너가 없습니다.</h5>
+                                                <p>
+                                                    "배너 추가" 버튼을 눌러 배너를 추가해주세요.
+                                                </p>
+                                                <div class="mt-3">
+                                                    <button type="button" class="btn btn-light-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#kt_modal_1">배너
+                                                        추가</button>
 
-                                    <!-- begin:: 컨텐트 -->
-                                    <div class="card-body">
-                                        <div class="no-account-search-list text-center"><i
-                                                class="marketit-icon_search_list"></i>
-                                            <h5 class="mt-4 mb-2" style="font-weight: bold;">추가된 배너가 없습니다.</h5>
-                                            <p>
-                                                "배너 추가" 버튼을 눌러 배너를 추가해주세요.
-                                            </p>
-                                            <div class="mt-3">
-                                                <button type="button" class="btn btn-light-primary"
-                                                    data-bs-toggle="modal" data-bs-target="#kt_modal_1">배너 추가</button>
-
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <!-- begin:: Modal -->
-                                    <div class="modal fade" tabindex="-1" id="kt_modal_1"
-                                        style="--bs-modal-width: 800px;">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h3 class="modal-title">배너 추가</h3>
+                                        <!-- begin:: Modal -->
+                                        <div class="modal fade" tabindex="-1" id="kt_modal_1"
+                                            style="--bs-modal-width: 800px;">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h3 class="modal-title">배너 추가</h3>
 
-                                                    <!--begin::Close-->
-                                                    <div class="btn btn-icon btn-sm btn-active-light-primary ms-2"
-                                                        data-bs-dismiss="modal" aria-label="Close">
-                                                        <span class="svg-icon svg-icon-1"></span>
+                                                        <!--begin::Close-->
+                                                        <div class="btn btn-icon btn-sm btn-active-light-primary ms-2"
+                                                            data-bs-dismiss="modal" aria-label="Close">
+                                                            <span class="svg-icon svg-icon-1"></span>
+                                                        </div>
+                                                        <!--end::Close-->
                                                     </div>
-                                                    <!--end::Close-->
-                                                </div>
 
-                                                <!-- begin::카드 -->
-                                                <div class="col-xxl-12 mb-xl-10">
-                                                    <div class="card">
+                                                    <!-- begin::카드 -->
+                                                    <div class="col-xxl-12 mb-xl-10">
+                                                        <div class="card">
 
-                                                        <!-- begin:: card-body -->
-                                                        <div class="card-body">
-                                                            <form action="m-0"
-                                                                class="form fv-plugins-bootstrap5 fv-plugins-framework"
-                                                                method="post" id="kt_careers_form">
+                                                            <!-- begin:: card-body -->
+                                                            <div class="card-body">
+                                                                <form action="m-0"
+                                                                    class="form fv-plugins-bootstrap5 fv-plugins-framework"
+                                                                    method="post" id="kt_careers_form">
 
-                                                                <!--begin::Input group-->
-                                                                <div class="row mb-5">
+                                                                    <!--begin::Input group-->
+                                                                    <div class="row mb-5">
 
+                                                                        <!--begin::Col-->
+                                                                        <div
+                                                                            class="col-md-12 fv-row fv-plugins-icon-container">
+                                                                            <!--begin::Label-->
+                                                                            <label class="fs-5 fw-semibold mb-2">배너
+                                                                                이미지</label>
+                                                                            <!--end::Label-->
+
+                                                                            <!--begin::Input-->
+                                                                            <div class="fv-row">
+                                                                                <!--begin::Dropzone-->
+                                                                                <div class="dropzone dz-clickable"
+                                                                                    id="kt_dropzonejs_example_1">
+                                                                                    <!--begin::Message-->
+                                                                                    <div class="dz-message needsclick">
+                                                                                        <!--begin::Icon-->
+                                                                                        <i
+                                                                                            class="bi bi-file-earmark-arrow-up text-primary fs-3x"></i>
+                                                                                        <!--end::Icon-->
+
+                                                                                        <!--begin::Info-->
+                                                                                        <div class="ms-4">
+                                                                                            <h3
+                                                                                                class="fs-5 fw-bold text-gray-900 mb-1">
+                                                                                                파일 등록
+                                                                                            </h3>
+                                                                                            <span
+                                                                                                class="fs-7 fw-semibold text-gray-400">jpg(jpeg),png
+                                                                                                형식 파일</span>
+                                                                                            <span
+                                                                                                class="fs-7 fw-semibold text-gray-400">개당
+                                                                                                5MB 이하, 최대 10개
+                                                                                                업로드</span>
+                                                                                        </div>
+                                                                                        <!--end::Info-->
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!--end::Dropzone-->
+                                                                            </div>
+                                                                            <!--end::Input-->
+                                                                        </div>
+                                                                        <!--end::Col-->
+
+                                                                    </div>
+                                                                    <!--end::Input group-->
+
+                                                                    <!--begin::Input group-->
+                                                                    <div class="row mb-5">
+                                                                        <!--begin::Col-->
+                                                                        <div
+                                                                            class="col-md-12 fv-row fv-plugins-icon-container">
+                                                                            <div class="row">
+                                                                                <div class="col-md-6 fv-row">
+                                                                                    <!--begin::Label-->
+                                                                                    <label
+                                                                                        class="fs-5 fw-semibold mb-2">기간
+                                                                                        설정</label>
+                                                                                    <!--end::Label-->
+                                                                                    <div class="input-group">
+                                                                                        <form>
+                                                                                            <input type="datetime-local"
+                                                                                                class="form-control"
+                                                                                                style="border-radius: 0px 0.475rem 0.475rem 0px;">
+                                                                                        </form>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-md-6 fv-row">
+                                                                                    <!--begin::Label-->
+                                                                                    <label
+                                                                                        class="fs-5 fw-semibold mb-2">&nbsp;</label>
+                                                                                    <!--end::Label-->
+                                                                                    <div class="row">
+                                                                                        <div
+                                                                                            class="col-md-1 d-flex justify-content-center align-items-center">
+                                                                                            <span>~</span>
+                                                                                        </div>
+                                                                                        <div class="col-md-11">
+                                                                                            <input type="datetime-local"
+                                                                                                class="form-control">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--end::Col-->
+
+                                                                    </div>
+                                                                    <!--end::Input group-->
+
+                                                                    <!--begin::Input group-->
+                                                                    <div
+                                                                        class="col-md-6 fv-row fv-plugins-icon-container">
+                                                                        <!--begin::Label-->
+                                                                        <label class=" fs-5 fw-semibold mb-2">상태</label>
+                                                                        <!--end::Label-->
+                                                                        <!--end::Input-->
+                                                                        <div
+                                                                            class="form-check form-check-custom form-check-solid">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                value="" id="flexCheckboxSm"
+                                                                                name="service-method" checked="">
+                                                                            <label class="form-check-label me-10"
+                                                                                for="flexCheckboxSm">
+                                                                                노출
+                                                                            </label>
+                                                                            <div
+                                                                                class="form-check form-check-custom form-check-solid">
+                                                                                <input class="form-check-input"
+                                                                                    type="radio" value=""
+                                                                                    id="flexCheckboxSm"
+                                                                                    name="service-method">
+                                                                                <label class="form-check-label"
+                                                                                    for="flexCheckboxSm">
+                                                                                    미노출
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--end::Input-->
+                                                                        <div
+                                                                            class="fv-plugins-message-container invalid-feedback">
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--end::Input group-->
+
+                                                                    <!-- begin::Input group -->
+                                                                    <div class="row mb-5">
+
+                                                                        <!--begin::Col-->
+                                                                        <div
+                                                                            class="col-md-12 fv-row fv-plugins-icon-container">
+                                                                            <!--begin::Label-->
+                                                                            <label
+                                                                                class=" fs-5 fw-semibold mb-2">비고</label>
+                                                                            <!--end::Label-->
+
+                                                                            <!--begin::Input-->
+                                                                            <input type="text"
+                                                                                class="form-control form-control-solid"
+                                                                                placeholder="비고 입력">
+                                                                            <!--end::Input-->
+
+                                                                            <div
+                                                                                class="fv-plugins-message-container invalid-feedback">
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--end::Col-->
+                                                                    </div>
+                                                                    <!-- end::Input group -->
+
+                                                                </form>
+                                                            </div>
+                                                            <!-- end::card-body-->
+                                                        </div>
+                                                    </div>
+                                                    <!-- end:: 카드 -->
+
+                                                    <!-- begin::카드 -->
+                                                    <div class="col-xxl-12 mb-5 mb-xl-10">
+                                                        <div class="card">
+
+                                                            <!--begin::카드  타이틀-->
+                                                            <div class="card-header pt-5 d-flex ">
+                                                                <h3 class="card-title align-items-start flex-column">
+                                                                    <span class="card-label fw-bold text-dark">상세 페이지
+                                                                        정보</span>
+                                                                </h3>
+                                                            </div>
+                                                            <!--end:: 카드 타이틀-->
+
+                                                            <!-- begin:: card-body -->
+                                                            <div class="card-body">
+                                                                <form action="m-0"
+                                                                    class="form fv-plugins-bootstrap5 fv-plugins-framework"
+                                                                    method="post" id="kt_careers_form">
+
+
+                                                                    <!--begin::Input group-->
+                                                                    <div
+                                                                        class="col-md-12 fv-row fv-plugins-icon-container mb-5">
+                                                                        <!--begin::Label-->
+                                                                        <label class=" fs-5 fw-semibold mb-2">배너
+                                                                            상세</label>
+                                                                        <!--end::Label-->
+
+                                                                        <!-- begin::배너 상세 없음 -->
+                                                                        <div
+                                                                            class="form-check form-check-custom form-check-solid">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                value="" id="flexCheckboxSm"
+                                                                                name="service-method" checked="">
+                                                                            <label class="form-check-label me-10"
+                                                                                for="flexCheckboxSm">
+                                                                                없음
+                                                                            </label>
+                                                                            <div
+                                                                                class="form-check form-check-custom form-check-solid">
+                                                                                <input class="form-check-input"
+                                                                                    type="radio" value=""
+                                                                                    id="flexCheckboxSm"
+                                                                                    name="service-method">
+                                                                                <label class="form-check-label me-10"
+                                                                                    for="flexCheckboxSm">
+                                                                                    이미지
+                                                                                </label>
+                                                                            </div>
+                                                                            <div
+                                                                                class="form-check form-check-custom form-check-solid">
+                                                                                <input class="form-check-input"
+                                                                                    type="radio" value=""
+                                                                                    id="flexCheckboxSm"
+                                                                                    name="service-method">
+                                                                                <label class="form-check-label"
+                                                                                    for="flexCheckboxSm">
+                                                                                    링크로 랜딩
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- end::배너 상세 없음 -->
+
+                                                                    <!-- begin::배너 상세 이미지 -->
                                                                     <!--begin::Col-->
                                                                     <div
-                                                                        class="col-md-12 fv-row fv-plugins-icon-container">
+                                                                        class="col-md-12 fv-row fv-plugins-icon-container mb-5">
                                                                         <!--begin::Label-->
-                                                                        <label class="fs-5 fw-semibold mb-2">배너
+                                                                        <label class="fs-5 fw-semibold mb-2">상세
                                                                             이미지</label>
                                                                         <!--end::Label-->
 
@@ -1247,99 +1469,50 @@ License: For each use you must have a valid license purchased only from above li
                                                                     </div>
                                                                     <!--end::Col-->
 
-                                                                </div>
-                                                                <!--end::Input group-->
-
-                                                                <!--begin::Input group-->
-                                                                <div class="row mb-5">
                                                                     <!--begin::Col-->
                                                                     <div
-                                                                        class="col-md-12 fv-row fv-plugins-icon-container">
-                                                                        <div class="row">
-                                                                            <div class="col-md-6 fv-row">
-                                                                                <!--begin::Label-->
-                                                                                <label class="fs-5 fw-semibold mb-2">기간
-                                                                                    설정</label>
-                                                                                <!--end::Label-->
-                                                                                <div class="input-group">
-                                                                                    <form>
-                                                                                        <input type="datetime-local"
-                                                                                            class="form-control"
-                                                                                            style="border-radius: 0px 0.475rem 0.475rem 0px;">
-                                                                                    </form>
-                                                                                </div>
-                                                                            </div>
+                                                                        class="col-md-12 fv-row fv-plugins-icon-container mb-5">
+                                                                        <!--begin::Label-->
+                                                                        <label class=" fs-5 fw-semibold mb-2">버튼
+                                                                            유무</label>
+                                                                        <!--end::Label-->
 
-                                                                            <div class="col-md-6 fv-row">
-                                                                                <!--begin::Label-->
-                                                                                <label
-                                                                                    class="fs-5 fw-semibold mb-2">&nbsp;</label>
-                                                                                <!--end::Label-->
-                                                                                <div class="row">
-                                                                                    <div
-                                                                                        class="col-md-1 d-flex justify-content-center align-items-center">
-                                                                                        <span>~</span>
-                                                                                    </div>
-                                                                                    <div class="col-md-11">
-                                                                                        <input type="datetime-local"
-                                                                                            class="form-control">
-                                                                                    </div>
-                                                                                </div>
+                                                                        <div
+                                                                            class="form-check form-check-custom form-check-solid">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                value="" id="flexCheckboxSm"
+                                                                                name="service-method" checked="">
+                                                                            <label class="form-check-label me-10"
+                                                                                for="flexCheckboxSm">
+                                                                                버튼 있음
+                                                                            </label>
+                                                                            <div
+                                                                                class="form-check form-check-custom form-check-solid">
+                                                                                <input class="form-check-input"
+                                                                                    type="radio" value=""
+                                                                                    id="flexCheckboxSm"
+                                                                                    name="service-method">
+                                                                                <label class="form-check-label me-10"
+                                                                                    for="flexCheckboxSm">
+                                                                                    버튼 없음
+                                                                                </label>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <!--end::Col-->
 
-                                                                </div>
-                                                                <!--end::Input group-->
-
-                                                                <!--begin::Input group-->
-                                                                <div class="col-md-6 fv-row fv-plugins-icon-container">
-                                                                    <!--begin::Label-->
-                                                                    <label class=" fs-5 fw-semibold mb-2">상태</label>
-                                                                    <!--end::Label-->
-                                                                    <!--end::Input-->
-                                                                    <div
-                                                                        class="form-check form-check-custom form-check-solid">
-                                                                        <input class="form-check-input" type="radio"
-                                                                            value="" id="flexCheckboxSm"
-                                                                            name="service-method" checked="">
-                                                                        <label class="form-check-label me-10"
-                                                                            for="flexCheckboxSm">
-                                                                            노출
-                                                                        </label>
-                                                                        <div
-                                                                            class="form-check form-check-custom form-check-solid">
-                                                                            <input class="form-check-input" type="radio"
-                                                                                value="" id="flexCheckboxSm"
-                                                                                name="service-method">
-                                                                            <label class="form-check-label"
-                                                                                for="flexCheckboxSm">
-                                                                                미노출
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--end::Input-->
-                                                                    <div
-                                                                        class="fv-plugins-message-container invalid-feedback">
-                                                                    </div>
-                                                                </div>
-                                                                <!--end::Input group-->
-
-                                                                <!-- begin::Input group -->
-                                                                <div class="row mb-5">
-
                                                                     <!--begin::Col-->
                                                                     <div
                                                                         class="col-md-12 fv-row fv-plugins-icon-container">
                                                                         <!--begin::Label-->
-                                                                        <label class=" fs-5 fw-semibold mb-2">비고</label>
+                                                                        <label class="required fs-5 fw-semibold mb-2">버튼
+                                                                            텍스트</label>
                                                                         <!--end::Label-->
 
                                                                         <!--begin::Input-->
                                                                         <input type="text"
                                                                             class="form-control form-control-solid"
-                                                                            placeholder="비고 입력">
+                                                                            placeholder="버튼명 입력">
                                                                         <!--end::Input-->
 
                                                                         <div
@@ -1347,364 +1520,206 @@ License: For each use you must have a valid license purchased only from above li
                                                                         </div>
                                                                     </div>
                                                                     <!--end::Col-->
-                                                                </div>
-                                                                <!-- end::Input group -->
 
-                                                            </form>
+                                                                    <!--begin::Col-->
+                                                                    <div
+                                                                        class="col-md-12 fv-row fv-plugins-icon-container">
+                                                                        <!--begin::Label-->
+                                                                        <label class="required fs-5 fw-semibold mb-2">버튼
+                                                                            URL</label>
+                                                                        <!--end::Label-->
+
+                                                                        <!--begin::Input-->
+                                                                        <input type="text"
+                                                                            class="required form-control form-control-solid"
+                                                                            placeholder="버튼을 누르면 이동할 링크 URL을 입력하세요.">
+                                                                        <!--end::Input-->
+
+                                                                        <div
+                                                                            class="fv-plugins-message-container invalid-feedback">
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--end::Col-->
+                                                                    <!-- end::배너 상세 이미지 -->
+
+                                                                    <!-- begin::배너 상세 링크로 랜딩 -->
+                                                                    <!--begin::Col-->
+                                                                    <div
+                                                                        class="col-md-12 fv-row fv-plugins-icon-container">
+                                                                        <!--begin::Label-->
+                                                                        <label class="required fs-5 fw-semibold mb-2">랜딩
+                                                                            URL</label>
+                                                                        <!--end::Label-->
+
+                                                                        <!--begin::Input-->
+                                                                        <input type="text"
+                                                                            class="required form-control form-control-solid"
+                                                                            placeholder="버튼을 누르면 이동할 링크 URL을 입력하세요.">
+                                                                        <!--end::Input-->
+
+                                                                        <div
+                                                                            class="fv-plugins-message-container invalid-feedback">
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--end::Col-->
+                                                                    <!-- end::배너 상세 링크로 랜딩 -->
+
+                                                                </form>
+                                                            </div>
+                                                            <!-- end::card-body-->
                                                         </div>
-                                                        <!-- end::card-body-->
                                                     </div>
-                                                </div>
-                                                <!-- end:: 카드 -->
-
-                                                <!-- begin::카드 -->
-                                                <div class="col-xxl-12 mb-5 mb-xl-10">
-                                                    <div class="card">
-
-                                                        <!--begin::카드  타이틀-->
-                                                        <div class="card-header pt-5 d-flex ">
-                                                            <h3 class="card-title align-items-start flex-column">
-                                                                <span class="card-label fw-bold text-dark">상세 페이지
-                                                                    정보</span>
-                                                            </h3>
-                                                        </div>
-                                                        <!--end:: 카드 타이틀-->
-
-                                                        <!-- begin:: card-body -->
-                                                        <div class="card-body">
-                                                            <form action="m-0"
-                                                                class="form fv-plugins-bootstrap5 fv-plugins-framework"
-                                                                method="post" id="kt_careers_form">
+                                                    <!-- end:: 카드 -->
 
 
-                                                                <!--begin::Input group-->
-                                                                <div
-                                                                    class="col-md-12 fv-row fv-plugins-icon-container mb-5">
-                                                                    <!--begin::Label-->
-                                                                    <label class=" fs-5 fw-semibold mb-2">배너 상세</label>
-                                                                    <!--end::Label-->
-
-                                                                    <!-- begin::배너 상세 없음 -->
-                                                                    <div
-                                                                        class="form-check form-check-custom form-check-solid">
-                                                                        <input class="form-check-input" type="radio"
-                                                                            value="" id="flexCheckboxSm"
-                                                                            name="service-method" checked="">
-                                                                        <label class="form-check-label me-10"
-                                                                            for="flexCheckboxSm">
-                                                                            없음
-                                                                        </label>
-                                                                        <div
-                                                                            class="form-check form-check-custom form-check-solid">
-                                                                            <input class="form-check-input" type="radio"
-                                                                                value="" id="flexCheckboxSm"
-                                                                                name="service-method">
-                                                                            <label class="form-check-label me-10"
-                                                                                for="flexCheckboxSm">
-                                                                                이미지
-                                                                            </label>
-                                                                        </div>
-                                                                        <div
-                                                                            class="form-check form-check-custom form-check-solid">
-                                                                            <input class="form-check-input" type="radio"
-                                                                                value="" id="flexCheckboxSm"
-                                                                                name="service-method">
-                                                                            <label class="form-check-label"
-                                                                                for="flexCheckboxSm">
-                                                                                링크로 랜딩
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- end::배너 상세 없음 -->
-
-                                                                <!-- begin::배너 상세 이미지 -->
-                                                                <!--begin::Col-->
-                                                                <div
-                                                                    class="col-md-12 fv-row fv-plugins-icon-container mb-5">
-                                                                    <!--begin::Label-->
-                                                                    <label class="fs-5 fw-semibold mb-2">상세
-                                                                        이미지</label>
-                                                                    <!--end::Label-->
-
-                                                                    <!--begin::Input-->
-                                                                    <div class="fv-row">
-                                                                        <!--begin::Dropzone-->
-                                                                        <div class="dropzone dz-clickable"
-                                                                            id="kt_dropzonejs_example_1">
-                                                                            <!--begin::Message-->
-                                                                            <div class="dz-message needsclick">
-                                                                                <!--begin::Icon-->
-                                                                                <i
-                                                                                    class="bi bi-file-earmark-arrow-up text-primary fs-3x"></i>
-                                                                                <!--end::Icon-->
-
-                                                                                <!--begin::Info-->
-                                                                                <div class="ms-4">
-                                                                                    <h3
-                                                                                        class="fs-5 fw-bold text-gray-900 mb-1">
-                                                                                        파일 등록
-                                                                                    </h3>
-                                                                                    <span
-                                                                                        class="fs-7 fw-semibold text-gray-400">jpg(jpeg),png
-                                                                                        형식 파일</span>
-                                                                                    <span
-                                                                                        class="fs-7 fw-semibold text-gray-400">개당
-                                                                                        5MB 이하, 최대 10개 업로드</span>
-                                                                                </div>
-                                                                                <!--end::Info-->
-                                                                            </div>
-                                                                        </div>
-                                                                        <!--end::Dropzone-->
-                                                                    </div>
-                                                                    <!--end::Input-->
-                                                                </div>
-                                                                <!--end::Col-->
-
-                                                                <!--begin::Col-->
-                                                                <div
-                                                                    class="col-md-12 fv-row fv-plugins-icon-container mb-5">
-                                                                    <!--begin::Label-->
-                                                                    <label class=" fs-5 fw-semibold mb-2">버튼 유무</label>
-                                                                    <!--end::Label-->
-
-                                                                    <div
-                                                                        class="form-check form-check-custom form-check-solid">
-                                                                        <input class="form-check-input" type="radio"
-                                                                            value="" id="flexCheckboxSm"
-                                                                            name="service-method" checked="">
-                                                                        <label class="form-check-label me-10"
-                                                                            for="flexCheckboxSm">
-                                                                            버튼 있음
-                                                                        </label>
-                                                                        <div
-                                                                            class="form-check form-check-custom form-check-solid">
-                                                                            <input class="form-check-input" type="radio"
-                                                                                value="" id="flexCheckboxSm"
-                                                                                name="service-method">
-                                                                            <label class="form-check-label me-10"
-                                                                                for="flexCheckboxSm">
-                                                                                버튼 없음
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!--end::Col-->
-
-                                                                <!--begin::Col-->
-                                                                <div class="col-md-12 fv-row fv-plugins-icon-container">
-                                                                    <!--begin::Label-->
-                                                                    <label class="required fs-5 fw-semibold mb-2">버튼
-                                                                        텍스트</label>
-                                                                    <!--end::Label-->
-
-                                                                    <!--begin::Input-->
-                                                                    <input type="text"
-                                                                        class="form-control form-control-solid"
-                                                                        placeholder="버튼명 입력">
-                                                                    <!--end::Input-->
-
-                                                                    <div
-                                                                        class="fv-plugins-message-container invalid-feedback">
-                                                                    </div>
-                                                                </div>
-                                                                <!--end::Col-->
-
-                                                                <!--begin::Col-->
-                                                                <div class="col-md-12 fv-row fv-plugins-icon-container">
-                                                                    <!--begin::Label-->
-                                                                    <label class="required fs-5 fw-semibold mb-2">버튼
-                                                                        URL</label>
-                                                                    <!--end::Label-->
-
-                                                                    <!--begin::Input-->
-                                                                    <input type="text"
-                                                                        class="required form-control form-control-solid"
-                                                                        placeholder="버튼을 누르면 이동할 링크 URL을 입력하세요.">
-                                                                    <!--end::Input-->
-
-                                                                    <div
-                                                                        class="fv-plugins-message-container invalid-feedback">
-                                                                    </div>
-                                                                </div>
-                                                                <!--end::Col-->
-                                                                <!-- end::배너 상세 이미지 -->
-
-                                                                <!-- begin::배너 상세 링크로 랜딩 -->
-                                                                <!--begin::Col-->
-                                                                <div class="col-md-12 fv-row fv-plugins-icon-container">
-                                                                    <!--begin::Label-->
-                                                                    <label class="required fs-5 fw-semibold mb-2">랜딩
-                                                                        URL</label>
-                                                                    <!--end::Label-->
-
-                                                                    <!--begin::Input-->
-                                                                    <input type="text"
-                                                                        class="required form-control form-control-solid"
-                                                                        placeholder="버튼을 누르면 이동할 링크 URL을 입력하세요.">
-                                                                    <!--end::Input-->
-
-                                                                    <div
-                                                                        class="fv-plugins-message-container invalid-feedback">
-                                                                    </div>
-                                                                </div>
-                                                                <!--end::Col-->
-                                                                <!-- end::배너 상세 링크로 랜딩 -->
-
-                                                            </form>
-                                                        </div>
-                                                        <!-- end::card-body-->
+                                                    <div class="modal-footer flex-center">
+                                                        <button type="button" class="btn btn-light"
+                                                            data-bs-dismiss="modal">닫기</button>
+                                                        <button type="button" id="kt_docs_sweetalert_basic"
+                                                            class="btn btn-primary">저장</button>
                                                     </div>
-                                                </div>
-                                                <!-- end:: 카드 -->
-
-
-                                                <div class="modal-footer flex-center">
-                                                    <button type="button" class="btn btn-light"
-                                                        data-bs-dismiss="modal">닫기</button>
-                                                    <button type="button" id="kt_docs_sweetalert_basic"
-                                                        class="btn btn-primary">저장</button>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- end:: Modal -->
+                                        <!-- end:: Modal -->
 
-                                    <!-- end:: 컨텐트 -->
+                                        <!-- end:: 컨텐트 -->
+                                    </div>
+
                                 </div>
+                                <!-- end:: 카드 -->
 
                             </div>
-                            <!-- end:: 카드 -->
+                            <!-- end::2nd tab -->
 
-                        </div>
-                        <!-- end::2nd tab -->
+                            <!-- begin::3rd tab -->
+                            <div class="tab-pane fade" id="kt_tab_pane_11" role="tabpanel">
 
-                        <!-- begin::3rd tab -->
-                        <div class="tab-pane fade" id="kt_tab_pane_11" role="tabpanel">
+                                <!-- begin::카드 -->
+                                <div class="col-xxl-12 mb-5 mb-xl-10">
+                                    <div class="card">
 
-                            <!-- begin::카드 -->
-                            <div class="col-xxl-12 mb-5 mb-xl-10">
-                                <div class="card">
-
-                                    <!--begin::카드  타이틀-->
-                                    <div class="card-header pt-5 d-flex ">
-                                        <div>
-                                            <h3 class="card-title align-items-start flex-column">
-                                                <span class="card-label fw-bold text-dark">만료된 배너 리스트 (1)</span>
-                                            </h3>
-                                        </div>
-                                        <div>
-                                            <select class="form-select" style="width: 78px; margin: 0.75rem;">
-                                                <option value="10" selected="">10</option>
-                                                <option value="30">30</option>
-                                                <option value="50">50</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <!--end:: 카드 타이틀-->
-
-
-                                    <!-- begin:: 카드 컨텐트 -->
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between mb-5">
+                                        <!--begin::카드  타이틀-->
+                                        <div class="card-header pt-5 d-flex ">
                                             <div>
-                                                <button type="button"
-                                                    class="btn btn-outline btn-outline-danger">삭제</button>
+                                                <h3 class="card-title align-items-start flex-column">
+                                                    <span class="card-label fw-bold text-dark">만료된 배너 리스트 (1)</span>
+                                                </h3>
+                                            </div>
+                                            <div>
+                                                <select class="form-select" style="width: 78px; margin: 0.75rem;">
+                                                    <option value="10" selected="">10</option>
+                                                    <option value="30">30</option>
+                                                    <option value="50">50</option>
+                                                </select>
                                             </div>
                                         </div>
-                                        <div class="table-responsive text-center">
-                                            <table
-                                                class="table table-hover table-rounded table-striped border gy-7 gs-7">
-                                                <thead>
-                                                    <tr
-                                                        class="fw-semibold fs-6 text-gray-800 border-bottom-2 border-gray-200">
-                                                        <th>선택</th>
-                                                        <th>번호</th>
-                                                        <th>이미지</th>
-                                                        <th>비고</th>
-                                                        <th>기간</th>
-                                                        <th>배너 상세 정보</th>
-                                                        <th>상태</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr style=" vertical-align: middle;">
-                                                        <td>
-                                                            <label
-                                                                class="form-check form-check-custom form-check-solid">
-                                                                <input class="form-check-input" type="checkbox"
-                                                                    value="1">
-                                                            </label>
-                                                        </td>
-                                                        <td>1</td>
-                                                        <td>
-                                                            <div class="image-input image-input-empty"
-                                                                data-kt-image-input="true"
-                                                                style="background-image: url(../../../assets/media/avatars/300-10.jpg); object-fit: cover;">
-                                                                <!--begin::Image preview wrapper-->
-                                                                <div class="image-input-wrapper w-200px h-200px"
-                                                                    style="object-fit: scale-down; ">
-                                                                </div>
-                                                                <!--end::Image preview wrapper-->
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            비고란에 적은 내용
-                                                        </td>
-                                                        <td>yyyy-mm-dd hh:mm:ss ~ yyyy-mm-dd hh:mm:ss</td>
-                                                        <td>
-                                                            <button type="submit"
-                                                                class="btn btn-outline btn-outline-primary mb-4 p-1">
-                                                                배너 상세정보
-                                                            </button>
-                                                        </td>
-                                                        <td>
-                                                            <div
-                                                                class="form-check form-switch form-check-custom form-check-solid me-10 ms-5">
-                                                                <input class="form-check-input h-20px w-35px"
-                                                                    type="checkbox" value="" id="flexSwitch30x50">
-                                                                <label class="form-check-label" for="flexSwitch30x50">
+                                        <!--end:: 카드 타이틀-->
+
+
+                                        <!-- begin:: 카드 컨텐트 -->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between mb-5">
+                                                <div>
+                                                    <button type="button"
+                                                        class="btn btn-outline btn-outline-danger">삭제</button>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive text-center">
+                                                <table
+                                                    class="table table-hover table-rounded table-striped border gy-7 gs-7">
+                                                    <thead>
+                                                        <tr
+                                                            class="fw-semibold fs-6 text-gray-800 border-bottom-2 border-gray-200">
+                                                            <th>선택</th>
+                                                            <th>번호</th>
+                                                            <th>이미지</th>
+                                                            <th>비고</th>
+                                                            <th>기간</th>
+                                                            <th>배너 상세 정보</th>
+                                                            <th>상태</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr style=" vertical-align: middle;">
+                                                            <td>
+                                                                <label
+                                                                    class="form-check form-check-custom form-check-solid">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="1">
                                                                 </label>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                                            </td>
+                                                            <td>1</td>
+                                                            <td>
+                                                                <div class="image-input image-input-empty"
+                                                                    data-kt-image-input="true"
+                                                                    style="background-image: url(../../../assets/media/avatars/300-10.jpg); object-fit: cover;">
+                                                                    <!--begin::Image preview wrapper-->
+                                                                    <div class="image-input-wrapper w-200px h-200px"
+                                                                        style="object-fit: scale-down; ">
+                                                                    </div>
+                                                                    <!--end::Image preview wrapper-->
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                비고란에 적은 내용
+                                                            </td>
+                                                            <td>yyyy-mm-dd hh:mm:ss ~ yyyy-mm-dd hh:mm:ss</td>
+                                                            <td>
+                                                                <button type="submit"
+                                                                    class="btn btn-outline btn-outline-primary mb-4 p-1">
+                                                                    배너 상세정보
+                                                                </button>
+                                                            </td>
+                                                            <td>
+                                                                <div
+                                                                    class="form-check form-switch form-check-custom form-check-solid me-10 ms-5">
+                                                                    <input class="form-check-input h-20px w-35px"
+                                                                        type="checkbox" value="" id="flexSwitch30x50">
+                                                                    <label class="form-check-label"
+                                                                        for="flexSwitch30x50">
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- end:: 카드 컨텐트 -->
+
+                                            <!-- begin::페이지네이션 -->
+                                            <div class="mb-10 mt-10">
+                                                <ul class="pagination">
+                                                    <li class="page-item previous disabled"><a href="#"
+                                                            class="page-link"><i class="previous"></i></a>
+                                                    </li>
+                                                    <li class="page-item active"><a href="#" class="page-link">1</a>
+                                                    </li>
+                                                    <li class="page-item "><a href="#" class="page-link">2</a>
+                                                    </li>
+                                                    <li class="page-item "><a href="#" class="page-link">3</a></li>
+                                                    <li class="page-item "><a href="#" class="page-link">4</a></li>
+                                                    <li class="page-item "><a href="#" class="page-link">5</a></li>
+                                                    <li class="page-item "><a href="#" class="page-link">6</a></li>
+                                                    <li class="page-item "><a href="#" class="page-link">7</a></li>
+                                                    <li class="page-item "><a href="#" class="page-link">8</a></li>
+                                                    <li class="page-item "><a href="#" class="page-link">9</a></li>
+                                                    <li class="page-item "><a href="#" class="page-link">10</a></li>
+                                                    <li class="page-item next"><a href="#" class="page-link"><i
+                                                                class="next"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <!-- end::페이지네이션 -->
                                         </div>
                                         <!-- end:: 카드 컨텐트 -->
 
-                                        <!-- begin::페이지네이션 -->
-                                        <div class="mb-10 mt-10">
-                                            <ul class="pagination">
-                                                <li class="page-item previous disabled"><a href="#" class="page-link"><i
-                                                            class="previous"></i></a>
-                                                </li>
-                                                <li class="page-item "><a href="#" class="page-link">1</a></li>
-                                                <li class="page-item active"><a href="#" class="page-link">2</a>
-                                                </li>
-                                                <li class="page-item "><a href="#" class="page-link">3</a></li>
-                                                <li class="page-item "><a href="#" class="page-link">4</a></li>
-                                                <li class="page-item "><a href="#" class="page-link">5</a></li>
-                                                <li class="page-item "><a href="#" class="page-link">6</a></li>
-                                                <li class="page-item "><a href="#" class="page-link">7</a></li>
-                                                <li class="page-item "><a href="#" class="page-link">8</a></li>
-                                                <li class="page-item "><a href="#" class="page-link">9</a></li>
-                                                <li class="page-item "><a href="#" class="page-link">10</a></li>
-                                                <li class="page-item next"><a href="#" class="page-link"><i
-                                                            class="next"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <!-- end::페이지네이션 -->
                                     </div>
-                                    <!-- end:: 카드 컨텐트 -->
-
                                 </div>
+                                <!-- end:: 카드 -->
+
                             </div>
-                            <!-- end:: 카드 -->
-
+                            <!-- end::3rd tab -->
                         </div>
-                        <!-- end::3rd tab -->
-
                     </div>
                 </div>
                 <!-- 바디: 끝 -->
